@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { height: 100%; }
+  body {
+    @apply bg-canvas font-sans text-fg antialiased;
+    background-image:
+      radial-gradient(1100px 620px at 18% -12%, rgba(94, 92, 230, 0.16), transparent 60%),
+      radial-gradient(900px 520px at 100% 0%, rgba(191, 90, 242, 0.1), transparent 55%),
+      radial-gradient(800px 600px at 60% 120%, rgba(10, 132, 255, 0.08), transparent 60%);
+    background-attachment: fixed;
+    color-scheme: dark;
+  }
+  ::selection { background: rgba(10, 132, 255, 0.35); }
+  * { scrollbar-width: thin; scrollbar-color: rgba(255, 255, 255, 0.16) transparent; }
+  button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid #0a84ff; outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .card { @apply rounded-2xl bg-card ring-1 ring-line; }
+  .glass { @apply bg-card/75 ring-1 ring-line backdrop-blur-xl shadow-glass; }
+  .popover { @apply z-50 rounded-2xl bg-elev/95 p-1.5 shadow-2xl ring-1 ring-line backdrop-blur-xl; }
+  .eyebrow { @apply text-[10.5px] font-semibold uppercase tracking-[0.12em] text-fg-3; }
+  .icon-btn { @apply grid size-9 place-items-center rounded-xl text-fg-2 transition-all duration-200 hover:bg-white/[0.07] hover:text-fg active:scale-95; }
+  .btn { @apply inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3 py-1.5 text-[12.5px] font-semibold transition-all duration-200 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-40; }
+  .btn-primary { @apply bg-accent text-white shadow-[0_8px_20px_-10px_#0a84ff] hover:brightness-110; }
+  .btn-soft { @apply bg-white/[0.06] text-fg hover:bg-white/[0.1]; }
+  .btn-outline { @apply text-fg ring-1 ring-line hover:bg-white/[0.05]; }
+  .input { @apply w-full rounded-xl bg-white/[0.05] px-3.5 py-2.5 text-sm text-fg ring-1 ring-line transition placeholder:text-fg-3 focus:bg-white/[0.07] focus:outline-none focus:ring-accent/60; }
+  .pill { @apply inline-flex items-center gap-1 whitespace-nowrap rounded-full px-2 py-0.5 text-[11px] font-medium ring-1; }
+  .tone-ai { @apply bg-cyan-500/[0.12] text-cyan-300 ring-cyan-500/25; }
+  .tone-ok { @apply bg-emerald-500/[0.12] text-emerald-300 ring-emerald-500/25; }
+  .tone-alert { @apply bg-rose-500/[0.12] text-rose-300 ring-rose-500/25; }
+  .tone-warn { @apply bg-amber-500/[0.14] text-amber-300 ring-amber-500/25; }
+  .tone-info { @apply bg-blue-500/[0.12] text-blue-300 ring-blue-500/25; }
+  .tone-violet { @apply bg-violet-500/[0.12] text-violet-300 ring-violet-500/25; }
+  .tone-muted { @apply bg-white/[0.05] text-fg-2 ring-line; }
+  .shimmer-line {
+    background: linear-gradient(90deg, transparent, rgba(10, 132, 255, 0.6), transparent);
+    background-size: 200% 100%;
+    @apply animate-shimmer;
+  }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+}
