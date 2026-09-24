@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"What money, if any, was actually received or paid out for this enquiry? Please show the relevant financial entries with private details hidden.\",\"changed\":false,\"reason\":\"Asks about actual cash movements, permits none, and requests supporting entries without treating the quoted offer as a loss.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":286680,"cached_input_tokens":263486,"cache_write_input_tokens":23152,"output_tokens":995,"reasoning_output_tokens":237}}

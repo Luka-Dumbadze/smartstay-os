@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"What was the most recent booking conflict or guest relocation, if any? If none comes to mind, we can walk through the last completed booking.\",\"changed\":false,\"reason\":\"Uses topics the respondent introduced, permits no incident, and offers a normal booking without assuming failure or cause.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":75048,"cached_input_tokens":55822,"cache_write_input_tokens":19214,"output_tokens":261,"reasoning_output_tokens":24}}

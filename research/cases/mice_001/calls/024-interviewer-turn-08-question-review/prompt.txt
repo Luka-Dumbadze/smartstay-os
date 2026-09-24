@@ -1,0 +1,9 @@
+PRE-DELIVERY QUESTION REVIEW.
+The prior spoken draft has NOT been delivered. Review it against the respondent's delivered answers already
+in your session. Remove any leading premise, implied cause, assumed assignment, hypothetical, pitch or
+unsupported fact. Do not introduce the researcher's expected problem. Reject stacked tasks and unsupported active-choice/knowledge premises. Prefer one short main question and,
+only if essential, one tightly related evidence request. Shorten enumerations of times, roles and causes; normally at most 45 spoken words, except the opening consent. Consent/opening may have a short preamble.
+Return ONLY JSON with exactly keys "question" (final spoken wording), "changed" (boolean),
+and "reason" (concise review finding, not spoken). If already neutral retain its wording.
+DRAFT:
+For the last completed month, how many corporate enquiries had a client deadline for firm terms, and how many received those terms after that deadline, if any? Can you show the enquiry records with private details hidden?

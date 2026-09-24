@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"What did the shared package worksheet record about payment terms when the first priced outline went out? Please show that version with names and client details hidden, if it’s available.\",\"changed\":false,\"reason\":\"Examines one stated control at a specific event, permits an unavailable version, and makes no inference about knowledge, effectiveness, or cause.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":440355,"cached_input_tokens":413908,"cache_write_input_tokens":26387,"output_tokens":1455,"reasoning_output_tokens":371}}

@@ -1,0 +1,34 @@
+Visitors from neighboring countries spend much per day, but stay for a short time
+
+
+Average expenditure per trip by countries in 2019, US$                                                      Average expenditure per day by countries in 2019, US$
+
+             USA                                                                             $1,352              Turkey                                                       $194
+  Saudi Arabia                                                                             $1,289           Saudi Arabia                                                     $189
+             UAE                                                        $870                                       USA                                                $149
+               UK                                                       $865                                    Armenia                                          $139
+        Czechia                                                     $760                                           UAE                                         $130
+          France                                                 $745                                             Israel                                       $129
+              Iran                                               $742                                                UK                                 $111
+            Israel                                              $722                                             France                           $92
+           China                                               $677                                                 Iran                      $88
+       Germany                                                $658                                                China                       $88
+    Kazakhstan                                                $645                                           Kazakhstan                       $87
+         Ukraine                                             $634                                                Poland                       $87
+          Poland                                             $632                                                  Italia                     $85
+             Italia                                    $525                                                     Czechia                     $79
+         Belarus                                      $499                                                    Azerbaijan                    $78
+          Russia                                     $455                                                        Russia                     $77
+         Greece                                $364                                                             Ukraine                     $76
+          Turkey                              $329                                                             Germany                  $69
+        Armenia                        $209                                                                     Belarus               $56
+     Azerbaijan                  $140                                                                            Greece         $38
+
+                      0          200      400          600      800        1,000   1,200   1,400    1,600                   0   50            100                150         200     250
+
+Source: Geostat Visitor Survey
+
+
+
+
+                                                                                                                                                                                           16

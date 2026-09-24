@@ -1,0 +1,310 @@
+SPOKEN INTERVIEW. Exchange 1/12. Stage: Operating context; simulated minutes 0–5.
+Begin with concise note-taking consent and operating-context discovery. You do not know the private incident.
+FIELD GUIDE:
+# Smartstay field discovery toolkit
+
+**Use:** Telavi/Kakheti hotel owners, general managers, reception/front-line leads, housekeeping/service leads, and financial responsibility holders. **Output:** one anonymized, evidence-linked operational case card per incident, with a comparable smooth case when available.
+
+**[I] Authority of this guide.** This is an operational implementation of [task_research.md, sections 3–4](../task_research.md), including its internal G1–G7 gates and scoring matrix. It is not an official GITA judging rubric. The interview scripts are original working scripts consistent with the requested past-behavior “Mom Test” approach; they are not quotations from that book. The schema and CLI are [case_card.json](../schemas/case_card.json) and [evaluate_candidate.py](../scripts/evaluate_candidate.py).
+
+**[D] Starting evidence, not a conclusion about your interviewee.** [Market findings](../research/derived/market_findings.md), A10–A12, report seasonal staff reductions and retention/service-quality concerns in the published Amirbari account. A13 records the Hotels Federation account of payroll/cost/margin pressure. A15 identifies PMC's concern about inconsistent reporting. **[U]** That corpus does not establish hotel-specific handover lapses, room-readiness failures, billing disputes, layoffs of a specified legal type, or quantified operator losses. Diagnose these only after the participant identifies an episode; never introduce them as facts about the property.
+
+**[I] Evidence notation:** D = documented original record; O = directly observed work or inspected evidence; I = inference; U = unknown. In JSON use these letters without brackets. An article documenting an opinion is not an operational incident record. Model-generated suggestions are not observations.
+
+## Before the conversation
+
+**[I] Interviewer checklist:**
+
+- Generate a blank case card with the command below; choose a pseudonymous `case_id` and keep guest/payment identifiers out of shared notes.
+- Record the recruitment route and participant's responsibility. Recruit beyond technopark friends and technology enthusiasts. Compare city boutiques, rural/family/wine-linked properties, and larger properties without claiming a representative sample.
+- Ask the owner and the person doing the work separately when possible. One person may hold several responsibilities; do not invent departments or agent roles.
+- Set a 40-minute timer. Get note-taking consent in the opening block. Ask separately before recording, copying artifacts, publishing a quotation, or proposing any trial. A conversation does not authorize access to a PMS or guest communications.
+- Use the participant's strongest working language. Preserve original wording, distinguish a translation from a quotation, and have a fluent speaker review Georgian/Russian idioms before coding.
+- Bring no product pitch, demo, suggested price, or proposed savings number. Keep diagnostic probes out of the opening questions.
+
+**[I] Copy-ready case preparation, from the project root:**
+
+```bash
+mkdir -p research/cases
+python3 scripts/evaluate_candidate.py --template > research/cases/CASE_REPLACE.json
+```
+
+**[I]** The template is schema-valid but deliberately ineligible. `null` means unknown; `0` means measured zero. Never replace a missing observation with zero. The initial `OUTSIDE_SOFTWARE_SCOPE` code is a conservative placeholder pending classification, not a factual finding about the hotel. Leave it until evidence justifies one of the other six codes.
+
+## Exact 40-minute chronological protocol
+
+**[I] Read the quoted questions as written; skip irrelevant follow-ups rather than extending the session.** Ask one question at a time. Use “What happened next?” to recover chronology. Record silence, uncertainty, and contradiction instead of filling them with your explanation.
+
+### 0–5 minutes — operating context and consent
+
+> We are researching how hotels here actually operate. We would like to understand a recent working day and where things became difficult. We are not asking you to evaluate a product. You can skip any question. If you show us records, please hide guest names, payment details, and other private information. May we take notes? We will ask separately before recording or using any attributable quotation.
+
+> What is your responsibility on a normal shift?
+
+> Which services do you operate, and which months do you operate them?
+
+> How many rooms are operating at present?
+
+> Walk me through yesterday from opening to closing.
+
+**[I] Capture:** `interview_date`, `interviewee_role`, `property_type`, `room_count`, actual `roles`, services and operating calendar in your notes. Distinguish rooms offered from rooms physically present; retain uncertainty as `null`. Person labels may repeat across distinct responsibilities.
+
+### 5–12 minutes — the last difficult episode
+
+> What was the last occasion when the shift did not go as planned?
+
+> When was that?
+
+> What happened first, and what happened next?
+
+> Who first noticed?
+
+> What changed for the guest, the staff, or the business as a result?
+
+> Who else was involved and could check this account?
+
+**[I] Capture:** `incident_summary`, `incident_date_range`, affected roles, the consequence in the participant's words. If they describe a general problem, ask:
+
+> Can we take the most recent specific occasion and follow it from the beginning?
+
+**[I] If no difficult episode is recalled, use a normal stay instead:**
+
+> Let us walk through the last completed stay. Where did you have to make a decision or contact someone else?
+
+**[I]** A smooth case is useful contrary evidence. Do not manufacture a failure to complete the card. Recency requires the reviewer to state why the selected episode reflects current operations; the engine does not invent a universal recency cutoff.
+
+### 12–20 minutes — artifact and responsibility walkthrough
+
+> Can you show me where that booking or request first appeared, with private details hidden?
+
+> What did that record say at the time?
+
+> What did you do next?
+
+> How did the next person find out?
+
+> Where was responsibility recorded?
+
+> How did you know the action had been accepted or finished?
+
+> What did the system show at that moment?
+
+> Which record or person could confirm the result?
+
+**[I] Capture:** trace steps, source record/version in `input_state`, actual and expected state, recipients, acknowledgements, completion evidence, and artifact references. Request a second participant's view without first telling them the manager's explanation. If two accounts conflict, preserve both and list the unresolved explanation.
+
+**[I] If copying is declined:**
+
+> Could you show the relevant step with private information hidden, while I record only the event sequence and the type of record?
+
+**[I]** A directly witnessed, redacted walkthrough can become a `direct_observation` artifact with its locator and reviewer note. Do not mark an uninspected record as reviewed.
+
+### 20–27 minutes — frequency, exposure, and financial consequence
+
+> When else did this happen recently?
+
+> Could we count it for the last completed month or another closed period you can show?
+
+> How many relevant arrivals, requests, or settlements were there in that same period?
+
+> What was paid, refunded, written off, or worked extra because of this occasion?
+
+> Which record shows that amount or time?
+
+> Was any of that amount already included in another adjustment?
+
+> How important was this consequence compared with the other problems you handled that period?
+
+**[I] Capture:** a closed `observation_window`, `incident_count`, `eligible_opportunities`, `opportunity_unit`, cash/rework measurements, supporting records, and the operator's own materiality judgment. Count each affected opportunity once for the selected failure definition; count repeated messages within one failed request as trace events, not extra failed requests.
+
+**[I] If they offer “hours every day” or “a lot of money”:**
+
+> Which recent day could we reconstruct to measure that?
+
+> What part can we verify, and what part is still an estimate?
+
+**[I]** Record estimates in notes, not in `verified_cash_leakage_gel` or verified `staff_rework_minutes`. No fixed GEL or minutes threshold is required to call an incident material; obtain the participant's reason and supporting evidence.
+
+### 27–33 minutes — past attempts, failed remedies, and workarounds
+
+> What have you changed to address this?
+
+> When did you last change that process?
+
+> What did that change cost?
+
+> Can you show a case after the change?
+
+> What still failed afterward?
+
+> Why does the current workaround survive?
+
+> What happens when the person who usually handles this is unavailable?
+
+**[I] Capture:** the actual existing process and any evidence of attempts. A paper list, shared queue, PMS configuration, explicit owner, acknowledgement rule, or deterministic workflow may solve the problem. Do not declare such controls inadequate merely because they are simple. If no comparison exists, leave G7 unknown and arrange a replay later.
+
+### 33–37 minutes — counterexample and competing cause
+
+> Show me a similar day when this went well.
+
+> What was different?
+
+> Who handles this best, and what do they do?
+
+> Was the necessary room, staff time, or service capacity actually available in the difficult case?
+
+> What problem would you solve before this one?
+
+**[I] Capture:** successful handling, the binding constraint, and alternative explanations. A shortage of physical rooms, inadequate pay, staff availability, training, or weak demand may be the root cause. Do not relabel these as a communication failure just to qualify for A2A.
+
+### 37–40 minutes — concrete commitment and correction
+
+> Have I understood the sequence and consequence correctly? What have I missed?
+
+> Who else took part and could check this account?
+
+> Would you let us reconstruct a few anonymized past cases with that person?
+
+> Who can decide what records may be used and what a supervised trial may change?
+
+> What approval and access would that trial require?
+
+> If a follow-up makes sense, what specific next step and date should we record?
+
+**[I] Capture:** an actual appointment, artifact owner, authority holder, permitted scope, or refusal. A “sounds interesting” response is not a commitment. No authorization is inferred from silence. End at 40 minutes; later baseline/replay work is a separate session.
+
+## Diagnostic probes after the participant identifies the topic
+
+**[I] Use one relevant branch in the walkthrough block. These are verbatim follow-ups, not a checklist of assumed hotel failures.**
+
+| Topic and evidence status | Exact questions |
+|---|---|
+| **Staffing changes/seasonality — reported concern, not a property-specific fact.** Market findings A10–A12. | “What changed in staffing between the last busy period and the period after it?” “For the last departure or staff reduction you mentioned, when did it happen?” “What reason was given?” “What work changed hands afterward?” “Which shifts, if any, were uncovered?” “Was replacement or overtime actually paid?” “What record shows that?” |
+| **Handover lapses — unestablished diagnostic hypothesis.** | “For the request you said was repeated, show me its first record.” “Who was responsible before the shift changed?” “Where could the incoming person see what remained open?” “What acknowledgement was expected?” “What was actually visible to that person?” “What happened on a comparable shift when the request was completed?” |
+| **Room readiness desynchronization — unestablished diagnostic hypothesis.** | “For the delayed arrival you described, when did you learn the arrival time?” “When did cleaning finish?” “Where and when was readiness recorded?” “When did reception learn it?” “When was the guest informed?” “Was a suitable room physically available?” “Which of those times can we verify?” |
+| **Billing/folio discrepancy — unestablished diagnostic hypothesis.** | “For the charge disagreement you described, what was the booked amount?” “What was on the folio?” “What was on the channel statement and bank settlement?” “Which service was actually supplied?” “What adjustment was made?” “Was it collected or paid?” “Could exchange rates, tax, timing, or package terms explain the difference?” |
+| **Cost pressure — reported concern without a quantified preventable loss.** A13, A18. | “Which expense changed most in your own records?” “What period are we comparing?” “Which part is recurring and which was exceptional?” “Was that payment avoidable, or a necessary operating cost?” “What is recorded for this property rather than the wider company?” |
+| **Incomplete reporting — institutional concern, local mechanism unverified.** A15–A16. | “Which records did you consult for your last operating decision?” “Did they agree?” “If they differed, show me the last example.” “What decision changed after you resolved it?” “Who supplied the missing information?” |
+
+**[I] Do not ask:** “Would AI help?”, “Is coordination your biggest problem?”, “Would you pay for this?”, or “Do you lose hours every day?” Use the last actual episode, the record, the failed or successful remedy, and the concrete consequence instead.
+
+## Operational trace table: booking to departure
+
+**[I] Follow one completed stay/request rather than asking for an ideal SOP. At each transition ask “What happened next?” and inspect the record.**
+
+| Lifecycle point | Exact walkthrough prompt | Evidence to capture |
+|---|---|---|
+| Booking | “Show the original booking and what was promised.” | Channel, room/services/terms, source version, acceptance, deposit requirement |
+| Amendment/pre-arrival | “Show the last change, who received it, and what they did.” | Changed state, timestamp or estimate, recipients, dependent services |
+| Assignment/readiness | “Show how the room was assigned and how readiness was confirmed.” | Reservation versus actual readiness, responsible role, available capacity |
+| Arrival | “Show when the guest arrived and what had to happen before check-in finished.” | Actual versus promised sequence, wait, escalation, verified consequence |
+| During stay | “Follow this request from first record to actual completion.” | Dispatch, ownership, acceptance, constraints, completion confirmation |
+| Shift transfer | “Show what remained open when responsibility changed.” | Outgoing/incoming responsibility, pending promise, evidence of acknowledgement |
+| Departure/settlement | “Reconcile the final folio with services, adjustments, and payment.” | Charge source, permission, credit/refund, settlement, unresolved difference |
+| Post-stay | “What action closed the complaint, and what shows it was completed?” | Guest response versus operational correction, recovery evidence |
+
+**[I] Copy this worksheet for each trace:**
+
+```text
+case_id:
+step_id | sequence | event_time_or_range | time_basis | actor_role | recipient_role
+source_system | input_record_and_version | expected_action | actual_outcome
+deadline_if_known | acknowledgement_time | completion_time | completion_evidence
+exception_or_escalation | rework_minutes_if_verified | cash_effect_if_verified
+artifact_id_and_locator | conflicting_account_or_missing_evidence
+```
+
+**[I] Map the worksheet to JSON:** `trace[].input_state` preserves the record/version; `expected_action` includes a deadline when known; `actual_outcome` includes an exception/escalation; `artifact_refs` point to completion and other evidence. The card's top-level cash/rework fields are **case totals**, not a second sum of already included adjustments. The worksheet may be an attached supporting artifact; do not add its arbitrary columns as undeclared schema fields.
+
+**[I] Mark the coordination failure precisely:**
+
+> At step ___, role ___ had information ___, recorded in artifact ___. Role ___ needed that state to perform ___. The expected acknowledgement/ownership/negotiation was ___. What actually happened was ___. The consequence confirmed by ___ was ___. The competing explanation still unresolved is ___.
+
+**[I]** Fill only evidenced blanks. Put the result in `handover_failure_mechanism.summary`, reference the relevant `step_ids` and artifacts, and create an `a2a_suitability.dependencies[]` entry for each genuinely asynchronous cross-role constraint. This is an analyst reconstruction, not a quotation or assumed causal proof. A missing timestamp alone does not prove a failed handover.
+
+**[I] Time rules:** `occurred_at` uses an offset-bearing ISO timestamp only when verified. For estimates use `time_basis: "estimate"`, keep `occurred_at: null`, and state the range/uncertainty in `time_note`. For unknown time use `time_basis: "unknown"`. Never turn “around lunch” into an exact clock time. Sequence reflects reconstructed order; the CLI checks consecutive positions and known timestamp order. An acknowledgement is not completion.
+
+## Complete the case card after the interview
+
+**[I] The 40-minute interview gathers evidence; final classification and scoring usually require follow-up review and baseline work. Do not complete missing gates with guesses.**
+
+| Schema fields | Completion rule |
+|---|---|
+| `case_id`, `property_type`, `room_count`, `interviewee_role`, `interview_date`, `incident_date_range` | Use pseudonyms, actual classifications, closed date ranges, and `null` for unknown counts/dates/role. `interviewee_role` references a `roles[].role_id`, not a free-text name. |
+| `roles`, `trace`, `handover_failure_mechanism` | Roles are real responsibilities; one person can hold several. Step and role IDs must resolve and be unique. Each trace step needs inspected episode evidence to pass G1. |
+| `supporting_artifacts` | Each artifact has a unique ID, kind, locator, D/O/I/U label, `reviewed` flag, summary, and collection date. Locator can refer to a restricted file, a notebook entry, or a witnessed/redacted record. Do not upload guest identities to satisfy a field. |
+| `verified_cash_leakage_gel`, `staff_rework_minutes`, `quantification_artifacts.cash/rework` | Enter measured case totals with primary artifacts. An actual zero needs supporting evidence too. Owner time is not automatically payroll savings; elapsed guest delay is not staff labor time. Avoid counting the same refund in multiple loss categories. |
+| `observation_window`, `incident_count`, `eligible_opportunities`, `opportunity_unit`, `quantification_artifacts.frequency` | Use the same closed period and cohort for numerator and denominator. Count affected opportunities once. A complaint review sample is not an eligible-stay denominator. |
+| `observed_frequency_per_month` | **Implementation convention [I]:** a 30-day-equivalent count: `incident_count × 30 / inclusive observation-window days`. Label this normalization when reporting it; retain the raw window/count. It is not an annual extrapolation or a calendar-month seasonal forecast. Leave null if not established. |
+| `root_cause_code`, `alternative_explanations` | Choose one primary mechanism from the taxonomy below and list competing causes without suppressing contradictions. Classification itself does not pass gates. |
+| `a2a_suitability` | `distinct_operational_roles` must equal unique actors/recipients in the trace. Each dependency links earlier/later steps and different participating roles. A role count, asynchronous flag, or invented agent title alone cannot pass G3. |
+| `gate_evidence` | Capture confirmation, materiality, permitted action, available information, access/authority, feasibility, and actual simple-rule comparison. Preserve unknown booleans as null, not true. |
+| `scores`, `reviewer` | Enter a pseudonymous accountable reviewer, seven ratings, rationales, and reviewed local evidence references. Ratings are human judgments; the CLI does not generate ratings from an interview or a cash amount. |
+
+**[I] Taxonomy:**
+
+| Code | Classify when the evidenced primary mechanism concerns |
+|---|---|
+| `ARRIVAL_READINESS` | Arrival commitment and room-readiness coordination |
+| `REQUEST_OWNERSHIP` | Request dispatch, ownership, acknowledgement, or completion |
+| `BOOKING_PROMISE` | Booking/amendment terms and promised versus supplied service |
+| `FOLIO_SETTLEMENT` | Service/folio/payment state and financial reconciliation |
+| `SHIFT_CONTINUITY` | Open responsibilities or promises crossing shifts |
+| `SERVICE_DEPENDENCY` | Dependent room, meal, event, transfer, or other service commitments |
+| `OUTSIDE_SOFTWARE_SCOPE` | Binding physical capacity, hardware, wages/job security, external demand, or unresolved software suitability |
+
+**[I] Important evidence-kind distinction:** `operator_record` and `direct_observation` are primary episode/measurement evidence. `operator_confirmation` records the consequence and confirming role. `baseline_test`, `replay_case`, `access_record`, and `commitment_record` support their named judgments. `institutional_report` and `practitioner_article` preserve context but cannot satisfy primary field-evidence requirements. D/O labels and `reviewed: true` must reflect actual human review; they are not truth guarantees merely because JSON validates.
+
+## G1–G7 checklist before assigning scores
+
+**[I] Source rules:** task_research.md §4.1 and §4.4. The following operational checks make the qualitative rules executable; they are not additional official hackathon criteria.
+
+| Gate | Exact reviewer question | What the CLI requires |
+|---|---|---|
+| G1 — Real problem | “Which recent episode is reconstructed, what original evidence supports it, and who confirms the consequence?” | Dated episode/interview; explicit recency basis; known interviewee/confirming role; consequence; reviewed primary evidence and confirmation/direct observation; supported trace. Public articles alone fail. |
+| G2 — Recurrent/material | “What is the counted exposure, and is this recurring or demonstrably serious?” | Closed period, positive denominator/unit, primary count evidence, and either at least two affected opportunities or a documented operator materiality confirmation. Two is the minimal interpretation of repetition, not a claim about a market threshold. Verified cash/rework fields need primary measurement artifacts. There is no invented financial-materiality cutoff. |
+| G3 — Structural coordination | “Which actual responsibilities depend on each other's state, and what consequential handoff failed?” | At least two traced roles, reviewed asynchronous cross-role dependency evidence, linked failure mechanism, and explicit rejection of single-database CRUD as the candidate explanation. |
+| G4 — Software leverage | “What permitted software action could have changed the failure path with the information then available?” | Software-only intervention; a coordination/software-data binding constraint; an evidenced action and available information. Hardware, physical capacity, labor economics, external demand, and unknown binding constraints fail. |
+| G5 — Authority/access | “What inputs and adapter are available, what writes are limited, and who can approve a trial?” | Reviewed input/access evidence, a verified connector/redacted import/honest simulator, explicit write limits, and confirmed authority of a named role. A simulator does not imply a live deployment or permission to send/refund. |
+| G6 — 115-hour feasibility | “What is the bounded workflow, how will the result be checked, and can it be replayed and compared?” | Positive estimate no greater than 115 hours, deterministic state oracle, reviewed replay cases, baseline comparison, failure-recovery test, and feasibility evidence. |
+| G7 — Simpler-control advantage | “Which simple control was actually tested, what failed, and why did dependency adaptation matter?” | Tested simple baseline, observed insufficiency, reviewed baseline-test evidence, and a rationale. An untested baseline, unknown sufficiency, or a sufficient simple rule fails. |
+
+**[I] Interpretation:** no CLI can judge whether a described write limit is sensible, an artifact is truthful, or a baseline was fairly designed. The reviewer must inspect those claims. The engine enforces explicit records, reference consistency, primary-evidence kinds, reviewed status, required decisions, and numeric boundaries. It does not access artifact locators, contact operators, fetch remote documents, authorize actions, or deploy anything.
+
+## Weighted score: only after all gates pass
+
+**[I] Exact source formula:** `score = Σ(weight × rating / 4)`. Select only if the result is **at least 70**, all ratings are established and evidence-linked, and **severity, A2A fit, feasibility, and evidence are nonzero**. A failed gate returns no score; a high rating cannot override it. Unknown ratings return no score rather than silently assigning a midpoint.
+
+| Field | Weight | Rating 0 | Rating 2 | Rating 4 |
+|---|---:|---|---|---|
+| `severity` | 20 | No measured consequence | Verified effort/small cash loss meaningful to operator | Material recurring loss, serious guest failure, or interruption supported by evidence and priorities |
+| `a2a_fit` | 20 | Single CRUD task | Two responsibilities, mostly fixed one-way handoff | Multiple dependent commitments/constraints, competing actions, exceptions, justified coordination |
+| `feasibility` | 15 | Missing data/access; unbounded build | One complete path, partial adapters, known gaps | Inputs, bounded adapters, clear oracle and demonstrable recovery |
+| `evidence` | 15 | Opinions only | Incident artifacts and plausible comparator | Reconstructable cases, independent role confirmation, denominator and holdout replay |
+| `frequency` | 15 | Isolated/recalled only | Repeated verified cases, limited exposure data | Repeated relevant opportunities or many operating days, demonstrated with records |
+| `preventable_share` | 10 | Outside software authority | Some failure path controllable | Exact preventable divergence and permitted corrective action established |
+| `adoption` | 5 | Polite praise | Decision-maker schedules concrete follow-up | Redacted cases supplied, trial owner named, supervised test window agreed |
+
+**[I] Ratings 1 and 3 interpolate between the documented anchors; explain the judgment.** A positive adoption rating requires evidence of the claimed action, not a model's confidence. Invite an owner and front-line worker to challenge the case card. Check whether changing plausible weights changes the ranking; do not call a narrow score difference a proven economic advantage. This engine implements the fixed source weights and does not replace that review.
+
+## Offline CLI and local checks
+
+**[I] Requirements:** Python 3.10+ and `jsonschema` with Draft 2020-12 support. No network calls or model/API keys are needed. Keep the script beside the checked-in schema in this workspace structure.
+
+```bash
+python3 -c 'import json; from jsonschema import Draft202012Validator; Draft202012Validator.check_schema(json.load(open("schemas/case_card.json")))'
+python3 scripts/evaluate_candidate.py --self-test
+python3 scripts/evaluate_candidate.py evaluate research/cases/CASE_REPLACE.json
+```
+
+**[I] Result format:** JSON with `status`, `accepted`, path-specific input errors, per-gate pass/fail reasons, `weighted_score`, weighted contributions, and selection reasons. Exit **0** means accepted or self-tests succeeded; **1** means candidate rejected or tests failed; **2** means invalid JSON/schema/cross-field input or a CLI/configuration error. The untouched template should reject with unknown-gate diagnostics, not be accepted as a completed incident.
+
+**[I] Input checks:** all declared objects reject extra properties; required fields cannot silently disappear; dates/timestamps validate; counts and money cannot be negative; scores must be integer 0–4 or null; IDs/references must resolve; role counts must match trace roles; chronological steps and known timestamps must agree; observation periods must be closed by the interview date; the frequency normalization must reconcile. Duplicate JSON keys and non-finite numeric values are rejected.
+
+**[O] Built-in examples are synthetic tests only.** `--self-test` runs the A2A, simple-CRUD, and physical-constraint fixtures and boundary/negative checks offline. The A2A fixture can pass all gates only in the internal synthetic test context; normal `evaluate` rejects a card marked `is_synthetic: true` under G1. Do not set this flag to false to rebrand a fixture as research. Passing tests establishes program behavior, not the existence of the hypothetical hotel incident.
+
+**[I] Completion rule for the field team:** retain the original redacted evidence, review the reconstructed timeline and competing cause, reconcile measurements, record the simple-control comparison, and only then seek selection. If a gate remains unknown, the next task is the specific evidence gap named in the output—not a more persuasive pitch.
+
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Opening: request note-taking consent and invite a concise description of the manager's normal 11:00–15:00 responsibilities. No assumed problem.

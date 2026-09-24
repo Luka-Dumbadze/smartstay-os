@@ -1,0 +1,1402 @@
+SYNTHESIS: interview is finished. Return ONLY one JSON object conforming exactly to the supplied schema.
+Extract ONLY what the respondent actually said in the delivered transcript; you do not have a hidden dossier.
+case_id=CASE_OVERBOOKING_001; is_synthetic=true; room_count=28. Scenario interview_date=2026-09-23.
+Make the event trace chronological, using offset +04:00. Keep uncertainty null and do not turn guest waiting into staff labor.
+Cash leakage means actual paid/refunded cash, not waived revenue. Read the money statements carefully.
+Artifacts are narrative records within this fiction: all locator and summary strings MUST explicitly include SYNTHETIC
+and reference the transcript turn where supplied (e.g. SYNTHETIC transcript_overbooking_hedging.md Turn 04).
+D/O and reviewed=true can mean inspected WITHIN THE FICTION only; explain this in every relevant artifact summary.
+Do not invent an actual record, replay/benchmark, simple-rule superiority, integration, approval or trial.
+Evidence not elicited remains null/empty; failed gates are an acceptable and expected result.
+Scores are transparent reviewer assessments linked to delivered evidence, not hotel facts; assign 0–4 where justified,
+or null if not assessable. Do not assign optimistic missing-evidence values to make the card pass.
+You may identify a future engineering action as an inference in its rationale, but do not mark it tested or authorized.
+Use only real role IDs within this fictional episode; count distinct actors/recipients actually appearing in trace.
+incident_count counts affected opportunities once; frequency = count*30/inclusive observation days, or null if unknown.
+Dates for the observation window must be closed by interview_date. All artifact/role/step references must resolve.
+The engine may reject G5/G6/G7. Never fabricate engineering evidence to fix that.
+ADDITIONAL OVERBOOKING RULES: root_cause_code=BOOKING_PROMISE. Include actual Front Desk/Night Auditor,
+Revenue/GM and Channel Operations responsibilities only as supplied. External channels are not separate
+hotel departments. Count traced actors/recipients consistently while noting external participants.
+All required keys must exist. Missing values remain null, not zero. verified_cash_leakage_gel requires
+actual settled deduction/payment and explicit fictional settlement conversion or direct GEL entry. Do not
+invent real FX, sum unlike currencies, add an invoice again to its payout offset, or conflate original guest
+funds/refunds with incremental relocation expense. Retain disputed/unverified legal basis separately.
+Quoted fees and 'Clause 6' do not establish public policy; the retrieved public terms concern 2.6.1 and do
+not establish a universal EUR 120 handling tariff. Never insert unseen public terms as episode evidence.
+Only shown fictional records qualify as reviewed within the fiction; missing log boundaries stay unknown.
+Distinguish booking acceptance, received notifications, update dispatch and acknowledgement/application.
+90 seconds and two minutes do not establish sub-second guarantees. Monthly frequency is only the defined
+30-day-equivalent count, never a forecast. Staff labor must be measured, not notification delay or guest wait.
+Do not upgrade I/U evidence to D/O to force gates. No integration, cross-OTA lock, replay, safe write authority
+or performance benchmark has been implemented merely because a log was narrated. A simple deterministic
+allocation/buffer baseline may suffice; no A2A superiority is presumed. Give concise trace/artifact prose,
+normally 12–16 consequential steps, preserving exact recorded versions and uncertainty.
+SCHEMA:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:smartstay:case-card:1.0",
+  "title": "Smartstay operational Incident Case Card",
+  "description": "Internal research framework, task_research.md sections 3–4; not an official GITA rubric. Strict shape validation plus evaluate_candidate.py semantic/gate checks. Unknown observations remain null; every object forbids extra fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "case_id": {
+      "$ref": "#/$defs/id"
+    },
+    "property_type": {
+      "enum": [
+        "independent_hotel",
+        "boutique_hotel",
+        "family_hotel",
+        "guesthouse",
+        "wine_hotel",
+        "branded_hotel",
+        "other",
+        "unknown"
+      ]
+    },
+    "room_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "interviewee_role": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/id"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "interview_date": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "incident_date_range": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/role"
+      }
+    },
+    "incident_summary": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step"
+      }
+    },
+    "handover_failure_mechanism": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "step_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "summary",
+        "step_ids",
+        "artifact_refs"
+      ]
+    },
+    "verified_cash_leakage_gel": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "staff_rework_minutes": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "observed_frequency_per_month": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "30-day-equivalent incident count = incident_count * 30 / inclusive observation days. Null if not established; not an annual extrapolation."
+    },
+    "observation_window": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "incident_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "eligible_opportunities": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "opportunity_unit": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "quantification_artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cash": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "rework": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "frequency": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "cash",
+        "rework",
+        "frequency"
+      ]
+    },
+    "supporting_artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "root_cause_code": {
+      "enum": [
+        "ARRIVAL_READINESS",
+        "REQUEST_OWNERSHIP",
+        "BOOKING_PROMISE",
+        "FOLIO_SETTLEMENT",
+        "SHIFT_CONTINUITY",
+        "SERVICE_DEPENDENCY",
+        "OUTSIDE_SOFTWARE_SCOPE"
+      ]
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "a2a_suitability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "distinct_operational_roles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "asynchronous_state_dependencies": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dependency"
+          }
+        },
+        "single_database_crud": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "simple_rule_inadequacy_rationale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "distinct_operational_roles",
+        "asynchronous_state_dependencies",
+        "dependencies",
+        "single_database_crud",
+        "simple_rule_inadequacy_rationale"
+      ]
+    },
+    "gate_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "real_problem": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recent_episode_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "recency_rationale": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "operator_confirmed_consequence": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "confirmation_role_id": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "consequence": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "recent_episode_confirmed",
+            "recency_rationale",
+            "operator_confirmed_consequence",
+            "confirmation_role_id",
+            "consequence",
+            "artifact_refs"
+          ]
+        },
+        "materiality": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "operator_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "rationale": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "operator_confirmed",
+            "rationale",
+            "artifact_refs"
+          ]
+        },
+        "software_leverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "software_only": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "binding_constraint": {
+              "enum": [
+                "coordination",
+                "software_data",
+                "physical_hardware",
+                "labor_economics",
+                "external_demand",
+                "unknown"
+              ]
+            },
+            "permitted_action": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "available_information": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "software_only",
+            "binding_constraint",
+            "permitted_action",
+            "available_information",
+            "artifact_refs"
+          ]
+        },
+        "access_authority": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "inputs_available": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "adapter_mode": {
+              "enum": [
+                "verified_connector",
+                "redacted_import",
+                "honest_simulator",
+                "unavailable",
+                "unknown"
+              ]
+            },
+            "adapter_description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "write_limits": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "trial_approver_role_id": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "authority_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "inputs_available",
+            "adapter_mode",
+            "adapter_description",
+            "write_limits",
+            "trial_approver_role_id",
+            "authority_confirmed",
+            "artifact_refs"
+          ]
+        },
+        "feasibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "estimated_hours": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            },
+            "bounded_workflow": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "deterministic_oracle": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "replay_case_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            },
+            "baseline_comparison": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "failure_recovery_test": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "estimated_hours",
+            "bounded_workflow",
+            "deterministic_oracle",
+            "replay_case_refs",
+            "baseline_comparison",
+            "failure_recovery_test",
+            "artifact_refs"
+          ]
+        },
+        "simple_rule": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "tested": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "baseline_description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "observed_failure": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "simple_rule_sufficient": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "tested",
+            "baseline_description",
+            "observed_failure",
+            "simple_rule_sufficient",
+            "artifact_refs"
+          ]
+        }
+      },
+      "required": [
+        "real_problem",
+        "materiality",
+        "software_leverage",
+        "access_authority",
+        "feasibility",
+        "simple_rule"
+      ]
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "severity": {
+          "$ref": "#/$defs/rating"
+        },
+        "a2a_fit": {
+          "$ref": "#/$defs/rating"
+        },
+        "feasibility": {
+          "$ref": "#/$defs/rating"
+        },
+        "evidence": {
+          "$ref": "#/$defs/rating"
+        },
+        "frequency": {
+          "$ref": "#/$defs/rating"
+        },
+        "preventable_share": {
+          "$ref": "#/$defs/rating"
+        },
+        "adoption": {
+          "$ref": "#/$defs/rating"
+        }
+      },
+      "required": [
+        "severity",
+        "a2a_fit",
+        "feasibility",
+        "evidence",
+        "frequency",
+        "preventable_share",
+        "adoption"
+      ]
+    },
+    "reviewer": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "is_synthetic",
+    "case_id",
+    "property_type",
+    "room_count",
+    "interviewee_role",
+    "interview_date",
+    "incident_date_range",
+    "roles",
+    "incident_summary",
+    "trace",
+    "handover_failure_mechanism",
+    "verified_cash_leakage_gel",
+    "staff_rework_minutes",
+    "observed_frequency_per_month",
+    "observation_window",
+    "incident_count",
+    "eligible_opportunities",
+    "opportunity_unit",
+    "quantification_artifacts",
+    "supporting_artifacts",
+    "root_cause_code",
+    "alternative_explanations",
+    "a2a_suitability",
+    "gate_evidence",
+    "scores",
+    "reviewer"
+  ],
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+    },
+    "date_range": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "role": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "responsibility": {
+          "$ref": "#/$defs/text"
+        },
+        "person_label": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "role_id",
+        "responsibility",
+        "person_label"
+      ],
+      "description": "Responsibilities, not invented agent titles. One person may hold several roles."
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "operator_record",
+            "direct_observation",
+            "operator_confirmation",
+            "baseline_test",
+            "replay_case",
+            "access_record",
+            "commitment_record",
+            "institutional_report",
+            "practitioner_article"
+          ]
+        },
+        "locator": {
+          "$ref": "#/$defs/text"
+        },
+        "evidence_label": {
+          "enum": [
+            "D",
+            "O",
+            "I",
+            "U"
+          ]
+        },
+        "reviewed": {
+          "type": "boolean"
+        },
+        "summary": {
+          "$ref": "#/$defs/text"
+        },
+        "collected_on": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "kind",
+        "locator",
+        "evidence_label",
+        "reviewed",
+        "summary",
+        "collected_on"
+      ],
+      "description": "Locator may be a restricted file or a witnessed/redacted record reference. No network fetch or authenticity inference is performed."
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "occurred_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time_basis": {
+          "enum": [
+            "timestamp",
+            "estimate",
+            "unknown"
+          ]
+        },
+        "time_note": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actor_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "recipient_role_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_system": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "input_state": {
+          "$ref": "#/$defs/text"
+        },
+        "expected_action": {
+          "$ref": "#/$defs/text"
+        },
+        "actual_outcome": {
+          "$ref": "#/$defs/text"
+        },
+        "acknowledged_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "completed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "step_id",
+        "sequence",
+        "occurred_at",
+        "time_basis",
+        "time_note",
+        "actor_role_id",
+        "recipient_role_id",
+        "source_system",
+        "input_state",
+        "expected_action",
+        "actual_outcome",
+        "acknowledged_at",
+        "completed_at",
+        "artifact_refs"
+      ]
+    },
+    "dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "from_step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "to_step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "from_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "to_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "state_dependency": {
+          "$ref": "#/$defs/text"
+        },
+        "constraint": {
+          "$ref": "#/$defs/text"
+        },
+        "asynchronous": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "from_step_id",
+        "to_step_id",
+        "from_role_id",
+        "to_role_id",
+        "state_dependency",
+        "constraint",
+        "asynchronous",
+        "artifact_refs"
+      ]
+    },
+    "rating": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rating": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "rating",
+        "rationale",
+        "artifact_refs"
+      ],
+      "description": "Human-adjudicated rating. Unknown is null; no default midpoint."
+    }
+  }
+}
+
+DELIVERED TRANSCRIPT:
+# Multi-channel overbooking: synthetic Mom Test interview
+
+**SYNTHETIC ROLEPLAY — no real hotelier, guest records, observed losses, or consent.**
+Both logical agents are pinned to `gpt-6-astra` in separate Codex sessions and working directories.
+The respondent's private preparation was not supplied to the interviewer. Only delivered dialogue is below;
+verbatim preparation, draft/retry outputs, prompts, events and execution metadata are retained in `overbooking_001/calls/`.
+
+**Timing:** 12 question–answer exchanges (24 speaker messages) allocated across the seven protocol stages.
+Minute ranges represent the simulated 40-minute agenda, not measured human interview duration.
+The 28-room hotel, cancellation rate, booking timing, charges and settlement conversions are fictional scenario details. Claimed Clause 6 and EUR 120 fee are not authenticated policy. No real guest was interviewed or relocated.
+
+## Turn 01 — Operating context — simulated minutes 0–5
+
+### Interviewer
+
+May I take notes? You can skip any question; please hide private details in any records you choose to show. I’ll ask separately before recording or using an attributable quotation.
+
+What are your responsibilities for room availability across booking channels and direct sales?
+
+### Respondent
+
+Yes, you can take notes for this fictional rehearsal. Any records I refer to will use fictional identifiers.
+
+I’m the general manager, and I own the decisions about how many rooms we offer, on which channels, and when we close availability. We have 28 rooms, and Booking.com, Expedia and Direct all draw from the same room inventory.
+
+Our Channel Operations colleague maintains the room mappings, checks availability updates and reconciles differences between the booking channels and our property management system. Front Desk and the Night Auditor handle arrivals and direct enquiries. For a telephone or walk-in booking, they must enter the reservation into the system before confirming it. Website bookings also use that shared inventory.
+
+The important boundary is that a change in our system does not instantly reserve or remove a room inside both OTAs. I’m responsible for choosing how much exposure we accept near sellout, including whether to leave several channels open for the last room. If that creates a conflict, the desk escalates it, and I own the relocation decision and expenditure. I wouldn’t put responsibility for that commercial policy on the night auditor.
+
+## Turn 02 — Last difficult episode — simulated minutes 5–8
+
+### Interviewer
+
+What was the most recent booking conflict or guest relocation, if any? If none comes to mind, we can walk through the last completed booking.
+
+### Respondent
+
+The most recent was for Saturday, 12 September, during a busy harvest weekend. We had one room left, with Booking.com, Expedia and Direct still open against the same inventory.
+
+In our fictional records, Booking.com confirmed a one-night reservation, then Expedia confirmed another about 65 seconds later. That happened between two stock-update jobs roughly two minutes apart. We ended up with 29 commitments for 28 rooms. Direct didn’t take another booking.
+
+I had chosen to keep the channels open near sellout, partly because we’d seen substantial cancellations on free-cancellation bookings. That was my risk decision; we hadn’t deliberately authorized selling a 29th room. The timing supports an inventory race, although missing distribution records mean I can’t rule out a mapping or manual-edit contribution.
+
+We accommodated the Expedia guest and arranged an equivalent alternative for the Booking.com guest for one night, with transport and no additional payment from the guest. The stay finished on 13 September.
+
+The competitor cost USD 260 and the taxi USD 30. A fictional invoice also included a claimed EUR 120 handling item. All three were subsequently deducted from our payout, but we disputed the handling item because its contractual basis wasn’t available.
+
+## Turn 03 — Last difficult episode — simulated minutes 8–12
+
+### Interviewer
+
+What source timestamps support the booking order and the roughly 65-second interval, and what does each timestamp represent? If those records are available, could you show the relevant entries with private details hidden?
+
+### Respondent
+
+Yes. These are invented rehearsal excerpts with fictional identifiers. All times are on **12 September 2026, Asia/Tbilisi, UTC+04:00**.
+
+| Source/event | Booking.com — F-BKG-912-A | Expedia — F-EXP-912-B |
+|---|---|---|
+| OTA-origin record: booking accepted as confirmed | 00:10:15 — B-ACC-01 | 00:11:20 — E-ACC-01 |
+| Local callback receipt: notification reached our system | 00:10:25 — B-IN-01 | 00:11:30 — E-IN-01 |
+| Local processing: reservation committed to inventory | 00:10:28 — version 8422, availability zero | 00:11:34 — version 8423, one-room deficit |
+
+The **65 seconds comes from the two OTA acceptance timestamps**, not from when staff saw the bookings or when our system processed them.
+
+Those acceptance records have whole-second resolution, with an assumed fictional clock uncertainty of ±5 seconds each. That puts the interval at approximately 55–75 seconds and supports the order within this scenario. Local clock checks have approximately ±2-second uncertainty.
+
+The export ledger separately records stock-update jobs at 00:10:00 and 00:12:00. Receipt acknowledgements followed at 00:12:06 for Booking.com and 00:12:09 for Expedia. Those acknowledgements don’t establish when the rooms actually stopped being sellable.
+
+Both listings were observed unavailable at 00:14, but that check has only minute resolution. Expedia’s outbound payload and detailed edit history are missing, so I can’t establish the exact mapping sent or exclude a manual availability edit.
+
+## Turn 04 — Artifact walkthrough — simulated minutes 12–15
+
+### Interviewer
+
+What do the available stock-update records show about the inventory sent and the meaning of the receipt acknowledgements? If available, could you show the relevant entries for those two jobs?
+
+### Respondent
+
+The surviving ledger shows one room in the first export and an intended zero-stock update in the second. These are the exact fictional entries, using invented identifiers:
+
+```text
+FICTIONAL | 2026-09-12T00:10:00+04:00 | distribution export U-8421 | stay=2026-09-12 | local_inventory_version=8421 | available=1 | targets=Booking.com,Expedia
+
+FICTIONAL | 2026-09-12T00:12:00+04:00 | outbound stock job U-8423 | local_version=8423 | intended_available=0 | Booking.com request=B-OUT-02 | Expedia request=E-OUT-02
+
+FICTIONAL | 2026-09-12T00:12:06+04:00 | acknowledgement B-ACK-02 | request=B-OUT-02 | receipt accepted | consumer sellability not established
+
+FICTIONAL | 2026-09-12T00:12:09+04:00 | acknowledgement E-ACK-02 | request=E-OUT-02 | receipt accepted | consumer sellability not established
+```
+
+By the second job, our system had recorded 29 commitments against 28 rooms. It advertised zero availability; it retained the one-room deficit internally.
+
+The acknowledgements establish receipt acceptance in this mock record. They don’t prove that the intended room and every associated rate plan had closed, or establish the exact time guests could no longer book.
+
+The version numbers are local references, not proof that either OTA enforced inventory versions. Expedia’s outbound payload bodies are missing, so its ledger entry establishes what we intended to send, not the exact mapping transmitted. No first-job acknowledgement is available in these excerpts. The later 00:14 availability observation supports closure for the search checked, with minute-level precision.
+
+## Turn 05 — Artifact walkthrough — simulated minutes 15–18
+
+### Interviewer
+
+How was the relocation decision made in this case? If a record of that decision exists, could you show it with private details hidden?
+
+### Respondent
+
+The night auditor read the over-capacity exception at 00:19 and escalated it to me. We had no internal room available, so I took responsibility for arranging the alternative and approving the expenditure. We accommodated the Expedia guest and relocated the Booking.com guest for one night.
+
+The available fictional recovery entries are:
+
+```text
+FICTIONAL | 2026-09-12 00:23 +04:00 | GM notified; no internal room available.
+
+FICTIONAL | 2026-09-12 09:10 +04:00 | alternative double confirmed at fictional competitor for one night, USD 260.
+
+FICTIONAL | 2026-09-12 09:25 +04:00 | fictional guest accepts alternative and transport without additional payment.
+
+FICTIONAL | 2026-09-13 11:00 +04:00 | relocated stay completed.
+```
+
+Our fictional comparison sheet records a double room with a private bathroom and breakfast, matching those basic booking requirements. Transport cost USD 30.
+
+There’s a gap in the decision record: these entries document escalation, the alternative and acceptance, but they don’t explain why we selected the Booking.com reservation for relocation despite its earlier acceptance. I can’t supply a documented selection rule or reconstruct that reasoning from timestamps alone.
+
+The guest’s accommodation was resolved, but that doesn’t settle the separate question of whether every subsequently invoiced charge had a contractual basis.
+
+## Turn 06 — Artifact walkthrough — simulated minutes 18–20
+
+### Interviewer
+
+What supports the claimed EUR 120 handling charge? If available, could you show the relocation invoice and any terms cited for that item, with private details hidden?
+
+### Respondent
+
+The fictional invoice supports that EUR 120 was charged. It doesn’t establish that the charge was contractually justified. Here is the relevant record:
+
+```text
+FICTIONAL INVOICE F-REL-0914
+Issued and received: 14 September 2026
+Case: FICTIONAL-INC-20260912-01
+Debtor: Fictional Vineyard Court
+
+Alternative accommodation, ONE night, 12–13 September
+USD 260.00 → GEL 702.00
+
+Relocation taxi, 12 September
+USD 30.00 → GEL 81.00
+
+Claimed handling item
+EUR 120.00 → GEL 360.00
+
+TOTAL: GEL 1,143.00
+```
+
+Those conversions use the explicitly fictional transaction schedule FX-F12: USD 1 equals GEL 2.70 and EUR 1 equals GEL 3.00. They are not real market rates.
+
+I remember people referring to “Clause 6,” but I cannot show an applicable signed clause establishing this item. The available invoice doesn’t identify a specific contractual provision for it.
+
+The public terms check you supplied places relocation obligations in clause 2.6.1 and indemnification matters in section 6. It found neither “120” nor “handling fee” in that retrieved text. That does not establish a universal tariff or resolve this particular charge’s legal basis.
+
+The full GEL 1,143 was offset against our fictional payout on 18 September. We disputed the GEL 360 handling component; no credit had been issued by 23 September. So it was deducted, but its contractual basis remains unresolved.
+
+## Turn 07 — Frequency and loss — simulated minutes 20–24
+
+### Interviewer
+
+How does the GEL 1,143 invoice reconcile with the payout deduction, bank receipts and any original guest funds? If those records are available, could you show the linked entries with their recorded currencies and conversions, keeping private details hidden?
+
+### Respondent
+
+The invoice and deduction are the same GEL 1,143 charge, counted once. These linked entries are all fictional.
+
+The invoice uses **FX-F12**, an invented transaction schedule: USD 1 = GEL 2.70; EUR 1 = GEL 3.00.
+
+```text
+F-REL-0914 | 14 September 2026
+Accommodation: USD 260 = GEL 702
+Taxi:          USD  30 = GEL  81
+Handling:      EUR 120 = GEL 360
+Total:                  GEL 1,143
+```
+
+The OTA paid the competitor and taxi; we made no separate supplier payment.
+
+```text
+F-BPAY-0918 | 18 September 2026 | All entries GEL
+Completed settlement period: 1–15 September
+
+Other reservation receipts                  +6,000
+Other commissions                             -900
+F-BKG-912-A original collection                +540
+F-BKG-912-A guest refund                       -540
+Original commission                            -81
+Commission reversal credit                     +81
+F-REL-0914 offset                            -1,143
+NET TRANSFER                                 3,957
+
+F-BANK-0918 | Value date 18 September
+Received GEL 3,957 | Reference F-BPAY-0918
+```
+
+The original guest paid USD 200 on 12 September and received a full USD 200 refund on 13 September—GEL 540 each under FX-F12. We never received that money in cash.
+
+```text
+F-EPAY-0920 | 20 September | Expedia booking
+Gross:      USD 200 = GEL 540
+Commission: USD  32 = GEL 86.40
+Refund: zero
+Net: GEL 453.60
+
+F-BANK-0921 | Value date 21 September
+Received GEL 453.60 | Reference F-EPAY-0920
+```
+
+The invoice balance is zero, but GEL 360 remains disputed without a credit. Expedia’s receipt is ordinary room revenue; it does not automatically offset the relocation expense as incremental earnings.
+
+## Turn 08 — Frequency and loss — simulated minutes 24–27
+
+### Interviewer
+
+For a completed period you can check, how many bookings had a conflict like this, out of how many relevant bookings? If a count record exists, could you show how bookings were included and outcomes distinguished?
+
+### Respondent
+
+I can describe this one conflict, but I don’t have a closed count of comparable conflicts against all relevant bookings. I wouldn’t turn one incident into a rate without that denominator.
+
+The completed count record available is for cancellations, which answers a different question:
+
+```text
+FICTIONAL COHORT-FC-AUG26
+Closed: 2 September 2026
+
+Included:
+100 unique free-cancellation reservation IDs
+scheduled to arrive during August 2026,
+across Booking.com, Expedia and Direct.
+Date amendments retain the original reservation ID.
+Unit: reservations, not room-nights.
+
+Outcomes:
+Cancelled before penalty: 38
+Completed stays:           62
+Unresolved or no-show:      0
+```
+
+That is the basis for my roughly 35–40% cancellation recollection. It has no separate conflict or relocation field. A completed stay also doesn’t, by itself, prove that there was no booking conflict along the way.
+
+For September, we have the documented pair of conflicting reservations for 12 September, resulting in one relocation. We also have the following Saturday’s successful use of exclusive Direct availability, but neither record supplies a complete September booking denominator.
+
+To answer your question properly, we would need a completed reservation register with conflicts identified separately from cancellations, and outcomes distinguishing guests accommodated here from guests relocated. That count is unavailable in this fictional dossier.
+
+## Turn 09 — Past attempts and workarounds — simulated minutes 27–30
+
+### Interviewer
+
+What, if anything, changed in how you allocated room availability across channels after 12 September, and when did that change take effect?
+
+### Respondent
+
+We used an exclusive Direct arrangement for the remaining rooms on the following peak Saturday. It took effect on **18 September for stays on 19–20 September**.
+
+At 26 commitments, Channel Operations closed availability on both Booking.com and Expedia. We recorded closure checks before releasing the two remaining rooms exclusively through Direct. I owned the release decision, and Front Desk used the shared property management system to confirm reservations.
+
+The fictional control record, **CTRL-0919**, shows that Direct sold both rooms. Twenty-eight parties stayed that Saturday, with no conflicting confirmation or relocation.
+
+That was a change from leaving several channels open against the last room. It reduced the exposure by giving the remaining availability to one sales source. It didn’t create a reservation lock across the OTAs.
+
+I can substantiate that specific use of the control in this rehearsal. I can’t claim it had become a permanent policy for every date, or infer a prevention rate from one successful weekend. We also don’t know whether closing the OTAs cost us enquiries or changed the rates we could achieve.
+
+## Turn 10 — Past attempts and workarounds — simulated minutes 30–33
+
+### Interviewer
+
+Could you walk me through the closure checks and Direct release recorded in CTRL-0919? If the record is available, could you show the entries through the two Direct confirmations?
+
+### Respondent
+
+I can show the summary, but I need to qualify my earlier description: CTRL-0919 does not contain a timestamped sequence of closure checks and individual Direct confirmations.
+
+The available fictional record reads:
+
+> **FICTIONAL CTRL-0919:** On 2026-09-18, with 26 commitments for 19 September, both OTAs were closed. Closure checks were recorded before two remaining rooms were released exclusively through Direct.
+
+Its completed-outcome summary states:
+
+> For 19–20 September, Direct sold both remaining rooms; 28 parties stayed, no conflicting confirmation and no relocation occurred.
+
+So the recorded sequence is: close Booking.com and Expedia, check closure, then release the remaining two rooms through Direct. I owned the release decision; Channel Operations handled OTA closure, and Front Desk confirmed through the shared PMS.
+
+What’s missing is the underlying detail: exact check times, which searches or rate plans were checked, supporting acknowledgements, and the two Direct reservation IDs and confirmation timestamps. I can’t show those entries or establish the interval between closure and release.
+
+The summary supports that we used the control and had a successful completed Saturday. It does not provide a detailed technical audit of the closure or prove that every possible OTA booking path was unavailable.
+
+## Turn 11 — Counterexample and competing cause — simulated minutes 33–37
+
+### Interviewer
+
+Beyond the change to exclusive Direct availability, what else, if anything, differed between 12 and 19 September that matters to comparing their outcomes? It’s fine if that’s unknown.
+
+### Respondent
+
+One clear difference is when we acted. For 12 September, we still had several channels open with just one room left. For 19 September, we closed the OTAs at 26 commitments, leaving two rooms to sell through Direct. So we changed both the sales source and the point at which we restricted availability.
+
+Both were peak Saturdays, and both ended with 28 parties staying in the hotel. But that doesn’t establish equal booking pressure. On 12 September, we have two OTA acceptances about 65 seconds apart. For 19 September, we don’t have the individual Direct confirmation times or evidence that similarly simultaneous requests occurred.
+
+We also don’t have a matched comparison of enquiry volumes, cancellations, rates, staffing or distribution-system conditions. We don’t know how much demand we missed after closing the OTAs.
+
+I’d therefore describe 19 September as one successful use of a practical control. It shows we could fill the remaining rooms through Direct without a recorded conflict that weekend. It doesn’t isolate the control’s effect from differences in demand and timing, or establish how often it would prevent relocation.
+
+## Turn 12 — Concrete next step — simulated minutes 37–40
+
+### Interviewer
+
+What, if anything, needs correcting in our reconstruction? What specific next step, if any, do you agree to now?
+
+### Respondent
+
+I’d tighten three points.
+
+First, the records support two acceptances about 65 seconds apart and a two-minute interval between export jobs. They don’t prove precisely when either OTA stopped selling. The missing Expedia payload and edit history leave the mapping or manual-edit explanation unresolved.
+
+Second, the EUR 120 handling item was invoiced and deducted in the fictional transactions, but its contractual basis remains unknown. My “Clause 6” recollection is not verification. The invoice and deduction are one expense, not two.
+
+Third, the following Saturday was one successful use of exclusive Direct availability. We have a summary, not detailed closure and confirmation logs or a matched comparison. And the 38% figure describes cancellations in the August cohort, not a conflict rate or justification for overselling.
+
+I also accept that we haven’t documented why the earlier Booking.com reservation was selected for relocation. That gap should stay visible.
+
+The specific next step I agree to now is a written rehearsal case summary incorporating those corrections and listing the missing records separately. That’s the extent of the commitment: this exercise provides no real hotel access, operational trial or permission to use an attributable real-world quotation.
+

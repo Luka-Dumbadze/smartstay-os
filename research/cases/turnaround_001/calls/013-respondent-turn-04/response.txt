@@ -1,0 +1,22 @@
+Yes. These are excerpts from the fictional paper sheet and PMS record, with names and reservation identifiers removed.
+
+The housekeeping sheet reads:
+
+> 19 Sep 2026 | Turnovers | [staff names removed] | Sheet issued 11:00  
+> Order: 101, 102, 103, 201, 202, 203
+
+That establishes the written order housekeeping was given. It doesn’t say why I chose it, or show that anyone compared it with expected arrival times. My explanation that I left the usual numerical order in place is my recollection.
+
+The PMS reservation excerpt reads:
+
+> Fixed twin | Assigned 103 | Expected arrival: 15:00 | Early check-in guarantee: none
+
+That supports the arrival expectation I described. But this excerpt isn’t a timestamped snapshot from eleven, and we don’t have an edit history here. It doesn’t prove when reception last looked at that field, or that housekeeping saw it at all.
+
+The later WhatsApp message reads:
+
+> 12:04 [Reception]: 103 guests are here in courtyard. Is it started? Please confirm before I give another time.
+
+That establishes reception asking for progress after the guests arrived. It doesn’t establish when housekeeping read it.
+
+So the records establish the numerical instruction and the listed arrival expectation separately. They don’t establish a shared understanding at eleven. I can’t honestly show you a recorded morning handover connecting those two things.

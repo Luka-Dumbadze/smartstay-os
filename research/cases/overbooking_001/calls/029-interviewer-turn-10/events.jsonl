@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Could you walk me through the closure checks and Direct release recorded in CTRL-0919? If the record is available, could you show the entries through the two Direct confirmations?"}}
+{"type":"turn.completed","usage":{"input_tokens":426733,"cached_input_tokens":399623,"cache_write_input_tokens":27053,"output_tokens":1244,"reasoning_output_tokens":151}}

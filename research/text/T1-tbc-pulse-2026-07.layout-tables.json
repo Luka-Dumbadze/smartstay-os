@@ -1,0 +1,591 @@
+{
+  "source_id": "T1",
+  "sha256": "407d58825af18e52c99a81cf83962ec11e284d9d04126f0d73f056461493b124",
+  "status": "column-layout candidates; inspect before semantic use",
+  "pages": [
+    {
+      "pdf_page": 1,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 2,
+              "raw": "  Tourism Pulse tracks TBC non       -resident non -cash"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 12,
+              "raw": "Tea Pavliashvili                    Tatia Khidasheli       Irina Kvakhadze"
+            },
+            {
+              "line": 13,
+              "raw": "Analyst, Researcher                 Researcher Associate   Senior Vice President, Research"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "July 2026 continued                     recovery            in non -residents’ non -cash spending,                                     while regional performance"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 16,
+              "raw": "In Kakheti , both total non - cash spending                                     and average transaction values                             increased             across         hotels               and"
+            },
+            {
+              "line": 17,
+              "raw": "restaurants, with the growth more pronounced                                    in the restaurants segment ."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 19,
+              "raw": "Looking ahead, peak -season activity in August is expected                                              to support strong hotel performance                                 in Adjara and"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 22,
+              "raw": "Note : Sector growth is based on POS and E -commerce   payments through TBC channels ; Growth rates may differ from market turnover dynamics   due to the changing   share of non -cash transactions"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 28,
+              "raw": "                                                                                                                                                                              TOURISM PULSE | JULY 2026    2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "   In July 2026 , non -residents’ total non -cash spending                                                and the number of non -cash transactions"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "      Total non -cash spending and number of non                                 -cash transactions"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 8,
+              "raw": "                                                                           Spending in GEL        Number of Transactions"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "       30%                                                                                                                                                                27%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 25,
+              "raw": "                    25%                                                                                                                                                   26%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 92,
+              "raw": "Source: TBC Bank’s Channels, Georgia                                                                                                                           TOURISM PULSE | JULY 2026   3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "    Non -cash spending in hotels and restaurants                                                                                             in Tbilisi continued                             to grow annually, posting 22%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "       Non -cash spending in hotels:                                                                                                              Non -cash spending in restaurants:"
+            },
+            {
+              "line": 6,
+              "raw": "       non -residents, Tbilisi                                                                                                                    non -residents, Tbilisi"
+            },
+            {
+              "line": 7,
+              "raw": "        70%                                                                                                                  753       800         100%                                                                                                                             100"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 10,
+              "raw": "        60%     640                                                                                                                    700"
+            },
+            {
+              "line": 11,
+              "raw": "                                                                                                                                                    80%                                                                                                                   77"
+            },
+            {
+              "line": 12,
+              "raw": "                                                                                                                                                          72                                                                                                                        80"
+            },
+            {
+              "line": 13,
+              "raw": "        50%                                                                                                                            600"
+            },
+            {
+              "line": 14,
+              "raw": "                42%                                                                                                                                                                                                                                                                 70"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 16,
+              "raw": "        40%                                                                                                                            500"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 19,
+              "raw": "        30%                                                                                                                            400          40%                                                                                                                             50"
+            },
+            {
+              "line": 20,
+              "raw": "                                                                                                                             22%                          31%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 22,
+              "raw": "        20%                                                                                                                            300"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 25,
+              "raw": "        10%                                                                                                                            200"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 28,
+              "raw": "         0%                                                                                                                            100"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 31,
+              "raw": "       -10%                                                                                                                            -           -20%                                                                                                                             -"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 110,
+              "raw": "                 Annual Change (Left Axis)                             Average Transaction Volume (Right Axis)                                            Annual Change (Left Axis)                             Average Transaction Volume (Right Axis)"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 115,
+              "raw": "Source: TBC Bank’s Channels, Tbilisi                                                                                                                                                                                                                                   TOURISM PULSE | JULY 2026   4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "   In Adjara, non -cash spending in hotels increased                                                                                           by 71% annually, while non -cash spending                                                                                                     in"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "      Non -cash spending in hotels:                                                                                                            Non -cash spending in restaurants:"
+            },
+            {
+              "line": 6,
+              "raw": "      non -residents, Adjara                                                                                                                   non -residents, Adjara"
+            },
+            {
+              "line": 7,
+              "raw": "        80%                                                                                                                   71%      1,000    180%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "                                                                                                                                                160%                                                                                                                               350"
+            },
+            {
+              "line": 10,
+              "raw": "                                                                                                                              950      900"
+            },
+            {
+              "line": 11,
+              "raw": "        60%    762                                                                                                                              140%"
+            },
+            {
+              "line": 12,
+              "raw": "                                                                                                                                       800                                                                                                                                         300"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "                                                                                                                                       700                                                                                                                                         250"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "               27%                                                                                                                     600             188"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 20,
+              "raw": "                                                                                                                                                 80%                                                                                                                    159"
+            },
+            {
+              "line": 21,
+              "raw": "        20%                                                                                                                            500"
+            },
+            {
+              "line": 22,
+              "raw": "                                                                                                                                                 60%                                                                                                                               150"
+            },
+            {
+              "line": 23,
+              "raw": "                                                                                                                                       400             43%"
+            },
+            {
+              "line": 24,
+              "raw": "         0%                                                                                                                                      40%"
+            },
+            {
+              "line": 25,
+              "raw": "                                                                                                                                       300                                                                                                                                         100"
+            },
+            {
+              "line": 26,
+              "raw": "                                                                                                                                                 20%                                                                                                                    6%"
+            },
+            {
+              "line": 27,
+              "raw": "                                                                                                                                       200                                                                                                                                         50"
+            },
+            {
+              "line": 28,
+              "raw": "       -20%                                                                                                                                       0%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 30,
+              "raw": "                                                                                                                                                -20%                                                                                                                               -"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 78,
+              "raw": "       -40%                                                                                                                            -"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 126,
+              "raw": "                                                                                                                                                       Annual Change (Left Axis)                              Average Transaction Volume (Right Axis)"
+            },
+            {
+              "line": 127,
+              "raw": "                Annual Change (Left Axis)                               Average Transaction Volume (Right Axis)"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 132,
+              "raw": "Source: TBC Bank’s Channels,                selected municipal units                                                                                                                                                                                                 TOURISM PULSE | JULY 2026    5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "   Regarding Kakheti, non -cash spending in hotels in creased                                                                                                            by 19% , while non -cash expenses                                                                                       in"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "      Non -cash spending in hotels:                                                                                                           Non -cash spending in restaurants:"
+            },
+            {
+              "line": 6,
+              "raw": "      non -residents , Kakheti                                                                                                                non -residents , Kakheti"
+            },
+            {
+              "line": 7,
+              "raw": "        70%                                                                                                                            650      70%                                                                                                                               120"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "       60%                                                                                                                                                                                                                                                                 116"
+            },
+            {
+              "line": 10,
+              "raw": "                531                                                                                                                            60%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 12,
+              "raw": "                                                                                                                               483                                                                                                                                     53%        115"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "       40%                                                                                                                             450"
+            },
+            {
+              "line": 16,
+              "raw": "                                                                                                                                               40%    38%                                                                                                                         110"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "                                                                                                                                       350     30%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 20,
+              "raw": "        20%                                                                                                                                                                                                                                                                       105"
+            },
+            {
+              "line": 21,
+              "raw": "                9%                                                                                                                     250      20%   101"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 23,
+              "raw": "                                                                                                                                                10%                                                                                                                               100"
+            },
+            {
+              "line": 24,
+              "raw": "         0%                                                                                                                            150"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 29,
+              "raw": "       -20%                                                                                                                                    -10%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 31,
+              "raw": "       -30%                                                                                                                            (50)    -20%                                                                                                                               90"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 110,
+              "raw": "                Annual Change (Left Axis)                              Average Transaction Volume (Right Axis)                                        Annual Change (Left Axis)                               Average Transaction Volume (Right Axis)"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 115,
+              "raw": "Source: TBC Bank’s Channels,               selected municipal units; Note: recalculated.                                                                                                                                                                             TOURISM PULSE | JULY 2026        6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "assets and/or securities and nothing herein shall form the basis of any contract or commitment whatsoever or shall be considered as a recommendation                      to take any such actions ."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "different from future results, performance          or achievements      expressed     or implied by such forward -looking        statements . Such forward -looking statements are based on"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 23,
+              "raw": "uncertain - ties because they relate to events and depend on circumstances          that may or may not occur in the future . No assur - ances can be given that the forward -looking statements in"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 30,
+              "raw": "Representatives     accept any liability whatsoever for the actions of third parties in this respect . TBC Capital makes no expressed or implied representation or warranty of usefulness in"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 37,
+              "raw": "                                                                                               7 Marjanishvili Str., Tbilisi 0102, Georgia   E mail: Research@tbccapital.ge            www.tbccapital.ge"
+            },
+            {
+              "line": 38,
+              "raw": "                                                                                               Tel: +995 32 2 272727 | +995 32 2 272733      Email: Macro@tbcbank.com.ge      www.investing.tbccapital.ge"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 43,
+              "raw": "                                                                                                                                                                                             TOURISM PULSE | JULY 2026   7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "TOURISM PULSE | JULY 2026   8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

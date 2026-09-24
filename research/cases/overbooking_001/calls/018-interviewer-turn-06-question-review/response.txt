@@ -1,0 +1,1 @@
+{"question":"What supports the claimed EUR 120 handling charge? If available, could you show the relocation invoice and any terms cited for that item, with private details hidden?","changed":false,"reason":"Examines the charge already reported without endorsing its contractual basis; the related record request is conditional."}

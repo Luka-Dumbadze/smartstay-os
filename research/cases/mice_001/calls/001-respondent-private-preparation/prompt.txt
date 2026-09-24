@@ -1,0 +1,227 @@
+PRIVATE PREPARATION FOR THE MICE RFP SCENARIO. Output a stable fictional dossier as JSON.
+Prepare a specific three-day September 2026 enquiry for a future autumn/winter corporate retreat at
+this 24-room hotel. Requested package: 18 rooms, meeting room, two coffee breaks and wine gala dinner.
+Potential gross inquiry value is USD 8,000–15,000, not guaranteed revenue or profit. Explain any claimed
+30–45% off-season corporate share as an explicitly fictional scenario estimate or scoped historical record,
+never a statistic about Kakheti. Choose dates before the 23 September interview for request/decision events.
+Show realistic distinct Sales conversion, Revenue/GM displacement/discount and F&B staffing/menu/margin
+constraints. Include actual exchanged options, versions and authority limits; not merely three approval clicks.
+Preserve capacity constraints, forecasts versus actual bookings, uncertainty in displaced transient demand,
+taxes/inclusions and gross value versus contribution. Do not invent an FX conversion.
+Use a client message indicating they booked elsewhere before the day-3 offer; do not guarantee they would
+have booked here if faster. Delay can contribute without being the sole proven cause. Distinguish a real
+48-hour client deadline from a slogan or later inference, and 24–72h anecdotes from a counted cohort.
+Include readable fictional RFP/email/thread, dated inventory/displacement or costing excerpt, proposal versions,
+client response, any actual cash/cost/rework record (otherwise unknown/estimated), a closed-window request
+cohort, one actually used simple control and a comparable success. Make no engineering benchmark or
+future trial exist. A sound rate/package worksheet with preapproved bounds and clear response ownership
+could be sufficient; do not rig the scenario to establish A2A superiority. Keep the dossier under 2500 words.
+Reveal only relevant information in subsequent answers. All details are invented rehearsal material.
+The market corpus below supplies broad context only and does not establish corporate revenue share,
+RFP response times, conversions or displacement economics for this fictional property.
+
+# Georgian and Kakheti hotels: findings from harvested evidence
+
+**[O] Evidence base:** the downloaded source snapshots in [the manifest](../manifest.csv), their page-aware text and article extracts, and the bounded Kakheti tables produced by [the extractor](../../scripts/extract_text.py). No findings below rely on a search snippet, an imagined interview, a simulated guest review, or an unprovided hotel's operating records. The research methodology remains separately available in [task_research.md](../../task_research.md).
+
+**[D] Main finding.** Kakheti's positive advertised-price and non-cash-spending indicators coexist with practitioner reports of seasonal staff reductions, difficult retention, and service-quality damage. Separately, the Hotels Federation interview describes payroll/operating-cost pressure and shrinking margins, while PMC identifies incomplete reporting as a management problem. These are supported sector and practitioner findings; they do not establish a specific hotel's loss or prove that an AI system can remove the causes. [A01, A03, A10–A15]
+
+**Evidence labels:** **[D]** documented source statement, with its original population and period; **[O]** observed download/extraction or directly checked source discrepancy; **[I]** inference explicitly bounded by cited evidence; **[U]** unestablished in the harvested corpus. A quotation from BMG below reproduces its published article text; it is not asserted to be a word-for-word transcript of the speaker's original interview. PDF locators use physical PDF pages; article locators use the extractor's non-empty body-paragraph numbering.
+
+## 1. Kakheti regional micro-economics
+
+### Advertised room prices: growth differs by accommodation type
+
+**[D] PMC's August 2026 Kakheti price-index row:**
+
+| Accommodation category | August month-on-month change | August year-on-year change | Attribution |
+|---|---:|---:|---|
+| 3-, 4-, and 5-star hotels | -0.2% | +9.3% | A01 |
+| Guesthouses | +2.6% | +5.0% | A01 |
+| All included accommodation | +1.1% | +7.3% | A01 |
+
+**[O]** These values were extracted directly into [P1 Kakheti CSV](../text/P1-pmc-hpi-2026-08.kakheti.csv), with the original source line, source SHA-256, and page retained. They are changes in a price index; the percentages are not occupancies, margins, or changes in realized room revenue. [A01–A02]
+
+**[D]** The same page reports a Kakheti **5-star advertised room-price average of 684 GEL** for August 2026. That is a category-specific quoted price, not a representative boutique-hotel ADR. Its methodology collects standard double-room prices from Booking.com, using a stratified sample of **568 hotels and 371 guesthouses** across **10 regions and Tbilisi**. Average prices use available hotels in the current period; the index uses available hotels in current and base periods. [A02]
+
+**[I] Interpretation.** The regional aggregate conceals different monthly movements: the star-hotel group fell slightly while guesthouses increased. These data support examining realized rates and costs by property type. They cannot establish that an individual hotel's margin improved or that service failures caused lost revenue. [A01–A02]
+
+### TBC payments: growing spending, restricted coverage, and an internal discrepancy
+
+**[D]** In **July 2026**, TBC reports Kakheti non-resident non-cash spending growth of **19% year over year in hotels** and **53% in restaurants**. The chart footer identifies **TBC Bank's channels, selected municipal units**, and notes that figures are recalculated. The methodology states that POS and e-commerce growth through TBC channels can differ from market turnover because the non-cash share and TBC's market share change. [A03–A04]
+
+| TBC Kakheti measure | Reported result | What it measures |
+|---|---:|---|
+| Hotel non-cash spending, July 2026 YoY | +19% | Spending through the described channels; not room nights or occupancy |
+| Restaurant non-cash spending, July 2026 YoY | +53% | Restaurant spending; not hotel room revenue |
+| Hotel chart, “Average Transaction Volume,” July 2025 → July 2026 | 531 → 483 | Printed right-axis endpoint labels; the regional panel does not explicitly state their currency/unit |
+| Restaurant chart, same label and dates | 101 → 116 | Printed right-axis endpoint labels; same unit caveat |
+
+**[D/O] Source discrepancy that must survive synthesis.** Page 2 says that both spending and average transaction values increased across Kakheti hotels and restaurants. But the hotel chart on page 6 labels the endpoints **531** and **483**, a decline, while the restaurant endpoints **101** and **116** rise. Both the extracted text and a rendered inspection support those chart labels. Therefore the report's claim of increased hotel average transaction value is unresolved, even though the spending-growth headline is clear. No silent correction, invented unit, or inferred transaction-count growth is supplied here. [A03–A05; rendered source: [T1 page](T1-page-006.png)]
+
+**[I] Interpretation.** Spending growth is compatible with margin pressure and says little about task-level efficiency. Bank-channel coverage, changing transaction mix, restaurant activity, prices, and operating costs prevent equating this payment signal with hotel profitability. The article reports of cost pressure concern a different population and evidence method, so they are contextual evidence rather than a matched financial panel. [A03–A05, A13]
+
+### BoG historical Kakheti payments: monthly movement, not an identified seasonality coefficient
+
+**[D]** Galt & Taggart's September 2022 overview presents a Kakheti hotel Bank of Georgia POS-payment index with **April 2019 = 100**. Its embedded table supplies the following **year-over-year growth rates**, distinct from the index level: [A06]
+
+| Month | Kakheti hotel BoG POS-payment growth YoY |
+|---|---:|
+| January 2022 | -16% |
+| February 2022 | -33% |
+| March 2022 | -27% |
+| April 2022 | +2% |
+| May 2022 | -18% |
+| June 2022 | -4% |
+| July 2022 | +21% |
+| August 2022 | +29% |
+
+**[O]** The extractor preserves these left-panel values in [G2 Kakheti CSV](../text/G2-gt-tourism-2022.kakheti.csv). The adjacent Mtskheta-Mtianeti panel is a different series and was excluded. The chart/table alignment was checked against [the rendered page](G2-page-027.png). No unlabelled index point was numerically estimated from the area chart. [A06]
+
+**[I] Interpretation.** The negative early-year and positive late-summer year-over-year readings document variation in this historical bank series. They do not isolate pure seasonal demand: year-over-year comparison, recovery conditions, and bank-channel composition matter. They also cannot be spliced into the later TBC series as if the banks measured an identical population. [A04, A06]
+
+**[D] Additional seasonality evidence.** PMC's regional-prices discussion says summer price seasonality is clear in Adjara but **less vivid in Kakheti**, where prices fluctuate through the year. BMG's Kakheti interview nonetheless describes seasonal staffing reductions and additional harvest-season activity. These statements concern different outcomes—quoted prices, staffing, and demand occasions—and are not interchangeable. [A07, A10–A11]
+
+**[D] Geographic comparison, not a Kakheti proxy.** Galt & Taggart's selected-hotel panel reports **Batumi occupancy of 37% in January 2024 and 80% in both July and August 2024**. Its full-year occupancy figures are **55.4% for Batumi** and **54.1% for Tbilisi**; full-year ADR is **US$93** and **US$91**, respectively, with ADR stated net of VAT. The page warns that figures may vary with updated samples. These numbers illustrate a documented urban sample's seasonal and annual performance; they do not estimate Telavi/boutique occupancy. [A08; [rendered source](G1-page-006.png)]
+
+### Room capacity: additions, historical share, and the incomplete small-property frame
+
+| Capacity fact | Value and population | Attribution |
+|---|---|---|
+| Kakheti hotel openings | **35 new hotels in 2020–2023** | **[D]** PMC, GNTA-sourced regional additions chart; A09 |
+| Kakheti room additions | **796 new hotel rooms in 2020–2023** | **[D]** Same source; additions are not the full current room stock; A09 |
+| National registered supply | **3,198 accommodation providers; 53,759 rooms; 128,015 beds**, as of **February 2024** | **[D]** PMC, GNTA-sourced stock figures; not Kakheti totals; A16 |
+| Historical larger-hotel cohort | Kakheti accounts for **6.6%** of national room stock among hotels with **30+ rooms** in **9M22**; national cohort stock **20,391 rooms** | **[D]** Galt & Taggart/GNTA; excludes smaller properties by definition; A17 |
+
+**[O]** The two Kakheti additions values were extracted into [P2 Kakheti CSV](../text/P2-pmc-hospitality-2024.kakheti.csv). The source has independently sorted hotel-count and room-count panels, so the relevant values appear on different lines. The extractor preserves each original line rather than assuming they share a table row. [A09]
+
+**[D]** PMC explicitly says its registered-supply figures do not fully capture small providers operating informally. It also reports family hotels as **40% of units but 15% of room capacity**. A property-count sample therefore represents a different population weighting than a room-weighted sample. [A16]
+
+**[U]** These extracts do not establish a current complete Telavi room inventory or a representative Kakheti boutique occupancy series. Adding historical openings to an unrelated stock definition, or converting a rounded cohort share into an exact current room count, would not resolve that gap. [A09, A16–A17]
+
+## 2. Practitioner testimony and operating pressure
+
+**[D] Attribution boundary.** BMG identifies Ketevan/Keti Amirbari as managing partner of Amirbari Hospitality Agency and Shalva Alaverdashvili as a hotelier and Hotels Federation founder. The following are exact sentences in the harvested BMG article paragraphs. They establish the publisher's attributed account, not independent verification of all underlying hotel events. The two Amirbari articles share a speaker and are not independent survey observations. [A10–A14]
+
+### Retention and seasonal reductions
+
+**[D] V1, “Staff Shortages and Seasonality Challenge Kakheti Hotels,” published 7 September 2026, paragraph 1:**
+
+> She said finding and retaining employees is particularly difficult in the region, with many workers moving to Tbilisi or abroad.
+
+**[D] V1, paragraph 2:**
+
+> Seasonality further complicates the problem, as hotels often have to reduce staff after the peak season. This creates an unstable job market and encourages employees to seek more secure opportunities elsewhere, Amirbari said.
+
+**[D] V1, paragraph 3:**
+
+> High staff turnover also affects service quality, making it harder for hotels to build a strong corporate culture and employee loyalty.
+
+**[D] V1, paragraph 4, a counterpoint:**
+
+> Boutique, conceptual and high-end hotels are making efforts to retain their management and staff, helping them maintain service standards despite the region’s labor and seasonal challenges.
+
+**[I] Synthesis.** The reported mechanism is seasonal reductions and insecure work contributing to retention problems, with turnover affecting service quality. The counterpoint matters: the article also describes active retention efforts, so it does not support a blanket assertion that boutiques are incapable of maintaining standards. “Staff reductions” is the source wording; the employment/legal mechanism of those reductions is not specified. [A10–A12]
+
+**[U]** No turnover percentage, seasonal headcount reduction, training cost, failed-handover count, or service-recovery cost is supplied in these paragraphs. A handover-breakdown hypothesis is not an observed incident. [A10–A12]
+
+### Payroll, costs, margins, and exit pressure
+
+**[D] V2, “Many Hotel Owners Want to Sell Their Properties” — Shalva Alaverdashvili, published 4 September 2026, paragraph 3:**
+
+> As competition intensifies, hotels are struggling to generate sufficient revenue, while payrolls and other operating costs have risen sharply over the past three years. As a result, profit margins that once made the sector attractive to investors have largely disappeared.
+
+**[D] V2, paragraph 2:**
+
+> He told BMGTV’s “Tsertili” that he had met with two hotel owners just before the interview, both of whom asked for help selling their properties and were ready to put them on the market after the tourist season ends in late October.
+
+**[D]** The same paragraph says he manages **nine hotels in Tbilisi and the regions**. That is the stated portfolio context for his observations, not the denominator of a representative survey. His account of **two owners** is an anecdote about sale intentions, not a count of completed sales or Kakheti-wide distress. [A13]
+
+**[I] Synthesis.** The account points to pressure between revenue, payroll/other expenses, and owner returns. It does not isolate the amount attributable to avoidable operational waste. Automation savings, EBITDA percentages, and recoverable GEL losses cannot be calculated from the testimony. [A13]
+
+### Demand differs across regions and property concepts
+
+**[D] V3, “Hotel Occupancy Rises, but Trends Vary by Region — Keti Amirbari,” published 2 September 2026, paragraph 3:**
+
+> Kakheti’s hotel market is driven largely by wine tourism and gastronomy. While overall demand has increased, Amirbari says some hotels have failed to reach their full potential.
+
+**[D]** V3 paragraph 1 says performance varies by region, hotel concept, and audience. V1 paragraph 3 describes events, international gatherings, and harvest activity as Kakheti demand occasions. These are reported qualitative demand characteristics, not occupancy estimates. [A11, A14]
+
+**[I] Synthesis.** A common regional demand headline should not be used to assume that all properties face the same operating calendar or demand mix. That inference is grounded in the named practitioner's distinctions, but the corpus does not quantify each segment's workload. [A11, A14]
+
+## 3. Systemic bottlenecks actually supported by the corpus
+
+| Bottleneck | Documented mechanism and consequence | Grounding strength and boundary |
+|---|---|---|
+| **Employment continuity and service-quality fragility** | **[D]** V1 reports difficulty finding/retaining staff, seasonal reductions, workers seeking stability elsewhere, and turnover affecting service quality. PMC independently lists workforce shortages and skills gaps as service-quality constraints. | **[D]** Kakheti-specific practitioner account plus a national sector assessment. **[U]** No measured shift, handover, cleaning, or response-time failure; no proof that coordination software fixes pay or job-security causes. [A10–A12, A15] |
+| **Operating-cost pressure eroding financial resilience** | **[D]** V2 reports rising payroll/operating costs, competitive revenue pressure, shrinking margins, and owner sale intentions. PMC identifies high operating costs for SMEs and reliance on borrowed funds. | **[D]** Attributed practitioner pressure plus institutional assessment. **[U]** No property-level loss accounting, verified sale completion, or preventable-leakage amount. PMC's financial analysis is historical and sampled, not a current boutique census. [A13, A15, A18] |
+| **Incomplete information for performance assessment and decisions** | **[D]** PMC states that limited and inconsistent reporting hinders assessment and decisions; it also warns that the registered-supply frame misses part of the informal small-provider population. | **[D]** National institutional assessment and explicit coverage limitation. **[U]** No inspected hotel's data architecture, duplicate-entry count, or measured reconciliation delay. A PMS/folio failure cannot be inferred from this statement alone. [A15–A16] |
+
+**[D] PMC's exact wording, reconstructed from the right-column text on page 14 across its line break:**
+
+> Inadequate Data Collection: Limited and inconsistent data reporting hinders performance assessment and decision-making.
+
+**[D] Financial sample caveat.** PMC's page 12 footnote says its financial analysis covers the **top 30 accommodation companies by revenue**, using **NACE 55**. The analysis discusses **2018–2022**. Page 13 describes overleverage and reliance on borrowed funds. This supports a historical cohort-specific financial concern; it must not be reported as the balance sheet of regional family hotels or as a current distress rate. [A18]
+
+**[U] Unsupported candidates excluded from the findings catalog:** billing/folio disputes, missed housekeeping handoffs, late room readiness, double bookings, duplicate refunds, and quantified guest-request response failures. The harvested sources do not document identifiable incidents of those types. Their absence here is not evidence that they never occur; it means they cannot be presented as empirically discovered in this dataset. [Corpus: G1, G2, T1, P1, P2, V1–V3]
+
+**[I] Software implication, not a proven product case.** The supported findings justify investigating continuity of operational responsibilities, trustworthy shared information, and preventable effort/cost inside hotels. They do not yet justify a particular agent topology, a billing automation product, or a savings claim. An AI-native OS/A2A opportunity would require a real cross-responsibility incident and evidence that controlled software actions can alter its outcome. This inference is bounded by the bottlenecks and missing incident evidence above; no hardware or IoT intervention is proposed. [A10–A18]
+
+## 4. Exact attribution and local evidence register
+
+**[O] Source fingerprints and canonical files.** Full SHA-256 values, HTTP outcomes, bytes, page/paragraph counts, retrieval timestamps, and extraction paths are in [manifest.csv](../manifest.csv). Prefixes below identify the exact saved snapshots; HTML hashes can change when a publisher changes page metadata or surrounding content.
+
+| Source | Raw file | SHA-256 prefix | Extracted text |
+|---|---|---|---|
+| G1 | [G1-gt-tourism-2024.pdf](../raw/G1-gt-tourism-2024.pdf) | `75f2925f6097b8f2` | [G1 text](../text/G1-gt-tourism-2024.txt) |
+| G2 | [G2-gt-tourism-2022.pdf](../raw/G2-gt-tourism-2022.pdf) | `a92c0d602ed17659` | [G2 text](../text/G2-gt-tourism-2022.txt) |
+| T1 | [T1-tbc-pulse-2026-07.pdf](../raw/T1-tbc-pulse-2026-07.pdf) | `407d58825af18e52` | [T1 text](../text/T1-tbc-pulse-2026-07.txt) |
+| P1 | [P1-pmc-hpi-2026-08.pdf](../raw/P1-pmc-hpi-2026-08.pdf) | `cce52f0de113fd24` | [P1 text](../text/P1-pmc-hpi-2026-08.txt) |
+| P2 | [P2-pmc-hospitality-2024.pdf](../raw/P2-pmc-hospitality-2024.pdf) | `39581d5fb23a9faf` | [P2 text](../text/P2-pmc-hospitality-2024.txt) |
+| V1 | [V1-bmg-kakheti.html](../raw/V1-bmg-kakheti.html) | `647c42854d91346a` | [V1 numbered paragraphs](../text/V1-bmg-kakheti.txt) |
+| V2 | [V2-bmg-costs.html](../raw/V2-bmg-costs.html) | `e5a27f7f2c8154a4` | [V2 numbered paragraphs](../text/V2-bmg-costs.txt) |
+| V3 | [V3-bmg-regions.html](../raw/V3-bmg-regions.html) | `20df9e907d9a5b05` | [V3 numbered paragraphs](../text/V3-bmg-regions.txt) |
+
+**[D/O] Claim-to-source attribution.** Each row's source ID resolves to the exact raw file above; the text links resolve to the page/paragraph evidence. The register includes caveats and contrary evidence rather than retaining only confirming claims.
+
+| ID | Key data point or claim | Exact raw source and hash prefix | Page / paragraph |
+|---|---|---|---|
+| A01 | Kakheti August 2026 HPI: star hotels -0.2%/+9.3%; guesthouses +2.6%/+5.0%; all +1.1%/+7.3% (MoM/YoY) | P1 / `cce52f0de113fd24` | [PDF p. 1, Table 1](../text/P1-pmc-hpi-2026-08/page-001.txt) |
+| A02 | Kakheti 5-star quoted average 684 GEL; 568 hotels/371 guesthouses; 10 regions + Tbilisi; standard double rooms; Booking.com availability/sample method | P1 / `cce52f0de113fd24` | [PDF p. 1, average-price text and footnotes](../text/P1-pmc-hpi-2026-08/page-001.txt) |
+| A03 | July 2026 Kakheti non-resident hotel +19% and restaurant +53% non-cash spending YoY; selected municipal units; recalculated | T1 / `407d58825af18e52` | [PDF p. 6, headline, panel titles, footer](../text/T1-tbc-pulse-2026-07/page-006.txt) |
+| A04 | TBC POS/e-commerce scope and market-share caveat; summary claims both Kakheti average transaction values increased | T1 / `407d58825af18e52` | [PDF p. 2, Kakheti paragraph and methodology note](../text/T1-tbc-pulse-2026-07/page-002.txt) |
+| A05 | Hotel average-transaction-volume chart labels 531→483; restaurant 101→116, Jul-25→Jul-26; panel unit not explicit | T1 / `407d58825af18e52` | [PDF p. 6, chart labels/legend](../text/T1-tbc-pulse-2026-07/page-006.txt), visually verified |
+| A06 | BoG Kakheti index Apr-19=100; Jan–Aug 2022 YoY: -16%, -33%, -27%, +2%, -18%, -4%, +21%, +29% | G2 / `a92c0d602ed17659` | [PDF p. 27, left panel/table](../text/G2-gt-tourism-2022/page-027.txt) |
+| A07 | Quoted-price seasonality less vivid in Kakheti than Adjara; prices fluctuate through the year | P2 / `39581d5fb23a9faf` | [PDF p. 11, opening regional-price discussion](../text/P2-pmc-hospitality-2024/page-011.txt) |
+| A08 | Selected hotels: Batumi Jan-24 37%, Jul/Aug-24 80%; FY24 occupancy Batumi 55.4%, Tbilisi 54.1%; ADR US$93/US$91 net VAT; sample updates | G1 / `75f2925f6097b8f2` | [PDF p. 6, Figures 16–19 and notes](../text/G1-gt-tourism-2024/page-006.txt), visually verified |
+| A09 | Kakheti 2020–2023 additions: 35 hotels, 796 rooms | P2 / `39581d5fb23a9faf` | [PDF p. 8, regional additions charts](../text/P2-pmc-hospitality-2024/page-008.txt) |
+| A10 | Difficult retention/migration, post-peak staff reductions and insecurity; Amirbari role and V1 publication date | V1 / `647c42854d91346a` | [Paragraphs 1–2; title/date metadata](../text/V1-bmg-kakheti.article.json) |
+| A11 | Turnover affects service quality; events/international gatherings/harvest activity | V1 / `647c42854d91346a` | [Paragraph 3](../text/V1-bmg-kakheti.article.json) |
+| A12 | Boutique/conceptual/high-end retention efforts help maintain standards | V1 / `647c42854d91346a` | [Paragraph 4](../text/V1-bmg-kakheti.article.json) |
+| A13 | Payroll/operating costs, margins, sales pressure; nine-hotel portfolio, two owners' sale intentions, late October timing; role and date | V2 / `e5a27f7f2c8154a4` | [Paragraphs 1–4; title/date metadata](../text/V2-bmg-costs.article.json) |
+| A14 | Regional/concept/audience differences; Kakheti wine/gastronomy; some properties below potential; role/date | V3 / `20df9e907d9a5b05` | [Paragraphs 1–3; title/date metadata](../text/V3-bmg-regions.article.json) |
+| A15 | Workforce/skills constraints, inconsistent reporting, SME operating costs | P2 / `39581d5fb23a9faf` | [PDF p. 14, service-quality/data/cost entries](../text/P2-pmc-hospitality-2024/page-014.txt) |
+| A16 | February 2024 registered stock: 3,198 providers, 53,759 rooms, 128,015 beds; family hotels 40% of units/15% of rooms; informal coverage limitation | P2 / `39581d5fb23a9faf` | [PDF p. 6, narrative and footnote](../text/P2-pmc-hospitality-2024/page-006.txt) |
+| A17 | 9M22 30+-room cohort: national 20,391 rooms, Kakheti share 6.6% | G2 / `a92c0d602ed17659` | [PDF p. 20, room-stock chart and regional share](../text/G2-gt-tourism-2022/page-020.txt) |
+| A18 | Historical financial cohort: top 30 accommodation companies by revenue, NACE 55, 2018–2022; overleverage/borrowed-funds concern | P2 / `39581d5fb23a9faf` | [PDF p. 12, narrative/sample footnote](../text/P2-pmc-hospitality-2024/page-012.txt); [p. 13, leverage](../text/P2-pmc-hospitality-2024/page-013.txt) |
+
+## 5. Reproduction and verification
+
+**[O] Run from the project directory:**
+
+```bash
+./scripts/harvest_reports.sh
+./scripts/extract_text.py
+```
+
+**[O] Executed outcome.** The live harvester returned exit code **0**. All **8 sources** returned **HTTP 200** and passed format/content validation. Extraction completed for **5 PDFs containing 65 pages** and **3 HTML articles containing 12 body paragraphs**. Every successful source has a combined text file; every PDF also has separate page files and column-layout candidates; each article has structured title/date/paragraph metadata. The manifest records hashes and usable-text status. These are pipeline observations derived from the saved responses, not market statistics.
+
+**[O] Semantic tables.** The extractor emits bounded, source-specific CSVs for PMC's price-index row, BoG's monthly Kakheti growth table, TBC's Kakheti spending headline, and PMC's Kakheti capacity additions. General `.layout-tables.json` outputs preserve column-like text and page/line locations; they are explicitly unverified layout candidates rather than guessed numeric cells. Selected chart labels were additionally inspected in rendered source pages.
+
+**[O] Failure handling.** The actual live run had no challenged or failed endpoint. Isolated simulated-response checks outside the research corpus verified that HTTP 404, a challenge HTML page, and invalid PDF bytes produce failure rows, preserve response bodies, and return nonzero status. The tests' fabricated response bodies are not included as market evidence. The downloader records HTTP status, curl status, validation details, headers, and source response paths, and does not use old cached artifacts as a silent substitute. A later run should regenerate extraction after harvesting; `--manifest-only` deliberately marks extraction as not yet run.
+
+**[O] Integrity checks.** Source hashes and byte sizes were checked against raw files; PDF page counts were reconciled with `pdfinfo`; article quotations were checked against numbered extracted paragraphs; cited page files and local links were checked. Numeric market entries in this report were matched to their cited source pages and table values; no interpolated chart values, invented economic estimates, or fabricated hotel incident counts were introduced. The source inconsistency in TBC average transaction values remains explicit.
+
+**[O] Machine-readable audit:** [verification results](verification.json) and [claim evidence register](evidence_register.json). The register retains source hashes, extracted-text paths, and checked supporting spans; the chart associations additionally rely on the rendered-page inspections identified above.
+
+**[U] Evidence limit.** This is executed public-source research. It supports the stated sector/practitioner bottlenecks and the measured indicators within their stated coverage. It does not supply audited property-level operating losses, complete boutique-market coverage, causal proof of workflow failures, or demonstrated AI-OS ROI.

@@ -1,0 +1,11 @@
+I’d tighten three points.
+
+First, the records support two acceptances about 65 seconds apart and a two-minute interval between export jobs. They don’t prove precisely when either OTA stopped selling. The missing Expedia payload and edit history leave the mapping or manual-edit explanation unresolved.
+
+Second, the EUR 120 handling item was invoiced and deducted in the fictional transactions, but its contractual basis remains unknown. My “Clause 6” recollection is not verification. The invoice and deduction are one expense, not two.
+
+Third, the following Saturday was one successful use of exclusive Direct availability. We have a summary, not detailed closure and confirmation logs or a matched comparison. And the 38% figure describes cancellations in the August cohort, not a conflict rate or justification for overselling.
+
+I also accept that we haven’t documented why the earlier Booking.com reservation was selected for relocation. That gap should stay visible.
+
+The specific next step I agree to now is a written rehearsal case summary incorporating those corrections and listing the missing records separately. That’s the extent of the commitment: this exercise provides no real hotel access, operational trial or permission to use an attributable real-world quotation.

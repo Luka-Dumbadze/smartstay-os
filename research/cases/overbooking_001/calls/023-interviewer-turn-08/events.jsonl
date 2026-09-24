@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"For a completed period you can check, how many bookings had a conflict like this, out of how many relevant bookings? If a count record exists, could you show how bookings were included and outcomes distinguished?"}}
+{"type":"turn.completed","usage":{"input_tokens":320575,"cached_input_tokens":294862,"cache_write_input_tokens":25668,"output_tokens":1028,"reasoning_output_tokens":151}}

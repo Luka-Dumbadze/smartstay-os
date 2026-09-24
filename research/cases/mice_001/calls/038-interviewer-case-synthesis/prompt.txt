@@ -1,0 +1,1283 @@
+SYNTHESIS: interview is finished. Return ONLY one JSON object conforming exactly to the supplied schema.
+Extract ONLY what the respondent actually said in the delivered transcript; you do not have a hidden dossier.
+case_id=CASE_MICE_001; is_synthetic=true; room_count=24. Scenario interview_date=2026-09-23.
+Make the event trace chronological, using offset +04:00. Keep uncertainty null and do not turn guest waiting into staff labor.
+Cash leakage means actual paid/refunded cash, not waived revenue. Read the money statements carefully.
+Artifacts are narrative records within this fiction: all locator and summary strings MUST explicitly include SYNTHETIC
+and reference the transcript turn where supplied (e.g. SYNTHETIC transcript_mice_rfp.md Turn 04).
+D/O and reviewed=true can mean inspected WITHIN THE FICTION only; explain this in every relevant artifact summary.
+Do not invent an actual record, replay/benchmark, simple-rule superiority, integration, approval or trial.
+Evidence not elicited remains null/empty; failed gates are an acceptable and expected result.
+Scores are transparent reviewer assessments linked to delivered evidence, not hotel facts; assign 0–4 where justified,
+or null if not assessable. Do not assign optimistic missing-evidence values to make the card pass.
+You may identify a future engineering action as an inference in its rationale, but do not mark it tested or authorized.
+Use only real role IDs within this fictional episode; count distinct actors/recipients actually appearing in trace.
+incident_count counts affected opportunities once; frequency = count*30/inclusive observation days, or null if unknown.
+Dates for the observation window must be closed by interview_date. All artifact/role/step references must resolve.
+The engine may reject G5/G6/G7. Never fabricate engineering evidence to fix that.
+ADDITIONAL MICE RULES: root_cause_code=SERVICE_DEPENDENCY. Include Sales, Revenue/GM and F&B/Chef only
+as actual responsibilities supplied in dialogue; do not invent authority or assign a record author not identified.
+All required fields must be present. Missing quantities remain null, not zero. A prospective USD quote is not
+verified_cash_leakage_gel; zero needs an explicit supporting fictional cash/ledger record too. Staff rework
+must be measured, not elapsed approval latency. Monthly frequency is only a 30-day-equivalent normalization.
+Keep claimed corporate revenue share scoped and synthetic; record forecasts/displacement as estimates.
+Only supplied fictional excerpts qualify as inspected within-fiction records. A described timestamp without
+its record has occurred_at=null and a time_note; estimates are not exact clock observations.
+Do not label inferred references D/O just to clear all-reference evidence checks. 'Tested' must distinguish
+ordinary use from an actual benchmark. Do not invent code, replay cases, estimates, permissions or integrations.
+Use a concise trace (normally 12–16 consequential steps) and concise artifact summaries, preserving pivotal
+versions, timestamps and uncertainties. A complete schema does not require repetitive prose.
+SCHEMA:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:smartstay:case-card:1.0",
+  "title": "Smartstay operational Incident Case Card",
+  "description": "Internal research framework, task_research.md sections 3–4; not an official GITA rubric. Strict shape validation plus evaluate_candidate.py semantic/gate checks. Unknown observations remain null; every object forbids extra fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "case_id": {
+      "$ref": "#/$defs/id"
+    },
+    "property_type": {
+      "enum": [
+        "independent_hotel",
+        "boutique_hotel",
+        "family_hotel",
+        "guesthouse",
+        "wine_hotel",
+        "branded_hotel",
+        "other",
+        "unknown"
+      ]
+    },
+    "room_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "interviewee_role": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/id"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "interview_date": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "incident_date_range": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/role"
+      }
+    },
+    "incident_summary": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step"
+      }
+    },
+    "handover_failure_mechanism": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "step_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "summary",
+        "step_ids",
+        "artifact_refs"
+      ]
+    },
+    "verified_cash_leakage_gel": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "staff_rework_minutes": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "observed_frequency_per_month": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "30-day-equivalent incident count = incident_count * 30 / inclusive observation days. Null if not established; not an annual extrapolation."
+    },
+    "observation_window": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "incident_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "eligible_opportunities": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "opportunity_unit": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "quantification_artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cash": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "rework": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "frequency": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "cash",
+        "rework",
+        "frequency"
+      ]
+    },
+    "supporting_artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "root_cause_code": {
+      "enum": [
+        "ARRIVAL_READINESS",
+        "REQUEST_OWNERSHIP",
+        "BOOKING_PROMISE",
+        "FOLIO_SETTLEMENT",
+        "SHIFT_CONTINUITY",
+        "SERVICE_DEPENDENCY",
+        "OUTSIDE_SOFTWARE_SCOPE"
+      ]
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "a2a_suitability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "distinct_operational_roles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "asynchronous_state_dependencies": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dependency"
+          }
+        },
+        "single_database_crud": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "simple_rule_inadequacy_rationale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "distinct_operational_roles",
+        "asynchronous_state_dependencies",
+        "dependencies",
+        "single_database_crud",
+        "simple_rule_inadequacy_rationale"
+      ]
+    },
+    "gate_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "real_problem": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recent_episode_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "recency_rationale": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "operator_confirmed_consequence": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "confirmation_role_id": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "consequence": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "recent_episode_confirmed",
+            "recency_rationale",
+            "operator_confirmed_consequence",
+            "confirmation_role_id",
+            "consequence",
+            "artifact_refs"
+          ]
+        },
+        "materiality": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "operator_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "rationale": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "operator_confirmed",
+            "rationale",
+            "artifact_refs"
+          ]
+        },
+        "software_leverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "software_only": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "binding_constraint": {
+              "enum": [
+                "coordination",
+                "software_data",
+                "physical_hardware",
+                "labor_economics",
+                "external_demand",
+                "unknown"
+              ]
+            },
+            "permitted_action": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "available_information": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "software_only",
+            "binding_constraint",
+            "permitted_action",
+            "available_information",
+            "artifact_refs"
+          ]
+        },
+        "access_authority": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "inputs_available": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "adapter_mode": {
+              "enum": [
+                "verified_connector",
+                "redacted_import",
+                "honest_simulator",
+                "unavailable",
+                "unknown"
+              ]
+            },
+            "adapter_description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "write_limits": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "trial_approver_role_id": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "authority_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "inputs_available",
+            "adapter_mode",
+            "adapter_description",
+            "write_limits",
+            "trial_approver_role_id",
+            "authority_confirmed",
+            "artifact_refs"
+          ]
+        },
+        "feasibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "estimated_hours": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            },
+            "bounded_workflow": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "deterministic_oracle": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "replay_case_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            },
+            "baseline_comparison": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "failure_recovery_test": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "estimated_hours",
+            "bounded_workflow",
+            "deterministic_oracle",
+            "replay_case_refs",
+            "baseline_comparison",
+            "failure_recovery_test",
+            "artifact_refs"
+          ]
+        },
+        "simple_rule": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "tested": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "baseline_description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "observed_failure": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "simple_rule_sufficient": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "tested",
+            "baseline_description",
+            "observed_failure",
+            "simple_rule_sufficient",
+            "artifact_refs"
+          ]
+        }
+      },
+      "required": [
+        "real_problem",
+        "materiality",
+        "software_leverage",
+        "access_authority",
+        "feasibility",
+        "simple_rule"
+      ]
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "severity": {
+          "$ref": "#/$defs/rating"
+        },
+        "a2a_fit": {
+          "$ref": "#/$defs/rating"
+        },
+        "feasibility": {
+          "$ref": "#/$defs/rating"
+        },
+        "evidence": {
+          "$ref": "#/$defs/rating"
+        },
+        "frequency": {
+          "$ref": "#/$defs/rating"
+        },
+        "preventable_share": {
+          "$ref": "#/$defs/rating"
+        },
+        "adoption": {
+          "$ref": "#/$defs/rating"
+        }
+      },
+      "required": [
+        "severity",
+        "a2a_fit",
+        "feasibility",
+        "evidence",
+        "frequency",
+        "preventable_share",
+        "adoption"
+      ]
+    },
+    "reviewer": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "is_synthetic",
+    "case_id",
+    "property_type",
+    "room_count",
+    "interviewee_role",
+    "interview_date",
+    "incident_date_range",
+    "roles",
+    "incident_summary",
+    "trace",
+    "handover_failure_mechanism",
+    "verified_cash_leakage_gel",
+    "staff_rework_minutes",
+    "observed_frequency_per_month",
+    "observation_window",
+    "incident_count",
+    "eligible_opportunities",
+    "opportunity_unit",
+    "quantification_artifacts",
+    "supporting_artifacts",
+    "root_cause_code",
+    "alternative_explanations",
+    "a2a_suitability",
+    "gate_evidence",
+    "scores",
+    "reviewer"
+  ],
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+    },
+    "date_range": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "role": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "responsibility": {
+          "$ref": "#/$defs/text"
+        },
+        "person_label": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "role_id",
+        "responsibility",
+        "person_label"
+      ],
+      "description": "Responsibilities, not invented agent titles. One person may hold several roles."
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "operator_record",
+            "direct_observation",
+            "operator_confirmation",
+            "baseline_test",
+            "replay_case",
+            "access_record",
+            "commitment_record",
+            "institutional_report",
+            "practitioner_article"
+          ]
+        },
+        "locator": {
+          "$ref": "#/$defs/text"
+        },
+        "evidence_label": {
+          "enum": [
+            "D",
+            "O",
+            "I",
+            "U"
+          ]
+        },
+        "reviewed": {
+          "type": "boolean"
+        },
+        "summary": {
+          "$ref": "#/$defs/text"
+        },
+        "collected_on": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "kind",
+        "locator",
+        "evidence_label",
+        "reviewed",
+        "summary",
+        "collected_on"
+      ],
+      "description": "Locator may be a restricted file or a witnessed/redacted record reference. No network fetch or authenticity inference is performed."
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "occurred_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time_basis": {
+          "enum": [
+            "timestamp",
+            "estimate",
+            "unknown"
+          ]
+        },
+        "time_note": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actor_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "recipient_role_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_system": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "input_state": {
+          "$ref": "#/$defs/text"
+        },
+        "expected_action": {
+          "$ref": "#/$defs/text"
+        },
+        "actual_outcome": {
+          "$ref": "#/$defs/text"
+        },
+        "acknowledged_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "completed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "step_id",
+        "sequence",
+        "occurred_at",
+        "time_basis",
+        "time_note",
+        "actor_role_id",
+        "recipient_role_id",
+        "source_system",
+        "input_state",
+        "expected_action",
+        "actual_outcome",
+        "acknowledged_at",
+        "completed_at",
+        "artifact_refs"
+      ]
+    },
+    "dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "from_step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "to_step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "from_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "to_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "state_dependency": {
+          "$ref": "#/$defs/text"
+        },
+        "constraint": {
+          "$ref": "#/$defs/text"
+        },
+        "asynchronous": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "from_step_id",
+        "to_step_id",
+        "from_role_id",
+        "to_role_id",
+        "state_dependency",
+        "constraint",
+        "asynchronous",
+        "artifact_refs"
+      ]
+    },
+    "rating": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rating": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "rating",
+        "rationale",
+        "artifact_refs"
+      ],
+      "description": "Human-adjudicated rating. Unknown is null; no default midpoint."
+    }
+  }
+}
+
+DELIVERED TRANSCRIPT:
+# MICE corporate RFP: synthetic Mom Test interview
+
+**SYNTHETIC ROLEPLAY — no real hotelier, guest records, observed losses, or consent.**
+Both logical agents are pinned to `gpt-6-astra` in separate Codex sessions and working directories.
+The respondent's private preparation was not supplied to the interviewer. Only delivered dialogue is below;
+verbatim preparation, draft/retry outputs, prompts, events and execution metadata are retained in `mice_001/calls/`.
+
+**Timing:** 12 question–answer exchanges (24 speaker messages) allocated across the seven protocol stages.
+Minute ranges represent the simulated 40-minute agenda, not measured human interview duration.
+The 24-room hotel, 30–45% off-season revenue share, USD 8,000–15,000 inquiry and all incident figures are fictional scenario assumptions/details, not market observations.
+
+## Turn 01 — Operating context — simulated minutes 0–5
+
+### Interviewer
+
+May I take notes? You can skip any question; please hide private details in any records you share. I’ll ask separately before recording or using an attributable quotation.
+
+What responsibility, if any, do you have for corporate or group enquiries about future stays and events?
+
+### Respondent
+
+Yes, you can take notes for this rehearsal. Please keep names and client details out of anything you share.
+
+I’m the commercial director and general manager, so I’m responsible for whether a corporate enquiry becomes an offer we can deliver at acceptable terms. We have 24 rooms, so a request for 18 rooms affects most of the hotel.
+
+Our sales manager owns the client relationship and coordinates the response. She can quote within approved rates and packages. I get involved when there’s a room discount, a question about holding inventory, or a trade-off with other business we might expect on those dates.
+
+F&B and the chef confirm the menu, staffing and service arrangements alongside existing commitments. I can’t simply promise a private dinner or a particular service time without their input. The owner also retains authority over certain payment and cancellation exceptions.
+
+So I don’t write every proposal, but when an enquiry needs several decisions, I’m responsible for getting those decisions together and giving Sales a clear answer they can stand behind.
+
+## Turn 02 — Last difficult episode — simulated minutes 5–8
+
+### Interviewer
+
+What was the most recent corporate enquiry that was difficult to handle, if any? If none comes to mind, we can walk through the most recent enquiry.
+
+### Respondent
+
+The one that comes to mind arrived on 15 September, for a two-night retreat in November: 18 rooms for 36 people, a meeting room, two coffee breaks and a wine gala dinner.
+
+The difficulty was getting a package close to their USD 10,000 budget that we could actually deliver. They initially wanted 18 twins, a private dinner with five premium wines, and a 10% deposit with the balance after the event. We could offer 14 twins and four doubles. We also had an existing restaurant booking, and our cellar cannot take 36 people together.
+
+Sales worked through alternatives with them: three wines, two tasting groups and a later dinner in a screened restaurant section. Meanwhile, I was reviewing the room discount and possible displacement, and the owner needed to decide on payment terms.
+
+They had explicitly asked for firm terms by 10:00 on 17 September. Our first two proposals still had unresolved conditions. The authorized offer went out at 14:00 that day, at USD 10,296 gross. By then, they had told us they’d booked elsewhere.
+
+They cited the wait, but also preferred the other venue’s private dinner room and payment schedule. I regard it as a missed opportunity; I can’t say an earlier answer would definitely have won it.
+
+## Turn 03 — Last difficult episode — simulated minutes 8–12
+
+### Interviewer
+
+What was the first response to the enquiry received on 15 September, and when was it sent? Can you show that response with names and client details hidden?
+
+### Respondent
+
+The first response was an acknowledgement from Sales at **10:35 on 15 September**, 35 minutes after the enquiry arrived. It wasn’t a firm quotation.
+
+Here is the exact fictional email excerpt; names and client details are omitted:
+
+> I own the response and have noted Thursday 10:00. We can offer 14 twins plus four doubles, subject to your acceptance. I am checking dinner privacy, wine selection and payment terms. I will send a priced outline today and confirm unresolved points.
+
+So we acknowledged their deadline and flagged the room configuration early. The first priced outline followed at 15:00 that afternoon, but dinner staffing and the requested deposit exception were still unresolved.
+
+## Turn 04 — Artifact walkthrough — simulated minutes 12–15
+
+### Interviewer
+
+What, if anything, did Sales send to F&B about dinner staffing for this enquiry? Please show the relevant message with names and client details hidden.
+
+### Respondent
+
+I don’t have a separate Sales-to-F&B message preserved in this fictional dossier, so I can’t show you its wording or say exactly what Sales asked about staffing.
+
+What I do have is the F&B and chef thread entry from **15 September at 13:10**. With identifying details omitted, it reads:
+
+> We already have a confirmed 12-person restaurant dinner at 19:30 on 13 November. Do not promise exclusive restaurant use. Cellar holds 24, so 36 cannot taste there together. Five premium wines and individually plated courses need two extra servers and a prep cook. Alternative: two cellar groups of 18 at 18:00 and 18:40, three estate wines, then a shared Georgian menu at 20:15 in a screened restaurant section. Existing guests retain restaurant access.
+
+That establishes the staffing and service constraints F&B raised. It doesn’t establish the wording of the request they received from Sales.
+
+## Turn 05 — Artifact walkthrough — simulated minutes 15–18
+
+### Interviewer
+
+What information did you use when reviewing the room discount and possible displacement for this enquiry? Please show the relevant record with names and client details hidden.
+
+### Respondent
+
+I used the rooms already booked for each night, what would remain after accepting the group, and our estimate of additional transient demand. I also considered the catering contribution and my discount authority.
+
+Here is the exact fictional inventory and displacement worksheet excerpt from **15 September at 11:20**, with identifying details omitted:
+
+> 12 Nov: 24 sellable, four confirmed double rooms, 20 uncommitted. 13 Nov: 24 sellable, five confirmed double rooms, 19 uncommitted. No maintenance blocks. Group requires 18 each night, leaving two and one rooms respectively. Existing bookings stay untouched. Forecast additional transient pickup without group: 3–5 rooms on Thursday and 4–6 Friday. With group, possible forgone pickup is 1–3 plus 3–5 room-nights. These are judgment ranges, not reservations; downside includes no additional pickup. Use approximately USD 110 net contribution per displaced room-night, excluding uncertain restaurant spend.
+
+The central estimate therefore suggested four to eight potentially displaced room-nights. But we could also have had no additional demand. The USD 110 was a planning estimate of contribution, not a quoted room rate.
+
+I could authorize rooms down to USD 175 gross per night, subject to checking the overall package. That was the rate in the final offer; existing reservations would not have been displaced.
+
+## Turn 06 — Artifact walkthrough — simulated minutes 18–20
+
+### Interviewer
+
+What exactly did the client say about booking elsewhere, and when did that message arrive? Please show it with names and client details hidden.
+
+### Respondent
+
+The message arrived at **12:10 on 17 September**, before our final offer went out at 14:00. Here is the exact fictional email excerpt, with names and client details omitted:
+
+> We confirmed another venue at 11:40 after our committee meeting. We could not keep the decision open without your final price and payment terms. Their private dinner room and payment schedule also suited us better. Thank you for working on it.
+
+They explicitly linked their decision to not having our final terms in time, but they also named two advantages of the other venue. That supports saying our delay contributed to the missed opportunity. It doesn’t establish that they would have booked with us if we had responded earlier.
+
+## Turn 07 — Frequency and loss — simulated minutes 20–24
+
+### Interviewer
+
+What money, if any, was actually received or paid out for this enquiry? Please show the relevant financial entries with private details hidden.
+
+### Respondent
+
+We received no money, and there was no recorded incremental cash expenditure for this enquiry.
+
+The fictional close-out ledger entry for **17 September**, with private details omitted, reads:
+
+> Signed contract none; invoice none; deposit receipts USD 0; supplier orders none; cancellation fees USD 0.
+
+We had checked additional staff availability, but had not made a paid booking. There was staff time spent preparing and revising the proposals, although we have no contemporaneous time sheets or wage allocation for it.
+
+The final USD 10,296 was a proposed package price including VAT. It was never collected or earned, and I would not describe that amount as a financial loss. The catering and room-service costs in our worksheet were estimates of what delivering the event would cost, not payments we made.
+
+## Turn 08 — Frequency and loss — simulated minutes 24–27
+
+### Interviewer
+
+For the last completed month, how many corporate enquiries had a client deadline for firm terms, and how many received those terms after that deadline, if any? Can you show the enquiry records with private details hidden?
+
+### Respondent
+
+I can’t give you a reliable count for August, the last completed month. I don’t have an August enquiry register in the records available for this rehearsal, so I can’t show which requests carried a client deadline or how many we missed. That’s unknown, rather than zero.
+
+The register I do have covers 12 enquiries received from 1–17 September, with statuses recorded on 22 September. It lists elapsed time to an authorized offer, but it doesn’t list each client’s deadline. Response time alone wouldn’t tell us whether an offer was late.
+
+For the specific September enquiry we’ve discussed, the fictional emails establish a deadline of **17 September at 10:00** and a final offer sent at **14:00**, four hours late. I can substantiate that individual case within the rehearsal records, but I can’t turn it into a monthly missed-deadline rate.
+
+## Turn 09 — Past attempts and workarounds — simulated minutes 27–30
+
+### Interviewer
+
+What, if anything, have you changed in how corporate proposals are prepared or approved following this enquiry?
+
+### Respondent
+
+As of today, 23 September, I can’t point to a completed change following this enquiry.
+
+We already had a shared package worksheet in use from August. It records the response owner, client deadline, rate limits, menu version, deposit terms and exceptions needing approval. In this case, recording the deadline wasn’t enough. We kept exchanging conditional options without resolving the payment and service questions before the client’s meeting.
+
+What I’m proposing is an earlier decision checkpoint for exceptions. Sales needs a clear point at which I either authorize a deliverable package or tell them which requested terms we cannot meet. Owner-level payment exceptions need to reach that checkpoint too. We should also make the difference between a priced outline and a firm offer unmistakable.
+
+Those are proposed changes, not something I can yet claim we’ve implemented or tested. My first step would be to tighten the worksheet and decision ownership. I don’t have evidence that buying another system would have resolved this particular negotiation.
+
+## Turn 10 — Past attempts and workarounds — simulated minutes 30–33
+
+### Interviewer
+
+What did the shared package worksheet record about payment terms when the first priced outline went out? Please show that version with names and client details hidden, if it’s available.
+
+### Respondent
+
+I don’t have a preserved version of the shared worksheet from that moment, so I can’t show exactly what its payment field said.
+
+What is available is the fictional proposal-version record for **V1, sent on 15 September at 15:00**. With identifying details omitted, the relevant entries read:
+
+> Status: Priced conditional outline; premium dinner staffing and deposit exception unresolved.  
+> Terms: 30% standard deposit; five wines; no guaranteed restaurant exclusivity.
+
+The client’s original request was for 10% upfront and the balance after the event. So the available record shows that the first outline carried our standard 30% deposit, while the requested exception remained unresolved. It does not show an approved concession.
+
+That establishes the proposal’s recorded position, but it isn’t a contemporaneous copy of the worksheet.
+
+## Turn 11 — Counterexample and competing cause — simulated minutes 33–37
+
+### Interviewer
+
+What is the most recent comparable corporate enquiry that went well, if any, and what differed in how it unfolded? Please show the relevant correspondence with names and client details hidden.
+
+### Respondent
+
+The most recent comparable one I can describe is an enquiry received on **8 September at 09:00**, for a December retreat: 16 rooms for two nights, 32 delegates, a meeting room, two coffee breaks and a wine dinner.
+
+We sent an authorized offer for **USD 9,600 gross on 9 September at 15:00**, 30 hours later. The client accepted the approved three-wine menu and our standard 30% deposit. We identified the cellar capacity issue early, and they accepted two tasting groups of 16. There was no conflicting restaurant commitment, and I could approve the room discount within my authority.
+
+I don’t have the correspondence preserved, so I can’t show or quote those exchanges. The available fictional booking-record excerpt, with identifying details omitted, reads:
+
+> Signed 10 September; USD 2,880 deposit recorded 11 September. Event not yet delivered; deposit is not earned revenue or profit.
+
+Our existing worksheet helped make the capacity and approval questions visible. But this was also an easier negotiation: fewer rooms, different dates and no payment exception requiring the owner. It went well in the sense that we secured a signed booking and deposit; the event is still ahead of us. I wouldn’t attribute that result to response speed alone.
+
+## Turn 12 — Concrete next step — simulated minutes 37–40
+
+### Interviewer
+
+My understanding is that firm terms were sent after the deadline; the client also preferred the other venue’s dinner room and payment schedule. What, if anything, needs correcting? What concrete next step, if any, do you agree to now?
+
+### Respondent
+
+That’s accurate. The deadline was 10:00 on 17 September, and we sent the authorized offer at 14:00. Their message arrived at 12:10, saying they had confirmed elsewhere at 11:40. They cited both the missing final terms and the other venue’s dinner room and payment schedule.
+
+The qualification I’d keep is that we missed an opportunity, not a guaranteed booking. We don’t know whether an earlier offer on our eventual terms would have won.
+
+Within this rehearsal, I agree to draft a revision to our existing worksheet by 25 September. It will distinguish a conditional outline from firm terms and require Sales to flag unresolved exceptions to me at a checkpoint before the client’s deadline. I’ll then review the proposed payment-exception escalation with the owner and the service-confirmation step with F&B.
+
+That commits me to preparing and reviewing a concrete process change. It doesn’t commit colleagues to new authority limits or establish a technology trial.
+

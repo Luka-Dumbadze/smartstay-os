@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cccc-48b3-73e0-8673-dd6dc1dfa5d7"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What was actually paid or refunded for this occasion, including the 60 GEL cash refund you mentioned and any other adjustment, if any? Could you show the relevant payment entries, with private details hidden, so we can check whether any amount appears more than once?"}}
+{"type":"turn.completed","usage":{"input_tokens":274136,"cached_input_tokens":249433,"cache_write_input_tokens":24664,"output_tokens":956,"reasoning_output_tokens":53}}

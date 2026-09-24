@@ -1,0 +1,1 @@
+{"question":"What, if anything, needs correcting in our reconstruction? What specific next step, if any, do you agree to now?","changed":false,"reason":"Briefly invites correction and an optional concrete next step without presuming commitment, access, approval, or a trial."}

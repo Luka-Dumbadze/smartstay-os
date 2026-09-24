@@ -1,0 +1,262 @@
+Regional Hotel Prices in Georgia
+ •          Among the selected regions, average hotel prices are higher in                                                       •     In contrast, such seasonal patterns are not as vivid in Tbilisi,
+            Tbilisi, Kakheti, and Adjara, where upmarket hotels are more                                                               Kakheti, and Samtskhe-Javakheti, where hotel prices fluctuate
+            concentrated. Seasonality is evident in Adjara region, with                                                                throughout the year. Meanwhile, regions such as Imereti and
+            average price increases recorded during the summer for all                                                                 Samegrelo-Zemo Svaneti generally have lower hotel prices and
+            categories.                                                                                                                no significant fluctuation.
+
+
+
+                                              Tbilisi                                                                     Kakheti                                                                    Adjara
+            1000
+
+             800
+
+             600
+      GEL
+
+
+
+
+             400
+
+             200
+
+               0
+
+
+
+
+                                                                                                                                             Sep
+
+                                                                                                                                                   Oct
+
+
+
+
+                                                                                                                                                               Dec
+                                                                                                                    May
+
+                                                                                                                           Jun
+                                                                                                        Mar
+
+
+
+
+                                                                                                                                 Jul
+
+
+
+
+                                                                                                                                                         Nov
+                                                                                                                                       Aug
+                                                                                                  Feb
+
+
+
+
+                                                                                                              Apr
+
+
+
+
+                                                                                                                                                                                                                                  Sep
+
+
+                                                                                                                                                                                                                                              Oct
+                                                                                                                                                                                               May
+
+
+
+
+                                                                                                                                                                                                                                                                      Dec
+                                                                                                                                                                                                                                                          Nov
+                                                                    Sep
+
+
+
+
+                                                                                                                                                                           Feb
+
+
+                                                                                                                                                                                 Mar
+
+
+
+
+                                                                                                                                                                                                      Jun
+
+
+                                                                                                                                                                                                              Jul
+
+
+                                                                                                                                                                                                                      Aug
+                                                                          Oct
+
+
+
+
+                                                                                                                                                                                        Apr
+                                                                                      Dec
+                                                        Jul
+                                Mar
+
+
+
+
+                                                  Jun
+                                            May
+
+
+
+
+                                                              Aug
+                          Feb
+
+
+
+
+                                      Apr
+
+
+
+
+                                                                                Nov
+
+
+
+
+                                                                                            Jan
+
+
+
+
+                                                                                                                                                                     Jan
+                   Jan
+
+
+
+
+                                Samegrelo-Zemo Svaneti                                                          Samtskhe-Javakheti                                                                   Imereti
+            1000
+
+             800
+
+             600
+GEL
+
+
+
+
+             400
+
+             200
+
+               0
+                                                                    Sep
+
+                                                                          Oct
+                                                  Jun
+
+
+
+
+                                                                                      Dec
+                                Mar
+
+
+
+
+                                            May
+
+
+
+
+                                                              Aug
+                          Feb
+
+
+
+
+                                      Apr
+
+
+
+
+                                                        Jul
+
+
+
+
+                                                                                Nov
+
+
+
+
+                                                                                                                                             Sep
+
+                                                                                                                                                   Oct
+                                                                                                                           Jun
+                                                                                                                    May
+
+
+
+
+                                                                                                                                                               Dec
+                                                                                                  Feb
+
+                                                                                                        Mar
+
+
+
+
+                                                                                                                                 Jul
+
+                                                                                                                                       Aug
+
+
+
+
+                                                                                                                                                         Nov
+                                                                                                              Apr
+
+
+
+
+                                                                                                                                                                                                                            Sep
+
+                                                                                                                                                                                                                                        Oct
+                                                                                                                                                                                              May
+
+
+
+
+                                                                                                                                                                                                                                                                Dec
+                                                                                                                                                                                                                                                    Nov
+                                                                                                                                                                                 Mar
+
+
+
+
+                                                                                                                                                                                                     Jun
+                                                                                                                                                                                       Apr
+
+
+
+
+                                                                                                                                                                                                            Jul
+
+                                                                                                                                                                                                                    Aug
+                                                                                                                                                                           Feb
+                    Jan
+
+
+
+
+                                                                                            Jan
+
+
+
+
+                                                                                                                                                                     Jan
+                                                                                                                          Source: PMCG                                                                                                                                 11

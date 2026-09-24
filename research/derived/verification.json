@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "source_count": 8,
+  "pdf_count": 5,
+  "pdf_pages": 65,
+  "article_paragraphs": 12,
+  "quotation_checks": 8,
+  "local_link_checks": 47,
+  "attributed_claim_checks": 18,
+  "task_research_sha256_unchanged": "f0ee1ae0c272a54e56a64c25e3351aacf21bd10a78a8a0be2b88a445958095c3",
+  "numeric_series_checks": "P1 HPI; G2 monthly YoY; T1 spending; P2 capacity passed",
+  "chart_association_review": "G1 p6, G2 p27, T1 p6 visually reviewed; no interpolated chart points",
+  "failure_path_checks": {
+    "environment": "isolated /tmp simulated responses; excluded from market evidence",
+    "invalid_pdf": "passed",
+    "challenge_html": "passed",
+    "http_404": "passed",
+    "failure_bodies_preserved": "passed",
+    "nonzero_exit": "passed"
+  }
+}

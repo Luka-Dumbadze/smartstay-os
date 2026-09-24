@@ -1,0 +1,20 @@
+SPOKEN INTERVIEW. Exchange 4/12. Stage: Artifact walkthrough; simulated minutes 12–15.
+The respondent just said, verbatim:
+Yes. These are invented rehearsal excerpts with fictional identifiers. All times are on **12 September 2026, Asia/Tbilisi, UTC+04:00**.
+
+| Source/event | Booking.com — F-BKG-912-A | Expedia — F-EXP-912-B |
+|---|---|---|
+| OTA-origin record: booking accepted as confirmed | 00:10:15 — B-ACC-01 | 00:11:20 — E-ACC-01 |
+| Local callback receipt: notification reached our system | 00:10:25 — B-IN-01 | 00:11:30 — E-IN-01 |
+| Local processing: reservation committed to inventory | 00:10:28 — version 8422, availability zero | 00:11:34 — version 8423, one-room deficit |
+
+The **65 seconds comes from the two OTA acceptance timestamps**, not from when staff saw the bookings or when our system processed them.
+
+Those acceptance records have whole-second resolution, with an assumed fictional clock uncertainty of ±5 seconds each. That puts the interval at approximately 55–75 seconds and supports the order within this scenario. Local clock checks have approximately ±2-second uncertainty.
+
+The export ledger separately records stock-update jobs at 00:10:00 and 00:12:00. Receipt acknowledgements followed at 00:12:06 for Booking.com and 00:12:09 for Expedia. Those acknowledgements don’t establish when the rooms actually stopped being sellable.
+
+Both listings were observed unavailable at 00:14, but that check has only minute resolution. Expedia’s outbound payload and detailed edit history are missing, so I can’t establish the exact mapping sent or exclude a manual availability edit.
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Inspect the inventory change and acknowledgement trail for that incident. Ask what the available records actually show about the claimed delay; permit missing logs and competing explanations.

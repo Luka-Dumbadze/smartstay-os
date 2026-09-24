@@ -1,0 +1,1 @@
+{"question":"What did the shared package worksheet record about payment terms when the first priced outline went out? Please show that version with names and client details hidden, if it’s available.","changed":false,"reason":"Examines one stated control at a specific event, permits an unavailable version, and makes no inference about knowledge, effectiveness, or cause."}

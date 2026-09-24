@@ -1,0 +1,1337 @@
+SYNTHESIS: interview is finished. Return ONLY one JSON object conforming exactly to the supplied schema.
+Extract ONLY what the respondent actually said in the delivered transcript; you do not have a hidden dossier.
+case_id=CASE_SIMULATED_001; is_synthetic=true; room_count=18. Scenario interview_date=2026-09-23.
+Make the event trace chronological, using offset +04:00. Keep uncertainty null and do not turn guest waiting into staff labor.
+Cash leakage means actual paid/refunded cash, not waived revenue. Read the money statements carefully.
+Artifacts are narrative records within this fiction: all locator and summary strings MUST explicitly include SYNTHETIC
+and reference the transcript turn where supplied (e.g. SYNTHETIC interview_transcript_001.md Turn 04).
+D/O and reviewed=true can mean inspected WITHIN THE FICTION only; explain this in every relevant artifact summary.
+Do not invent an actual record, replay/benchmark, simple-rule superiority, integration, approval or trial.
+Evidence not elicited remains null/empty; failed gates are an acceptable and expected result.
+Scores are transparent reviewer assessments linked to delivered evidence, not hotel facts; assign 0–4 where justified,
+or null if not assessable. Do not assign optimistic missing-evidence values to make the card pass.
+You may identify a future engineering action as an inference in its rationale, but do not mark it tested or authorized.
+Use only real role IDs within this fictional episode; count distinct actors/recipients actually appearing in trace.
+incident_count counts affected opportunities once; frequency = count*30/inclusive observation days, or null if unknown.
+Dates for the observation window must be closed by interview_date. All artifact/role/step references must resolve.
+The engine may reject G5/G6/G7. Never fabricate engineering evidence to fix that.
+SCHEMA:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:smartstay:case-card:1.0",
+  "title": "Smartstay operational Incident Case Card",
+  "description": "Internal research framework, task_research.md sections 3–4; not an official GITA rubric. Strict shape validation plus evaluate_candidate.py semantic/gate checks. Unknown observations remain null; every object forbids extra fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "case_id": {
+      "$ref": "#/$defs/id"
+    },
+    "property_type": {
+      "enum": [
+        "independent_hotel",
+        "boutique_hotel",
+        "family_hotel",
+        "guesthouse",
+        "wine_hotel",
+        "branded_hotel",
+        "other",
+        "unknown"
+      ]
+    },
+    "room_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "interviewee_role": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/id"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "interview_date": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "incident_date_range": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/role"
+      }
+    },
+    "incident_summary": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step"
+      }
+    },
+    "handover_failure_mechanism": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "step_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "summary",
+        "step_ids",
+        "artifact_refs"
+      ]
+    },
+    "verified_cash_leakage_gel": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "staff_rework_minutes": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "observed_frequency_per_month": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "30-day-equivalent incident count = incident_count * 30 / inclusive observation days. Null if not established; not an annual extrapolation."
+    },
+    "observation_window": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "incident_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "eligible_opportunities": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "opportunity_unit": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "quantification_artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cash": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "rework": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "frequency": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "cash",
+        "rework",
+        "frequency"
+      ]
+    },
+    "supporting_artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "root_cause_code": {
+      "enum": [
+        "ARRIVAL_READINESS",
+        "REQUEST_OWNERSHIP",
+        "BOOKING_PROMISE",
+        "FOLIO_SETTLEMENT",
+        "SHIFT_CONTINUITY",
+        "SERVICE_DEPENDENCY",
+        "OUTSIDE_SOFTWARE_SCOPE"
+      ]
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "a2a_suitability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "distinct_operational_roles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "asynchronous_state_dependencies": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dependency"
+          }
+        },
+        "single_database_crud": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "simple_rule_inadequacy_rationale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "distinct_operational_roles",
+        "asynchronous_state_dependencies",
+        "dependencies",
+        "single_database_crud",
+        "simple_rule_inadequacy_rationale"
+      ]
+    },
+    "gate_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "real_problem": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recent_episode_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "recency_rationale": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "operator_confirmed_consequence": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "confirmation_role_id": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "consequence": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "recent_episode_confirmed",
+            "recency_rationale",
+            "operator_confirmed_consequence",
+            "confirmation_role_id",
+            "consequence",
+            "artifact_refs"
+          ]
+        },
+        "materiality": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "operator_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "rationale": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "operator_confirmed",
+            "rationale",
+            "artifact_refs"
+          ]
+        },
+        "software_leverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "software_only": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "binding_constraint": {
+              "enum": [
+                "coordination",
+                "software_data",
+                "physical_hardware",
+                "labor_economics",
+                "external_demand",
+                "unknown"
+              ]
+            },
+            "permitted_action": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "available_information": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "software_only",
+            "binding_constraint",
+            "permitted_action",
+            "available_information",
+            "artifact_refs"
+          ]
+        },
+        "access_authority": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "inputs_available": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "adapter_mode": {
+              "enum": [
+                "verified_connector",
+                "redacted_import",
+                "honest_simulator",
+                "unavailable",
+                "unknown"
+              ]
+            },
+            "adapter_description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "write_limits": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "trial_approver_role_id": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "authority_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "inputs_available",
+            "adapter_mode",
+            "adapter_description",
+            "write_limits",
+            "trial_approver_role_id",
+            "authority_confirmed",
+            "artifact_refs"
+          ]
+        },
+        "feasibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "estimated_hours": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            },
+            "bounded_workflow": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "deterministic_oracle": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "replay_case_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            },
+            "baseline_comparison": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "failure_recovery_test": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "estimated_hours",
+            "bounded_workflow",
+            "deterministic_oracle",
+            "replay_case_refs",
+            "baseline_comparison",
+            "failure_recovery_test",
+            "artifact_refs"
+          ]
+        },
+        "simple_rule": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "tested": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "baseline_description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "observed_failure": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "simple_rule_sufficient": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "tested",
+            "baseline_description",
+            "observed_failure",
+            "simple_rule_sufficient",
+            "artifact_refs"
+          ]
+        }
+      },
+      "required": [
+        "real_problem",
+        "materiality",
+        "software_leverage",
+        "access_authority",
+        "feasibility",
+        "simple_rule"
+      ]
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "severity": {
+          "$ref": "#/$defs/rating"
+        },
+        "a2a_fit": {
+          "$ref": "#/$defs/rating"
+        },
+        "feasibility": {
+          "$ref": "#/$defs/rating"
+        },
+        "evidence": {
+          "$ref": "#/$defs/rating"
+        },
+        "frequency": {
+          "$ref": "#/$defs/rating"
+        },
+        "preventable_share": {
+          "$ref": "#/$defs/rating"
+        },
+        "adoption": {
+          "$ref": "#/$defs/rating"
+        }
+      },
+      "required": [
+        "severity",
+        "a2a_fit",
+        "feasibility",
+        "evidence",
+        "frequency",
+        "preventable_share",
+        "adoption"
+      ]
+    },
+    "reviewer": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "is_synthetic",
+    "case_id",
+    "property_type",
+    "room_count",
+    "interviewee_role",
+    "interview_date",
+    "incident_date_range",
+    "roles",
+    "incident_summary",
+    "trace",
+    "handover_failure_mechanism",
+    "verified_cash_leakage_gel",
+    "staff_rework_minutes",
+    "observed_frequency_per_month",
+    "observation_window",
+    "incident_count",
+    "eligible_opportunities",
+    "opportunity_unit",
+    "quantification_artifacts",
+    "supporting_artifacts",
+    "root_cause_code",
+    "alternative_explanations",
+    "a2a_suitability",
+    "gate_evidence",
+    "scores",
+    "reviewer"
+  ],
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+    },
+    "date_range": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "role": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "responsibility": {
+          "$ref": "#/$defs/text"
+        },
+        "person_label": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "role_id",
+        "responsibility",
+        "person_label"
+      ],
+      "description": "Responsibilities, not invented agent titles. One person may hold several roles."
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "operator_record",
+            "direct_observation",
+            "operator_confirmation",
+            "baseline_test",
+            "replay_case",
+            "access_record",
+            "commitment_record",
+            "institutional_report",
+            "practitioner_article"
+          ]
+        },
+        "locator": {
+          "$ref": "#/$defs/text"
+        },
+        "evidence_label": {
+          "enum": [
+            "D",
+            "O",
+            "I",
+            "U"
+          ]
+        },
+        "reviewed": {
+          "type": "boolean"
+        },
+        "summary": {
+          "$ref": "#/$defs/text"
+        },
+        "collected_on": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "kind",
+        "locator",
+        "evidence_label",
+        "reviewed",
+        "summary",
+        "collected_on"
+      ],
+      "description": "Locator may be a restricted file or a witnessed/redacted record reference. No network fetch or authenticity inference is performed."
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "occurred_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time_basis": {
+          "enum": [
+            "timestamp",
+            "estimate",
+            "unknown"
+          ]
+        },
+        "time_note": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actor_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "recipient_role_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_system": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "input_state": {
+          "$ref": "#/$defs/text"
+        },
+        "expected_action": {
+          "$ref": "#/$defs/text"
+        },
+        "actual_outcome": {
+          "$ref": "#/$defs/text"
+        },
+        "acknowledged_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "completed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "step_id",
+        "sequence",
+        "occurred_at",
+        "time_basis",
+        "time_note",
+        "actor_role_id",
+        "recipient_role_id",
+        "source_system",
+        "input_state",
+        "expected_action",
+        "actual_outcome",
+        "acknowledged_at",
+        "completed_at",
+        "artifact_refs"
+      ]
+    },
+    "dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "from_step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "to_step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "from_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "to_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "state_dependency": {
+          "$ref": "#/$defs/text"
+        },
+        "constraint": {
+          "$ref": "#/$defs/text"
+        },
+        "asynchronous": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "from_step_id",
+        "to_step_id",
+        "from_role_id",
+        "to_role_id",
+        "state_dependency",
+        "constraint",
+        "asynchronous",
+        "artifact_refs"
+      ]
+    },
+    "rating": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rating": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "rating",
+        "rationale",
+        "artifact_refs"
+      ],
+      "description": "Human-adjudicated rating. Unknown is null; no default midpoint."
+    }
+  }
+}
+
+DELIVERED TRANSCRIPT:
+# Simulated Mom Test interview 001
+
+**SYNTHETIC ROLEPLAY — no real hotelier, guest records, observed losses, or consent.**
+Both logical agents are pinned to `gpt-6-astra` in separate Codex sessions and working directories.
+The respondent's private preparation was not supplied to the interviewer. Only delivered dialogue is below;
+verbatim preparation, draft/retry outputs, prompts, events and execution metadata are retained in `simulation_001/calls/`.
+
+**Timing:** 12 question–answer exchanges (24 speaker messages) allocated across the seven protocol stages.
+Minute ranges represent the simulated 40-minute agenda, not measured human interview duration.
+The 18-room property, 85%+ weekend occupancy, current tool stack, and all incident-level figures are fictional assumptions/details.
+
+## Turn 01 — Operating context — simulated minutes 0–5
+
+### Interviewer
+
+We’re researching how hotels here operate, starting with a recent working day. You can skip any question. Please hide guest names, payment details, and other private information in any records you show. May we take notes? We’ll ask separately before recording or using an attributable quotation.
+
+What is your responsibility on a normal shift?
+
+### Respondent
+
+Yes, you can take notes. Keep guest and staff names out of them, please. Ask me separately about recording or quoting me by name.
+
+I’m the general manager. We have 18 rooms, so on a normal shift I move between checking arrivals with reception, agreeing room priorities with our housekeeping lead, and dealing with anything staff cannot settle themselves. During harvest, that can mean a late checkout, guests arriving before their rooms are ready, or covering a gap when someone is absent.
+
+Reception handles the bookings and check-ins. Our housekeeping lead decides when a room has passed inspection; I don’t overrule her just because someone is waiting downstairs. I handle complaints and can approve modest compensation. I also make the rota, watch spending and speak with the owner when we need more permanent staff.
+
+A fair amount of my work is making decisions that affect more than one department. If I approve a late checkout, I need to check what we have told the next guest. When that connection gets missed, it is my responsibility too. The newer staff need clear instructions and someone available to back them up.
+
+## Turn 02 — Last difficult episode — simulated minutes 5–8
+
+### Interviewer
+
+I’ll keep guest and staff names out of the notes. What was the last occasion when the shift did not go as planned, and when was that?
+
+### Respondent
+
+Last Saturday, 19 September. We had nine rooms checking out and nine arriving, and one of our experienced housekeeping staff called in sick. That left our housekeeping lead and a newer seasonal worker doing the rooms.
+
+Two arriving parties had been told they could have their rooms early—one at half past one, the other at two. Those times had started as requests, subject to housekeeping, but reception confirmed them without getting that confirmation. I had also approved a late checkout for one of those rooms without checking what we had told the incoming guests.
+
+The first party got their keys at 14:20, still before our normal three o’clock check-in, but later than we had promised. The other got theirs at 15:26. I dealt with that complaint and agreed some compensation.
+
+There were two things happening together. We genuinely had less cleaning capacity that day, and we had made promises we could not support. Better communication could have spared people some waiting and frustration. I cannot say it would have made that second room clean by three.
+
+## Turn 03 — Last difficult episode — simulated minutes 8–12
+
+### Interviewer
+
+Starting with the early-arrival requests, what happened first and what happened next, through both parties receiving their keys?
+
+Which of those times come from records, and which are estimates or still unknown?
+
+### Respondent
+
+The notebook puts both requests at 08:05: 13:30 for one room, 14:00 for the other, both subject to housekeeping.
+
+At 09:10, I approved a 13:00 late checkout for the room wanted at two. That is in the PMS. I hadn’t checked the early-arrival requests. Then reception’s notebook says they told that incoming party 14:00 at 10:42, and confirmed 13:30 for the other party at 10:48. We have those written entries, not recordings of the calls.
+
+At 11:56, housekeeping wrote in WhatsApp that only two people were working, flagged the late checkout and said neither early time could be confirmed. Reception replied at 12:03 to prioritise the room wanted at half past one. There’s no documented correction to either guest.
+
+The late checkout was processed at 13:07. That’s a PMS time; I cannot give you the exact moment the guests physically left.
+
+The first party arrived at 13:32, the second at 14:00, according to the notebook. The reception shifts overlapped, but there’s no written acknowledgement showing that the incoming receptionist received the warning.
+
+Housekeeping released the first room in WhatsApp at 14:18; the notebook records keys at 14:20. The second release was at 15:24, with keys at 15:26.
+
+Those are the times supported by our fictional records. Cleaning start times are estimates from staff recollection: around 13:25 for the first room and 14:12 for the second. We don’t have a timed cleaning log, or proof of when the incoming receptionist read the earlier message.
+
+## Turn 04 — Artifact walkthrough — simulated minutes 12–15
+
+### Interviewer
+
+Can you show me the notebook entries and WhatsApp exchange, with guest and staff names hidden, from the requests through the 12:03 reply?
+
+At that point, who was responsible for updating each guest, and where, if anywhere, was that responsibility recorded?
+
+### Respondent
+
+Yes. These are the fictional notebook excerpts, with staff initials removed and rooms labelled A and B.
+
+> 19/9 08:05 — A asks 13:30; B asks 14:00. Subject to HK.  
+> 10:42 — B called. Told them 14:00 room available.  
+> 10:48 — A confirmed 13:30 by phone.
+
+And the fictional WhatsApp exchange, using roles instead of names:
+
+> 19 Sep 07:12, room attendant: I’m sick and cannot come today. Sorry, [name removed].  
+> 19 Sep 11:56, housekeeping lead: Only [seasonal attendant] and me. B has late checkout. Cannot confirm 13:30 for A or 14:00 for B. Which first?  
+> 19 Sep 12:03, morning reception: A first please. Both early arrivals in notebook.
+
+At 12:03, I would have expected the morning receptionist to update both parties. She had made the assurances and was still on duty. But that is my expectation as manager—not an assignment written in those entries. Neither record says who must call, by when, or whether either guest was reached.
+
+The reply settles which room to prioritise. It doesn’t settle what to tell the guests. I hadn’t made that responsibility explicit enough, including what should pass to the next shift if the calls were still outstanding. I can’t treat the absence of a written correction as proof that no conversation happened, but we have no documented correction to rely on.
+
+## Turn 05 — Artifact walkthrough — simulated minutes 15–18
+
+### Interviewer
+
+What did morning reception and the incoming receptionist each say they saw and did after the 11:56 warning, if you’ve heard their accounts?
+
+Can you show the shift handover entry, if one exists, with names hidden, including anything recorded about contacting either party?
+
+### Respondent
+
+I don’t have separate accounts from both receptionists that I can quote reliably. I should be careful there.
+
+For morning reception, the 12:03 reply shows she responded to the warning and asked housekeeping to prioritise room A. It doesn’t establish whether she then contacted either party.
+
+For the incoming receptionist, we don’t know when he read that warning. My account is that he told the first party to expect a short wait, but I don’t have an exact time or his exact words recorded.
+
+There isn’t a written handover entry linking the promises, the warning and responsibility for calling the guests. The rota shows a 13:30–14:00 overlap; that establishes time together, not what they discussed.
+
+The next relevant fictional notebook entries, with names hidden, are:
+
+> 13:32 — A arrived. Waiting in courtyard.  
+> 14:00 — B arrived. Says 14:00 was promised.
+
+Neither records a call to revise the arrival time. So I can show you that gap, but I cannot fill it with a conversation I don’t have. I arranged the overlap, but I hadn’t made sure these unresolved promises had to be explicitly handed over.
+
+## Turn 06 — Artifact walkthrough — simulated minutes 18–20
+
+### Interviewer
+
+Can you show the room-release messages and key handover entries for A and B, with names hidden?
+
+What happened between each party’s arrival and receiving their keys, including what you personally saw and what you learned from others?
+
+### Respondent
+
+Yes. These are the fictional WhatsApp release messages, with names removed and the same room labels:
+
+> 19 Sep 14:18, housekeeping lead: A checked, ready. B still being cleaned.  
+> 19 Sep 15:24, housekeeping lead: B checked and ready. You can give keys.
+
+And the fictional notebook entries:
+
+> 14:20 — A keys given.  
+> 15:26 — B keys given. [Manager] agreed [compensation details redacted].
+
+A arrived at 13:32 and waited 48 minutes. The notebook places them in the courtyard. My understanding is that reception said it would be a short wait, but I cannot give you their exact words. The newer attendant later recalled starting that room around 13:25. That’s an estimate; the release message is the recorded time.
+
+B arrived at 14:00 and waited 86 minutes. Reception checked whether the spare single could work, but it wasn’t suitable for the party. The housekeeping lead later described extra cleaning in a muddy bathroom and estimated working on B from about 14:12 to 15:15, with an interruption. That isn’t a measured hour of continuous cleaning.
+
+What I personally handled was B’s complaint and the compensation decision. I place that conversation around 14:40–14:48 from my later reconstruction, not a timestamped record. I wasn’t watching either room being cleaned or standing beside reception throughout the wait.
+
+Reception and housekeeping also spent time repeating progress enquiries. Those are reconstructed staff accounts. The firm points are the recorded arrivals, inspection releases and key handovers.
+
+## Turn 07 — Frequency and loss — simulated minutes 20–24
+
+### Interviewer
+
+For a completed period you have records for, how many arriving parties received confirmed early-room times, and how many received keys later than those times?
+
+For B’s compensation, can you show the adjustment and payment records with private details hidden, distinguishing cash paid or refunded from charges waived?
+
+### Respondent
+
+For the completed week of 14–20 September, we counted 34 arriving room bookings. Two recorded early-time assurances were missed: A and B. B also received keys after our normal 15:00 check-in.
+
+I don’t have a reliable count of **all** confirmed early-room times that week, including ones we met. So I can give you two recorded misses among 34 arrivals, but not a failure rate for early confirmations. Our counting unit was a room booking, which isn’t necessarily the same as a travelling party.
+
+For B, these are the fictional folio excerpts, with identifying and payment-method details hidden. Amounts are in GEL:
+
+> Payment previously received: 320.00  
+> One-night room charge: 320.00  
+> Reserved wine service for two: 30.00  
+> 19 Sep 15:31 — Room service-recovery adjustment: −60.00  
+> 19 Sep 15:32 — Wine service waived: −30.00  
+> 19 Sep 15:34 — Cash refund paid: 60.00  
+> Closing charges: 260.00 | Net payments retained: 260.00 | Balance: 0.00
+
+The separate fictional cashbook entry reads:
+
+> 19 Sep 15:34 — OUT 60.00 GEL | B refund | [staff identifier removed]
+
+So **60 GEL actually left the till**. The room adjustment and the refund are the same concession, not two separate losses. The other **30 GEL was an unpaid wine charge we waived**; they still received the wine service. That makes a 90 GEL reduction from the original charges, but only 60 GEL in cash refunded.
+
+## Turn 08 — Frequency and loss — simulated minutes 24–27
+
+### Interviewer
+
+For the repeated progress enquiries and complaint handling, what records, if any, distinguish staff time spent doing that work from the guests’ waiting time, and what remains an estimate?
+
+How significant were the refund and waived charge compared with the other problems you handled that week?
+
+### Respondent
+
+We don’t have a time sheet for those enquiries. The arrival and key entries support the guests’ waits—48 minutes for A and 86 for B—but those are not staff working minutes.
+
+The staff-time figure comes from our same-evening reconstruction. We estimated 22 minutes for reception: eight reconstructing the promise and handling the initial complaint, seven checking an alternative and explaining the situation, and seven processing the compensation. Housekeeping estimated eight minutes answering repeated progress enquiries. I estimated eight minutes handling the complaint and five checking the refund.
+
+That’s 43 staff minutes, with each interval counted once. It excludes ordinary cleaning and normal check-in. The messages and financial entries support that parts of the work happened; they don’t establish how long each task took. Even the seven minutes for processing the compensation remains an estimate, despite having timestamps for the individual entries. I wouldn’t claim we could recover all 43 minutes.
+
+The 60 GEL refund and 30 GEL waiver were enough for me to notice and check. But I don’t have a complete costed list of that week’s other problems, so I can’t honestly rank this as our biggest loss or give you its share of weekly costs.
+
+Operationally, what concerned me was pulling people into repeated explanations while housekeeping was already short. That was a management problem worth addressing, even without pretending the compensation alone proves a large financial problem.
+
+## Turn 09 — Past attempts and workarounds — simulated minutes 27–30
+
+### Interviewer
+
+What, if anything, have you changed to address this, and when did you last change the process?
+
+Can you show a case after that change, with names hidden, and walk me through what happened?
+
+### Respondent
+
+I haven’t put a new process in place since Saturday. The last change was on 5 September: a brief 12:30 review between reception and the housekeeping lead, using a paper arrival list. They agree priorities, and reception is supposed to check with housekeeping before confirming early access.
+
+A case after that change was Saturday, 12 September. To be clear, that was before the incident we’ve been discussing.
+
+The fictional notebook has a tick recording that the review happened that day. I don’t have a verbatim handover passage to quote. The case details I can give you, without names, are these: we had nine departures and nine arriving room bookings. Two parties requested early rooms. Those requests stayed conditional until inspection, and all nine assigned arrival rooms were released by 14:52. No missed readiness assurance or room-readiness compensation was recorded.
+
+But we also had all three housekeeping workers present, and nobody had been granted checkout beyond noon. So I can’t attribute that result just to the paper review.
+
+The review was recorded again on 18 September, then missed on the 19th while reception handled departures and housekeeping covered the absence. That’s the weakness: I introduced something that depended on the busiest people finding time, without making the outstanding guest updates explicit. We haven’t yet tested a further change.
+
+## Turn 10 — Past attempts and workarounds — simulated minutes 30–33
+
+### Interviewer
+
+What staff time or spending did introducing and running the 12:30 review involve, and what part is recorded versus estimated?
+
+Before 19 September, on what occasions, if any, was the review missed, and what happened to the early-room requests on those occasions?
+
+### Respondent
+
+It used the existing paper arrival list and time from reception and the housekeeping lead. I don’t have a recorded setup cost or a timed account of explaining it to staff. There’s no separate spending figure I can substantiate.
+
+I described it as a five-minute review, but that was the intended length, not a measured average. If both people spent five minutes together, that would be ten staff minutes. I wouldn’t multiply that across the fortnight and present it as actual time worked—we don’t have the records for that.
+
+The notebook ticks establish that the review happened on 12 and 18 September. They don’t record its duration.
+
+Before the 19th, I can’t identify a particular missed review with a documented outcome for the early-room requests. We weren’t keeping a daily completed-or-missed log. A missing tick alone wouldn’t tell me whether they skipped the conversation or simply didn’t mark it.
+
+So the missed review I can discuss is the 19th. I can’t say it was the first time we missed it, and I can’t give you earlier guest outcomes to compare. That’s a limit in how I followed up the process after introducing it.
+
+## Turn 11 — Counterexample and competing cause — simulated minutes 33–37
+
+### Interviewer
+
+Comparing 12 and 19 September, what do the records or housekeeping lead’s account establish about the available rooms, staff time and cleaning work, and what remains unknown?
+
+What other operational problems, if any, have you given priority over this one since then?
+
+### Respondent
+
+Both Saturdays had nine departures and nine arriving room bookings. That gives us a similar turnover count, but it doesn’t establish the same amount of cleaning work.
+
+On the 12th, three housekeeping staff were present, no checkout beyond noon had been granted, and all nine assigned arrival rooms were released by 14:52. The review was marked as completed. We don’t have room-by-room cleaning durations or exact physical departure times, so I can’t say how much spare capacity they had.
+
+On the 19th, only the lead and the newer attendant were working. There were also eight stayover rooms, though I don’t have measured servicing time for those. B’s checkout was processed at 13:07. The lead recalled extra work on its muddy bathroom and cleaning from roughly 14:12 to 15:15, including an interruption. Those times are estimates.
+
+The remaining unoccupied room was a clean single, and it wasn’t a suitable substitute accepted by either affected party. So an empty room didn’t give reception a straightforward solution.
+
+What remains unknown is how much of the difference came from staffing, later room access, cleaning condition or interruptions. We also can’t establish that doing the review would have got B ready by three. It might have prevented the promise.
+
+Since then, I haven’t documented another particular problem as taking priority over this one. Staffing cover and daily room readiness remain my responsibilities, but I can’t give you a specific competing incident or claim I made a formal priority decision. The honest position is that I haven’t implemented the follow-up yet.
+
+## Turn 12 — Concrete next step — simulated minutes 37–40
+
+### Interviewer
+
+My understanding is that A and B received keys after their confirmed times; B also passed normal check-in. B received a 60 GEL cash refund and a 30 GEL waiver. Staff rework remains estimated, guest updates remain unconfirmed, and the contributions of staffing, room access and cleaning work remain unresolved. What have I missed or misstated?
+
+What next step, if any, is agreed to check this account with those involved, including the date, who can authorize reviewing the records, and the permitted scope?
+
+### Respondent
+
+That is a fair account. I’d add that the PMS still showed B as dirty at arrival. This wasn’t a room incorrectly marked clean; reception had confirmed a time without housekeeping confirmation. And I approved the late checkout without checking the incoming promise.
+
+We know we were one experienced attendant short and that B had a late checkout. What remains unresolved is how much each factor contributed to the delay, and what better communication could actually have prevented. The 60 GEL adjustment and cash refund are the same concession; the separate 30 GEL waiver covered wine service they still received.
+
+There is **no agreed next step or date** for checking this with the staff. My agreement to interview notes does not mean they have agreed to interviews, recordings or quotations.
+
+I can arrange an internal review of the operational records as manager. I haven’t authorised wider access or sharing, and we haven’t established who would approve any broader disclosure.
+
+A modest next step would be to agree a short review with the two receptionists and housekeeping lead, limited to the early promises, guest contact and handover. We could use redacted excerpts and distinguish what each person remembers from what was written. That is a proposal, not a booked meeting or an authorised trial.
+

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccb5-7075-7a32-8211-97ebf44e18a6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"For the repeated progress enquiries and complaint handling, what records, if any, distinguish staff time spent doing that work from the guests’ waiting time, and what remains an estimate?\n\nHow significant were the refund and waived charge compared with the other problems you handled that week?"}}
+{"type":"turn.completed","usage":{"input_tokens":166667,"cached_input_tokens":143628,"cache_write_input_tokens":23015,"output_tokens":487,"reasoning_output_tokens":53}}

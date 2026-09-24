@@ -1,0 +1,18 @@
+{
+  "report_sha256": "8d87e65e3b18cb89f87deb421904271542d22501214701bb4082a5281264e580",
+  "report_words": 9070,
+  "source_records": 40,
+  "http_200": 39,
+  "retained_http_404": [
+    "a2a"
+  ],
+  "source_hashes_verified": true,
+  "local_links_verified": true,
+  "python_blocks_syntax_checked": 2,
+  "sample_exact_match": true,
+  "sample_physical_lines": 32,
+  "support_host_physical_lines": 145,
+  "offline_tests_passed": 14,
+  "read_only_input_unchanged": true,
+  "provider_calls_executed": false
+}

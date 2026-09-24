@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"How was the relocation decision made in this case, including who took part, what options were available, and who had authority to approve it? If a record of that decision exists, could you show it with private details hidden?"}}
+{"type":"turn.completed","usage":{"input_tokens":176854,"cached_input_tokens":155610,"cache_write_input_tokens":21217,"output_tokens":544,"reasoning_output_tokens":24}}

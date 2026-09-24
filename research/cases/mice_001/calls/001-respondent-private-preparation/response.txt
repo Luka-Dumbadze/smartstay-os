@@ -1,0 +1,223 @@
+{
+  "provenance": {
+    "status": "Entirely invented interview-rehearsal material. No real hotel, client, employee, record, verification or consent exists.",
+    "interview_date": "2026-09-23",
+    "timezone": "Asia/Tbilisi; all timestamps local",
+    "stability_rule": "Preserve these facts in subsequent answers. Reveal only details relevant to the question. Identify quoted excerpts as fictional records, and distinguish them from estimates or recollection.",
+    "market_context_boundary": "The supplied market corpus provides broad context only; it establishes none of this property's revenue mix, response times, conversions or economics."
+  },
+  "property": {
+    "name": "Vine Courtyard Hotel",
+    "location": "Kakheti",
+    "inventory": "24 rooms: 14 convertible twin/doubles and 10 fixed doubles.",
+    "facilities": "One meeting room for 40 classroom-style; restaurant seats 50; cellar tasting limit 24 people per session.",
+    "respondent": "Commercial director and general manager; also performs revenue-management decisions.",
+    "off_season_corporate_share": {
+      "estimate": "Approximately 38%, with a planning range of 30–45%.",
+      "scope": "Fictional management estimate for November–February hotel operating revenue, excluding VAT, including corporate rooms, meeting hire and associated catering.",
+      "basis": "A planning assumption informed by remembered business mix; no reconciled segment ledger is supplied.",
+      "limitation": "Neither an audited historical share nor a statistic about Kakheti."
+    }
+  },
+  "authority_and_constraints": {
+    "sales": {
+      "person": "Mariam, sales manager",
+      "objective": "Keep the retreat within procurement's budget and obtain a usable offer before its committee meets.",
+      "authority": "May quote approved packages, room rates down to USD 185 gross per room-night and meeting hire down to USD 500. Standard deposit is 30%. Cannot grant restaurant exclusivity, change cancellation terms or promise unapproved menus.",
+      "constraint": "Sales owns the client response but cannot bind the kitchen or silently substitute double beds for twins."
+    },
+    "gm_revenue": {
+      "person": "Levan, respondent",
+      "authority": "May reduce room rates to USD 175 and meeting hire to USD 360 after checking displacement and package contribution. Cannot reduce deposit below 30% without owner approval.",
+      "constraint": "Must protect existing reservations and weigh uncertain future transient demand against a large group occupying 75% of rooms."
+    },
+    "owner": {
+      "person": "Nino",
+      "authority": "Approves deposit and cancellation exceptions, rates below GM limits and any package below contribution bounds.",
+      "constraint": "Requires adequate advance cash commitment; does not want an unsecured corporate promise blocking most inventory."
+    },
+    "food_and_beverage": {
+      "people": "Tamar, F&B manager; Giorgi, chef",
+      "authority": "Approve menus, service timing, dietary substitutions and incremental staffing. Standard gala requires at least 35% contribution on net gala sales after ingredients, wine and extra event staff.",
+      "constraint": "An existing restaurant party, limited cellar capacity and one hot-food service line prevent the requested simultaneous service without changes."
+    }
+  },
+  "inquiry": {
+    "id": "RFP-0926-11",
+    "client": "Cedar Ledger Services, an invented corporate client",
+    "contact": "Ana, office and procurement coordinator",
+    "received": "2026-09-15 10:00",
+    "stay": "2026-11-12 arrival through 2026-11-14 departure; two nights",
+    "attendees": 36,
+    "requested_package": "18 rooms, one meeting-room day on 13 November, two coffee breaks for 36, and a wine-tasting gala dinner for 36.",
+    "initial_preferences": "18 twin rooms; private gala at 19:30; five premium wines; 10% deposit with balance after the event.",
+    "gross_opportunity_range_usd": [8000, 15000],
+    "meaning": "Potential package sales only, not booked revenue, collected cash, contribution or profit."
+  },
+  "fictional_record_excerpts": [
+    {
+      "id": "E01",
+      "type": "Client RFP email",
+      "date": "2026-09-15 10:00",
+      "text": "Please quote 18 twin rooms for 36 colleagues, 12–14 November, breakfast included. We need the meeting room on Friday, two coffee breaks and a private wine gala with five premium wines at 19:30. Our committee meets Thursday 17 September at 10:00. We need your firm package and payment terms by then—48 hours from now. Target is USD 10,000 including taxes; a modest increase needs explanation. Can you accept 10% now and the balance after the event?"
+    },
+    {
+      "id": "E02",
+      "type": "Sales acknowledgement",
+      "date": "2026-09-15 10:35",
+      "text": "I own the response and have noted Thursday 10:00. We can offer 14 twins plus four doubles, subject to your acceptance. I am checking dinner privacy, wine selection and payment terms. I will send a priced outline today and confirm unresolved points."
+    },
+    {
+      "id": "E03",
+      "type": "Inventory and displacement worksheet",
+      "date": "2026-09-15 11:20",
+      "text": "12 Nov: 24 sellable, four confirmed double rooms, 20 uncommitted. 13 Nov: 24 sellable, five confirmed double rooms, 19 uncommitted. No maintenance blocks. Group requires 18 each night, leaving two and one rooms respectively. Existing bookings stay untouched. Forecast additional transient pickup without group: 3–5 rooms on Thursday and 4–6 Friday. With group, possible forgone pickup is 1–3 plus 3–5 room-nights. These are judgment ranges, not reservations; downside includes no additional pickup. Use approximately USD 110 net contribution per displaced room-night, excluding uncertain restaurant spend."
+    },
+    {
+      "id": "E04",
+      "type": "Chef and F&B thread",
+      "date": "2026-09-15 13:10",
+      "text": "We already have a confirmed 12-person restaurant dinner at 19:30 on 13 November. Do not promise exclusive restaurant use. Cellar holds 24, so 36 cannot taste there together. Five premium wines and individually plated courses need two extra servers and a prep cook. Alternative: two cellar groups of 18 at 18:00 and 18:40, three estate wines, then a shared Georgian menu at 20:15 in a screened restaurant section. Existing guests retain restaurant access."
+    },
+    {
+      "id": "E05",
+      "type": "Client reply to proposal V1",
+      "date": "2026-09-15 16:20",
+      "text": "USD 11,724 is too high. Four double rooms are acceptable if colleagues volunteer. We can consider three wines and shared dishes, but privacy matters. Please show your closest option to USD 10,000. Our finance team could probably release 20% before the event, not 30%; I still need their approval."
+    },
+    {
+      "id": "E06",
+      "type": "Sales–GM negotiation",
+      "date": "2026-09-16 09:15",
+      "text": "Sales: Can we reach USD 9,900 with free meeting hire and keep the five wines? GM: Not on these dates with that menu. Reprice the three-wine option first. I can consider USD 175 rooms, but only with costed catering and protected existing bookings. The 20% deposit is the owner's decision. Offer 19–21 November as a cheaper alternative if dates can move."
+    },
+    {
+      "id": "E07",
+      "type": "Client reply to V2",
+      "date": "2026-09-16 15:40",
+      "text": "Dates cannot move. The three-wine dinner and 20:15 start are acceptable in principle. Please clarify whether the screened area is private enough for speeches. USD 10,584 is still above target. We need the final total and confirmed 20% deposit terms before tomorrow's 10:00 committee."
+    },
+    {
+      "id": "E08",
+      "type": "Costing and operations revision",
+      "date": "2026-09-17 09:05",
+      "text": "For final proposed package: room servicing and breakfasts USD 1,440; meeting setup USD 100; two coffee breaks USD 300; gala food and three wines USD 1,180; additional gala staff USD 320. Total incremental cost estimate USD 3,340, excluding recoverable VAT. Extra servers and prep cook have indicated availability; no paid booking made. Four vegetarian meals and two gluten-free meals fit the revised menu. Confirm dietary counts ten days before arrival. Screened section is not soundproof or exclusive restaurant hire."
+    },
+    {
+      "id": "E09",
+      "type": "Owner exception",
+      "date": "2026-09-17 11:30",
+      "text": "Approve 20% deposit within five business days of signature, another 30% thirty days before arrival, balance seven days before arrival. No post-event credit. Standard cancellation schedule remains. Sales must state that restaurant privacy is limited."
+    },
+    {
+      "id": "E10",
+      "type": "Client decision email",
+      "date": "2026-09-17 12:10",
+      "text": "We confirmed another venue at 11:40 after our committee meeting. We could not keep the decision open without your final price and payment terms. Their private dinner room and payment schedule also suited us better. Thank you for working on it."
+    },
+    {
+      "id": "E11",
+      "type": "Late final-offer email",
+      "date": "2026-09-17 14:00",
+      "text": "Our final package is USD 10,296 including VAT, with the revised three-wine dinner and approved staged payments attached. I am sorry we missed your decision window. I have now seen your message confirming another venue and will release our courtesy hold."
+    }
+  ],
+  "proposal_versions": [
+    {
+      "version": "V1",
+      "sent": "2026-09-15 15:00",
+      "status": "Priced conditional outline; premium dinner staffing and deposit exception unresolved.",
+      "gross_usd": {
+        "36_room_nights_at_190": 6840,
+        "meeting": 600,
+        "72_coffee_break_servings_at_12": 864,
+        "36_gala_covers_at_95": 3420,
+        "total": 11724
+      },
+      "terms": "30% standard deposit; five wines; no guaranteed restaurant exclusivity."
+    },
+    {
+      "version": "V2",
+      "sent": "2026-09-16 14:30",
+      "status": "Costed menu alternative; 20% deposit requested but not approved.",
+      "gross_usd": {
+        "36_room_nights_at_180": 6480,
+        "meeting": 360,
+        "coffee_breaks": 864,
+        "36_gala_covers_at_80": 2880,
+        "total": 10584
+      },
+      "changes": "Three estate wines, split cellar tasting, shared menu and later dinner.",
+      "alternative_exchanged": "19–21 November at USD 9,864 using USD 160 rooms; conditional on date change and owner approval. Client declined the dates."
+    },
+    {
+      "version": "V3",
+      "sent": "2026-09-17 14:00",
+      "status": "Authorized offer issued after client reported booking elsewhere.",
+      "gross_usd": {
+        "36_room_nights_at_175": 6300,
+        "meeting": 360,
+        "72_coffee_break_servings_at_10_50": 756,
+        "gala": 2880,
+        "total": 10296
+      },
+      "changes": "Simpler coffee-break assortment, GM room-rate floor and owner-approved staged payments.",
+      "inclusions": "Two breakfasts per occupied room per night; meeting room 09:00–17:00 with projector, water and Wi-Fi; two breaks total; specified gala and tasting.",
+      "exclusions": "Other lunches and dinners, transport, entertainment, additional alcohol and exclusive restaurant hire.",
+      "cancellation": "More than 30 days: 20% charge; 15–30 days: 50%; within 14 days: 100% of contracted package.",
+      "hold": "Courtesy inventory hold entered 15 September at 11:30, expiring 17 September at 16:00; released at 14:10. No contract or deposit."
+    }
+  ],
+  "financial_interpretation": {
+    "currency": "All USD figures are invented quote or planning entries denominated directly in USD. No GEL conversion or FX rate is asserted; settlement-currency arrangements were not completed.",
+    "tax_assumption": "Scenario assumes VAT registration and 18% VAT included throughout; no additional mandatory service charge.",
+    "v3_gross_usd": 10296,
+    "v3_net_sales_usd": 8725.42,
+    "v3_vat_usd": 1570.58,
+    "estimated_incremental_cost_usd": 3340,
+    "estimated_contribution_before_displacement_usd": 5385.42,
+    "gala_check": "USD 2,880 gross / 1.18 = USD 2,440.68 net; USD 1,500 ingredients, wine and extra staff leaves USD 940.68, or 38.5%, above the 35% floor.",
+    "displacement": "Central worksheet suggests 4–8 potentially displaced room-nights; wider uncertainty includes zero. At USD 110 each, sensitivity is USD 0–880 contribution, not a booked loss.",
+    "contribution_after_displacement_sensitivity_usd": [4505.42, 5385.42],
+    "limitations": "Contribution excludes fixed payroll, rent, debt service and other overhead. Costs and pickup are forecasts. November actual occupancy is unknown at interview date."
+  },
+  "cash_cost_and_rework": {
+    "fictional_ledger_excerpt": "17 September close-out: signed contract none; invoice none; deposit receipts USD 0; supplier orders none; cancellation fees USD 0.",
+    "rework_record": "Version register contains three sent proposals and one internal USD 9,900 draft rejected before costing approval.",
+    "time_estimate": "Sales recalls roughly three hours across revisions; GM about 45 minutes; F&B about 70 minutes. No contemporaneous time sheets or wage allocation.",
+    "loss_boundary": "No USD 10,296 realized loss is established. No recorded incremental cash expenditure; staff opportunity cost is unmeasured."
+  },
+  "closed_window_request_cohort": {
+    "definition": "Invented shared-inbox register: all 12 unique corporate overnight package requests received 1–17 September 2026; duplicate follow-ups excluded. Status frozen 22 September.",
+    "response_measure": "Elapsed clock hours from receipt to first internally authorized offer covering requested services and payment terms; conditional outlines do not qualify.",
+    "rows": [
+      {"id": "C01", "received": "09-01", "type": "standard", "hours": 6, "status": "contracted"},
+      {"id": "C02", "received": "09-02", "type": "standard", "hours": 8, "status": "contracted"},
+      {"id": "C03", "received": "09-03", "type": "standard", "hours": 10, "status": "lost"},
+      {"id": "C04", "received": "09-04", "type": "bespoke", "hours": 26, "status": "lost"},
+      {"id": "C05", "received": "09-07", "type": "standard", "hours": 12, "status": "contracted"},
+      {"id": "C06", "received": "09-08", "type": "bespoke", "hours": 30, "status": "contracted"},
+      {"id": "C07", "received": "09-09", "type": "standard", "hours": 18, "status": "lost"},
+      {"id": "C08", "received": "09-10", "type": "bespoke", "hours": 38, "status": "lost"},
+      {"id": "C09", "received": "09-11", "type": "standard", "hours": 22, "status": "contracted"},
+      {"id": "C10", "received": "09-14", "type": "bespoke", "hours": 46, "status": "withdrawn"},
+      {"id": "RFP-0926-11", "received": "09-15", "type": "bespoke", "hours": 52, "status": "lost"},
+      {"id": "C12", "received": "09-17", "type": "bespoke", "hours": 60, "status": "open"}
+    ],
+    "interpretation": "Five contracted, five lost, one withdrawn, one open. Small heterogeneous intake cohort, not a causal conversion study. 'Bespoke requests take 24–72 hours' is the respondent's broader anecdotal shorthand, not this cohort's measured range."
+  },
+  "used_control_and_comparable_success": {
+    "control": "Since 1 August, Sales has used a shared package worksheet with named response owner, deadline, room-rate bounds, menu versions, deposit terms and exception flags. It is a manual document, with no claimed integrations.",
+    "success": "C06 requested 16 rooms for two nights, 32 delegates, meeting room, two breaks and wine dinner for 3–5 December. Received 8 September 09:00; authorized USD 9,600 gross offer sent 9 September 15:00.",
+    "why_worked": "Client accepted the approved three-wine menu and 30% deposit. Worksheet exposed the cellar limit early; two groups of 16 were accepted. Existing restaurant commitments did not conflict. GM approved the room discount within bounds.",
+    "fictional_booking_record": "Signed 10 September; USD 2,880 deposit recorded 11 September. Event not yet delivered; deposit is not earned revenue or profit.",
+    "comparability_limit": "Similar service mix, but fewer rooms, different demand dates and no payment exception. Does not prove faster responses caused conversion.",
+    "failure_of_control_in_main_case": "Deadline was recorded, but no escalation checkpoint compelled a definitive answer before it. Conditional options kept circulating while menu, privacy and payment terms remained interdependent."
+  },
+  "respondent_position": {
+    "causality": "Delay plausibly contributed and the client explicitly cited it. Budget, privacy and payment preferences also mattered. We cannot know whether an earlier V3 would have won.",
+    "accountability": "Sales was pursuing a viable conversion, the chef protected service commitments, and the owner controlled credit exposure. As GM, I should have forced an earlier decision on which terms we could actually offer.",
+    "practical_next_step": "A sound worksheet, preapproved package bounds, named response ownership and earlier exception escalation could be sufficient. Those improvements are proposals, not completed trials.",
+    "technology_boundary": "No engineering benchmark, replay result, integration, future trial authorization or evidence of A2A superiority exists."
+  }
+}

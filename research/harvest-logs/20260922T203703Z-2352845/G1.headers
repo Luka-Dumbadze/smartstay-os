@@ -1,0 +1,29 @@
+HTTP/2 301 
+content-type: text/plain; charset=utf-8
+content-length: 103
+access-control-allow-origin: *
+location: https://ramad.bog.ge/s3/galt/8e2bb4f0-cfd9-4ccc-851f-e02cf2ca80b6.pdf
+vary: Accept
+strict-transport-security: max-age=63072000
+x-auditory: public
+cache-control: max-age=0
+date: Tue, 22 Sep 2026 20:37:05 GMT
+server-timing: cdn-cache; desc=MISS
+server-timing: edge; dur=184
+server-timing: origin; dur=471
+alt-svc: h3=":443"; ma=93600
+server-timing: ak_p; desc="1790109424286_1476213511_963313317_65565_16236_11_121_15";dur=1
+
+HTTP/2 200 
+access-control-allow-origin: *
+content-type: application/pdf
+cache-control: public, max-age=3600
+last-modified: Mon Mar 17 2025 16:10:07 GMT+0400 (Georgia Standard Time)
+vary: Accept-Encoding
+etag: "816b7-ozeBv4rMqNS89lKsVUMgN0ltnEk"
+content-length: 530103
+x-cache: HIT
+date: Tue, 22 Sep 2026 20:37:05 GMT
+strict-transport-security: max-age=63072000
+x-auditory: public
+

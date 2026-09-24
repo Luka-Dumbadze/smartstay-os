@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What do the available stock-update records show about the inventory sent and the meaning of the receipt acknowledgements? If available, could you show the relevant entries for those two jobs?"}}
+{"type":"turn.completed","usage":{"input_tokens":134973,"cached_input_tokens":114537,"cache_write_input_tokens":20415,"output_tokens":420,"reasoning_output_tokens":24}}

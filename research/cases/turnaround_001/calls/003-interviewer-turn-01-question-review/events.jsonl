@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cccc-48b3-73e0-8673-dd6dc1dfa5d7"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"We’re researching how hotels operate between 11:00 and 15:00. You can skip any question. Please hide private details in any records you choose to show; we’ll ask separately before recording or using an attributable quotation. May I take notes?\\n\\nWhat are your usual responsibilities between 11:00 and 15:00?\",\"changed\":false,\"reason\":\"Neutral opening requests consent and asks about present responsibilities without assuming a problem, cause, or assignment. No respondent answers have been delivered.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":36806,"cached_input_tokens":18263,"cache_write_input_tokens":18537,"output_tokens":183,"reasoning_output_tokens":0}}

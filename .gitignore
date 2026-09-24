@@ -1,0 +1,26 @@
+# Environment & Secrets (არასდროს აიტვირთოს!)
+.env
+.env*.local
+*.env
+
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Next.js & Build outputs
+.next/
+out/
+build/
+dist/
+
+# Local Database & Logs
+.smartstay/
+*.log
+*.sqlite
+/tmp/
+
+# OS files
+.DS_Store
+Thumbs.db

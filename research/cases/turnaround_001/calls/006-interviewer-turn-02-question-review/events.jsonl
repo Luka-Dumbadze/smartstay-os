@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cccc-48b3-73e0-8673-dd6dc1dfa5d7"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"I’ll leave staff names out. What was the most recent occasion between eleven and three when things did not go as planned, if any? If none comes to mind, please walk me through the most recent shift in that window.\",\"changed\":false,\"reason\":\"Invites a specific recent occasion without assuming difficulty, permits a normal shift, and respects the request to omit staff names.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":75028,"cached_input_tokens":55793,"cache_write_input_tokens":19223,"output_tokens":317,"reasoning_output_tokens":0}}

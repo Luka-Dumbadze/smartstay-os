@@ -1,0 +1,1 @@
+For a completed period you can check, how many bookings had a conflict like this, out of how many relevant bookings? If a count record exists, could you show how bookings were included and outcomes distinguished?

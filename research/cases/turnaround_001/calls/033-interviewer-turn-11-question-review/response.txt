@@ -1,0 +1,1 @@
+{"question":"Comparing 103 with the smooth 201 arrival, what differences in available rooms, cleaning work, staffing, and time can you establish, and what remains unknown?","changed":false,"reason":"Compares reported occasions using factors the respondent introduced, permits uncertainty, and does not attribute either outcome to a particular cause."}

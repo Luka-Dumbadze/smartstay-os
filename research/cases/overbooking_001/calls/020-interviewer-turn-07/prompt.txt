@@ -1,0 +1,32 @@
+SPOKEN INTERVIEW. Exchange 7/12. Stage: Frequency and loss; simulated minutes 20–24.
+The respondent just said, verbatim:
+The fictional invoice supports that EUR 120 was charged. It doesn’t establish that the charge was contractually justified. Here is the relevant record:
+
+```text
+FICTIONAL INVOICE F-REL-0914
+Issued and received: 14 September 2026
+Case: FICTIONAL-INC-20260912-01
+Debtor: Fictional Vineyard Court
+
+Alternative accommodation, ONE night, 12–13 September
+USD 260.00 → GEL 702.00
+
+Relocation taxi, 12 September
+USD 30.00 → GEL 81.00
+
+Claimed handling item
+EUR 120.00 → GEL 360.00
+
+TOTAL: GEL 1,143.00
+```
+
+Those conversions use the explicitly fictional transaction schedule FX-F12: USD 1 equals GEL 2.70 and EUR 1 equals GEL 3.00. They are not real market rates.
+
+I remember people referring to “Clause 6,” but I cannot show an applicable signed clause establishing this item. The available invoice doesn’t identify a specific contractual provision for it.
+
+The public terms check you supplied places relocation obligations in clause 2.6.1 and indemnification matters in section 6. It found neither “120” nor “handling fee” in that retrieved text. That does not establish a universal tariff or resolve this particular charge’s legal basis.
+
+The full GEL 1,143 was offset against our fictional payout on 18 September. We disputed the GEL 360 handling component; no credit had been issued by 23 September. So it was deducted, but its contractual basis remains unresolved.
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Reconcile billed amounts with payout deductions and bank receipts in their actual currencies, including recorded conversions, original guest funds and duplicate entries. Keep unverified staff labor unknown.

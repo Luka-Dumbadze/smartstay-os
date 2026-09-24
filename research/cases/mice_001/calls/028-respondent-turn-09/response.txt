@@ -1,0 +1,7 @@
+As of today, 23 September, I can’t point to a completed change following this enquiry.
+
+We already had a shared package worksheet in use from August. It records the response owner, client deadline, rate limits, menu version, deposit terms and exceptions needing approval. In this case, recording the deadline wasn’t enough. We kept exchanging conditional options without resolving the payment and service questions before the client’s meeting.
+
+What I’m proposing is an earlier decision checkpoint for exceptions. Sales needs a clear point at which I either authorize a deliverable package or tell them which requested terms we cannot meet. Owner-level payment exceptions need to reach that checkpoint too. We should also make the difference between a priced outline and a firm offer unmistakable.
+
+Those are proposed changes, not something I can yet claim we’ve implemented or tested. My first step would be to tighten the worksheet and decision ownership. I don’t have evidence that buying another system would have resolved this particular negotiation.

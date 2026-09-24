@@ -1,0 +1,254 @@
+[
+  {
+    "claim_id": "A01",
+    "source_id": "P1",
+    "sha256": "cce52f0de113fd241042ded4935e7ac9a921b75ddf981d497ecf5446ad3b1025",
+    "text_paths": [
+      "research/text/P1-pmc-hpi-2026-08/page-001.txt"
+    ],
+    "verified_spans": [
+      "-0.2%",
+      "9.3%",
+      "2.6%",
+      "5.0%",
+      "1.1%",
+      "7.3%"
+    ]
+  },
+  {
+    "claim_id": "A02",
+    "source_id": "P1",
+    "sha256": "cce52f0de113fd241042ded4935e7ac9a921b75ddf981d497ecf5446ad3b1025",
+    "text_paths": [
+      "research/text/P1-pmc-hpi-2026-08/page-001.txt"
+    ],
+    "verified_spans": [
+      "by Kakheti at 684 GEL",
+      "568 3-, 4-, 5-star hotels and 371 guesthouses",
+      "across 10",
+      "booking.com."
+    ]
+  },
+  {
+    "claim_id": "A03",
+    "source_id": "T1",
+    "sha256": "407d58825af18e52c99a81cf83962ec11e284d9d04126f0d73f056461493b124",
+    "text_paths": [
+      "research/text/T1-tbc-pulse-2026-07/page-006.txt"
+    ],
+    "verified_spans": [
+      "19%",
+      "53 % year over year",
+      "non -residents , Kakheti",
+      "selected municipal units; Note: recalculated."
+    ]
+  },
+  {
+    "claim_id": "A04",
+    "source_id": "T1",
+    "sha256": "407d58825af18e52c99a81cf83962ec11e284d9d04126f0d73f056461493b124",
+    "text_paths": [
+      "research/text/T1-tbc-pulse-2026-07/page-002.txt"
+    ],
+    "verified_spans": [
+      "payments through TBC channels",
+      "TBC market share",
+      "average transaction values increased"
+    ]
+  },
+  {
+    "claim_id": "A05",
+    "source_id": "T1",
+    "sha256": "407d58825af18e52c99a81cf83962ec11e284d9d04126f0d73f056461493b124",
+    "text_paths": [
+      "research/text/T1-tbc-pulse-2026-07/page-006.txt"
+    ],
+    "verified_spans": [
+      "531",
+      "483",
+      "101",
+      "116",
+      "Jul-25",
+      "Jul-26",
+      "Average Transaction Volume (Right Axis)"
+    ]
+  },
+  {
+    "claim_id": "A06",
+    "source_id": "G2",
+    "sha256": "a92c0d602ed176596d3ce80a0faece641ed571e5bce673e231017afef8e5013a",
+    "text_paths": [
+      "research/text/G2-gt-tourism-2022/page-027.txt"
+    ],
+    "verified_spans": [
+      "Apr-19=100",
+      "-16%",
+      "-33%",
+      "-27%",
+      "2%",
+      "-18%",
+      "-4%",
+      "21%",
+      "29%"
+    ]
+  },
+  {
+    "claim_id": "A07",
+    "source_id": "P2",
+    "sha256": "39581d5fb23a9fafc46af63032ea939d48578868342c8755b1495e3445c82f46",
+    "text_paths": [
+      "research/text/P2-pmc-hospitality-2024/page-011.txt"
+    ],
+    "verified_spans": [
+      "such seasonal patterns are not as vivid in Tbilisi,",
+      "Kakheti, and Samtskhe-Javakheti"
+    ]
+  },
+  {
+    "claim_id": "A08",
+    "source_id": "G1",
+    "sha256": "75f2925f6097b8f2715737761e61be48631921464a89781ef5e6f433cf6c6e96",
+    "text_paths": [
+      "research/text/G1-gt-tourism-2024/page-006.txt"
+    ],
+    "verified_spans": [
+      "FY24 54.1%",
+      "FY24 55.4%",
+      "FY24 $91",
+      "FY24 $93",
+      "37%",
+      "80% 80%",
+      "net of VAT",
+      "updated sample"
+    ]
+  },
+  {
+    "claim_id": "A09",
+    "source_id": "P2",
+    "sha256": "39581d5fb23a9fafc46af63032ea939d48578868342c8755b1495e3445c82f46",
+    "text_paths": [
+      "research/text/P2-pmc-hospitality-2024/page-008.txt"
+    ],
+    "verified_spans": [
+      "Kakheti 35",
+      "Kakheti 796",
+      "2020-2023"
+    ]
+  },
+  {
+    "claim_id": "A10",
+    "source_id": "V1",
+    "sha256": "647c42854d91346a1de877535cc6ae859779a23131b28031231dd0dbad2c8211",
+    "text_paths": [
+      "research/text/V1-bmg-kakheti.txt"
+    ],
+    "structured_path": "research/text/V1-bmg-kakheti.article.json",
+    "published_at": "2026-09-07 11:00:00",
+    "paragraphs_verified": 4
+  },
+  {
+    "claim_id": "A11",
+    "source_id": "V1",
+    "sha256": "647c42854d91346a1de877535cc6ae859779a23131b28031231dd0dbad2c8211",
+    "text_paths": [
+      "research/text/V1-bmg-kakheti.txt"
+    ],
+    "structured_path": "research/text/V1-bmg-kakheti.article.json",
+    "published_at": "2026-09-07 11:00:00",
+    "paragraphs_verified": 4
+  },
+  {
+    "claim_id": "A12",
+    "source_id": "V1",
+    "sha256": "647c42854d91346a1de877535cc6ae859779a23131b28031231dd0dbad2c8211",
+    "text_paths": [
+      "research/text/V1-bmg-kakheti.txt"
+    ],
+    "structured_path": "research/text/V1-bmg-kakheti.article.json",
+    "published_at": "2026-09-07 11:00:00",
+    "paragraphs_verified": 4
+  },
+  {
+    "claim_id": "A13",
+    "source_id": "V2",
+    "sha256": "e5a27f7f2c8154a44dbebb7afb941827be3175fe0e2cdc8c6bc1ba13dfc1ac67",
+    "text_paths": [
+      "research/text/V2-bmg-costs.txt"
+    ],
+    "structured_path": "research/text/V2-bmg-costs.article.json",
+    "published_at": "2026-09-04 10:15:00",
+    "paragraphs_verified": 4
+  },
+  {
+    "claim_id": "A14",
+    "source_id": "V3",
+    "sha256": "20df9e907d9a5b0525f689d522d4c85c873781e404b5ac9a8df00655a3fcc347",
+    "text_paths": [
+      "research/text/V3-bmg-regions.txt"
+    ],
+    "structured_path": "research/text/V3-bmg-regions.article.json",
+    "published_at": "2026-09-02 13:30:00",
+    "paragraphs_verified": 4
+  },
+  {
+    "claim_id": "A15",
+    "source_id": "P2",
+    "sha256": "39581d5fb23a9fafc46af63032ea939d48578868342c8755b1495e3445c82f46",
+    "text_paths": [
+      "research/text/P2-pmc-hospitality-2024/page-014.txt"
+    ],
+    "verified_spans": [
+      "Workforce shortages, industry skills gaps",
+      "Limited and inconsistent data reporting",
+      "hinders performance assessment and decision-making.",
+      "High Operational Costs for SMEs"
+    ]
+  },
+  {
+    "claim_id": "A16",
+    "source_id": "P2",
+    "sha256": "39581d5fb23a9fafc46af63032ea939d48578868342c8755b1495e3445c82f46",
+    "text_paths": [
+      "research/text/P2-pmc-hospitality-2024/page-006.txt"
+    ],
+    "verified_spans": [
+      "3,198 registered accommodation providers",
+      "53,759 rooms and 128,015 beds",
+      "As of February 2024",
+      "family hotels (40% of all units)",
+      "15% of total room",
+      "providers operate informally"
+    ]
+  },
+  {
+    "claim_id": "A17",
+    "source_id": "G2",
+    "sha256": "a92c0d602ed176596d3ce80a0faece641ed571e5bce673e231017afef8e5013a",
+    "text_paths": [
+      "research/text/G2-gt-tourism-2022/page-020.txt"
+    ],
+    "verified_spans": [
+      "30+ rooms",
+      "20,391",
+      "9M22",
+      "6.6%"
+    ]
+  },
+  {
+    "claim_id": "A18",
+    "source_id": "P2",
+    "sha256": "39581d5fb23a9fafc46af63032ea939d48578868342c8755b1495e3445c82f46",
+    "text_paths": [
+      "research/text/P2-pmc-hospitality-2024/page-012.txt",
+      "research/text/P2-pmc-hospitality-2024/page-013.txt"
+    ],
+    "verified_spans": [
+      "top 30 companies",
+      "NACE code: 55 - Accommodation",
+      "2018",
+      "2022",
+      "overleveraged",
+      "reliance on borrowed funds"
+    ]
+  }
+]

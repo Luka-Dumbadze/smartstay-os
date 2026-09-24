@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccca-dd26-7873-a3af-b908426e6b73"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Nothing has been agreed beyond taking notes for this rehearsal with staff names left out. We haven’t set a follow-up date, arranged a trial, or agreed to provide further records.\n\nThe excerpts I showed were fictional rehearsal records. No real guest or operator has authorized record use. There’s also no permission to record the interview or use an attributable quotation; you said you would ask separately, and that hasn’t happened."}}
+{"type":"turn.completed","usage":{"input_tokens":340967,"cached_input_tokens":311885,"cache_write_input_tokens":29043,"output_tokens":8866,"reasoning_output_tokens":602}}

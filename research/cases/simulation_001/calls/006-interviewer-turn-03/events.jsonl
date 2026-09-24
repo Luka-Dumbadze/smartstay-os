@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccb5-7075-7a32-8211-97ebf44e18a6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Starting with the early-arrival requests, what happened first and what happened next, through both parties receiving their keys?\n\nWhich of those times come from records, and which are estimates or still unknown?"}}
+{"type":"turn.completed","usage":{"input_tokens":56055,"cached_input_tokens":36585,"cache_write_input_tokens":19461,"output_tokens":169,"reasoning_output_tokens":20}}

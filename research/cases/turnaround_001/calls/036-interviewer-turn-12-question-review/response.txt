@@ -1,0 +1,1 @@
+{"question":"What follow-up, if any, has been agreed, including its date and who has authorized any associated record use? It’s fine if nothing has been agreed or authorization remains unknown.","changed":false,"reason":"Asks only about actual follow-up and authorization, explicitly permits none or unknown, and does not infer consent from the rehearsal."}

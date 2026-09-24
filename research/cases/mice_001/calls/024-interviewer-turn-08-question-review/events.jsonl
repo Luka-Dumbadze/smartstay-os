@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"For the last completed month, how many corporate enquiries had a client deadline for firm terms, and how many received those terms after that deadline, if any? Can you show the enquiry records with private details hidden?\",\"changed\":false,\"reason\":\"Defines a closed period and consistent enquiry denominator, permits no late responses, and requests supporting records without assuming recurrence or counting proposal versions.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":336644,"cached_input_tokens":311453,"cache_write_input_tokens":25143,"output_tokens":1195,"reasoning_output_tokens":306}}

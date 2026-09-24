@@ -1,0 +1,15 @@
+HTTP/2 200 
+date: Tue, 22 Sep 2026 20:37:11 GMT
+content-type: text/html; charset=UTF-8
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cache-control: no-cache, private
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=stoK%2BF87CxO%2FNZR%2BHi9Tiet9QRvbtNbDuuxUfrG61SwPPyULA9pmXLA0QUSnXDgoqyYumrkyHi113aPX6aImDxY8AMQ7vNf4h2GqeV2%2F95qdbTRvayeg"}]}
+server: cloudflare
+vary: Accept-Encoding
+x-powered-by: PHP/8.2.33
+age: 0
+x-cache: miss cached
+x-device: Desktop
+cf-cache-status: DYNAMIC
+cf-ray: a3f41b2889901f4f-TBS
+

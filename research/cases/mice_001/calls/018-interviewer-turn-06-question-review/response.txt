@@ -1,0 +1,1 @@
+{"question":"What exactly did the client say about booking elsewhere, and when did that message arrive? Please show it with names and client details hidden.","changed":false,"reason":"Seeks the client’s wording and message timestamp without assuming why they chose elsewhere or that a booking was guaranteed."}

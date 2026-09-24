@@ -1,0 +1,1 @@
+{"question":"Beyond the change to exclusive Direct availability, what else, if anything, differed between 12 and 19 September that matters to comparing their outcomes? It’s fine if that’s unknown.","changed":false,"reason":"Invites other differences without assigning causation to the control, and explicitly permits none or unknown."}

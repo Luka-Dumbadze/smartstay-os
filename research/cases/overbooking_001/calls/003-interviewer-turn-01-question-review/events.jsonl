@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"May I take notes? You can skip any question; please hide private details in any records you choose to show. I’ll ask separately before recording or using an attributable quotation.\\n\\nWhat are your responsibilities for room availability across booking channels and direct sales?\",\"changed\":false,\"reason\":\"Neutral opening consent and one operating-context question; no assumed fault, cause, or specific assignment.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":36845,"cached_input_tokens":18284,"cache_write_input_tokens":18555,"output_tokens":164,"reasoning_output_tokens":24}}

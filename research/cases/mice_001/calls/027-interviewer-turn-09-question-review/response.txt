@@ -1,0 +1,1 @@
+{"question":"What, if anything, have you changed in how corporate proposals are prepared or approved following this enquiry?","changed":false,"reason":"Asks about actual changes, permits none, and does not assume a remedy, commitment, or cause."}

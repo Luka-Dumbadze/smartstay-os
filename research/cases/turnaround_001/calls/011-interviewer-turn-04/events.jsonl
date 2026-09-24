@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cccc-48b3-73e0-8673-dd6dc1dfa5d7"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Could you show me the records from that morning that best establish what reception and housekeeping each knew when the cleaning order was set, with staff names and guest details hidden? It’s fine if the records don’t establish that."}}
+{"type":"turn.completed","usage":{"input_tokens":135046,"cached_input_tokens":114598,"cache_write_input_tokens":20427,"output_tokens":506,"reasoning_output_tokens":34}}

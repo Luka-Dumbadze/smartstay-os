@@ -1,0 +1,22 @@
+For the nineteenth, from 11:00 through 15:00 inclusive, I can show six arriving parties and one documented case of keys being handed over later than reception’s stated readiness time. I can’t establish whether that happened for any of the other five, because the register doesn’t record what readiness times they may have been given.
+
+Here’s the fictional arrival and key register, with guest details omitted:
+
+> Room | Party arrival | Keys handed over  
+> 101 | 13:40 | 13:40  
+> 102 | 14:20 | 14:20  
+> 103 | 12:00 | 13:17  
+> 201 | 14:03 | 14:03  
+> 202 | 14:35 | 14:35  
+> 203 | 14:58 | 14:58
+
+That supports the denominator: six parties arriving in that closed window.
+
+For 103, the notebook records:
+
+> 12:01 | Told them room should be ready 12:30 before checking with [housekeeping].  
+> 13:17 | 103 keys handed over.
+
+That supports the one documented case: keys were handed over 47 minutes after the original assurance. We subsequently corrected that assurance, but I wouldn’t erase it from the count.
+
+So I would report **one confirmed case among six arrivals, with readiness-promise history unknown for the other five**. Their same-minute arrival and key entries show no recorded wait on arrival; they don’t prove we met every time previously communicated to them.

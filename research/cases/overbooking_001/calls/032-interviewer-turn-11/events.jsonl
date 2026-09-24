@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Beyond the change to exclusive Direct availability, what else, if anything, differed between 12 and 19 September that matters to comparing their outcomes? It’s fine if that’s unknown."}}
+{"type":"turn.completed","usage":{"input_tokens":481784,"cached_input_tokens":453972,"cache_write_input_tokens":27749,"output_tokens":1381,"reasoning_output_tokens":170}}

@@ -1,0 +1,50 @@
+SPOKEN INTERVIEW. Exchange 8/12. Stage: Frequency and loss; simulated minutes 24–27.
+The respondent just said, verbatim:
+The invoice and deduction are the same GEL 1,143 charge, counted once. These linked entries are all fictional.
+
+The invoice uses **FX-F12**, an invented transaction schedule: USD 1 = GEL 2.70; EUR 1 = GEL 3.00.
+
+```text
+F-REL-0914 | 14 September 2026
+Accommodation: USD 260 = GEL 702
+Taxi:          USD  30 = GEL  81
+Handling:      EUR 120 = GEL 360
+Total:                  GEL 1,143
+```
+
+The OTA paid the competitor and taxi; we made no separate supplier payment.
+
+```text
+F-BPAY-0918 | 18 September 2026 | All entries GEL
+Completed settlement period: 1–15 September
+
+Other reservation receipts                  +6,000
+Other commissions                             -900
+F-BKG-912-A original collection                +540
+F-BKG-912-A guest refund                       -540
+Original commission                            -81
+Commission reversal credit                     +81
+F-REL-0914 offset                            -1,143
+NET TRANSFER                                 3,957
+
+F-BANK-0918 | Value date 18 September
+Received GEL 3,957 | Reference F-BPAY-0918
+```
+
+The original guest paid USD 200 on 12 September and received a full USD 200 refund on 13 September—GEL 540 each under FX-F12. We never received that money in cash.
+
+```text
+F-EPAY-0920 | 20 September | Expedia booking
+Gross:      USD 200 = GEL 540
+Commission: USD  32 = GEL 86.40
+Refund: zero
+Net: GEL 453.60
+
+F-BANK-0921 | Value date 21 September
+Received GEL 453.60 | Reference F-EPAY-0920
+```
+
+The invoice balance is zero, but GEL 360 remains disputed without a credit. Expedia’s receipt is ordinary room revenue; it does not automatically offset the relocation expense as incremental earnings.
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Request one closed-period count and its eligible-booking denominator. Distinguish cancellation cohorts, sync conflicts, intentional overselling and walked guests.

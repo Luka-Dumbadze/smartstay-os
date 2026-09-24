@@ -1,0 +1,14 @@
+SPOKEN INTERVIEW. Exchange 10/12. Stage: Past attempts and workarounds; simulated minutes 30–33.
+The respondent just said, verbatim:
+We used an exclusive Direct arrangement for the remaining rooms on the following peak Saturday. It took effect on **18 September for stays on 19–20 September**.
+
+At 26 commitments, Channel Operations closed availability on both Booking.com and Expedia. We recorded closure checks before releasing the two remaining rooms exclusively through Direct. I owned the release decision, and Front Desk used the shared property management system to confirm reservations.
+
+The fictional control record, **CTRL-0919**, shows that Direct sold both rooms. Twenty-eight parties stayed that Saturday, with no conflicting confirmation or relocation.
+
+That was a change from leaving several channels open against the last room. It reduced the exposure by giving the remaining availability to one sales source. It didn’t create a reservation lock across the OTAs.
+
+I can substantiate that specific use of the control in this rehearsal. I can’t claim it had become a permanent policy for every date, or infer a prevention rate from one successful weekend. We also don’t know whether closing the OTAs cost us enquiries or changed the rates we could achieve.
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Follow one actual use of that control and its outcome; do not demand failure of deterministic allotments, buffers or manual closing.

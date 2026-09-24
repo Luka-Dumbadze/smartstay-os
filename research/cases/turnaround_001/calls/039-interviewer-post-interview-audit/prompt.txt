@@ -1,0 +1,1364 @@
+AUDIT: interview is finished. Produce Markdown analysis, not further spoken questions.
+Evaluate your interviewer fidelity candidly. Cite turn numbers and verbatim short question fragments.
+Identify leading premises, stacked questions, hypothetical/pitch violations, missed probes, money/time/denominator
+ambiguity, capacity versus stale-information causes, and why the simple-rule baseline remains uncertain.
+Do not label simulated artifact narratives as genuine evidence. Extract an event trace table from the case/transcript.
+Explain G3/G4/G7 and the attached evaluator result. Do not force acceptance or create a fake final score.
+Suggest concrete neutral replacement questions for the Human Director. All lessons are rehearsal lessons, not market validation.
+TRANSCRIPT:
+# Turnaround deadlock: synthetic Mom Test interview
+
+**SYNTHETIC ROLEPLAY — no real hotelier, guest records, observed losses, or consent.**
+Both logical agents are pinned to `gpt-6-astra` in separate Codex sessions and working directories.
+The respondent's private preparation was not supplied to the interviewer. Only delivered dialogue is below;
+verbatim preparation, draft/retry outputs, prompts, events and execution metadata are retained in `turnaround_001/calls/`.
+
+**Timing:** 12 question–answer exchanges (24 speaker messages) allocated across the seven protocol stages.
+Minute ranges represent the simulated 40-minute agenda, not measured human interview duration.
+The 18-room hotel, numerical cleaning order, early arrivals, $30–$50 late-checkout quotes, tool stack and all incident figures are fictional scenario assumptions/details, not market observations.
+
+## Turn 01 — Operating context — simulated minutes 0–5
+
+### Interviewer
+
+We’re researching how hotels operate between 11:00 and 15:00. You can skip any question. Please hide private details in any records you choose to show; we’ll ask separately before recording or using an attributable quotation. May I take notes?
+
+What are your usual responsibilities between 11:00 and 15:00?
+
+### Respondent
+
+Yes, you can take notes for this rehearsal. Leave staff names out, please.
+
+Between eleven and three, I’m mostly making sure the rooms we’re releasing are actually ready, while reception handles departures and people start arriving. We have eighteen rooms, so I’m close to the work. On the shift we’re discussing, I was doing the final room inspections myself.
+
+Reception brings me late-checkout requests, uncertain arrival times and complaints. I decide whether we can make an exception, and I approve compensation when it’s needed. Housekeeping’s lead directs the cleaning and supports our new seasonal worker. They were working together that day; having two people didn’t mean we could clean two rooms independently.
+
+The awkward part is knowing what I can safely promise. The paper sheet usually runs 101, 102, 103. That works when arrivals follow roughly what we expect. If someone turns up at noon, reception may know the room is marked dirty in Cloudbeds but not whether it’s nearly finished or hasn’t been started.
+
+I’m also responsible for the staffing and those working rules. If a new receptionist gives an optimistic time without checking, I have to look at what I taught her, not just tell her she got it wrong.
+
+## Turn 02 — Last difficult episode — simulated minutes 5–8
+
+### Interviewer
+
+I’ll leave staff names out. What was the most recent occasion between eleven and three when things did not go as planned, if any? If none comes to mind, please walk me through the most recent shift in that window.
+
+### Respondent
+
+Saturday, the nineteenth. A party booked into our twin room, 103, arrived at noon. We had expected them at three. They waited in the courtyard, and reception told them the room should be ready by twelve thirty without first getting confirmation.
+
+Our cleaners were following the paper sheet: 101, then 102, then 103. One was new, working alongside the experienced cleaner. Reception sent a WhatsApp message asking about progress, but didn’t get an answer before going upstairs to check. It turned out they were still finishing 102; 103 hadn’t been started.
+
+I corrected the time with the guests and said approximately one fifteen, subject to inspection. We offered them temporary use of a double, but they needed separate beds. Our other twin was occupied, so there wasn’t a straightforward room swap.
+
+They received their keys at 13:17. I approved a 60 GEL refund, which reception paid in cash. That was for the incorrect assurance and inconvenience; our normal check-in time was still three.
+
+For me, there were two problems. We didn’t have a dependable answer at the desk, and we promised before checking. But there was also actual cleaning to do. Better information wouldn’t have made that twin ready instantly. The cleaners followed the order I’d left them, so I take responsibility for that too.
+
+## Turn 03 — Last difficult episode — simulated minutes 8–12
+
+### Interviewer
+
+Please walk me through how you chose the order on that day’s paper sheet and what happened from then until reception went upstairs, distinguishing recorded times from estimates.
+
+### Respondent
+
+I didn’t choose that morning’s order by comparing arrival times. I left our normal numerical order in place: 101, 102, 103, then 201, 202, 203. That was my default, and housekeeping followed it. We expected 103 at three, so I hadn’t marked it as an early priority.
+
+The sheet records that it was issued at 11:00. The first three rooms were already vacated. It records completion and inspection times, though, not when cleaning started. So I can’t give you exact working times for each room.
+
+There was another decision while they were working. The notebook records an outgoing guest in 201 asking at 11:03 to stay until one. Reception quoted forty US dollars, subject to approval. At 11:08 I declined because we didn’t know the next guest’s arrival time or have a dependable view of how the remaining cleaning would fit. The guest hadn’t accepted the price; nothing was collected. The PMS checkout entry is 11:15.
+
+For 101, the sheet says cleaning finished at 11:35 and I inspected it at 11:40. The team then continued to 102.
+
+The notebook puts the unexpected 103 arrival at 12:00 and reception’s twelve-to-three-weekend promise—sorry, twelve-to-three isn’t right—the **12:30 readiness promise** at 12:01. The WhatsApp question is timestamped 12:04.
+
+Reception went upstairs around 12:08, as we remember it; that minute isn’t recorded. That was when she found 102 still being finished and 103 untouched. Before that check, the desk couldn’t reliably distinguish “nearly ready” from “not started.”
+
+## Turn 04 — Artifact walkthrough — simulated minutes 12–15
+
+### Interviewer
+
+Could you show me the records from that morning that best establish what reception and housekeeping each knew when the cleaning order was set, with staff names and guest details hidden? It’s fine if the records don’t establish that.
+
+### Respondent
+
+Yes. These are excerpts from the fictional paper sheet and PMS record, with names and reservation identifiers removed.
+
+The housekeeping sheet reads:
+
+> 19 Sep 2026 | Turnovers | [staff names removed] | Sheet issued 11:00  
+> Order: 101, 102, 103, 201, 202, 203
+
+That establishes the written order housekeeping was given. It doesn’t say why I chose it, or show that anyone compared it with expected arrival times. My explanation that I left the usual numerical order in place is my recollection.
+
+The PMS reservation excerpt reads:
+
+> Fixed twin | Assigned 103 | Expected arrival: 15:00 | Early check-in guarantee: none
+
+That supports the arrival expectation I described. But this excerpt isn’t a timestamped snapshot from eleven, and we don’t have an edit history here. It doesn’t prove when reception last looked at that field, or that housekeeping saw it at all.
+
+The later WhatsApp message reads:
+
+> 12:04 [Reception]: 103 guests are here in courtyard. Is it started? Please confirm before I give another time.
+
+That establishes reception asking for progress after the guests arrived. It doesn’t establish when housekeeping read it.
+
+So the records establish the numerical instruction and the listed arrival expectation separately. They don’t establish a shared understanding at eleven. I can’t honestly show you a recorded morning handover connecting those two things.
+
+## Turn 05 — Artifact walkthrough — simulated minutes 15–18
+
+### Interviewer
+
+Please walk me through the 201 late-checkout request, from reception receiving it to your decision, including what information you used at the time. Could you show the notebook entry, with private details hidden?
+
+### Respondent
+
+Reception received the request at 11:03: the departing guest in 201 wanted to stay until 13:00. She explained that it would be forty US dollars if approved, then brought it to me.
+
+We knew another party was due into 201 that day, but we didn’t have a dependable arrival time for them. We had six turnovers and one cleaning team, with the newer worker working alongside the experienced cleaner. I didn’t have a confirmed progress update showing how a one o’clock departure would fit into the remaining work.
+
+I declined at 11:08. It was a cautious decision on my part. I can’t say the extension was physically impossible; I couldn’t confidently promise it with what I knew then.
+
+Here’s the fictional notebook excerpt, with the staff identifier hidden:
+
+> 11:03 | Outgoing 201 asks to stay until 13:00. Told USD 40 only if approved. No acceptance taken. [Staff identifier removed]  
+> 11:08 | [Manager] says cannot approve; next arrival timing and cleaning readiness uncertain. [Staff identifier removed]
+
+The PMS checkout entry is 11:15, with no late-checkout charge.
+
+The incoming party only confirmed a 14:00 arrival at 13:15. I didn’t have that information when I declined. And the forty dollars was a conditional quote—the departing guest hadn’t agreed to pay it, so I wouldn’t call it money we lost.
+
+## Turn 06 — Artifact walkthrough — simulated minutes 18–20
+
+### Interviewer
+
+Returning to 103, please walk me through what happened from reception’s upstairs check until the guests received their keys, including when cleaning finished, inspection occurred, and reception learned the room was ready. Could you show the relevant entries, distinguishing recorded times from estimates and leaving any unknown times as unknown?
+
+### Respondent
+
+The upstairs check was around 12:08, from memory. Reception found the team finishing 102, with 103 untouched. I decided they should finish 102 before moving on. I don’t have a recorded minute for that decision.
+
+At 12:12, the notebook records that I corrected the guests’ expectation: approximately 13:15, subject to inspection. We offered a temporary double, which they declined because they needed separate beds.
+
+Here are the relevant fictional entries, with names hidden. The paper housekeeping sheet reads:
+
+> Room | Clean complete | Release inspection  
+> 102 | 12:15 | 12:18  
+> 103 | 13:05 | 13:12
+
+The WhatsApp messages read:
+
+> 12:19 [Housekeeping]: 102 finished and checked. Going into 103 now.  
+> 13:12 [Manager]: 103 inspected, ready. [Reception] can give keys.
+
+The 12:19 message tells us they reported moving into 103 then. It isn’t an exact cleaning-start record.
+
+The PMS note reads:
+
+> 13:14 | Reception note: [Manager] confirmed room inspected at 13:12
+
+So release was communicated at 13:12, and reception had recorded the confirmation by 13:14. We don’t have an exact message-read time.
+
+Finally, the notebook says:
+
+> 13:17 | 103 keys handed over.
+
+The PMS check-in was entered at 13:18; that’s the administrative entry, not the key-handover time. I can’t account precisely for each minute between inspection and keys. The recorded arrival-to-key interval was 77 minutes, but that wasn’t 77 minutes of cleaning.
+
+## Turn 07 — Frequency and loss — simulated minutes 20–24
+
+### Interviewer
+
+What was actually paid or refunded for this occasion, including the 60 GEL cash refund you mentioned and any other adjustment, if any? Could you show the relevant payment entries, with private details hidden, so we can check whether any amount appears more than once?
+
+### Respondent
+
+The guests had paid 420 GEL in cash the previous evening. We returned 60 GEL in cash on the nineteenth. We retained 360 GEL. There was one compensation refund, with entries recording both the reduction in the accommodation charge and the cash leaving the till.
+
+Here’s the fictional PMS excerpt, with identifying details removed:
+
+> 18 Sep 18:42 | Accommodation payment received | Cash | GEL 420.00  
+> 19 Sep 14:11 | Accommodation allowance | GEL -60.00 | Manager-approved service recovery  
+> 19 Sep 14:11 | Cash refund recorded | GEL 60.00 | RF-0919-01  
+> Revised accommodation charge: GEL 360.00 | Net payment retained: GEL 360.00 | Balance: GEL 0.00
+
+The separate refund voucher reads:
+
+> 19 Sep 2026 | 14:10  
+> Pay guest: GEL 60.00 cash  
+> Reason: Incorrect 12:30 room-readiness assurance; room keys delivered 13:17. Goodwill partial accommodation refund.  
+> Approved: [Manager]  
+> Paid: [Reception]  
+> Related original payment: GEL 420.00 cash, 18 Sep 2026
+
+And the cashbook:
+
+> 11:00 opening cash: GEL 700.00  
+> 14:10 | RF-0919-01 | [Reservation hidden] accommodation refund | OUT GEL 60.00  
+> 15:00 closing cash counted: GEL 640.00  
+> Other cash movements 11:00–15:00: none
+
+Those repeated sixty-GEL entries refer to the same refund. Adding them together would overstate it. No other compensation adjustment is recorded for this occasion. The separate forty-dollar late-checkout quote for 201 produced no charge or payment.
+
+## Turn 08 — Frequency and loss — simulated minutes 24–27
+
+### Interviewer
+
+For a closed period you can show, how many parties arriving between eleven and three, if any, received their keys later than a readiness time reception had given them, out of all parties arriving in that window during the same period? Could you show the records supporting both counts, keeping anything uncounted as unknown?
+
+### Respondent
+
+For the nineteenth, from 11:00 through 15:00 inclusive, I can show six arriving parties and one documented case of keys being handed over later than reception’s stated readiness time. I can’t establish whether that happened for any of the other five, because the register doesn’t record what readiness times they may have been given.
+
+Here’s the fictional arrival and key register, with guest details omitted:
+
+> Room | Party arrival | Keys handed over  
+> 101 | 13:40 | 13:40  
+> 102 | 14:20 | 14:20  
+> 103 | 12:00 | 13:17  
+> 201 | 14:03 | 14:03  
+> 202 | 14:35 | 14:35  
+> 203 | 14:58 | 14:58
+
+That supports the denominator: six parties arriving in that closed window.
+
+For 103, the notebook records:
+
+> 12:01 | Told them room should be ready 12:30 before checking with [housekeeping].  
+> 13:17 | 103 keys handed over.
+
+That supports the one documented case: keys were handed over 47 minutes after the original assurance. We subsequently corrected that assurance, but I wouldn’t erase it from the count.
+
+So I would report **one confirmed case among six arrivals, with readiness-promise history unknown for the other five**. Their same-minute arrival and key entries show no recorded wait on arrival; they don’t prove we met every time previously communicated to them.
+
+## Turn 09 — Past attempts and workarounds — simulated minutes 27–30
+
+### Interviewer
+
+What, if anything, have you changed in how you handle room-readiness information and promises, and when did you last make such a change?
+
+### Respondent
+
+The last change I can point to was on the nineteenth itself, at 13:15. For the next room, 201, we made the confirmation explicit.
+
+The incoming party had just confirmed a two o’clock arrival. Reception boxed 201 on the paper housekeeping sheet and got the housekeeping lead’s acknowledgement by phone. Then reception waited for my inspection and release call, which came at 13:55. The guests arrived at 14:03 and received their keys in the same recorded minute.
+
+It was a small change in how we used the paper and phone. It didn’t change the cleaning order—201 was already next. What it gave reception was an acknowledged priority and a definite release confirmation.
+
+That occasion went smoothly, but there was also enough time to clean the room. I wouldn’t claim the phone call alone made it work.
+
+I can show that we used that control that afternoon. I don’t have a record establishing that it became a consistently followed routine on every shift afterwards. My expectation is that reception checks before promising, and distinguishes an estimate from an inspected room. Making sure new staff understand and follow that is my responsibility.
+
+## Turn 10 — Past attempts and workarounds — simulated minutes 30–33
+
+### Interviewer
+
+Please walk me through the boxed-sheet and phone confirmation for 201, including the work each person did, any time spent on it that you can establish, and the result. Could you show the related entries with names hidden, distinguishing recorded details from recollection?
+
+### Respondent
+
+At 13:15, reception recorded that the incoming 201 party had confirmed a 14:00 arrival by phone. She boxed 201 on the housekeeping sheet and obtained the housekeeping lead’s acknowledgement by phone. That reinforced the existing order—201 was already next.
+
+Housekeeping then cleaned the room. I inspected it and phoned reception to release it. Reception could hand over the keys knowing it had passed inspection.
+
+These are the relevant fictional sheet entries, with names hidden:
+
+> 13:15 [Reception]: BOX 201 NEXT. Arrival confirmed 14:00. [Housekeeping lead] acknowledged by phone. Phone desk after inspection.  
+> 201 | Clean complete: 13:50 [Housekeeping lead] | Release inspection: 13:55 [Manager]  
+> 13:55 [Reception]: [Manager] called, 201 released.
+
+And the notebook records:
+
+> 14:03 | Incoming 201 arrived, keys handed over. [Reception]
+
+Those are recorded minutes. The 13:15 annotation groups several actions; it doesn’t separately timestamp the guest call, writing on the sheet and the acknowledgement call.
+
+We didn’t time the calls or the writing. We also didn’t record the cleaning start or inspection start, so I can’t turn those completion times into measured labor durations. There’s no measured saving in staff minutes here.
+
+The result was a confirmed room release before arrival, with keys handed over in the same recorded minute the party arrived. Reception didn’t need another upstairs progress hunt for this room. It worked, but I can’t separate the benefit of the confirmation from the fact that the team had enough time.
+
+## Turn 11 — Counterexample and competing cause — simulated minutes 33–37
+
+### Interviewer
+
+Comparing 103 with the smooth 201 arrival, what differences in available rooms, cleaning work, staffing, and time can you establish, and what remains unknown?
+
+### Respondent
+
+The clearest difference is how much time we had before the guests arrived.
+
+For 103, they arrived at noon instead of the expected three. Their room hadn’t been started when reception checked upstairs around 12:08—that check time is remembered. Cleaning completion is recorded at 13:05, inspection at 13:12, and keys at 13:17.
+
+They needed separate beds. Our other fixed twin was occupied, and the family rooms were occupied too. The two unsold rooms were fixed doubles. We offered temporary use of a double, which they declined.
+
+For 201, we got confirmation at 13:15 that the party expected to arrive at two. Cleaning finished at 13:50, inspection and the release call were at 13:55, and they arrived at 14:03. So the assigned room was already released eight minutes before arrival. We didn’t need a substitute.
+
+Staffing was the same: one experienced cleaner and one new worker cleaning together, with me inspecting. There wasn’t an extra team making 201 easier. Both rooms needed turnover cleaning, but we have no exact start times or task breakdowns establishing whether one required more work.
+
+The confirmation process was clearer for 201, but it was already next on the sheet and had time to be finished before arrival. I can’t honestly say that using the same phone rule for 103 would have produced a clean twin at noon. It could have helped us give an informed answer; it couldn’t remove the cleaning.
+
+## Turn 12 — Concrete next step — simulated minutes 37–40
+
+### Interviewer
+
+What follow-up, if any, has been agreed, including its date and who has authorized any associated record use? It’s fine if nothing has been agreed or authorization remains unknown.
+
+### Respondent
+
+Nothing has been agreed beyond taking notes for this rehearsal with staff names left out. We haven’t set a follow-up date, arranged a trial, or agreed to provide further records.
+
+The excerpts I showed were fictional rehearsal records. No real guest or operator has authorized record use. There’s also no permission to record the interview or use an attributable quotation; you said you would ask separately, and that hasn’t happened.
+
+
+CASE:
+{
+  "schema_version": "1.0",
+  "is_synthetic": true,
+  "case_id": "CASE_TURNAROUND_001",
+  "property_type": "unknown",
+  "room_count": 18,
+  "interviewee_role": "manager",
+  "interview_date": "2026-09-23",
+  "incident_date_range": {
+    "start": "2026-09-19",
+    "end": "2026-09-19"
+  },
+  "roles": [
+    {
+      "role_id": "manager",
+      "responsibility": "Sets working rules and cleaning order, makes exception decisions, performs final room inspections and releases, and approves compensation.",
+      "person_label": null
+    },
+    {
+      "role_id": "reception",
+      "responsibility": "Handles departures, arrivals, guest requests and readiness assurances; seeks progress information, records release confirmation, hands over keys, and pays approved compensation.",
+      "person_label": null
+    },
+    {
+      "role_id": "housekeeping_lead",
+      "responsibility": "Directs and performs cleaning while supporting the seasonal worker; reports cleaning progress and completion. The two worked together as one cleaning team.",
+      "person_label": null
+    },
+    {
+      "role_id": "seasonal_worker",
+      "responsibility": "Cleans alongside the experienced housekeeping lead; was not operating as an independent cleaning team.",
+      "person_label": null
+    }
+  ],
+  "incident_summary": "SYNTHETIC episode: On 19 September 2026, the party assigned fixed twin 103 arrived at 12:00 rather than the listed expected arrival of 15:00. Reception gave a 12:30 readiness assurance at 12:01 before checking with housekeeping. The team was following the manager's numerical order and had not started 103 when reception checked upstairs at approximately 12:08. The manager subsequently gave an approximate 13:15 estimate subject to inspection. Cleaning completion was recorded at 13:05, inspection and release communication at 13:12, and key handover at 13:17. The arrival-to-key interval was 77 minutes; keys were delivered 47 minutes after the original assurance. A single 60 GEL cash refund reduced the previously paid 420 GEL to 360 GEL retained. Normal check-in remained 15:00 and no early check-in guarantee was recorded. Physical cleaning, unavailable alternative twin accommodation, unchecked promises, and progress visibility all matter to interpretation. The separate declined USD 40 late-checkout quote for 201 generated no charge or payment. A later paper-and-phone confirmation for 201 succeeded without changing its place in the cleaning order.",
+  "trace": [
+    {
+      "step_id": "s01",
+      "sequence": 1,
+      "occurred_at": "2026-09-19T11:00:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Sheet issue minute appears in the fictional excerpt. The manager's reason for retaining the numerical order is recollection, not a recorded decision.",
+      "actor_role_id": "manager",
+      "recipient_role_id": "housekeeping_lead",
+      "source_system": "Paper housekeeping sheet",
+      "input_state": "Issued order: 101, 102, 103, 201, 202, 203. The manager reported that the first three rooms were vacated. The separate reservation excerpt lists 103 arrival at 15:00 but is not an 11:00 snapshot.",
+      "expected_action": "Housekeeping was instructed to follow the written order.",
+      "actual_outcome": "Housekeeping followed the numerical order. No inspected record connects the order with a shared morning review of arrival expectations.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_order",
+        "a_reservation",
+        "a_initial_account"
+      ]
+    },
+    {
+      "step_id": "s02",
+      "sequence": 2,
+      "occurred_at": "2026-09-19T11:03:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Request minute appears in the fictional notebook excerpt.",
+      "actor_role_id": "reception",
+      "recipient_role_id": "manager",
+      "source_system": "Reception notebook",
+      "input_state": "Outgoing 201 guest requested departure at 13:00. Reception quoted USD 40 only if approved; no acceptance was taken.",
+      "expected_action": "The manager was to decide whether to approve the requested exception.",
+      "actual_outcome": "Reception brought the conditional request to the manager.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_late_request",
+        "a_late_account"
+      ]
+    },
+    {
+      "step_id": "s03",
+      "sequence": 3,
+      "occurred_at": "2026-09-19T11:08:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Decision minute appears in the fictional notebook excerpt. The separately reported 11:15 checkout entry was not supplied as an inspected excerpt.",
+      "actor_role_id": "manager",
+      "recipient_role_id": "reception",
+      "source_system": "Reception notebook",
+      "input_state": "Another party was due into 201, but its dependable arrival time and the fit of remaining cleaning were unknown to the manager.",
+      "expected_action": "Approve or decline the requested late checkout.",
+      "actual_outcome": "The manager declined cautiously, without establishing physical impossibility. The respondent reported checkout at 11:15 with no late-checkout charge. The quote was unaccepted and produced no payment.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T11:08:00+04:00",
+      "artifact_refs": [
+        "a_late_request",
+        "a_late_account"
+      ]
+    },
+    {
+      "step_id": "s04",
+      "sequence": 4,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "The respondent said the sheet recorded 101 cleaning completion at 11:35, but that row was not supplied as an inspected excerpt. This reported time is not promoted to occurred_at.",
+      "actor_role_id": "housekeeping_lead",
+      "recipient_role_id": null,
+      "source_system": "Respondent's account of paper housekeeping sheet",
+      "input_state": "101 was first on the issued order; the lead and seasonal worker were cleaning together.",
+      "expected_action": "Complete cleaning of 101 in accordance with the written order.",
+      "actual_outcome": "The respondent reported cleaning completion for 101. No cleaning-start time or measured labor duration was established.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_initial_account",
+        "a_context"
+      ]
+    },
+    {
+      "step_id": "s05",
+      "sequence": 5,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "The respondent said the sheet recorded the manager's inspection of 101 at 11:40, but that row was not supplied as an inspected excerpt.",
+      "actor_role_id": "manager",
+      "recipient_role_id": null,
+      "source_system": "Respondent's account of paper housekeeping sheet",
+      "input_state": "101 cleaning had reportedly finished.",
+      "expected_action": "The manager performed final room inspections on this shift.",
+      "actual_outcome": "The manager reported inspecting 101; the cleaning team continued to 102.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_initial_account"
+      ]
+    },
+    {
+      "step_id": "s06",
+      "sequence": 6,
+      "occurred_at": "2026-09-19T12:00:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "103 arrival minute appears in the fictional arrival register.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Arrival and key register; reservation excerpt",
+      "input_state": "103 was assigned as a fixed twin. The reservation excerpt lists expected arrival at 15:00 and no early check-in guarantee.",
+      "expected_action": "No noon readiness commitment was established before this arrival; normal check-in was reported as 15:00.",
+      "actual_outcome": "The party arrived at 12:00 and waited in the courtyard.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_arrivals",
+        "a_reservation",
+        "a_initial_account"
+      ]
+    },
+    {
+      "step_id": "s07",
+      "sequence": 7,
+      "occurred_at": "2026-09-19T12:01:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "The fictional notebook excerpt supplied in Turn 08 records the assurance minute and promised readiness time.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook",
+      "input_state": "The party had arrived. Reception had not checked with housekeeping before giving a readiness time.",
+      "expected_action": "Reception's stated assurance was that the room should be ready at 12:30. The manager later stated an expectation that reception checks before promising.",
+      "actual_outcome": "Reception gave the 12:30 assurance without confirmation.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_arrivals",
+        "a_control_account"
+      ]
+    },
+    {
+      "step_id": "s08",
+      "sequence": 8,
+      "occurred_at": "2026-09-19T12:04:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Message-send minute appears in the fictional excerpt. Read and acknowledgement times are unknown.",
+      "actor_role_id": "reception",
+      "recipient_role_id": "housekeeping_lead",
+      "source_system": "WhatsApp",
+      "input_state": "103 guests were in the courtyard; reception lacked confirmation that cleaning had started.",
+      "expected_action": "Reception asked whether 103 had started and requested confirmation before giving another time.",
+      "actual_outcome": "The question was sent. The respondent reported no answer before reception went upstairs; the excerpt does not establish when housekeeping read it.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_progress_request",
+        "a_initial_account"
+      ]
+    },
+    {
+      "step_id": "s09",
+      "sequence": 9,
+      "occurred_at": null,
+      "time_basis": "estimate",
+      "time_note": "Approximately 12:08, recalled by the respondent; no recorded minute was supplied.",
+      "actor_role_id": "reception",
+      "recipient_role_id": "housekeeping_lead",
+      "source_system": "In-person upstairs check, described retrospectively",
+      "input_state": "Reception had not received an answer to the progress question before checking upstairs.",
+      "expected_action": "Establish the actual cleaning progress.",
+      "actual_outcome": "Reception found the team finishing 102 and 103 untouched. The time spent checking was not measured.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_readiness_account"
+      ]
+    },
+    {
+      "step_id": "s10",
+      "sequence": 10,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "Described after the upstairs check and before moving to 103; the decision minute was not recorded.",
+      "actor_role_id": "manager",
+      "recipient_role_id": "housekeeping_lead",
+      "source_system": "Respondent's recollection",
+      "input_state": "The team was finishing 102; 103 had not started.",
+      "expected_action": "The manager instructed the team to finish 102 before moving on.",
+      "actual_outcome": "The manager retained 102 ahead of 103. No exact time or separate acknowledgement record was supplied for this decision.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_readiness_account"
+      ]
+    },
+    {
+      "step_id": "s11",
+      "sequence": 11,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "The respondent described a notebook entry at 12:12, but did not supply that entry as an inspected excerpt.",
+      "actor_role_id": "manager",
+      "recipient_role_id": null,
+      "source_system": "Respondent's account of reception notebook",
+      "input_state": "103 had not started at the upstairs check. The guests required separate beds.",
+      "expected_action": "The revised estimate was approximately 13:15, subject to inspection, rather than an unconditional release time.",
+      "actual_outcome": "The manager corrected the guests' expectation and offered temporary use of a double, which they declined. No suitable alternative twin was reported available.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_readiness_account",
+        "a_capacity"
+      ]
+    },
+    {
+      "step_id": "s12",
+      "sequence": 12,
+      "occurred_at": "2026-09-19T12:15:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "102 cleaning completion minute appears in the fictional sheet excerpt; cleaning start is unknown.",
+      "actor_role_id": "housekeeping_lead",
+      "recipient_role_id": null,
+      "source_system": "Paper housekeeping sheet",
+      "input_state": "The team had been instructed to finish 102 before moving to 103.",
+      "expected_action": "Finish cleaning 102.",
+      "actual_outcome": "102 cleaning completion was recorded at 12:15.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T12:15:00+04:00",
+      "artifact_refs": [
+        "a_readiness_records",
+        "a_readiness_account"
+      ]
+    },
+    {
+      "step_id": "s13",
+      "sequence": 13,
+      "occurred_at": "2026-09-19T12:18:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "102 release inspection minute appears in the fictional sheet excerpt; inspection start is unknown.",
+      "actor_role_id": "manager",
+      "recipient_role_id": null,
+      "source_system": "Paper housekeeping sheet",
+      "input_state": "102 cleaning completion was recorded at 12:15.",
+      "expected_action": "Inspect the cleaned room before release.",
+      "actual_outcome": "102 release inspection was recorded at 12:18.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T12:18:00+04:00",
+      "artifact_refs": [
+        "a_readiness_records",
+        "a_context"
+      ]
+    },
+    {
+      "step_id": "s14",
+      "sequence": 14,
+      "occurred_at": "2026-09-19T12:19:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Message-send minute appears in the fictional excerpt. It is not an exact cleaning-start timestamp or a recorded read acknowledgement.",
+      "actor_role_id": "housekeeping_lead",
+      "recipient_role_id": null,
+      "source_system": "WhatsApp",
+      "input_state": "102 was reported finished and checked.",
+      "expected_action": "The next room in the instructed order was 103.",
+      "actual_outcome": "Housekeeping sent: 102 finished and checked; going into 103 now. Exact cleaning start and message-read time remain unknown.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_readiness_records"
+      ]
+    },
+    {
+      "step_id": "s15",
+      "sequence": 15,
+      "occurred_at": "2026-09-19T13:05:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "103 cleaning completion minute appears in the fictional sheet excerpt. No measured cleaning duration follows from this endpoint.",
+      "actor_role_id": "housekeeping_lead",
+      "recipient_role_id": null,
+      "source_system": "Paper housekeeping sheet",
+      "input_state": "The lead and seasonal worker were cleaning together; 103 followed 102.",
+      "expected_action": "Complete turnover cleaning before the manager's release inspection.",
+      "actual_outcome": "103 cleaning completion was recorded at 13:05.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T13:05:00+04:00",
+      "artifact_refs": [
+        "a_readiness_records",
+        "a_context"
+      ]
+    },
+    {
+      "step_id": "s16",
+      "sequence": 16,
+      "occurred_at": "2026-09-19T13:12:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Both the release inspection and the manager's message carry the recorded minute 13:12. Their within-minute order is not separately timed.",
+      "actor_role_id": "manager",
+      "recipient_role_id": "reception",
+      "source_system": "Paper housekeeping sheet and WhatsApp",
+      "input_state": "103 cleaning completion was recorded at 13:05; release depended on inspection.",
+      "expected_action": "Inspect 103 and tell reception when keys could be issued.",
+      "actual_outcome": "The manager recorded inspection and sent that 103 was inspected and ready and reception could give keys.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T13:12:00+04:00",
+      "artifact_refs": [
+        "a_readiness_records"
+      ]
+    },
+    {
+      "step_id": "s17",
+      "sequence": 17,
+      "occurred_at": "2026-09-19T13:14:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "The reception note is timestamped 13:14; this establishes a recorded confirmation by that minute, not the exact message-read time.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "PMS note",
+      "input_state": "The manager had communicated inspection and release at 13:12.",
+      "expected_action": "Reception's stated working expectation was to distinguish an estimate from an inspected room.",
+      "actual_outcome": "Reception recorded that the manager confirmed the room was inspected at 13:12.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T13:14:00+04:00",
+      "artifact_refs": [
+        "a_readiness_records",
+        "a_control_account"
+      ]
+    },
+    {
+      "step_id": "s18",
+      "sequence": 18,
+      "occurred_at": "2026-09-19T13:15:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "The fictional 13:15 sheet annotation groups arrival confirmation, boxing 201, and phone acknowledgement. Individual action and acknowledgement timestamps are unknown.",
+      "actor_role_id": "reception",
+      "recipient_role_id": "housekeeping_lead",
+      "source_system": "Paper housekeeping sheet and phone, recorded in sheet annotation",
+      "input_state": "The incoming 201 party had confirmed expected arrival at 14:00. 201 was already next in the cleaning order.",
+      "expected_action": "Keep 201 next, obtain housekeeping acknowledgement, and phone the desk after inspection.",
+      "actual_outcome": "Reception boxed 201 and recorded housekeeping lead acknowledgement by phone. This reinforced the existing order rather than changing it.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_control_records",
+        "a_control_account"
+      ]
+    },
+    {
+      "step_id": "s19",
+      "sequence": 19,
+      "occurred_at": "2026-09-19T13:17:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Key handover at 13:17 appears in the fictional notebook and arrival register. The separately reported 13:18 administrative check-in entry was not supplied as an inspected excerpt.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook and arrival/key register",
+      "input_state": "103 had been released at 13:12 and reception recorded confirmation by 13:14.",
+      "expected_action": "Issue keys following release. The original 12:30 assurance had been replaced by an approximate 13:15 estimate subject to inspection.",
+      "actual_outcome": "Keys were handed over at 13:17: 77 minutes after arrival and 47 minutes after the original assurance. The manager could not account precisely for each minute between release and handover. These intervals are not staff labor durations.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T13:17:00+04:00",
+      "artifact_refs": [
+        "a_readiness_records",
+        "a_arrivals",
+        "a_readiness_account"
+      ]
+    },
+    {
+      "step_id": "s20",
+      "sequence": 20,
+      "occurred_at": "2026-09-19T13:50:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "201 cleaning completion minute appears in the fictional sheet excerpt; its start time and task breakdown were not recorded.",
+      "actor_role_id": "housekeeping_lead",
+      "recipient_role_id": null,
+      "source_system": "Paper housekeeping sheet",
+      "input_state": "201 was next, its 14:00 expected arrival was recorded, and the lead had acknowledged by phone.",
+      "expected_action": "Complete cleaning before release inspection.",
+      "actual_outcome": "201 cleaning completion was recorded at 13:50.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T13:50:00+04:00",
+      "artifact_refs": [
+        "a_control_records"
+      ]
+    },
+    {
+      "step_id": "s21",
+      "sequence": 21,
+      "occurred_at": "2026-09-19T13:55:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "201 release inspection and reception's record of the manager's call both carry 13:55. Exact call duration and within-minute sequence are unknown.",
+      "actor_role_id": "manager",
+      "recipient_role_id": "reception",
+      "source_system": "Paper housekeeping sheet and recorded release phone call",
+      "input_state": "201 cleaning completion was recorded at 13:50; the sheet instructed a phone call after inspection.",
+      "expected_action": "Inspect 201 and explicitly release it to reception.",
+      "actual_outcome": "The manager inspected and called reception. Reception recorded that 201 was released.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T13:55:00+04:00",
+      "artifact_refs": [
+        "a_control_records"
+      ]
+    },
+    {
+      "step_id": "s22",
+      "sequence": 22,
+      "occurred_at": "2026-09-19T14:03:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "201 arrival and key handover share the recorded minute 14:03; sub-minute waiting is not established.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook and arrival/key register",
+      "input_state": "201 had been inspected and released eight minutes before the recorded arrival.",
+      "expected_action": "Hand over keys for the released room on arrival.",
+      "actual_outcome": "The party arrived and received keys in the same recorded minute. Reception reported no additional upstairs progress search for this room. No measured staff-time saving was established.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T14:03:00+04:00",
+      "artifact_refs": [
+        "a_control_records",
+        "a_arrivals"
+      ]
+    },
+    {
+      "step_id": "s23",
+      "sequence": 23,
+      "occurred_at": "2026-09-19T14:10:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "The refund voucher and cashbook record 14:10. The PMS allowance and refund entries are timestamped 14:11 and represent the same transaction, not another payment.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Refund voucher RF-0919-01, cashbook, and PMS financial entries",
+      "input_state": "The manager approved a goodwill refund for the incorrect 12:30 assurance and inconvenience. Original cash payment was 420 GEL on 18 September at 18:42.",
+      "expected_action": "Pay the approved 60 GEL cash refund.",
+      "actual_outcome": "Reception paid 60 GEL cash once. The revised accommodation charge and net payment retained were both 360 GEL, with zero balance. Cashbook opening cash of 700 GEL less this refund reconciled to 640 GEL closing cash, with no other movements from 11:00 to 15:00.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T14:10:00+04:00",
+      "artifact_refs": [
+        "a_cash"
+      ]
+    }
+  ],
+  "handover_failure_mechanism": {
+    "summary": "SYNTHETIC analyst reconstruction: At s07, reception gave a 12:30 assurance before checking housekeeping progress. At s08, reception asked whether 103 had started; message-read and acknowledgement times are unknown. The remembered upstairs check at s09 found 102 still being finished and 103 untouched. The manager stated that reception should check before promising, but no inspected contemporaneous morning handover establishes a shared progress view or an acknowledgement deadline. Cleaning completion at s15 and inspected release at s16 were distinct states; reception recorded release confirmation at s17 before key handover at s19. The manager and fictional refund records associate the incorrect assurance and inconvenience with one 60 GEL cash refund. This establishes a reported unchecked promise and a progress-information gap, not that a missed message or numerical order alone caused the full wait. Physical cleaning, separate-bed requirements, limited substitute rooms, and earlier-than-expected arrival remain competing explanations. No specific failure is established for the minutes between inspection and key handover.",
+    "step_ids": [
+      "s01",
+      "s07",
+      "s08",
+      "s09",
+      "s15",
+      "s16",
+      "s17",
+      "s19",
+      "s23"
+    ],
+    "artifact_refs": [
+      "a_order",
+      "a_reservation",
+      "a_progress_request",
+      "a_readiness_account",
+      "a_readiness_records",
+      "a_arrivals",
+      "a_cash",
+      "a_control_account",
+      "a_capacity"
+    ]
+  },
+  "verified_cash_leakage_gel": 60,
+  "staff_rework_minutes": null,
+  "observed_frequency_per_month": 30,
+  "observation_window": {
+    "start": "2026-09-19",
+    "end": "2026-09-19"
+  },
+  "incident_count": 1,
+  "eligible_opportunities": 6,
+  "opportunity_unit": "Arriving party recorded from 11:00 through 15:00 inclusive on 19 September 2026. One documented affected party among six arrivals; readiness-promise histories for the other five are unknown. The count is a confirmed minimum, not a fully ascertained total. The value 30 is only the schema's 30-day-equivalent normalization of one documented case over one inclusive calendar day; it is not an observed monthly total, a full-day exposure measure, or a forecast.",
+  "quantification_artifacts": {
+    "cash": [
+      "a_cash"
+    ],
+    "rework": [],
+    "frequency": [
+      "a_arrivals"
+    ]
+  },
+  "supporting_artifacts": [
+    {
+      "artifact_id": "a_context",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 01 respondent operating-context account",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 01: Respondent reports 18 rooms, manager inspection and compensation responsibilities, reception duties, and a housekeeping lead cleaning together with a seasonal worker. Reviewed=true means review of the delivered narrative WITHIN THE FICTION only; this is not an inspected operational record, direct observation of work, or real-world confirmation.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_initial_account",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 02 and Turn 03 respondent incident account",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 02 and Turn 03: Manager describes the 19 September incident, retained numerical order, no confirmed answer before the upstairs check, normal 15:00 check-in, and responsibility for the order. Reports 101 completion at 11:35 and inspection at 11:40 without supplying those rows as inspected excerpts. Reviewed=true means review of the account WITHIN THE FICTION only; recollection and descriptions of records are not promoted to inspected records or real-world verification.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_order",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 04 housekeeping sheet excerpt",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 04: Quoted sheet dated 19 September 2026, issued 11:00, gives order 101, 102, 103, 201, 202, 203. It does not document why that order was chosen or a shared review of arrivals. D and reviewed=true mean the supplied narrative excerpt was inspected WITHIN THE FICTION only; no actual hotel record was inspected or authenticated.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_reservation",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 04 PMS reservation excerpt",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 04: Quoted reservation excerpt lists fixed twin 103, expected arrival 15:00, and no early check-in guarantee. It is not an 11:00 snapshot and has no supplied edit history, last-view time, or proof housekeeping saw it. D and reviewed=true mean inspection of this supplied excerpt WITHIN THE FICTION only; no actual PMS access or authentication occurred.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_progress_request",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 04 WhatsApp 12:04 excerpt",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 04: Reception's quoted 12:04 message says 103 guests are in the courtyard, asks whether cleaning has started, and requests confirmation before another time is given. It does not establish read or acknowledgement time. D and reviewed=true mean the excerpt was inspected WITHIN THE FICTION only; no actual communications were accessed or verified.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_late_request",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 05 late-checkout notebook excerpt",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 05: Quoted notebook records 201's 11:03 request to remain until 13:00, USD 40 conditional on approval with no acceptance taken, and the manager's 11:08 refusal because next-arrival timing and cleaning readiness were uncertain. D and reviewed=true mean inspection of this narrative excerpt WITHIN THE FICTION only; no actual request or revenue loss was verified.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_late_account",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 05 respondent explanation of 201 decision",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 05: Respondent describes six turnovers, one joint cleaning team, an uncertain next arrival, no confirmed progress fit, and a cautious refusal rather than proven physical impossibility. Reports an 11:15 PMS checkout entry without supplying it as an inspected excerpt. The incoming 14:00 expectation became known at 13:15; the unaccepted USD 40 quote was not money lost. Reviewed=true means narrative review WITHIN THE FICTION only, not inspection of the described checkout record or real-world verification.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_readiness_account",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 06 respondent chronology and timing qualifications",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 06: Respondent recalls the upstairs check around 12:08 and an untimed decision to finish 102. Describes a 12:12 notebook entry revising the estimate to approximately 13:15 subject to inspection, a declined temporary double, and an administrative 13:18 check-in entry; these particular entries were not supplied as inspected excerpts. The respondent cannot explain each release-to-key minute or measure cleaning from guest waiting. Reviewed=true means review of this account WITHIN THE FICTION only; reported exact times are not treated as inspected timestamp evidence.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_readiness_records",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 06 quoted sheet, WhatsApp, PMS note, and key-handover notebook excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 06: Quoted records show 102 cleaning complete 12:15 and inspection 12:18; 103 cleaning complete 13:05 and inspection 13:12; housekeeping's 12:19 move-to-103 report; manager's 13:12 release message; reception's 13:14 confirmation note; and keys handed over at 13:17. Cleaning-start and message-read times are not established. D and reviewed=true mean these supplied excerpts were inspected WITHIN THE FICTION only, not actual records or observed real-world work.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_cash",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 07 PMS financial excerpt, refund voucher RF-0919-01, and cashbook excerpt",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 07: Quoted records show 420 GEL cash received on 18 September at 18:42, one 60 GEL cash refund at 14:10 on 19 September approved by the manager and paid by reception, and corresponding 14:11 PMS allowance and refund entries. Revised charge and net retained payment are 360 GEL, balance zero. Cashbook reconciles 700 GEL opening less 60 GEL to 640 GEL closing, with no other 11:00–15:00 movements. The allowance and cash refund are two representations of one compensation event, not 120 GEL of leakage. D and reviewed=true mean reconciliation of supplied excerpts WITHIN THE FICTION only; no actual cash loss or financial record was verified.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_arrivals",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 08 arrival/key register and 103 assurance notebook excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 08: Quoted register contains six parties arriving from 11:00 through 15:00 inclusive on 19 September: 101 at 13:40, 102 at 14:20, 103 at 12:00, 201 at 14:03, 202 at 14:35, and 203 at 14:58. All except 103 have keys in the arrival minute; 103 keys are 13:17. Quoted notebook records a 12:01 assurance of 12:30 readiness before checking housekeeping. One documented affected party is established; promise histories of the other five are unknown. D and reviewed=true mean inspection of these supplied excerpts WITHIN THE FICTION only; neither complete incident ascertainment nor real-world frequency was verified.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_control_account",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 09 respondent process-change account",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 09: Respondent describes boxing 201, phone acknowledgement, and waiting for inspection release on the same afternoon. 201 was already next, so the cleaning order did not change. The manager expects reception to check before promising and distinguish estimates from inspected readiness, but has no evidence of consistent later adoption. Reviewed=true means review of this account WITHIN THE FICTION only; no general effectiveness, ongoing routine, or real-world control test was verified.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_control_records",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 10 quoted 201 sheet and arrival notebook excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 10: Quoted sheet groups at 13:15 a confirmed 14:00 arrival, BOX 201 NEXT, housekeeping lead phone acknowledgement, and instruction to phone after inspection. It records cleaning complete 13:50, manager inspection 13:55, and reception's 13:55 release-call note. Quoted notebook records arrival and keys at 14:03. Calls, writing, cleaning starts, inspection starts, and labor savings were not measured. D and reviewed=true mean inspection of supplied operational excerpts WITHIN THE FICTION only; this is one described successful use, not an actual benchmark, replay, controlled experiment, or verified real-world test.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_capacity",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 11 respondent comparison of 103 and 201",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 11: Respondent identifies more time before arrival as the clearest difference for 201. Staffing was unchanged: one experienced cleaner and one newer worker together, manager inspecting. For 103, the other fixed twin and family rooms were occupied, two unsold rooms were fixed doubles, and temporary double use was declined. Task breakdowns and exact starts are unknown, so differences in cleaning workload cannot be established. Reviewed=true means review of this account WITHIN THE FICTION only; capacity statements were not independently observed or verified against actual inventory records.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_permission_account",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_turnaround_deadlock.md Turn 12 respondent follow-up and permission statement",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC transcript_turnaround_deadlock.md Turn 12: Respondent states that only rehearsal notes with staff names omitted were agreed. No follow-up date, trial, further records, interview recording, or attributable quotation was agreed. The shown excerpts were fictional and no real guest or operator authorized record use. Reviewed=true means review of this delivered statement WITHIN THE FICTION only; it creates no real consent, access authorization, integration permission, or commitment.",
+      "collected_on": "2026-09-23"
+    }
+  ],
+  "root_cause_code": "ARRIVAL_READINESS",
+  "alternative_explanations": [
+    "103 arrived three hours before its listed expected arrival and before the normal 15:00 check-in time; no early check-in guarantee was shown.",
+    "Physical turnover cleaning remained to be done. The experienced cleaner and seasonal worker worked together rather than as two independent teams.",
+    "Separate beds constrained substitution: the other fixed twin and family rooms were reported occupied, while the two unsold rooms were fixed doubles. The party declined temporary double use.",
+    "Reception promised before checking. The manager acknowledged responsibility for training and working rules, so the account does not establish a message-delivery defect as the primary cause.",
+    "The manager retained numerical order and later decided to finish 102 before starting 103. The transcript does not establish that another order would have made a suitable twin ready at noon.",
+    "The 12:04 message has no read timestamp. Absence of an answer before the remembered upstairs check does not establish that housekeeping saw and ignored it.",
+    "The successful 201 case had more time before arrival and was already next. Its outcome does not isolate the contribution of phone acknowledgement from physical capacity and timing.",
+    "Cleaning and inspection start times, task breakdowns, call durations, and writing time are unknown; neither comparative labor demand nor staff savings can be calculated.",
+    "The declined late checkout for 201 was a cautious decision under uncertainty, not established physical impossibility or a measured loss. The USD 40 quote was unaccepted.",
+    "The five minutes between 103's recorded inspection and key handover are not fully explained and do not by themselves establish another handover failure."
+  ],
+  "a2a_suitability": {
+    "distinct_operational_roles": 3,
+    "asynchronous_state_dependencies": true,
+    "dependencies": [
+      {
+        "from_step_id": "s01",
+        "to_step_id": "s04",
+        "from_role_id": "manager",
+        "to_role_id": "housekeeping_lead",
+        "state_dependency": "Housekeeping's sequence followed the manager's written room order.",
+        "constraint": "One joint cleaning team followed the issued sequence; the order did not document an arrival-time comparison.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_order",
+          "a_initial_account",
+          "a_context"
+        ]
+      },
+      {
+        "from_step_id": "s15",
+        "to_step_id": "s16",
+        "from_role_id": "housekeeping_lead",
+        "to_role_id": "manager",
+        "state_dependency": "103 required cleaning completion before the manager's release inspection.",
+        "constraint": "Recorded cleaning completion was 13:05 and release inspection was 13:12; cleaning completion alone was not the release state.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_readiness_records"
+        ]
+      },
+      {
+        "from_step_id": "s16",
+        "to_step_id": "s19",
+        "from_role_id": "manager",
+        "to_role_id": "reception",
+        "state_dependency": "Reception needed the manager's inspected-ready confirmation before issuing keys.",
+        "constraint": "Release message was 13:12, reception recorded confirmation by 13:14, and keys were handed over at 13:17. Exact message-read time is unknown.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_readiness_records"
+        ]
+      },
+      {
+        "from_step_id": "s18",
+        "to_step_id": "s20",
+        "from_role_id": "reception",
+        "to_role_id": "housekeeping_lead",
+        "state_dependency": "Reception recorded 201's confirmed expected arrival and reinforced its next position with phone acknowledgement.",
+        "constraint": "The 13:15 annotation groups several actions; it establishes acknowledgement in the account but not an exact acknowledgement timestamp or a changed cleaning order.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_control_records",
+          "a_control_account"
+        ]
+      },
+      {
+        "from_step_id": "s20",
+        "to_step_id": "s21",
+        "from_role_id": "housekeeping_lead",
+        "to_role_id": "manager",
+        "state_dependency": "201 cleaning completion preceded manager inspection and release.",
+        "constraint": "Cleaning completion was recorded at 13:50 and release inspection at 13:55. Start times and labor durations are unknown.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_control_records"
+        ]
+      },
+      {
+        "from_step_id": "s21",
+        "to_step_id": "s22",
+        "from_role_id": "manager",
+        "to_role_id": "reception",
+        "state_dependency": "Reception used the manager's release call to know 201 had passed inspection before handing over keys.",
+        "constraint": "Release preceded arrival by eight recorded minutes; the party received keys in its arrival minute.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_control_records"
+        ]
+      }
+    ],
+    "single_database_crud": null,
+    "simple_rule_inadequacy_rationale": "No inadequacy of the strongest simple control was established. The observed comparator combined a marked shared paper priority, housekeeping acknowledgement, and explicit manager release to reception; it succeeded for 201 without reordering rooms. An updated shared priority queue with explicit ownership and readiness acknowledgement remains a possible engineering comparison, not a tested or authorized intervention. The transcript does not establish that adaptive multi-agent coordination outperforms such a control. Three operational roles appear as trace actors or recipients; the seasonal worker is described but has no separately attributed trace action."
+  },
+  "gate_evidence": {
+    "real_problem": {
+      "recent_episode_confirmed": true,
+      "recency_rationale": "Within this SYNTHETIC rehearsal, the episode is dated 19 September 2026, four days before the scenario interview date. The manager described the numerical order as the usual default and a same-day control change, but did not establish consistent subsequent practice. This is not real operator confirmation; is_synthetic remains true and the real-problem gate must not be treated as passed for actual research.",
+      "operator_confirmed_consequence": true,
+      "confirmation_role_id": "manager",
+      "consequence": "Within the fiction, the manager reports an incorrect 12:30 assurance, courtyard waiting until 13:17, and one 60 GEL cash refund. Quoted narrative records support 77 minutes from arrival to keys, 47 minutes after the initial assurance, and 360 GEL retained from a 420 GEL payment. No independent participant was interviewed.",
+      "artifact_refs": [
+        "a_initial_account",
+        "a_arrivals",
+        "a_readiness_records",
+        "a_cash"
+      ]
+    },
+    "materiality": {
+      "operator_confirmed": null,
+      "rationale": "The respondent identified the assurance and information problems and approved compensation, but was not asked to establish the consequence's materiality relative to other problems or financial priorities. One documented case among six arrivals does not establish recurrence, and the other five promise histories are unknown.",
+      "artifact_refs": [
+        "a_initial_account",
+        "a_cash",
+        "a_arrivals"
+      ]
+    },
+    "software_leverage": {
+      "software_only": null,
+      "binding_constraint": "unknown",
+      "permitted_action": null,
+      "available_information": "The supplied fictional records contain the numerical order, a reservation excerpt listing 15:00 expected arrival without an 11:00 snapshot or edit history, the 12:04 progress request, later cleaning completion and release records, and a 13:15 confirmation of 201's 14:00 expected arrival. Cleaning-start and message-read times are missing. The 201 arrival confirmation was not available at the 11:08 refusal. No authorized software action was elicited.",
+      "artifact_refs": [
+        "a_order",
+        "a_reservation",
+        "a_progress_request",
+        "a_late_account",
+        "a_readiness_records",
+        "a_control_records",
+        "a_capacity"
+      ]
+    },
+    "access_authority": {
+      "inputs_available": null,
+      "adapter_mode": "unknown",
+      "adapter_description": null,
+      "write_limits": null,
+      "trial_approver_role_id": null,
+      "authority_confirmed": false,
+      "artifact_refs": [
+        "a_permission_account"
+      ]
+    },
+    "feasibility": {
+      "estimated_hours": null,
+      "bounded_workflow": null,
+      "deterministic_oracle": null,
+      "replay_case_refs": [],
+      "baseline_comparison": null,
+      "failure_recovery_test": null,
+      "artifact_refs": []
+    },
+    "simple_rule": {
+      "tested": true,
+      "baseline_description": "Limited to one actual use described WITHIN THE FICTION: reception boxed 201 on the shared paper sheet, recorded its confirmed expected arrival, obtained housekeeping lead acknowledgement by phone, and waited for the manager's inspection and release call. 201 was already next, so the order did not change. This is an operational example rather than a controlled benchmark or engineering test. Its sufficiency across other arrivals or shifts was not established.",
+      "observed_failure": null,
+      "simple_rule_sufficient": null,
+      "artifact_refs": [
+        "a_control_records",
+        "a_control_account",
+        "a_capacity"
+      ]
+    }
+  },
+  "scores": {
+    "severity": {
+      "rating": 1,
+      "rationale": "Provisional reviewer assessment of the SYNTHETIC account: one reconciled 60 GEL cash refund and a missed readiness assurance establish a concrete consequence within the fiction. Broader seriousness, recurrence, staff rework, and the operator's materiality judgment were not established.",
+      "artifact_refs": [
+        "a_cash",
+        "a_arrivals",
+        "a_initial_account"
+      ]
+    },
+    "a2a_fit": {
+      "rating": 2,
+      "rationale": "Provisional reviewer assessment within the fiction: manager, reception, and housekeeping have sequential state dependencies around cleaning, inspection, and key release. The observed successful paper-and-phone control supports a mostly fixed handoff interpretation; superiority of adaptive coordination and rejection of a simpler shared-state workflow remain unestablished.",
+      "artifact_refs": [
+        "a_readiness_records",
+        "a_control_records",
+        "a_capacity"
+      ]
+    },
+    "feasibility": {
+      "rating": null,
+      "rationale": "No build estimate, adapter, permitted workflow, replay set, deterministic oracle, baseline benchmark, or recovery test was elicited. Narrative excerpts do not establish engineering feasibility.",
+      "artifact_refs": []
+    },
+    "evidence": {
+      "rating": 2,
+      "rationale": "Provisional reviewer assessment of internal completeness only: the supplied SYNTHETIC excerpts reconstruct several event times, one cash refund, a six-arrival denominator, and a smooth comparator. Important timestamps remain reported or unknown, five promise histories are missing, and there is no independent role confirmation. This rating does not represent authentic hotel evidence or override rejection of synthetic cases.",
+      "artifact_refs": [
+        "a_readiness_records",
+        "a_cash",
+        "a_arrivals",
+        "a_control_records",
+        "a_permission_account"
+      ]
+    },
+    "frequency": {
+      "rating": 1,
+      "rationale": "Only one documented affected party was established among six arrivals in the four-hour window on one day. Other parties' promise histories are unknown, so recurrence and a complete failure rate remain unestablished. The top-level value 30 is the required one-day count normalization of the confirmed minimum, not an observed monthly frequency or extrapolation.",
+      "artifact_refs": [
+        "a_arrivals"
+      ]
+    },
+    "preventable_share": {
+      "rating": null,
+      "rationale": "The respondent distinguished better-informed promises from the physical work needed to prepare a twin. No tested, permitted intervention or quantified preventable share was established, and the smoother 201 case had different time available before arrival.",
+      "artifact_refs": [
+        "a_initial_account",
+        "a_capacity",
+        "a_control_records"
+      ]
+    },
+    "adoption": {
+      "rating": 0,
+      "rationale": "The respondent explicitly stated that no follow-up date, trial, further-record provision, or real record-use authorization was agreed. Rehearsal note-taking consent does not establish adoption or operational access.",
+      "artifact_refs": [
+        "a_permission_account"
+      ]
+    }
+  },
+  "reviewer": "SYNTHETIC_REVIEWER_001: model-generated transcript assessment for this rehearsal; not an accountable human field review, real-world verification, or selection decision."
+}
+
+EVALUATION:
+{
+  "normal_evaluation": {
+    "case_id": "CASE_TURNAROUND_001",
+    "status": "rejected",
+    "accepted": false,
+    "errors": [],
+    "gates": {
+      "G1": {
+        "passed": false,
+        "reasons": [
+          "Synthetic cases cannot establish a real problem outside --self-test.",
+          "Need reviewed operator record/direct observation; press or analyst opinion alone is insufficient.",
+          "Need a recorded consequence confirmation or direct observation.",
+          "Every trace step needs reviewed primary episode evidence."
+        ]
+      },
+      "G2": {
+        "passed": false,
+        "reasons": [
+          "Need repeated incidents or an operator-confirmed sufficiently serious consequence with evidence."
+        ]
+      },
+      "G3": {
+        "passed": false,
+        "reasons": [
+          "Need evidenced asynchronous cross-role state/constraint dependencies, not an asserted flag alone.",
+          "Single-database CRUD or an unknown CRUD assessment does not establish A2A fit.",
+          "Identify the consequential negotiation/ownership/acknowledgement failure and its trace steps."
+        ]
+      },
+      "G4": {
+        "passed": false,
+        "reasons": [
+          "Binding physical/hardware, labor-economics, external-demand, or unknown constraint cannot pass as software leverage.",
+          "Specify an evidenced permitted software action and the information available to change the failure path."
+        ]
+      },
+      "G5": {
+        "passed": false,
+        "reasons": [
+          "Need available/redacted inputs and reviewed access evidence.",
+          "Need a usable adapter/import or explicitly honest simulator; assumed integration is insufficient.",
+          "Need explicit write limits and evidenced authority of a role able to approve trial actions."
+        ]
+      },
+      "G6": {
+        "passed": false,
+        "reasons": [
+          "Need an explicit bounded estimate within 115 hours.",
+          "Need an end-to-end boundary, deterministic state oracle, baseline comparison, and recovery test.",
+          "Need available reviewed replay-case artifacts.",
+          "Feasibility needs supporting artifacts, not only an optimistic estimate."
+        ]
+      },
+      "G7": {
+        "passed": false,
+        "reasons": [
+          "A simple rule/task-list baseline must be tested and shown insufficient; unknown or sufficient fails.",
+          "Describe the tested simple control, its observed failure, and why dependency negotiation/adaptation matters.",
+          "Need reviewed evidence of the baseline comparison."
+        ]
+      }
+    },
+    "weighted_score": null,
+    "contributions": {},
+    "selection_reasons": [
+      "Rejected before scoring: G1, G2, G3, G4, G5, G6, G7"
+    ],
+    "synthetic_test": false,
+    "qualification": "Internal screening of recorded evidence; not verified truth or an official GITA result."
+  },
+  "synthetic_exception_evaluation": {
+    "case_id": "CASE_TURNAROUND_001",
+    "status": "rejected",
+    "accepted": false,
+    "errors": [],
+    "gates": {
+      "G1": {
+        "passed": false,
+        "reasons": [
+          "Need reviewed operator record/direct observation; press or analyst opinion alone is insufficient.",
+          "Need a recorded consequence confirmation or direct observation.",
+          "Every trace step needs reviewed primary episode evidence."
+        ]
+      },
+      "G2": {
+        "passed": false,
+        "reasons": [
+          "Need repeated incidents or an operator-confirmed sufficiently serious consequence with evidence."
+        ]
+      },
+      "G3": {
+        "passed": false,
+        "reasons": [
+          "Need evidenced asynchronous cross-role state/constraint dependencies, not an asserted flag alone.",
+          "Single-database CRUD or an unknown CRUD assessment does not establish A2A fit.",
+          "Identify the consequential negotiation/ownership/acknowledgement failure and its trace steps."
+        ]
+      },
+      "G4": {
+        "passed": false,
+        "reasons": [
+          "Binding physical/hardware, labor-economics, external-demand, or unknown constraint cannot pass as software leverage.",
+          "Specify an evidenced permitted software action and the information available to change the failure path."
+        ]
+      },
+      "G5": {
+        "passed": false,
+        "reasons": [
+          "Need available/redacted inputs and reviewed access evidence.",
+          "Need a usable adapter/import or explicitly honest simulator; assumed integration is insufficient.",
+          "Need explicit write limits and evidenced authority of a role able to approve trial actions."
+        ]
+      },
+      "G6": {
+        "passed": false,
+        "reasons": [
+          "Need an explicit bounded estimate within 115 hours.",
+          "Need an end-to-end boundary, deterministic state oracle, baseline comparison, and recovery test.",
+          "Need available reviewed replay-case artifacts.",
+          "Feasibility needs supporting artifacts, not only an optimistic estimate."
+        ]
+      },
+      "G7": {
+        "passed": false,
+        "reasons": [
+          "A simple rule/task-list baseline must be tested and shown insufficient; unknown or sufficient fails.",
+          "Describe the tested simple control, its observed failure, and why dependency negotiation/adaptation matters.",
+          "Need reviewed evidence of the baseline comparison."
+        ]
+      }
+    },
+    "weighted_score": null,
+    "contributions": {},
+    "selection_reasons": [
+      "Rejected before scoring: G1, G2, G3, G4, G5, G6, G7"
+    ],
+    "synthetic_test": true,
+    "qualification": "Internal screening of recorded evidence; not verified truth or an official GITA result."
+  },
+  "diagnostic_only": {
+    "not_a_selection_score": true,
+    "contributions": {
+      "severity": 5.0,
+      "a2a_fit": 10.0,
+      "feasibility": null,
+      "evidence": 7.5,
+      "frequency": 3.75,
+      "preventable_share": null,
+      "adoption": 0.0
+    },
+    "all_ratings_known": false,
+    "weighted_total_if_all_ratings_known": null,
+    "unknown_rating_score_bounds": [
+      26.25,
+      51.25
+    ]
+  },
+  "explanation": "Equivalent to allowing synthetic provenance only, using existing evaluate(card, synthetic_test=True). All G1–G7 checks and score eligibility remain unchanged. Diagnostic subtotal/bounds never override failed gates."
+}
+
+REQUIRED REPORT FOCUS: Candidate #1, the 11:00–15:00 turnaround deadlock. Include a definitive
+current qualification verdict as hackathon core engine (not a speculative business endorsement), operational
+strengths and remaining risks. Explain numerical order versus FIFO versus a manually updated deadline/room-type
+priority queue: numerical order is not necessarily FIFO. Compare dynamic queue reordering with both static
+order and the stronger deterministic priority/acknowledgement control; never assume A2A superiority.
+Do not claim a replay or physical capacity benefit was measured. Explain G3 and G7 separately. Distinguish
+cash refunds from opportunity revenue and margins. Cite exact transcript turns for important quantities.
+Account for the pre-delivery question reviews and audit the delivered questions, not rejected drafts.
+Use [O] only for observed run/evaluator facts, [I] for engineering inference, [U] for unestablished claims;
+all incident detail is explicitly synthetic. Give concrete next evidence needed before a real core-engine decision.

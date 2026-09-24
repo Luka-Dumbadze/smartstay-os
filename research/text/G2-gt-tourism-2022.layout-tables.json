@@ -1,0 +1,2350 @@
+{
+  "source_id": "G2",
+  "sha256": "a92c0d602ed176596d3ce80a0faece641ed571e5bce673e231017afef8e5013a",
+  "status": "column-layout candidates; inspect before semantic use",
+  "pages": [
+    {
+      "pdf_page": 1,
+      "blocks": []
+    },
+    {
+      "pdf_page": 2,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "1   Key findings"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 3,
+              "raw": "2   Global tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "3   Georgia's tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "4   Hotel supply and pipeline"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "5   Hotel industry performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 2,
+              "raw": "Global recovery: tourism recovered quickly in 2022, almost            well as labor shortage. This will likely remain a long lasting"
+            },
+            {
+              "line": 3,
+              "raw": "identically everywhere. Georgia slightly lags global tourism          problem for the sector as halt in tourism due to pandemic made"
+            },
+            {
+              "line": 4,
+              "raw": "recovery, as Russia-Ukraine war softened tourist arrivals mostly      sector less attractive for job-seekers."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "Tourism recovery in Georgia: tourism recovery accelerated             branded hotel segment mostly in Tbilisi, due to extensive pipeline."
+            },
+            {
+              "line": 8,
+              "raw": "since May-22 after initial negative impact from Russia-Ukraine        However, pandemic reduced interest toward a sector after years"
+            },
+            {
+              "line": 9,
+              "raw": "war; Tourist arrivals recovery stood at 56.8% in 1H22 and 78.7%       of investment boom. The medium and large-sized (30+ rooms)"
+            },
+            {
+              "line": 10,
+              "raw": "in Jul-Aug 2022 vs pre-pandemic level. Tourism revenues are           hotel room stock growth softened over 2020-22 and reduction in"
+            },
+            {
+              "line": 11,
+              "raw": "recovering faster than arrivals - 78.3% in 1H22 and 123.6% in         hotel construction permits hint on weaker investor interest. We"
+            },
+            {
+              "line": 12,
+              "raw": "Jul-Aug 2022 vs pre-pandemic level - explained by influx of           expect gradual revival of investments mostly in regional hotel"
+            },
+            {
+              "line": 13,
+              "raw": "migrants, high inflation and arrival mix (more tourists vs same-day   development amid faster-than-expected recovery in tourism and"
+            },
+            {
+              "line": 14,
+              "raw": "arrivals). Hotel revenues recovered swiftly in the regions aided by   Georgia remaining popular tourism destination despite regional"
+            },
+            {
+              "line": 15,
+              "raw": "domestic tourism also, while Tbilisi market still lags behind         geopolitical tensions."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "Recovery by countries: tourists from Middle East and Central          vs pre-pandemic level and expect 10.0% y/y growth in 2023."
+            },
+            {
+              "line": 19,
+              "raw": "Asia already surpassed 2019 figures, while all neighboring            Geopolitical tensions remain a key risk for a sector outlook."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 24,
+              "raw": "Employment and salaries: employment partially recovered in            wellness and MICE tourism, we believe, in order to attract more"
+            },
+            {
+              "line": 25,
+              "raw": "hospitality sector in contrast of full recovery in other sectors.     high-spending visitors."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "1   Key findings"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 3,
+              "raw": "2   Global tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "3   Georgia's tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "4   Hotel supply and pipeline"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "5   Hotel industry performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": " Int’l tourist arrivals in Europe, % change vs 2019                                                                                            Int’l tourist arrivals by countries, % change vs 2019"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "                                                                                                                                                           Jan-22     Feb-22     Mar-22     Apr-22     May-22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 10,
+              "raw": "                                                                                                                                               Turkey       -16%       -7%        -6%       -22%        -4%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 13,
+              "raw": "                                                                                                                                               Spain        -41%       -28%      -29%       -15%       -12%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 16,
+              "raw": "                                                                                                                                               Italy        -39%       -22%      -33%       -26%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "                                                                                                                                               France       -43%       -34%      -31%       -30%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "                                                                                                                                               Germany      -68%       -58%      -51%       -38%       -29%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 24,
+              "raw": "                                                                                                                                               Europe       -48%       -36%      -34%       -33%       -34%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 76,
+              "raw": "                                                                                                                                               Georgia      -47%       -45%      -52%       -48%       -38%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "                                                         Turkey          Spain            Italy       France            Germany"
+            },
+            {
+              "line": 7,
+              "raw": "                                                                                                                                                                               Jul-22   YTD"
+            },
+            {
+              "line": 8,
+              "raw": "80%                                                                                                                                                            80%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 11,
+              "raw": "                                                                                                                                                                     Turkey    72%      62%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 14,
+              "raw": "60%                                                                                                                                                            60%"
+            },
+            {
+              "line": 15,
+              "raw": "                                                                                                                                                                     Spain     77%      62%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 19,
+              "raw": "                                                                                                                                                                     Italy     76%      55%"
+            },
+            {
+              "line": 20,
+              "raw": "40%                                                                                                                                                            40%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 22,
+              "raw": "                                                                                                                                                                     France    78%      60%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 26,
+              "raw": "20%                                                                                                                                                            20%   Germany   71%      50%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 31,
+              "raw": "                                                                                                                                                                     Europe    75%      57%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 33,
+              "raw": " 0%                                                                                                                                                            0%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "                   Accor Group                     Melia Hotels                     Marriott International                     Hilton Hotels                      Intercontinental Hotel Group"
+            },
+            {
+              "line": 7,
+              "raw": "                                                                                                                                                                                                                                                Jan-19   Sep-22   Growth, %"
+            },
+            {
+              "line": 8,
+              "raw": "250                                                                                                                                                                                                                       250"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 11,
+              "raw": "                                                                                                                                                                                                                                Accor Group      100      68        -32%"
+            },
+            {
+              "line": 12,
+              "raw": "200                                                                                                                                                                                                                       200"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "                                                                                                                                                                                                                                IHG              100      101        1%"
+            },
+            {
+              "line": 16,
+              "raw": "150                                                                                                                                                                                                                       150"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 19,
+              "raw": "                                                                                                                                                                                                                                Melia Hotels     100      69        -31%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "100                                                                                                                                                                                                                       100"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 24,
+              "raw": "                                                                                                                                                                                                                                Marriott Int.    100      151       51%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 26,
+              "raw": " 50                                                                                                                                                                                                                       50"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 29,
+              "raw": "                                                                                                                                                                                                                                Hilton Hotels    100      191       91%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 31,
+              "raw": "  0                                                                                                                                                                                                                       0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": " Seat capacity in Europe - domestic flights, % change vs 2019                                                Seat capacity in Europe– int’l flights, % change vs 2019"
+            },
+            {
+              "line": 5,
+              "raw": "  0%                                                                                                          0%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 10,
+              "raw": "-20%                                                                                                        -20%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "-40%                                                                                                        -40%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 20,
+              "raw": "                                                                        Jan-22        -29%                  -60%"
+            },
+            {
+              "line": 21,
+              "raw": "-60%                                                                                                                                                                                        Jan-22        -41%"
+            },
+            {
+              "line": 22,
+              "raw": "                                                                        Feb-22        -30%"
+            },
+            {
+              "line": 23,
+              "raw": "                                                                                                                                                                                            Feb-22        -40%"
+            },
+            {
+              "line": 24,
+              "raw": "                                                                        Mar-22        -29%"
+            },
+            {
+              "line": 25,
+              "raw": "                                                                                                                                                                                            Mar-22        -33%"
+            },
+            {
+              "line": 26,
+              "raw": "                                                                        Apr-22        -22%"
+            },
+            {
+              "line": 27,
+              "raw": "                                                                                                                                                                                            Apr-22        -25%"
+            },
+            {
+              "line": 28,
+              "raw": "-80%                                                                    May-22        -14%                  -80%"
+            },
+            {
+              "line": 29,
+              "raw": "                                                                                                                                                                                            May-22        -23%"
+            },
+            {
+              "line": 30,
+              "raw": "                                                                        Jul-22        -12%"
+            },
+            {
+              "line": 31,
+              "raw": "                                                                                                                                                                                            Jul-22        -23%"
+            },
+            {
+              "line": 32,
+              "raw": "                                                                        Jul-22        -11%"
+            },
+            {
+              "line": 33,
+              "raw": "                                                                                                                                                                                            Jul-22        -21%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 134,
+              "raw": " Source: UNWTO                                                                                               Source: UNWTO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 9,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "250                                       Lufthansa                    Air France                   Ryanair                   American Airlines                            Wizzair                                        250"
+            },
+            {
+              "line": 6,
+              "raw": "                                                                                                                                                                                                                                             Jan-19   Sep-22   Growth, %"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "200                                                                                                                                                                                                                       200   Lufthansa     100      32        -68%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 14,
+              "raw": "150                                                                                                                                                                                                                       150   Air France    100      15        -85%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 19,
+              "raw": "                                                                                                                                                                                                                                Wizzair       100      76        -24%"
+            },
+            {
+              "line": 20,
+              "raw": "100                                                                                                                                                                                                                       100"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 24,
+              "raw": "                                                                                                                                                                                                                                Ryanair       100      97        -3%"
+            },
+            {
+              "line": 25,
+              "raw": " 50                                                                                                                                                                                                                       50"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 28,
+              "raw": "                                                                                                                                                                                                                                              100      44        -56%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 31,
+              "raw": "  0                                                                                                                                                                                                                       0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "1   Key findings"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 3,
+              "raw": "2   Global tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "3   Georgia's tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "4   Hotel supply and pipeline"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "5   Hotel industry performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Recovery of tourists as % of 2019 level                                                                                                          Int’l visitors from top-5 countries, mn visitors"
+            },
+            {
+              "line": 5,
+              "raw": "100%                                                                                                                                             2.5      Visitors were up from"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "                                                                                                                                                                                                                 8M19       8M22"
+            },
+            {
+              "line": 8,
+              "raw": "                                                                                                                              81%                             % Change in 8M22 vs. 8M19"
+            },
+            {
+              "line": 9,
+              "raw": "                                                                                                                                       77%                 Israel                   +6%"
+            },
+            {
+              "line": 10,
+              "raw": "80%                                                                                                                                              2.0"
+            },
+            {
+              "line": 11,
+              "raw": "                                                                                                                                                           Saudi Arabia             +59%"
+            },
+            {
+              "line": 12,
+              "raw": "                                                                                                                     64%                                   Belarus                  +94%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 14,
+              "raw": "                                                                                                                                                           Kazakhstan               +35%"
+            },
+            {
+              "line": 15,
+              "raw": "60%                                                                              55%"
+            },
+            {
+              "line": 16,
+              "raw": "                                                                        53%                        52%                                           1.5       Uzbekistan               +185%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 20,
+              "raw": "                                    39%                                                                                                                                                                                      1.1"
+            },
+            {
+              "line": 21,
+              "raw": "                  37%                                                                                                                                   1.0             1.1"
+            },
+            {
+              "line": 22,
+              "raw": "40%                                                                                                                                                                                                                                1.0"
+            },
+            {
+              "line": 23,
+              "raw": "                           33%                                                                                                                   1.0"
+            },
+            {
+              "line": 24,
+              "raw": "        28%                                                                                                                                                                           0.9"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 29,
+              "raw": "                                                                                                                                                                                            0.4         0.5"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 79,
+              "raw": "                                                                                                                                                       Azerbaijan       Russia        Armenia     TurkeyGeorgia (Non-resident) Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 12,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Recovery of tourism revenue as % of 2019 level                                                                                                        Int’l tourism revenue from top-5 countries, US$ mn"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "150%                                                                                                                                                  1,500"
+            },
+            {
+              "line": 7,
+              "raw": "                   Faster recovery of revenues vs arrivals                                                                                                                            8M19         8M22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "                   (tourists/same day)                                                                                                      127%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 11,
+              "raw": "120%                                                                                                                                                  1,200"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 16,
+              "raw": "90%                                                                                                                                                    900"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "                                                                            69%               71% 71%                                                                                                                       749"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "                                                55%                                                                                                           590"
+            },
+            {
+              "line": 22,
+              "raw": "60%                  52%                51% 53%                                                                                                        600"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 26,
+              "raw": "                                                                                                                                                                          315          303"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 29,
+              "raw": "                                                                                                                                                                                216          200"
+            },
+            {
+              "line": 30,
+              "raw": "                                                                                                                                                                                                      162         146 170"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 73,
+              "raw": "                                                                                                                                                              Russia       EU          Turkey        Azerbaijan    Israel   Others"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 13,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Employment index: Hospitality vs other sectors                                                                Average salaries: Hospitality vs total business sector"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "                  Employment in hotels and restaurants                Employment in other sectors                        Salaries in GEL, hotels and restaurants                Salaries in GEL, total business sector"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 26,
+              "raw": "  60                                                                                                              800"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 31,
+              "raw": "  40                                                                                                              400"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 94,
+              "raw": "Source: Geostat                                                                                               Source: Geostat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 14,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Passenger traffic at Georgian airports, persons                        Passenger traffic by airports, 8M22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 19,
+              "raw": "4                                                                            Kutaisi                                  Tbilisi"
+            },
+            {
+              "line": 20,
+              "raw": "                                                                              23%                                     59%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 22,
+              "raw": "               2.8                                       2.9"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 24,
+              "raw": "      2.3                                                       2.3"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 33,
+              "raw": "     2015      2016   2017   2018   2019   2020   2021   8M19   8M22             Tbilisi                     71%"
+            },
+            {
+              "line": 34,
+              "raw": "                                                                                 Batumi                      94%"
+            },
+            {
+              "line": 35,
+              "raw": "                                                                                 Kutaisi                     95%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 15,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "                       Russia                        Turkey                Azerbaijan                     Armenia"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "                           Georgia                        Georgia"
+            },
+            {
+              "line": 10,
+              "raw": "                             3%                            10%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 23,
+              "raw": "                        Others                       Others                   Others"
+            },
+            {
+              "line": 24,
+              "raw": "                         97%                          90%                      76%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 16,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Average expenditure per trip by countries in 2019, US$                                                      Average expenditure per day by countries in 2019, US$"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "             USA                                                                             $1,352              Turkey                                                       $194"
+            },
+            {
+              "line": 7,
+              "raw": "  Saudi Arabia                                                                             $1,289           Saudi Arabia                                                     $189"
+            },
+            {
+              "line": 8,
+              "raw": "             UAE                                                        $870                                       USA                                                $149"
+            },
+            {
+              "line": 9,
+              "raw": "               UK                                                       $865                                    Armenia                                          $139"
+            },
+            {
+              "line": 10,
+              "raw": "        Czechia                                                     $760                                           UAE                                         $130"
+            },
+            {
+              "line": 11,
+              "raw": "          France                                                 $745                                             Israel                                       $129"
+            },
+            {
+              "line": 12,
+              "raw": "              Iran                                               $742                                                UK                                 $111"
+            },
+            {
+              "line": 13,
+              "raw": "            Israel                                              $722                                             France                           $92"
+            },
+            {
+              "line": 14,
+              "raw": "           China                                               $677                                                 Iran                      $88"
+            },
+            {
+              "line": 15,
+              "raw": "       Germany                                                $658                                                China                       $88"
+            },
+            {
+              "line": 16,
+              "raw": "    Kazakhstan                                                $645                                           Kazakhstan                       $87"
+            },
+            {
+              "line": 17,
+              "raw": "         Ukraine                                             $634                                                Poland                       $87"
+            },
+            {
+              "line": 18,
+              "raw": "          Poland                                             $632                                                  Italia                     $85"
+            },
+            {
+              "line": 19,
+              "raw": "             Italia                                    $525                                                     Czechia                     $79"
+            },
+            {
+              "line": 20,
+              "raw": "         Belarus                                      $499                                                    Azerbaijan                    $78"
+            },
+            {
+              "line": 21,
+              "raw": "          Russia                                     $455                                                        Russia                     $77"
+            },
+            {
+              "line": 22,
+              "raw": "         Greece                                $364                                                             Ukraine                     $76"
+            },
+            {
+              "line": 23,
+              "raw": "          Turkey                              $329                                                             Germany                  $69"
+            },
+            {
+              "line": 24,
+              "raw": "        Armenia                        $209                                                                     Belarus               $56"
+            },
+            {
+              "line": 25,
+              "raw": "     Azerbaijan                  $140                                                                            Greece         $38"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 27,
+              "raw": "                      0          200      400          600      800        1,000   1,200   1,400    1,600                   0   50            100                150         200     250"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 17,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Average length of stay by countries in 2019, days                                              Average length of stay by regions in 2019, days"
+            },
+            {
+              "line": 5,
+              "raw": "      Czechia                                                                       9.6"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "     Germany                                                                        9.5"
+            },
+            {
+              "line": 8,
+              "raw": "       Greece                                                                       9.5"
+            },
+            {
+              "line": 9,
+              "raw": "           USA                                                                   9.1"
+            },
+            {
+              "line": 10,
+              "raw": "       Belarus                                                                8.9              4"
+            },
+            {
+              "line": 11,
+              "raw": "            Iran                                                           8.4                      3.5      3.5"
+            },
+            {
+              "line": 12,
+              "raw": "       Ukraine                                                          8.3                                              3.2                                                      3.2"
+            },
+            {
+              "line": 13,
+              "raw": "        France                                                         8.1"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "             UK                                                      7.8"
+            },
+            {
+              "line": 16,
+              "raw": "         China                                                    7.7"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "  Kazakhstan                                                     7.4                                                                           2.1        2.0"
+            },
+            {
+              "line": 19,
+              "raw": "        Poland                                                 7.3                             2"
+            },
+            {
+              "line": 20,
+              "raw": "Saudi Arabia                                               6.8"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 22,
+              "raw": "           UAE                                           6.7"
+            },
+            {
+              "line": 23,
+              "raw": "          Italia                                     6.2"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 25,
+              "raw": "        Russia                                     5.9"
+            },
+            {
+              "line": 26,
+              "raw": "          Israel                               5.6"
+            },
+            {
+              "line": 27,
+              "raw": "   Azerbaijan                        1.8"
+            },
+            {
+              "line": 28,
+              "raw": "        Turkey                    1.7                                                          0"
+            },
+            {
+              "line": 29,
+              "raw": "      Armenia                    1.5                                                               Adjara   Tbilisi   Samtskhe -   Imereti   Kakheti   Inner Kartli Mtskheta -   Other"
+            },
+            {
+              "line": 30,
+              "raw": "                                                                                                                       Javakheti                                     Mtianeti"
+            },
+            {
+              "line": 31,
+              "raw": "                   0             2         4   6                 8                  10    12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 18,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "1   Key findings"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 3,
+              "raw": "2   Global tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "3   Georgia's tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "4   Hotel supply and pipeline"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "5   Hotel industry performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 19,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": " Accommodation stock breakdown by category                        Hotel stock breakdown by size in 9M22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 10,
+              "raw": "          Guesthouse                     Other"
+            },
+            {
+              "line": 11,
+              "raw": "                                                                                       Unit       Room      Bed"
+            },
+            {
+              "line": 12,
+              "raw": "            6.8%                         8.8%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "                                                                   Total               1,157      31,809   71,813"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "Family hotel                                     47,874   Hotel      <30 rooms         857        11,418   27,855"
+            },
+            {
+              "line": 19,
+              "raw": "  16.9%                                                   66.4%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 22,
+              "raw": "                                                                     30+ rooms         300        20,391   43,958"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 20,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Medium and large-sized (30+ rooms) room stock, rooms                                                                   Openings of medium and large-sized (30+ rooms) hotels"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "                                                                                                                                                   2017        2018    2019     2020   2021   9M22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 8,
+              "raw": "                                                                                                                        Hotels, units               25          30       32      18     20     19"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 10,
+              "raw": "24,000                                                                                                                  Room stock, y/y growth     14%         12%      15%     9%     6%     8%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "                                                                                            17,729                     Medium and large-sized (30+ rooms) room stock"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 17,
+              "raw": "                                                                                   16,257                              breakdown by regions in 9M22, rooms"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 20,
+              "raw": "12,000                                                  11,115"
+            },
+            {
+              "line": 21,
+              "raw": "                                                                                                                                 Imereti         Others"
+            },
+            {
+              "line": 22,
+              "raw": "                                                9,480                                                                                            13.0%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 25,
+              "raw": "                            6,224                                                                                                                                     Tbilisi"
+            },
+            {
+              "line": 26,
+              "raw": "                                                                                                                             Kakheti                                  37.5%"
+            },
+            {
+              "line": 27,
+              "raw": " 6,000              4,950                                                                                                     6.6%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 31,
+              "raw": "      0                                                                                                                       7.4%"
+            },
+            {
+              "line": 32,
+              "raw": "           2011     2012    2013        2014    2015    2016     2017     2018     2019     2020     2021 9M22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 21,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Branded hotel room stock, rooms                                                                               Branded hotel room stock by region in 9M22, rooms"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "                                                                                                     CAGR          Samtskhe - Javakheti 3.9%"
+            },
+            {
+              "line": 8,
+              "raw": "                                               2017     2018     2019     2020    2021     9M22"
+            },
+            {
+              "line": 9,
+              "raw": "                                                                                                    2011-22       Mtskheta-Mtianeti 4.0%"
+            },
+            {
+              "line": 10,
+              "raw": "            Int’l upscale, y/y growth          21%      0%       13%       4%         0%      9%     10%                   Guria 4.0%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 12,
+              "raw": "6,400       Int’l midscale, y/y growth         19%      22%      35%       2%         0%      40%    18%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 16,
+              "raw": "                  International upscale                                                                                               21.9%                    Tbilisi"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 27,
+              "raw": "                                                                       1,401                                  Branded hotel openings in 2022"
+            },
+            {
+              "line": 28,
+              "raw": "                                                      964                                                     Hotel                                         Region       Rooms"
+            },
+            {
+              "line": 29,
+              "raw": "                                              964                                                             Pullman Axis Towers                           Tbilisi       220"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 31,
+              "raw": "                                        862                                                      2,748        Hilton Garden Inn                             Tbilisi       170"
+            },
+            {
+              "line": 32,
+              "raw": "           454      610     610                                                2,423 2,528 2,528"
+            },
+            {
+              "line": 33,
+              "raw": "                                                               2,141 2,141                                    Ibis Budget Concert Hall                      Tbilisi       137"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 35,
+              "raw": "                                              1,460                                                           Ramada by Wyndham                             Tbilisi       125"
+            },
+            {
+              "line": 36,
+              "raw": "           966      966     966         966"
+            },
+            {
+              "line": 37,
+              "raw": "                                                                                                              Ramada Old Tbilisi                            Tbilisi       107"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 39,
+              "raw": "                                                                                                              Golden Tulip Design Tbilisi                   Tbilisi       77"
+            },
+            {
+              "line": 40,
+              "raw": "          2011    2012     2013     2014      2015    2016     2017    2018    2019    2020    2021 9M22"
+            },
+            {
+              "line": 41,
+              "raw": "                                                                                                              Courtyard by Marriott                         Batumi        150"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 22,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "                                                                                                      There are 28 hotels with 4,344 rooms in pipeline over"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "                                                                Midscale           Upscale             2023-25.    However,      empirical     evidence suggest"
+            },
+            {
+              "line": 8,
+              "raw": "                Planned hotel room stock, Tbilisi                   1,923            1,435"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 10,
+              "raw": "                Planned hotel room stock, Batumi                    327              868"
+            },
+            {
+              "line": 11,
+              "raw": "                Planned hotel room stock, other                     458              445              Majority of hotels in pipeline are planned for Tbilisi (52.9%"
+            },
+            {
+              "line": 12,
+              "raw": " 8,000                                                                                                 of total), followed by Batumi (21.1% of total), while other"
+            },
+            {
+              "line": 13,
+              "raw": "                                                                            9M22         2025          regions account for 26.0% of room stock."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 16,
+              "raw": "                                                                                                      Largest supplier of branded hotel stock is Georgian Co-"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "                    3,358                                                                             Some 12 planned hotels in pipeline are suspended."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 23,
+              "raw": "                                                            1,962                          2,034"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 30,
+              "raw": "                         Tbilisi                       Batumi                        Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 23,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Hotel construction permit issuance, sq.m.                                  Hotel construction permit issuance, units"
+            },
+            {
+              "line": 5,
+              "raw": "1,500                                                                      600"
+            },
+            {
+              "line": 6,
+              "raw": "                                                                                                           2014    2015    2016    2017     2018      2019   2020    2021    1H22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "                                                                                                           2,670   2,954   2,291   3,259    1,784    1,926   1,780   1,191   1,617"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 12,
+              "raw": "1,200                                                                      480"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "  900                                                                      360                                              337"
+            },
+            {
+              "line": 19,
+              "raw": "                                               759                                                                 311"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "                         660                                                                                                                        256"
+            },
+            {
+              "line": 22,
+              "raw": "            606   623                   601"
+            },
+            {
+              "line": 23,
+              "raw": "  600                                                                      240   227"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 25,
+              "raw": "                                                      456                                                                                                    189"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 29,
+              "raw": "  300                                                                      120"
+            },
+            {
+              "line": 30,
+              "raw": "                                                             225                                                                                                       90"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 35,
+              "raw": "     0                                                                       0"
+            },
+            {
+              "line": 36,
+              "raw": "           2014   2015   2016   2017    2018   2019   2020   2021   1H22         2014       2015         2016      2017     2018      2019          2020     2021     1H22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 24,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 1,
+              "raw": "1   Key findings"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 3,
+              "raw": "2   Global tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "3   Georgia's tourism sector recovery"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "4   Hotel supply and pipeline"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "5   Hotel industry performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 25,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 5,
+              "raw": "                                                                                                                         Local cards                                  Foreign cards"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 10,
+              "raw": "250%                                                                                                                                                                                                                                                   234% 230%                                         230%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 12,
+              "raw": "                                                                               205%                                                     200%                          201%                                                                                                 197%"
+            },
+            {
+              "line": 13,
+              "raw": "200%                                                                                                                                              186%                                     189%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "                                                                     166%                                                                                                        169%"
+            },
+            {
+              "line": 16,
+              "raw": "                       162%                                                                                                                                                                          160%                                    164%"
+            },
+            {
+              "line": 17,
+              "raw": "                                                                                                                                                            159%                                                         155%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 19,
+              "raw": "150%     138%                                                                            136%                                                                                                                  140%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "         116% 119%                                                                                                                                                                         119%                                                        120%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 23,
+              "raw": "                                                                                                   98%                                                                                               100%                                                                  98%"
+            },
+            {
+              "line": 24,
+              "raw": "100%                                                                                                                                                                                                           86%                 89%                                                         86%"
+            },
+            {
+              "line": 25,
+              "raw": "                                 83%                        79%                                             83%      84%                                                                                                 82%                                                                             80%"
+            },
+            {
+              "line": 26,
+              "raw": "                                                                                                                                                                                 69%                                                                                                 69%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 28,
+              "raw": " 50%                             36%                                                                                                                        38%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 30,
+              "raw": "                                          3%     5%                                                                                     18%"
+            },
+            {
+              "line": 31,
+              "raw": "                                                                               6%        9%        10%      9%       9%       7%"
+            },
+            {
+              "line": 32,
+              "raw": "                                                            2%       4%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 26,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Index of BoG Pos payments in Tbilisi hotels, Apr-19=100                                                                 Index of BoG Pos payments in Adjara hotels, Apr-19=100"
+            },
+            {
+              "line": 5,
+              "raw": "200                                                                                                                     1,000"
+            },
+            {
+              "line": 6,
+              "raw": "                            Jan-22     Feb-22    Mar-22    Apr-22    May-22    Jun-22    Jul-22     Aug-22                                            Jan-22   Feb-22   Mar-22   Apr-22    May-22    Jun-22    Jul-22    Aug-22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 8,
+              "raw": "               y/y growth   690%       347%      211%      117%      104%       54%      19%         19%                                 y/y growth   511%     362%     159%     146%       83%       2%        7%        70%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 10,
+              "raw": "160                                                                                                                      800"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "120                                                                                                                      600"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 20,
+              "raw": " 80                                                                                                                      400"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 25,
+              "raw": " 40                                                                                                                      200"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 30,
+              "raw": "  0                                                                                                                        0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 27,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Index of BoG Pos payments in Kakheti hotels,                                                                                                        Index of BoG Pos payments in Mtskheta-Mtianeti hotels,"
+            },
+            {
+              "line": 5,
+              "raw": "Apr-19=100                                                                                                                                          Apr-19=100"
+            },
+            {
+              "line": 6,
+              "raw": "600                                                                                                                                                 200"
+            },
+            {
+              "line": 7,
+              "raw": "                                  Jan-22    Feb-22            Mar-22       Apr-22     May-22        Jun-22             Jul-22     Aug-22                                              Jan-22     Feb-22        Mar-22         Apr-22     May-22      Jun-22               Jul-22      Aug-22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "                y/y growth        -16%        -33%            -27%          2%         -18%             -4%            21%         29%                             y/y growth         718%       1303%             37%         4%         50%              35%            32%          20%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 34,
+              "raw": "   0                                                                                                                                                  0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 28,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "ADR recovery in Tbilisi                                                    ADR recovery in regions"
+            },
+            {
+              "line": 5,
+              "raw": "200%                                                                       200%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 7,
+              "raw": "160%                                                                       160%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "                                                                                           100%              107%     101%     103%"
+            },
+            {
+              "line": 10,
+              "raw": "120%                                                                       120%                      97%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 12,
+              "raw": "              79%             79%       78%      81%               82%"
+            },
+            {
+              "line": 13,
+              "raw": " 80%                                                                       80%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": " 40%                                                                       40%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 17,
+              "raw": "  0%                                                                        0%"
+            },
+            {
+              "line": 18,
+              "raw": "             Jan-22          Feb-22    Mar-22   Apr-22   May-22   Jun-22          Jan-22   Feb-22   Mar-22   Apr-22   May-22   Jun-22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 21,
+              "raw": "RevPar recovery in Tbilisi                                                 RevPar recovery in regions"
+            },
+            {
+              "line": 22,
+              "raw": "200%                                                                       200%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 24,
+              "raw": "160%                                                                       160%   137%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 26,
+              "raw": "120%                                                                       120%            100%"
+            },
+            {
+              "line": 27,
+              "raw": "                                                                   85%                                                 91%      87%"
+            },
+            {
+              "line": 28,
+              "raw": "                                                          82%                                        79%      77%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 30,
+              "raw": " 80%                          64%       64%                                80%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 33,
+              "raw": " 40%                                                                       40%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 35,
+              "raw": "  0%                                                                        0%"
+            },
+            {
+              "line": 36,
+              "raw": "            Jan-22           Feb-22    Mar-22   Apr-22   May-22   Jun-22          Jan-22   Feb-22   Mar-22   Apr-22   May-22   Jun-22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 29,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Index of Airbnb rental demand in Tbilisi, Jan-18=100                                                                                                                                 Airbnb rental demand in Batumi, index Jan-18=100"
+            },
+            {
+              "line": 5,
+              "raw": "500                                                                                                                                                                                  3,500"
+            },
+            {
+              "line": 6,
+              "raw": "                                                   Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jul-22                                                   Jul-22 Aug-22                                                                                 Jan-22 Feb-22 Mar-22 Apr-22 May-22 Jul-22                                                Jul-22 Aug-22"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 9,
+              "raw": "               Recovery vs. 2019                      68%            81%           91%          55%               55%        62%               80%         63%                                         Recovery vs. 2019                       200%         228%              405%       247%             177%           89%          120%              100%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 34,
+              "raw": "  0                                                                                                                                                                                     0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 30,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "                                                 Jan-22            Feb-22            Mar-22            Apr-22            May-22            Jul-22            Jul-22"
+            },
+            {
+              "line": 7,
+              "raw": "                                                                                                                                                                                        1st wave of                                            Russia-Ukraine"
+            },
+            {
+              "line": 8,
+              "raw": "               Rent Index, y/y growth             13%               16%               31%              68%                68%              61%               69%                         Covid-19                                                   War"
+            },
+            {
+              "line": 9,
+              "raw": "150            Rent Index, m/m growth             0%                2%                13%              27%                4%                0%                7%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 31,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 4,
+              "raw": "Distribution of hotel permit issuance by regions in 2021,   Hotel permit issuance by regions, units"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 6,
+              "raw": "                                                                                                                       y/y    vs. 2019"
+            },
+            {
+              "line": 7,
+              "raw": "                                                                           2016   2017   2018   2019   2020   2021"
+            },
+            {
+              "line": 8,
+              "raw": "                                                                                                                     growth   growth"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 11,
+              "raw": "                                                             Tbilisi        88    127     99    137     91     72    -21%      -47%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "                                                             Adjara        110    102    120    122     70     43    -39%      -65%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 19,
+              "raw": "                                                                            27     16     35     25     11     14     27%      -44%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 23,
+              "raw": "                   5.8%                                      Kakheti        10     12     16     21     20     11    -45%      -48%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 26,
+              "raw": "                     Javakheti                               Other         106    108    134     89     64     49    -23%      -45%"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 30,
+              "raw": "                                                             Georgia       288    311    337    394    256    189    -26%      -52%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pdf_page": 32,
+      "blocks": [
+        {
+          "lines": [
+            {
+              "line": 2,
+              "raw": "This document is the property of and has been prepared by JSC Galt & Taggart (\"Galt & Taggart\"), a member of Bank of Georgia Group PLC                    The information provided and opinions expressed in this document are based on the information available as of the issue date and are solely"
+            },
+            {
+              "line": 3,
+              "raw": "(‘Group”) solely for informational purposes and independently of the respective companies mentioned herein. This document does not                        those of Galt & Taggart as part of its internal research coverage. Opinions, forecasts and estimates contained herein are based on information"
+            },
+            {
+              "line": 4,
+              "raw": "constitute or form part of, and should not be construed as, an offer or solicitation or invitation of an offer to buy, sell or subscribe for any          obtained from third party წყაროs believed to be reliable and in good faith, and may change without notice. Third party publications, studies"
+            },
+            {
+              "line": 5,
+              "raw": "securities or assets and nothing contained herein shall form the basis of any contract or commitment whatsoever or shall be considered as a               and surveys generally state that the data contained therein have been obtained from წყაროs believed to be reliable, but that there is no"
+            },
+            {
+              "line": 6,
+              "raw": "recommendation to take any such actions.                                                                                                                  guarantee of the accuracy or completeness of such data. Accordingly, undue reliance should not be placed on any such data contained in this"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 8,
+              "raw": "Galt & Taggart is authorized to perform professional activities on the Georgian market. The distribution of this document in certain jurisdictions        make any representation or warranty, express or implied, of this document's usefulness in predicting the future performance, or in estimating"
+            },
+            {
+              "line": 9,
+              "raw": "may be restricted by law. Persons into whose possession this document comes are required by Galt & Taggart to inform themselves about                     the current or future value, of any security or asset."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 11,
+              "raw": "or use by, any person or entity that is a citizen or resident located in any locality, state, country or Other jurisdiction where such distribution,      Galt & Taggart does, and seeks to do, and any Other member of the Group may or seek to do business with companies covered in its"
+            },
+            {
+              "line": 12,
+              "raw": "publication, availability or use would be contrary to law or regulation or which would require any registration or licensing within such jurisdiction.    research. As a result, investors should be aware of a potential conflict of interest that may affect the objectivity of the information contained in"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 15,
+              "raw": "The recipients of this document must make their own investment decisions as they believe appropriate based on their specific objectives and               Unauthorized copying, distribution, publication or retransmission of all or any part of this document by any medium or in any form for any"
+            },
+            {
+              "line": 16,
+              "raw": "financial situation. When doing so, such recipients should be sure to make their own assessment of the risks inherent in emerging market                  purpose is strictly prohibited."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 18,
+              "raw": "and nationalization of assets, and currency exchange risk.                                                                                                The recipients of this document are responsible for protecting against viruses and Other destructive items. Receipt of the electronic"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 20,
+              "raw": "No representation, warranty or undertaking, express or implied, is or will be made by Galt & Taggart or any Other member of the Group or                  a destructive nature."
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 27,
+              "raw": "on as legal, investment, business or tax advice, whether relating to the past or the future, by Galt & Taggart any Other member of the Group              Senior Associate"
+            },
+            {
+              "line": 28,
+              "raw": "or any of their respective directors, employees, affiliates, advisers or agents in any respect. Recipients are required to make their own                 Kakha Samkurashvili | ksamkurashvili@gt.ge"
+            }
+          ]
+        },
+        {
+          "lines": [
+            {
+              "line": 39,
+              "raw": "most recently updated, or that the information contained in this document is correct as at any time subsequent to the date on which it is                 Address: 3 A. Pushkin Street, Tbilisi 0105, Georgia"
+            },
+            {
+              "line": 40,
+              "raw": "supplied or, if different, the date indicated in the document containing the same. No representation or warranty, expressed or implied, is made           Tel: + (995) 32 2401 111"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

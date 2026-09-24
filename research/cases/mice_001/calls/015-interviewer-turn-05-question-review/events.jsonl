@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"What information did you use when reviewing the room discount and possible displacement for this enquiry? Please show the relevant record with names and client details hidden.\",\"changed\":false,\"reason\":\"Follows the respondent’s stated review and asks about its inputs without assuming a decision, cause, or authority beyond what was described.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":197802,"cached_input_tokens":176574,"cache_write_input_tokens":21198,"output_tokens":746,"reasoning_output_tokens":179}}

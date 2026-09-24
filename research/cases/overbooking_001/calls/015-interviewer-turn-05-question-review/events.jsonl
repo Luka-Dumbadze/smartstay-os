@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"How was the relocation decision made in this case? If a record of that decision exists, could you show it with private details hidden?\",\"changed\":true,\"reason\":\"Removed stacked prompts about participants, options, and authority; retained one concrete process question and a conditional record request.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":198337,"cached_input_tokens":176827,"cache_write_input_tokens":21480,"output_tokens":608,"reasoning_output_tokens":24}}

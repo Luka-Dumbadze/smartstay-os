@@ -1,0 +1,285 @@
+{
+  "dossier_id": "TELAVI-2026-09-19",
+  "status": "Private fictional rehearsal dossier. All people, property records and transactions below are invented; none constitutes real-world verification.",
+  "disclosure_rule": "Keep these facts stable. In subsequent interview answers, reveal only the parts relevant to the current question. Do not invent additional records or results to fill evidence gaps.",
+  "property": {
+    "description": "Independent 18-room boutique/wine hotel in Telavi, Kakheti",
+    "scenario_today": "2026-09-23",
+    "episode_date": "2026-09-19",
+    "timezone": "Asia/Tbilisi",
+    "operating_context": "Rtveli season; weekend occupancy above 85% and quieter midweek are imposed fictional assumptions, not market findings.",
+    "systems": [
+      "Cloudbeds PMS, manually updated by reception",
+      "Staff WhatsApp group",
+      "Paper front-desk notebook",
+      "Paper housekeeping sheet"
+    ],
+    "room_inventory": {
+      "fixed_double": 14,
+      "fixed_twin": 2,
+      "family": 2,
+      "total": 18
+    },
+    "standard_checkout": "11:00",
+    "standard_checkin": "15:00"
+  },
+  "people_and_authority": {
+    "general_manager": {
+      "name": "Tamar",
+      "responsibilities": "Staffing, exceptions, room-release inspection during this shift and compensation approval.",
+      "authority": "May approve a service-recovery refund up to 100 GEL; larger refunds require the owner. Cannot commit the owner to new software contracts.",
+      "management_accountability": "I kept the two cleaners working as a pair while Lika learned. I also left numerical room order as the default and had not made the rule against unconfirmed readiness promises clear enough."
+    },
+    "receptionist": {
+      "name": "Nino",
+      "experience": "Local student, three weeks into the job",
+      "responsibilities": "Check-outs, arrivals, PMS entries, guest requests and the notebook.",
+      "authority": "May explain the conditional late-checkout price and hand over an inspected room. Must obtain approval for late checkout and compensation; cannot independently declare a room ready."
+    },
+    "housekeeping_lead": {
+      "name": "Maia",
+      "responsibilities": "Direct cleaning, supervise Lika, record completion on the paper sheet and report problems.",
+      "authority": "May reorder unstarted work when an arrival priority is confirmed. Must not skip cleaning or release inspection."
+    },
+    "housekeeping_assistant": {
+      "name": "Lika",
+      "experience": "New seasonal local worker, sixth shift",
+      "responsibilities": "Works alongside Maia; not yet assigned independent full-room turnovers."
+    },
+    "porter": {
+      "name": "Giorgi",
+      "responsibilities": "Luggage, courtyard assistance and brief reception cover.",
+      "authority": "Cannot inspect or release rooms, approve refunds or promise readiness."
+    }
+  },
+  "capacity_and_room_constraints": {
+    "staffing": "Two cleaners working together form one turnover team, not two independent cleaning teams.",
+    "turnover_rooms": ["101", "102", "103", "201", "202", "203"],
+    "default_order": ["101", "102", "103", "201", "202", "203"],
+    "twin_constraint": "103 is a fixed twin booked by two adults requiring separate beds. The other fixed twin, 104, is occupied by a stayover. No spare twin is available.",
+    "other_vacancies": "The two unsold rooms are fixed doubles. Family rooms are occupied by stayovers. Reception offered a temporary double; the arriving twin party declined.",
+    "physical_limit": "The team still needed to clean and reset 103 and obtain inspection. Status visibility could not make the room immediately usable at noon.",
+    "workload_limit": "All six turnovers were completed within the window. That does not establish spare capacity for a 13:00 checkout or another six-room workload.",
+    "staff_protection": "No cleaner ignored an acknowledged instruction. They followed the sheet they had been given."
+  },
+  "timestamp_convention": {
+    "recorded_exact": "Exact minute transcribed from an invented contemporaneous record inspected within the fiction; not independently clock-verified.",
+    "remembered": "Approximate recollection, explicitly labeled.",
+    "cleaning_times": "Paper entries record completion and inspection, not exact cleaning start times or uninterrupted labor durations.",
+    "clock_limit": "No clock-synchronization evidence exists."
+  },
+  "timeline": [
+    {
+      "time": "11:00",
+      "basis": "recorded_exact: housekeeping sheet",
+      "event": "Six turnovers listed in numerical order. Rooms 101, 102 and 103 already vacated. Reception has an expected arrival time of 15:00 for 103.",
+      "knowable": "There is no confirmed early arrival or early-room guarantee for 103."
+    },
+    {
+      "time": "11:03",
+      "basis": "recorded_exact: front-desk notebook",
+      "event": "Departing guest in 201 requests checkout at 13:00. Nino quotes USD 40, expressly subject to approval.",
+      "knowable": "201 has another arrival that day, with no dependable arrival time. There is no live cleaning-progress confirmation. The guest has not accepted the price."
+    },
+    {
+      "time": "11:08",
+      "basis": "recorded_exact: front-desk notebook",
+      "event": "Tamar declines the late checkout because she cannot confidently fit the later room release into the team's remaining work.",
+      "knowable": "This is a conservative management decision under uncertainty, not proof that the extension was physically impossible."
+    },
+    {
+      "time": "11:15",
+      "basis": "recorded_exact: PMS checkout entry",
+      "event": "201 checks out. No late-checkout charge is posted or collected."
+    },
+    {
+      "time": "11:35",
+      "basis": "recorded_exact: housekeeping sheet",
+      "event": "101 marked cleaning complete; Tamar signs its release at 11:40."
+    },
+    {
+      "time": "12:00",
+      "basis": "recorded_exact: front-desk notebook",
+      "event": "The party booked into 103 arrives unexpectedly early after changing its own outing plans. They wait in the courtyard.",
+      "knowable": "Their room is still marked dirty in the PMS. That status does not show which room the cleaners are currently working on."
+    },
+    {
+      "time": "12:01",
+      "basis": "recorded_exact: front-desk notebook",
+      "event": "Nino tells the party that 103 should be ready by 12:30 without receiving a housekeeping confirmation.",
+      "knowable": "The assurance has no confirmed operational basis. Standard check-in remains 15:00."
+    },
+    {
+      "time": "12:04",
+      "basis": "recorded_exact: WhatsApp message",
+      "event": "Nino asks for 103 progress. No reply reaches reception before someone checks physically.",
+      "knowable": "Sending the message does not establish that Maia has read or accepted it."
+    },
+    {
+      "time": "around 12:08",
+      "basis": "remembered: Nino and Tamar",
+      "event": "With Giorgi briefly covering reception, Nino goes upstairs. She finds the team finishing 102; 103 has not been started.",
+      "knowable": "Reception now has direct progress information. Earlier, it had only stale room status and an unanswered question."
+    },
+    {
+      "time": "12:12",
+      "basis": "recorded_exact: front-desk notebook",
+      "event": "Tamar corrects the 12:30 assurance and gives approximately 13:15 as an estimate subject to inspection. The party declines temporary use of a double.",
+      "knowable": "103 is next, but its exact cleaning duration is still uncertain."
+    },
+    {
+      "time": "12:15",
+      "basis": "recorded_exact: housekeeping sheet",
+      "event": "102 marked cleaning complete; inspection signed at 12:18. The team then proceeds to 103.",
+      "knowable": "Finishing 102 before moving to 103 was Tamar's decision after the physical check. No alternative sequence was tested."
+    },
+    {
+      "time": "13:05",
+      "basis": "recorded_exact: housekeeping sheet",
+      "event": "103 marked cleaning complete. Tamar signs release at 13:12 and informs reception."
+    },
+    {
+      "time": "13:15",
+      "basis": "recorded_exact: annotated housekeeping sheet",
+      "event": "After the incoming 201 party confirms a 14:00 arrival by phone, Nino boxes 201 as the next priority. Maia acknowledges the instruction by phone.",
+      "knowable": "This confirms the existing next room in the sequence rather than demonstrating a benefit from reordering."
+    },
+    {
+      "time": "13:17",
+      "basis": "recorded_exact: key-handover notebook entry",
+      "event": "The 103 party receives its keys.",
+      "knowable": "Recorded arrival-to-key interval is 77 minutes. The party receives the room before standard check-in, but after reception's unsupported 12:30 assurance."
+    },
+    {
+      "time": "13:50",
+      "basis": "recorded_exact: housekeeping sheet",
+      "event": "201 marked cleaning complete. Tamar inspects and phones release to Nino at 13:55."
+    },
+    {
+      "time": "14:03",
+      "basis": "recorded_exact: arrival and key-handover notebook entry",
+      "event": "The incoming 201 party arrives and receives keys immediately."
+    },
+    {
+      "time": "14:10",
+      "basis": "recorded_exact: fictional refund voucher and cashbook",
+      "event": "Nino pays the 103 party a 60 GEL cash refund approved by Tamar for the misleading readiness assurance and resulting inconvenience."
+    },
+    {
+      "time": "14:20",
+      "basis": "recorded_exact: housekeeping sheet",
+      "event": "202 marked cleaning complete; inspected at 14:25."
+    },
+    {
+      "time": "14:50",
+      "basis": "recorded_exact: housekeeping sheet",
+      "event": "203 marked cleaning complete; inspected at 14:55."
+    },
+    {
+      "time": "15:00",
+      "basis": "recorded_exact: closed-window reconciliation",
+      "event": "All six turnover rooms have been released and all six incoming parties have received keys."
+    }
+  ],
+  "fictional_records": [
+    {
+      "id": "HK-0919",
+      "kind": "Paper housekeeping sheet",
+      "exact_contents": "19 Sep 2026 | Turnovers | Maia + Lika | Sheet issued 11:00\nOrder: 101, 102, 103, 201, 202, 203\nRoom | Clean complete, Maia | Release inspection, Tamar\n101 | 11:35 M | 11:40 T\n102 | 12:15 M | 12:18 T\n103 | 13:05 M | 13:12 T\n201 | 13:50 M | 13:55 T\n202 | 14:20 M | 14:25 T\n203 | 14:50 M | 14:55 T\n13:15 N: BOX 201 NEXT. Arrival confirmed 14:00. Maia acknowledged by phone. Phone desk after inspection.\n13:55 N: Tamar called, 201 released."
+    },
+    {
+      "id": "FD-0919",
+      "kind": "Paper front-desk notebook",
+      "exact_contents": "11:03 | Outgoing 201 asks to stay until 13:00. Told USD 40 only if approved. No acceptance taken. N\n11:08 | Tamar says cannot approve; next arrival timing and cleaning readiness uncertain. N\n12:00 | Incoming 103 here, two guests, twin required, waiting courtyard. Earlier than expected. N\n12:01 | Told them room should be ready 12:30 before checking with Maia. N\n12:12 | Tamar spoke to guests: 12:30 not confirmed; estimate about 13:15, inspection required. Temporary double offered and declined. N\n13:15 | Incoming 201 confirmed 14:00 by phone; boxed on HK sheet; Maia acknowledged. N\n13:17 | 103 keys handed over. N\n14:03 | Incoming 201 arrived, keys handed over. N\n14:05 | Tamar authorizes 60 GEL refund to 103 for incorrect readiness assurance. N\n14:10 | Cash refund paid; voucher RF-0919-01. N"
+    },
+    {
+      "id": "WA-0919",
+      "kind": "Staff WhatsApp excerpt",
+      "exact_contents": "12:04 Nino: 103 guests are here in courtyard. Is it started? Please confirm before I give another time.\n12:19 Maia: 102 finished and checked. Going into 103 now.\n13:12 Tamar: 103 inspected, ready. Nino can give keys.",
+      "limits": "No reliable read-time record is retained. These messages do not establish exact cleaning starts or how long anyone spent checking a phone."
+    },
+    {
+      "id": "PMS-0919",
+      "kind": "Fictional human-readable Cloudbeds reservation and folio excerpt",
+      "exact_contents": "Date: 19 Sep 2026\nOutgoing reservation DEP-201 | Room 201 | Checkout entered 11:15 | Late-checkout charge: none\nIncoming reservation ARR-103 | Fixed twin | Assigned 103 | Expected arrival: 15:00 | Early check-in guarantee: none\nARR-103 | 18 Sep 18:42 | Accommodation payment received | Cash | GEL 420.00\nARR-103 | 19 Sep 13:14 | Reception note: Tamar confirmed room inspected at 13:12\nARR-103 | Check-in entered 13:18\nARR-103 | 19 Sep 14:11 | Accommodation allowance | GEL -60.00 | Manager-approved service recovery\nARR-103 | 19 Sep 14:11 | Cash refund recorded | GEL 60.00 | RF-0919-01\nARR-103 | Revised accommodation charge: GEL 360.00 | Net payment retained: GEL 360.00 | Balance: GEL 0.00",
+      "limits": "This is an invented readable record, not a verified Cloudbeds export format or evidence of any particular API capability. The allowance and refund describe one service recovery, not two losses."
+    },
+    {
+      "id": "RF-0919-01",
+      "kind": "Fictional cash-refund voucher",
+      "exact_contents": "19 Sep 2026 | 14:10\nReservation ARR-103 | Room 103\nPay guest: GEL 60.00 cash\nReason: Incorrect 12:30 room-readiness assurance; room keys delivered 13:17. Goodwill partial accommodation refund.\nApproved: Tamar\nPaid: Nino\nGuest receipt acknowledgement: fictional signature mark present\nRelated original payment: GEL 420.00 cash, 18 Sep 2026"
+    },
+    {
+      "id": "CASH-0919",
+      "kind": "Fictional reception cashbook excerpt",
+      "exact_contents": "19 Sep 2026 | 11:00 opening cash: GEL 700.00\n14:10 | RF-0919-01 | ARR-103 accommodation refund | OUT GEL 60.00\n15:00 closing cash counted: GEL 640.00\nOther cash movements 11:00–15:00: none"
+    },
+    {
+      "id": "ARRIVALS-0919",
+      "kind": "Closed-window paper arrival and key register",
+      "exact_contents": "19 Sep 2026 | Window 11:00–15:00 inclusive\nRoom | Party arrival | Keys handed over\n101 | 13:40 | 13:40\n102 | 14:20 | 14:20\n103 | 12:00 | 13:17\n201 | 14:03 | 14:03\n202 | 14:35 | 14:35\n203 | 14:58 | 14:58\nSix parties; one recorded room-readiness wait. Minute-resolution entries."
+    }
+  ],
+  "closed_window_cohort": {
+    "window": "2026-09-19 11:00–15:00, inclusive",
+    "unit": "Room or reservation party, as specified; not individual guests",
+    "previous_night_occupied_rooms": 16,
+    "departing_rooms": 6,
+    "stayover_rooms": 10,
+    "incoming_reservation_parties": 6,
+    "incoming_rooms": 6,
+    "unsold_rooms": 2,
+    "resulting_night_occupied_rooms": 16,
+    "occupancy_calculation": "16 / 18 = 88.9%, rounded; fictional property arithmetic only",
+    "turnovers_released_by_15": 6,
+    "incoming_parties_with_recorded_readiness_wait": 1,
+    "incoming_parties_with_no_recorded_readiness_wait": 5,
+    "rooms_delivered_after_standard_checkin": 0,
+    "late_checkout_requests_in_window": 1,
+    "late_checkout_requests_declined": 1,
+    "late_checkout_payments_collected": 0,
+    "compensation_refunds_paid": 1,
+    "compensation_total_gel": 60,
+    "limits": "This is one closed four-hour episode, not a weekly failure rate. Same-minute arrival and key entries do not establish zero seconds of waiting. Stayover service and workload outside the window are not measured here."
+  },
+  "money_interpretation": {
+    "late_checkout": "USD 40 was a conditional quote for an actual request that management declined. The guest never confirmed acceptance. It is neither profit, lost collected cash nor established recoverable revenue.",
+    "refund": "Within the fiction, 60 GEL was actually paid back from an earlier 420 GEL cash accommodation payment. It is the only documented service-recovery cash outflow in the window.",
+    "conversion": "No FX transaction or exchange rate is documented. Do not convert or add the USD quote to the GEL refund.",
+    "profit_limit": "No incremental cleaning cost, tax treatment, contribution margin, lifetime guest value or avoided future loss is established."
+  },
+  "staff_rework": {
+    "measured_staff_minutes": null,
+    "contemporaneous_time_study": false,
+    "known_activity": "One physical progress-check trip, an unanswered WhatsApp inquiry before that check, and a correction of the guest-facing readiness assurance.",
+    "remembered_estimate": "Nino remembers spending roughly five to ten minutes away from reception checking progress. Giorgi covered her. Neither kept departure and return times.",
+    "limits": "Do not present the estimate as measured labor savings. Do not sum overlapping staff time, treat the whole guest wait as staff rework, or infer that all checking could be eliminated."
+  },
+  "actually_used_simple_control": {
+    "method": "Box the next confirmed arrival on the paper housekeeping sheet, obtain Maia's phone acknowledgement, and require Tamar's release call before reception promises or hands over the room.",
+    "use_in_episode": "Used for 201 at 13:15; release call received at 13:55.",
+    "smooth_counterexample": "The 201 party arrived at 14:03 and received keys in the same recorded minute. The paper and phone process worked without another physical progress hunt by reception.",
+    "interpretation": "A correctly used simple rule can be sufficient. This example does not isolate the rule's causal effect: 201 was already next and its arrival left enough time.",
+    "ordinary_success": "On quieter days, numerical order also works when no guest needs a different room first. Those days have no quantified comparison record in this dossier."
+  },
+  "failure_distinctions": {
+    "information": "Reception lacked dependable progress visibility until the physical check.",
+    "authority_and_management": "Nino gave an unsupported readiness assurance; Tamar had not established a sufficiently clear confirmation routine. Tamar also chose to decline late checkout under uncertainty.",
+    "capacity": "One supervised cleaning team needed real time to prepare six rooms. A twin could not be substituted freely, and 103 was not physically ready at noon.",
+    "bounded_counterfactual": "Earlier notice might have allowed a different sequence or more accurate guest communication. No record proves that another sequence would have produced a noon-ready twin, prevented the refund or allowed paid late checkout."
+  },
+  "fixed_uncertainties_and_limits": [
+    "No exact arrival time was known for incoming 201 when late checkout was declined.",
+    "No confirmed willingness to pay USD 40 exists.",
+    "No dependable cleaning start-time or task-duration record exists.",
+    "No evidence establishes why Maia did not answer the 12:04 message immediately.",
+    "The precise minute of the physical check is remembered, not recorded.",
+    "The refund was discretionary compensation for communication and inconvenience, not proof of a contractual late-check-in breach.",
+    "The six-room outcome cannot establish sustainable staffing capacity for another day.",
+    "No real guest or operator evidence, interview consent or authentic invoice exists.",
+    "No engineering prototype, controlled queue replay, API access test, model deployment, completed experiment or future trial has occurred.",
+    "No evidence establishes that A2A would outperform a consistently followed paper-and-phone rule.",
+    "The supplied Georgian market research is broad context only and does not corroborate this property's invented episode."
+  ],
+  "manager_voice": "I need reception to know what we can honestly promise. Another screen is no help if somebody still has to chase the answer. My cleaners followed my sheet; I own that. And if the twin needs cleaning, it needs cleaning."
+}

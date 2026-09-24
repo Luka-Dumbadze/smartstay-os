@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What exactly did the client say about booking elsewhere, and when did that message arrive? Please show it with names and client details hidden."}}
+{"type":"turn.completed","usage":{"input_tokens":219453,"cached_input_tokens":197772,"cache_write_input_tokens":21648,"output_tokens":777,"reasoning_output_tokens":179}}

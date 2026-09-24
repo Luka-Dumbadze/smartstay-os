@@ -1,0 +1,33 @@
+SPOKEN INTERVIEW. Exchange 7/12. Stage: Frequency and loss; simulated minutes 20–24.
+The respondent just said, verbatim:
+The upstairs check was around 12:08, from memory. Reception found the team finishing 102, with 103 untouched. I decided they should finish 102 before moving on. I don’t have a recorded minute for that decision.
+
+At 12:12, the notebook records that I corrected the guests’ expectation: approximately 13:15, subject to inspection. We offered a temporary double, which they declined because they needed separate beds.
+
+Here are the relevant fictional entries, with names hidden. The paper housekeeping sheet reads:
+
+> Room | Clean complete | Release inspection  
+> 102 | 12:15 | 12:18  
+> 103 | 13:05 | 13:12
+
+The WhatsApp messages read:
+
+> 12:19 [Housekeeping]: 102 finished and checked. Going into 103 now.  
+> 13:12 [Manager]: 103 inspected, ready. [Reception] can give keys.
+
+The 12:19 message tells us they reported moving into 103 then. It isn’t an exact cleaning-start record.
+
+The PMS note reads:
+
+> 13:14 | Reception note: [Manager] confirmed room inspected at 13:12
+
+So release was communicated at 13:12, and reception had recorded the confirmation by 13:14. We don’t have an exact message-read time.
+
+Finally, the notebook says:
+
+> 13:17 | 103 keys handed over.
+
+The PMS check-in was entered at 13:18; that’s the administrative entry, not the key-handover time. I can’t account precisely for each minute between inspection and keys. The recorded arrival-to-key interval was 77 minutes, but that wasn’t 77 minutes of cleaning.
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Reconcile paid/refunded cash against compensation and declined quotes already mentioned; no unsupported exchange-rate or profit assumptions.

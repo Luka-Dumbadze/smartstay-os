@@ -1,0 +1,1235 @@
+AUDIT: interview is finished. Produce Markdown analysis, not further spoken questions.
+Evaluate your interviewer fidelity candidly. Cite turn numbers and verbatim short question fragments.
+Identify leading premises, stacked questions, hypothetical/pitch violations, missed probes, money/time/denominator
+ambiguity, capacity versus stale-information causes, and why the simple-rule baseline remains uncertain.
+Do not label simulated artifact narratives as genuine evidence. Extract an event trace table from the case/transcript.
+Explain G3/G4/G7 and the attached evaluator result. Do not force acceptance or create a fake final score.
+Suggest concrete neutral replacement questions for the Human Director. All lessons are rehearsal lessons, not market validation.
+TRANSCRIPT:
+# Simulated Mom Test interview 001
+
+**SYNTHETIC ROLEPLAY — no real hotelier, guest records, observed losses, or consent.**
+Both logical agents are pinned to `gpt-6-astra` in separate Codex sessions and working directories.
+The respondent's private preparation was not supplied to the interviewer. Only delivered dialogue is below;
+verbatim preparation, draft/retry outputs, prompts, events and execution metadata are retained in `simulation_001/calls/`.
+
+**Timing:** 12 question–answer exchanges (24 speaker messages) allocated across the seven protocol stages.
+Minute ranges represent the simulated 40-minute agenda, not measured human interview duration.
+The 18-room property, 85%+ weekend occupancy, current tool stack, and all incident-level figures are fictional assumptions/details.
+
+## Turn 01 — Operating context — simulated minutes 0–5
+
+### Interviewer
+
+We’re researching how hotels here operate, starting with a recent working day. You can skip any question. Please hide guest names, payment details, and other private information in any records you show. May we take notes? We’ll ask separately before recording or using an attributable quotation.
+
+What is your responsibility on a normal shift?
+
+### Respondent
+
+Yes, you can take notes. Keep guest and staff names out of them, please. Ask me separately about recording or quoting me by name.
+
+I’m the general manager. We have 18 rooms, so on a normal shift I move between checking arrivals with reception, agreeing room priorities with our housekeeping lead, and dealing with anything staff cannot settle themselves. During harvest, that can mean a late checkout, guests arriving before their rooms are ready, or covering a gap when someone is absent.
+
+Reception handles the bookings and check-ins. Our housekeeping lead decides when a room has passed inspection; I don’t overrule her just because someone is waiting downstairs. I handle complaints and can approve modest compensation. I also make the rota, watch spending and speak with the owner when we need more permanent staff.
+
+A fair amount of my work is making decisions that affect more than one department. If I approve a late checkout, I need to check what we have told the next guest. When that connection gets missed, it is my responsibility too. The newer staff need clear instructions and someone available to back them up.
+
+## Turn 02 — Last difficult episode — simulated minutes 5–8
+
+### Interviewer
+
+I’ll keep guest and staff names out of the notes. What was the last occasion when the shift did not go as planned, and when was that?
+
+### Respondent
+
+Last Saturday, 19 September. We had nine rooms checking out and nine arriving, and one of our experienced housekeeping staff called in sick. That left our housekeeping lead and a newer seasonal worker doing the rooms.
+
+Two arriving parties had been told they could have their rooms early—one at half past one, the other at two. Those times had started as requests, subject to housekeeping, but reception confirmed them without getting that confirmation. I had also approved a late checkout for one of those rooms without checking what we had told the incoming guests.
+
+The first party got their keys at 14:20, still before our normal three o’clock check-in, but later than we had promised. The other got theirs at 15:26. I dealt with that complaint and agreed some compensation.
+
+There were two things happening together. We genuinely had less cleaning capacity that day, and we had made promises we could not support. Better communication could have spared people some waiting and frustration. I cannot say it would have made that second room clean by three.
+
+## Turn 03 — Last difficult episode — simulated minutes 8–12
+
+### Interviewer
+
+Starting with the early-arrival requests, what happened first and what happened next, through both parties receiving their keys?
+
+Which of those times come from records, and which are estimates or still unknown?
+
+### Respondent
+
+The notebook puts both requests at 08:05: 13:30 for one room, 14:00 for the other, both subject to housekeeping.
+
+At 09:10, I approved a 13:00 late checkout for the room wanted at two. That is in the PMS. I hadn’t checked the early-arrival requests. Then reception’s notebook says they told that incoming party 14:00 at 10:42, and confirmed 13:30 for the other party at 10:48. We have those written entries, not recordings of the calls.
+
+At 11:56, housekeeping wrote in WhatsApp that only two people were working, flagged the late checkout and said neither early time could be confirmed. Reception replied at 12:03 to prioritise the room wanted at half past one. There’s no documented correction to either guest.
+
+The late checkout was processed at 13:07. That’s a PMS time; I cannot give you the exact moment the guests physically left.
+
+The first party arrived at 13:32, the second at 14:00, according to the notebook. The reception shifts overlapped, but there’s no written acknowledgement showing that the incoming receptionist received the warning.
+
+Housekeeping released the first room in WhatsApp at 14:18; the notebook records keys at 14:20. The second release was at 15:24, with keys at 15:26.
+
+Those are the times supported by our fictional records. Cleaning start times are estimates from staff recollection: around 13:25 for the first room and 14:12 for the second. We don’t have a timed cleaning log, or proof of when the incoming receptionist read the earlier message.
+
+## Turn 04 — Artifact walkthrough — simulated minutes 12–15
+
+### Interviewer
+
+Can you show me the notebook entries and WhatsApp exchange, with guest and staff names hidden, from the requests through the 12:03 reply?
+
+At that point, who was responsible for updating each guest, and where, if anywhere, was that responsibility recorded?
+
+### Respondent
+
+Yes. These are the fictional notebook excerpts, with staff initials removed and rooms labelled A and B.
+
+> 19/9 08:05 — A asks 13:30; B asks 14:00. Subject to HK.  
+> 10:42 — B called. Told them 14:00 room available.  
+> 10:48 — A confirmed 13:30 by phone.
+
+And the fictional WhatsApp exchange, using roles instead of names:
+
+> 19 Sep 07:12, room attendant: I’m sick and cannot come today. Sorry, [name removed].  
+> 19 Sep 11:56, housekeeping lead: Only [seasonal attendant] and me. B has late checkout. Cannot confirm 13:30 for A or 14:00 for B. Which first?  
+> 19 Sep 12:03, morning reception: A first please. Both early arrivals in notebook.
+
+At 12:03, I would have expected the morning receptionist to update both parties. She had made the assurances and was still on duty. But that is my expectation as manager—not an assignment written in those entries. Neither record says who must call, by when, or whether either guest was reached.
+
+The reply settles which room to prioritise. It doesn’t settle what to tell the guests. I hadn’t made that responsibility explicit enough, including what should pass to the next shift if the calls were still outstanding. I can’t treat the absence of a written correction as proof that no conversation happened, but we have no documented correction to rely on.
+
+## Turn 05 — Artifact walkthrough — simulated minutes 15–18
+
+### Interviewer
+
+What did morning reception and the incoming receptionist each say they saw and did after the 11:56 warning, if you’ve heard their accounts?
+
+Can you show the shift handover entry, if one exists, with names hidden, including anything recorded about contacting either party?
+
+### Respondent
+
+I don’t have separate accounts from both receptionists that I can quote reliably. I should be careful there.
+
+For morning reception, the 12:03 reply shows she responded to the warning and asked housekeeping to prioritise room A. It doesn’t establish whether she then contacted either party.
+
+For the incoming receptionist, we don’t know when he read that warning. My account is that he told the first party to expect a short wait, but I don’t have an exact time or his exact words recorded.
+
+There isn’t a written handover entry linking the promises, the warning and responsibility for calling the guests. The rota shows a 13:30–14:00 overlap; that establishes time together, not what they discussed.
+
+The next relevant fictional notebook entries, with names hidden, are:
+
+> 13:32 — A arrived. Waiting in courtyard.  
+> 14:00 — B arrived. Says 14:00 was promised.
+
+Neither records a call to revise the arrival time. So I can show you that gap, but I cannot fill it with a conversation I don’t have. I arranged the overlap, but I hadn’t made sure these unresolved promises had to be explicitly handed over.
+
+## Turn 06 — Artifact walkthrough — simulated minutes 18–20
+
+### Interviewer
+
+Can you show the room-release messages and key handover entries for A and B, with names hidden?
+
+What happened between each party’s arrival and receiving their keys, including what you personally saw and what you learned from others?
+
+### Respondent
+
+Yes. These are the fictional WhatsApp release messages, with names removed and the same room labels:
+
+> 19 Sep 14:18, housekeeping lead: A checked, ready. B still being cleaned.  
+> 19 Sep 15:24, housekeeping lead: B checked and ready. You can give keys.
+
+And the fictional notebook entries:
+
+> 14:20 — A keys given.  
+> 15:26 — B keys given. [Manager] agreed [compensation details redacted].
+
+A arrived at 13:32 and waited 48 minutes. The notebook places them in the courtyard. My understanding is that reception said it would be a short wait, but I cannot give you their exact words. The newer attendant later recalled starting that room around 13:25. That’s an estimate; the release message is the recorded time.
+
+B arrived at 14:00 and waited 86 minutes. Reception checked whether the spare single could work, but it wasn’t suitable for the party. The housekeeping lead later described extra cleaning in a muddy bathroom and estimated working on B from about 14:12 to 15:15, with an interruption. That isn’t a measured hour of continuous cleaning.
+
+What I personally handled was B’s complaint and the compensation decision. I place that conversation around 14:40–14:48 from my later reconstruction, not a timestamped record. I wasn’t watching either room being cleaned or standing beside reception throughout the wait.
+
+Reception and housekeeping also spent time repeating progress enquiries. Those are reconstructed staff accounts. The firm points are the recorded arrivals, inspection releases and key handovers.
+
+## Turn 07 — Frequency and loss — simulated minutes 20–24
+
+### Interviewer
+
+For a completed period you have records for, how many arriving parties received confirmed early-room times, and how many received keys later than those times?
+
+For B’s compensation, can you show the adjustment and payment records with private details hidden, distinguishing cash paid or refunded from charges waived?
+
+### Respondent
+
+For the completed week of 14–20 September, we counted 34 arriving room bookings. Two recorded early-time assurances were missed: A and B. B also received keys after our normal 15:00 check-in.
+
+I don’t have a reliable count of **all** confirmed early-room times that week, including ones we met. So I can give you two recorded misses among 34 arrivals, but not a failure rate for early confirmations. Our counting unit was a room booking, which isn’t necessarily the same as a travelling party.
+
+For B, these are the fictional folio excerpts, with identifying and payment-method details hidden. Amounts are in GEL:
+
+> Payment previously received: 320.00  
+> One-night room charge: 320.00  
+> Reserved wine service for two: 30.00  
+> 19 Sep 15:31 — Room service-recovery adjustment: −60.00  
+> 19 Sep 15:32 — Wine service waived: −30.00  
+> 19 Sep 15:34 — Cash refund paid: 60.00  
+> Closing charges: 260.00 | Net payments retained: 260.00 | Balance: 0.00
+
+The separate fictional cashbook entry reads:
+
+> 19 Sep 15:34 — OUT 60.00 GEL | B refund | [staff identifier removed]
+
+So **60 GEL actually left the till**. The room adjustment and the refund are the same concession, not two separate losses. The other **30 GEL was an unpaid wine charge we waived**; they still received the wine service. That makes a 90 GEL reduction from the original charges, but only 60 GEL in cash refunded.
+
+## Turn 08 — Frequency and loss — simulated minutes 24–27
+
+### Interviewer
+
+For the repeated progress enquiries and complaint handling, what records, if any, distinguish staff time spent doing that work from the guests’ waiting time, and what remains an estimate?
+
+How significant were the refund and waived charge compared with the other problems you handled that week?
+
+### Respondent
+
+We don’t have a time sheet for those enquiries. The arrival and key entries support the guests’ waits—48 minutes for A and 86 for B—but those are not staff working minutes.
+
+The staff-time figure comes from our same-evening reconstruction. We estimated 22 minutes for reception: eight reconstructing the promise and handling the initial complaint, seven checking an alternative and explaining the situation, and seven processing the compensation. Housekeeping estimated eight minutes answering repeated progress enquiries. I estimated eight minutes handling the complaint and five checking the refund.
+
+That’s 43 staff minutes, with each interval counted once. It excludes ordinary cleaning and normal check-in. The messages and financial entries support that parts of the work happened; they don’t establish how long each task took. Even the seven minutes for processing the compensation remains an estimate, despite having timestamps for the individual entries. I wouldn’t claim we could recover all 43 minutes.
+
+The 60 GEL refund and 30 GEL waiver were enough for me to notice and check. But I don’t have a complete costed list of that week’s other problems, so I can’t honestly rank this as our biggest loss or give you its share of weekly costs.
+
+Operationally, what concerned me was pulling people into repeated explanations while housekeeping was already short. That was a management problem worth addressing, even without pretending the compensation alone proves a large financial problem.
+
+## Turn 09 — Past attempts and workarounds — simulated minutes 27–30
+
+### Interviewer
+
+What, if anything, have you changed to address this, and when did you last change the process?
+
+Can you show a case after that change, with names hidden, and walk me through what happened?
+
+### Respondent
+
+I haven’t put a new process in place since Saturday. The last change was on 5 September: a brief 12:30 review between reception and the housekeeping lead, using a paper arrival list. They agree priorities, and reception is supposed to check with housekeeping before confirming early access.
+
+A case after that change was Saturday, 12 September. To be clear, that was before the incident we’ve been discussing.
+
+The fictional notebook has a tick recording that the review happened that day. I don’t have a verbatim handover passage to quote. The case details I can give you, without names, are these: we had nine departures and nine arriving room bookings. Two parties requested early rooms. Those requests stayed conditional until inspection, and all nine assigned arrival rooms were released by 14:52. No missed readiness assurance or room-readiness compensation was recorded.
+
+But we also had all three housekeeping workers present, and nobody had been granted checkout beyond noon. So I can’t attribute that result just to the paper review.
+
+The review was recorded again on 18 September, then missed on the 19th while reception handled departures and housekeeping covered the absence. That’s the weakness: I introduced something that depended on the busiest people finding time, without making the outstanding guest updates explicit. We haven’t yet tested a further change.
+
+## Turn 10 — Past attempts and workarounds — simulated minutes 30–33
+
+### Interviewer
+
+What staff time or spending did introducing and running the 12:30 review involve, and what part is recorded versus estimated?
+
+Before 19 September, on what occasions, if any, was the review missed, and what happened to the early-room requests on those occasions?
+
+### Respondent
+
+It used the existing paper arrival list and time from reception and the housekeeping lead. I don’t have a recorded setup cost or a timed account of explaining it to staff. There’s no separate spending figure I can substantiate.
+
+I described it as a five-minute review, but that was the intended length, not a measured average. If both people spent five minutes together, that would be ten staff minutes. I wouldn’t multiply that across the fortnight and present it as actual time worked—we don’t have the records for that.
+
+The notebook ticks establish that the review happened on 12 and 18 September. They don’t record its duration.
+
+Before the 19th, I can’t identify a particular missed review with a documented outcome for the early-room requests. We weren’t keeping a daily completed-or-missed log. A missing tick alone wouldn’t tell me whether they skipped the conversation or simply didn’t mark it.
+
+So the missed review I can discuss is the 19th. I can’t say it was the first time we missed it, and I can’t give you earlier guest outcomes to compare. That’s a limit in how I followed up the process after introducing it.
+
+## Turn 11 — Counterexample and competing cause — simulated minutes 33–37
+
+### Interviewer
+
+Comparing 12 and 19 September, what do the records or housekeeping lead’s account establish about the available rooms, staff time and cleaning work, and what remains unknown?
+
+What other operational problems, if any, have you given priority over this one since then?
+
+### Respondent
+
+Both Saturdays had nine departures and nine arriving room bookings. That gives us a similar turnover count, but it doesn’t establish the same amount of cleaning work.
+
+On the 12th, three housekeeping staff were present, no checkout beyond noon had been granted, and all nine assigned arrival rooms were released by 14:52. The review was marked as completed. We don’t have room-by-room cleaning durations or exact physical departure times, so I can’t say how much spare capacity they had.
+
+On the 19th, only the lead and the newer attendant were working. There were also eight stayover rooms, though I don’t have measured servicing time for those. B’s checkout was processed at 13:07. The lead recalled extra work on its muddy bathroom and cleaning from roughly 14:12 to 15:15, including an interruption. Those times are estimates.
+
+The remaining unoccupied room was a clean single, and it wasn’t a suitable substitute accepted by either affected party. So an empty room didn’t give reception a straightforward solution.
+
+What remains unknown is how much of the difference came from staffing, later room access, cleaning condition or interruptions. We also can’t establish that doing the review would have got B ready by three. It might have prevented the promise.
+
+Since then, I haven’t documented another particular problem as taking priority over this one. Staffing cover and daily room readiness remain my responsibilities, but I can’t give you a specific competing incident or claim I made a formal priority decision. The honest position is that I haven’t implemented the follow-up yet.
+
+## Turn 12 — Concrete next step — simulated minutes 37–40
+
+### Interviewer
+
+My understanding is that A and B received keys after their confirmed times; B also passed normal check-in. B received a 60 GEL cash refund and a 30 GEL waiver. Staff rework remains estimated, guest updates remain unconfirmed, and the contributions of staffing, room access and cleaning work remain unresolved. What have I missed or misstated?
+
+What next step, if any, is agreed to check this account with those involved, including the date, who can authorize reviewing the records, and the permitted scope?
+
+### Respondent
+
+That is a fair account. I’d add that the PMS still showed B as dirty at arrival. This wasn’t a room incorrectly marked clean; reception had confirmed a time without housekeeping confirmation. And I approved the late checkout without checking the incoming promise.
+
+We know we were one experienced attendant short and that B had a late checkout. What remains unresolved is how much each factor contributed to the delay, and what better communication could actually have prevented. The 60 GEL adjustment and cash refund are the same concession; the separate 30 GEL waiver covered wine service they still received.
+
+There is **no agreed next step or date** for checking this with the staff. My agreement to interview notes does not mean they have agreed to interviews, recordings or quotations.
+
+I can arrange an internal review of the operational records as manager. I haven’t authorised wider access or sharing, and we haven’t established who would approve any broader disclosure.
+
+A modest next step would be to agree a short review with the two receptionists and housekeeping lead, limited to the early promises, guest contact and handover. We could use redacted excerpts and distinguish what each person remembers from what was written. That is a proposal, not a booked meeting or an authorised trial.
+
+
+CASE:
+{
+  "schema_version": "1.0",
+  "is_synthetic": true,
+  "case_id": "CASE_SIMULATED_001",
+  "property_type": "unknown",
+  "room_count": 18,
+  "interviewee_role": "general_manager",
+  "interview_date": "2026-09-23",
+  "incident_date_range": {
+    "start": "2026-09-19",
+    "end": "2026-09-19"
+  },
+  "roles": [
+    {
+      "role_id": "general_manager",
+      "responsibility": "Approves late checkouts and modest compensation, handles complaints, arranges the rota, agrees priorities and monitors spending.",
+      "person_label": "Manager"
+    },
+    {
+      "role_id": "reception",
+      "responsibility": "Handles bookings, arrival assurances, check-ins, guest communication and compensation processing. Morning and incoming receptionists share this operational responsibility; their separate accounts were not obtained.",
+      "person_label": null
+    },
+    {
+      "role_id": "housekeeping_lead",
+      "responsibility": "Sets cleaning priorities, performs cleaning and decides when rooms have passed inspection and can be released.",
+      "person_label": "Housekeeping lead"
+    },
+    {
+      "role_id": "experienced_attendant",
+      "responsibility": "Experienced housekeeping worker who reported being unable to attend the incident shift.",
+      "person_label": "Absent attendant"
+    },
+    {
+      "role_id": "seasonal_attendant",
+      "responsibility": "Newer seasonal housekeeping worker who cleaned rooms alongside the housekeeping lead.",
+      "person_label": "Seasonal attendant"
+    }
+  ],
+  "incident_summary": "SYNTHETIC episode: On 19 September, nine departures and nine arriving room bookings coincided with an experienced attendant's absence. Reception confirmed early access for A at 13:30 and B at 14:00 without housekeeping confirmation. The manager approved B's 13:00 late checkout without checking the incoming promise. Housekeeping warned at 11:56 that neither early time could be confirmed; reception requested A first, but guest corrections and handover acknowledgement remain undocumented. A arrived at 13:32 and received keys at 14:20; B arrived at 14:00 and received keys at 15:26. B received a 60 GEL cash refund and a separate 30 GEL waiver for wine service supplied. The relative contributions of staffing, later room access, cleaning condition, interruptions and unsupported promises remain unresolved.",
+  "trace": [
+    {
+      "step_id": "s01",
+      "sequence": 1,
+      "occurred_at": "2026-09-19T07:12:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Timestamp from the fictional WhatsApp excerpt.",
+      "actor_role_id": "experienced_attendant",
+      "recipient_role_id": null,
+      "source_system": "WhatsApp",
+      "input_state": "The experienced attendant was unable to attend work because of illness.",
+      "expected_action": "A specific absence-reporting requirement was not elicited.",
+      "actual_outcome": "The attendant reported being sick and unable to come. The housekeeping lead and seasonal attendant covered the rooms.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_warning",
+        "a_incident"
+      ]
+    },
+    {
+      "step_id": "s02",
+      "sequence": 2,
+      "occurred_at": "2026-09-19T08:05:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Notebook entry time; not independently verified outside the fiction.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook",
+      "input_state": "A requested 13:30 access and B requested 14:00 access.",
+      "expected_action": "Requests were subject to housekeeping confirmation.",
+      "actual_outcome": "Both early-access requests were recorded as conditional.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_requests"
+      ]
+    },
+    {
+      "step_id": "s03",
+      "sequence": 3,
+      "occurred_at": "2026-09-19T09:10:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Manager reported a PMS timestamp; the underlying PMS entry was not displayed.",
+      "actor_role_id": "general_manager",
+      "recipient_role_id": null,
+      "source_system": "PMS, as described by the manager",
+      "input_state": "B had an incoming 14:00 request recorded in the notebook.",
+      "expected_action": "The manager described checking the incoming commitment when approving a late checkout as part of the responsibility.",
+      "actual_outcome": "The manager approved a 13:00 late checkout without checking the early-arrival request.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_timeline",
+        "a_context"
+      ]
+    },
+    {
+      "step_id": "s04",
+      "sequence": 4,
+      "occurred_at": "2026-09-19T10:42:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Written notebook entry, not a recording of the call.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook",
+      "input_state": "B's 14:00 request was conditional on housekeeping; a 13:00 late checkout had been approved.",
+      "expected_action": "Reception was supposed to check with housekeeping before confirming early access.",
+      "actual_outcome": "Morning reception told B that the room would be available at 14:00 without housekeeping confirmation.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_requests",
+        "a_incident",
+        "a_process"
+      ]
+    },
+    {
+      "step_id": "s05",
+      "sequence": 5,
+      "occurred_at": "2026-09-19T10:48:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Written notebook entry, not a recording of the call.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook",
+      "input_state": "A's 13:30 request remained subject to housekeeping.",
+      "expected_action": "Reception was supposed to check with housekeeping before confirming early access.",
+      "actual_outcome": "Morning reception confirmed 13:30 by phone without housekeeping confirmation.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_requests",
+        "a_incident",
+        "a_process"
+      ]
+    },
+    {
+      "step_id": "s06",
+      "sequence": 6,
+      "occurred_at": "2026-09-19T11:56:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Timestamp from the fictional WhatsApp warning.",
+      "actor_role_id": "housekeeping_lead",
+      "recipient_role_id": "reception",
+      "source_system": "WhatsApp",
+      "input_state": "Only the lead and seasonal attendant were working, B had a late checkout, and both early times had been promised.",
+      "expected_action": "Housekeeping requested a room priority. The manager expected morning reception to update both guests, but no assignment or deadline was recorded.",
+      "actual_outcome": "Housekeeping explicitly stated that neither early time could be confirmed. Reception subsequently selected A first; guest-contact completion remains unknown.",
+      "acknowledged_at": "2026-09-19T12:03:00+04:00",
+      "completed_at": null,
+      "artifact_refs": [
+        "a_warning",
+        "a_handover"
+      ]
+    },
+    {
+      "step_id": "s07",
+      "sequence": 7,
+      "occurred_at": "2026-09-19T12:03:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Timestamp from the fictional WhatsApp reply.",
+      "actor_role_id": "reception",
+      "recipient_role_id": "housekeeping_lead",
+      "source_system": "WhatsApp",
+      "input_state": "Housekeeping had rejected confirmation of both early times and requested a priority.",
+      "expected_action": "Select the room priority; the manager also expected morning reception to update both guests.",
+      "actual_outcome": "Morning reception requested A first and referred to both early arrivals in the notebook. The reply did not assign guest calls, record a deadline or confirm that either guest was reached.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_warning",
+        "a_handover"
+      ]
+    },
+    {
+      "step_id": "s08",
+      "sequence": 8,
+      "occurred_at": "2026-09-19T13:32:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Arrival time from the fictional notebook. The timing and wording of any short-wait assurance remain unknown.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook",
+      "input_state": "A had been promised 13:30 access. The rota reportedly provided a 13:30–14:00 reception overlap, but no warning acknowledgement or completed guest correction was documented.",
+      "expected_action": "Provide the room at the confirmed time; inspection release remained necessary.",
+      "actual_outcome": "A arrived and waited in the courtyard. The manager reported that incoming reception described a short wait, without a reliable exact time or quotation.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_arrivals",
+        "a_handover"
+      ]
+    },
+    {
+      "step_id": "s09",
+      "sequence": 9,
+      "occurred_at": "2026-09-19T14:00:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Arrival time from the fictional notebook. The 13:07 checkout-processing time was reported from the PMS, not inspected directly.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook; manager's account of PMS state",
+      "input_state": "B had been promised 14:00 access. Prior checkout was processed at 13:07, but physical departure time is unknown. The manager said the PMS still showed B as dirty at arrival.",
+      "expected_action": "Provide access at the promised time after housekeeping inspection.",
+      "actual_outcome": "B arrived and stated that 14:00 had been promised. The room was not ready. Reception checked a spare single, but it was unsuitable; the time of that check is unknown.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_arrivals",
+        "a_timeline",
+        "a_work_account",
+        "a_closing"
+      ]
+    },
+    {
+      "step_id": "s10",
+      "sequence": 10,
+      "occurred_at": "2026-09-19T14:18:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Timestamp from the fictional inspection-release message.",
+      "actor_role_id": "housekeeping_lead",
+      "recipient_role_id": "reception",
+      "source_system": "WhatsApp",
+      "input_state": "A was waiting and B was still being cleaned.",
+      "expected_action": "The housekeeping lead determines whether the room has passed inspection before release.",
+      "actual_outcome": "The lead reported A checked and ready, with B still being cleaned.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T14:18:00+04:00",
+      "artifact_refs": [
+        "a_releases",
+        "a_context"
+      ]
+    },
+    {
+      "step_id": "s11",
+      "sequence": 11,
+      "occurred_at": "2026-09-19T14:20:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Key handover time from the fictional notebook.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook",
+      "input_state": "Housekeeping released A at 14:18. A had arrived at 13:32 following a 13:30 assurance.",
+      "expected_action": "Give keys following inspection release.",
+      "actual_outcome": "A received keys after 48 minutes of guest waiting, 50 minutes after the promised time and before normal 15:00 check-in.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T14:20:00+04:00",
+      "artifact_refs": [
+        "a_keys",
+        "a_arrivals",
+        "a_requests",
+        "a_releases"
+      ]
+    },
+    {
+      "step_id": "s12",
+      "sequence": 12,
+      "occurred_at": null,
+      "time_basis": "estimate",
+      "time_note": "Manager's later reconstruction places the complaint conversation around 14:40–14:48 on 19 September; no timestamped conversation record.",
+      "actor_role_id": "general_manager",
+      "recipient_role_id": null,
+      "source_system": "Manager's recollection",
+      "input_state": "B was waiting after the promised 14:00 access time.",
+      "expected_action": "The manager handles complaints and may approve modest compensation.",
+      "actual_outcome": "The manager handled B's complaint and agreed compensation. The conversation duration is estimated.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_work_account",
+        "a_context"
+      ]
+    },
+    {
+      "step_id": "s13",
+      "sequence": 13,
+      "occurred_at": "2026-09-19T15:24:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Timestamp from the fictional inspection-release message.",
+      "actor_role_id": "housekeeping_lead",
+      "recipient_role_id": "reception",
+      "source_system": "WhatsApp",
+      "input_state": "B remained unavailable after its promised time and normal 15:00 check-in.",
+      "expected_action": "Complete inspection before authorizing key handover.",
+      "actual_outcome": "The lead reported B checked and ready and told reception that keys could be given.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T15:24:00+04:00",
+      "artifact_refs": [
+        "a_releases"
+      ]
+    },
+    {
+      "step_id": "s14",
+      "sequence": 14,
+      "occurred_at": "2026-09-19T15:26:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Key handover time from the fictional notebook.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Reception notebook",
+      "input_state": "Housekeeping released B at 15:24. B had arrived at its promised 14:00 time.",
+      "expected_action": "Give keys following inspection release.",
+      "actual_outcome": "B received keys after 86 minutes of guest waiting and 26 minutes after normal check-in. The notebook recorded the manager's compensation agreement.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T15:26:00+04:00",
+      "artifact_refs": [
+        "a_keys",
+        "a_arrivals",
+        "a_releases"
+      ]
+    },
+    {
+      "step_id": "s15",
+      "sequence": 15,
+      "occurred_at": "2026-09-19T15:31:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Fictional folio timestamp. Reception processing is described in the staff reconstruction; the individual posting identity was not supplied.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Folio",
+      "input_state": "B had paid 320 GEL against a 320 GEL room charge, with an additional unpaid 30 GEL wine-service charge.",
+      "expected_action": "Process the compensation approved by the manager.",
+      "actual_outcome": "A 60 GEL room service-recovery adjustment was posted. This adjustment and the subsequent 60 GEL cash refund are the same concession.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_folio",
+        "a_rework"
+      ]
+    },
+    {
+      "step_id": "s16",
+      "sequence": 16,
+      "occurred_at": "2026-09-19T15:32:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Fictional folio timestamp; individual posting identity was not supplied.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Folio",
+      "input_state": "B's 30 GEL wine-service charge was unpaid.",
+      "expected_action": "Process the agreed wine-service waiver.",
+      "actual_outcome": "The 30 GEL charge was waived although the wine service was supplied. This was waived revenue, not cash refunded.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_folio",
+        "a_rework",
+        "a_closing"
+      ]
+    },
+    {
+      "step_id": "s17",
+      "sequence": 17,
+      "occurred_at": "2026-09-19T15:34:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Matching fictional folio and cashbook timestamps; staff identifier was removed.",
+      "actor_role_id": "reception",
+      "recipient_role_id": null,
+      "source_system": "Folio and cashbook",
+      "input_state": "The 60 GEL room adjustment and 30 GEL wine waiver had reduced total charges from 350 GEL to 260 GEL.",
+      "expected_action": "Pay the approved refund and reconcile the balance.",
+      "actual_outcome": "60 GEL was refunded in cash. Closing charges and net payments retained were both 260 GEL, with zero balance. Actual cash outflow was 60 GEL, not 90 or 120 GEL.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-19T15:34:00+04:00",
+      "artifact_refs": [
+        "a_folio",
+        "a_cashbook",
+        "a_rework"
+      ]
+    }
+  ],
+  "handover_failure_mechanism": {
+    "summary": "SYNTHETIC analyst reconstruction: Reception converted conditional early-access requests into assurances without housekeeping confirmation. The manager separately approved B's late checkout without checking the incoming request. At s06, housekeeping explicitly warned reception that neither early time could be confirmed. At s07, reception selected A first, but the available entries neither assigned nor demonstrated completion of guest updates. The manager expected morning reception to make those updates; that expectation was not a recorded assignment. Reception shift overlap does not establish transfer or acceptance of the warning, and missing correction records do not prove that no conversation occurred. Subsequent releases and key handovers establish missed assurances. Staffing and room-access constraints remain competing explanations for actual readiness delays.",
+    "step_ids": [
+      "s02",
+      "s03",
+      "s04",
+      "s05",
+      "s06",
+      "s07",
+      "s08",
+      "s09",
+      "s11",
+      "s14"
+    ],
+    "artifact_refs": [
+      "a_requests",
+      "a_warning",
+      "a_timeline",
+      "a_handover",
+      "a_arrivals",
+      "a_keys",
+      "a_capacity",
+      "a_closing"
+    ]
+  },
+  "verified_cash_leakage_gel": 60,
+  "staff_rework_minutes": null,
+  "observed_frequency_per_month": 8.571428571428571,
+  "observation_window": {
+    "start": "2026-09-14",
+    "end": "2026-09-20"
+  },
+  "incident_count": 2,
+  "eligible_opportunities": 34,
+  "opportunity_unit": "Arriving room booking across all arrivals in the closed week. Two bookings had recorded missed early-time assurances. The count of all confirmed early-time bookings is unknown, so this is not an early-confirmation failure-rate denominator.",
+  "quantification_artifacts": {
+    "cash": [
+      "a_folio",
+      "a_cashbook"
+    ],
+    "rework": [],
+    "frequency": [
+      "a_count",
+      "a_requests",
+      "a_keys"
+    ]
+  },
+  "supporting_artifacts": [
+    {
+      "artifact_id": "a_context",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 01",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 01: Narrative inspected WITHIN THE FICTION only; no real operator or consent was verified. Manager described 18 rooms, responsibilities, housekeeping inspection authority and permission for anonymous notes only.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_incident",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 02",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 02: Narrative inspected WITHIN THE FICTION only. Manager dated the episode to 19 September, described nine departures and nine arrivals, one absent experienced attendant, unsupported early assurances and compensation. This is a fictional account, not independent operational verification.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_timeline",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 03",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 03: Narrative inspected WITHIN THE FICTION only. Manager reported PMS times of 09:10 for approving B's 13:00 checkout and 13:07 for processing checkout. Original PMS entries were not displayed; exact physical departure and incoming receptionist warning-read time remain unknown.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_requests",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 04 notebook excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 04: D and reviewed=true mean fictional excerpts inspected WITHIN THE FICTION only, not real records authenticated. Entries show conditional requests at 08:05, B's 14:00 assurance at 10:42 and A's 13:30 confirmation at 10:48; no call recordings were provided.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_warning",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 04 WhatsApp excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 04: D and reviewed=true mean fictional excerpts inspected WITHIN THE FICTION only. Messages show sickness reported at 07:12, housekeeping rejecting confirmation of both early times at 11:56 and morning reception prioritizing A at 12:03. No real messaging account was accessed.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_handover",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turns 04–05",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turns 04–05: Narrative inspected WITHIN THE FICTION only. Manager expected morning reception to update guests but identified no written assignment, deadline or completion. Reported rota overlap was 13:30–14:00; no separate reliable receptionist accounts or written warning handover were supplied. Missing records do not prove absent conversations.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_arrivals",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 05 notebook excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 05: D and reviewed=true mean fictional excerpts inspected WITHIN THE FICTION only. A arrived at 13:32 and waited in the courtyard; B arrived at 14:00 and stated that 14:00 was promised. No guest-update call was recorded in these excerpts.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_releases",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 06 WhatsApp release excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 06: D and reviewed=true mean fictional excerpts inspected WITHIN THE FICTION only. Housekeeping released A at 14:18 and B at 15:24 after inspection. These are release times, not timed cleaning-duration observations.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_keys",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 06 notebook key entries",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 06: D and reviewed=true mean fictional excerpts inspected WITHIN THE FICTION only. Keys were recorded at 14:20 for A and 15:26 for B, with manager-approved compensation noted for B. Combined with arrivals, these support guest waits of 48 and 86 minutes, not staff labor.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_work_account",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 06",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 06: Narrative inspected WITHIN THE FICTION only. Seasonal attendant's A cleaning start was recalled around 13:25; lead's B cleaning was recalled around 14:12–15:15 with an interruption and extra muddy-bathroom work. Manager placed the complaint conversation around 14:40–14:48. These are estimates, not inspected timed logs; the spare single was unsuitable.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_count",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 07 weekly count account",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 07: Narrative count account inspected WITHIN THE FICTION only; the underlying weekly arrival register was not supplied. Manager reported 34 arriving room bookings during 14–20 September and two recorded misses, A and B. All confirmed early-time bookings were not counted reliably. The 30-day normalization is 2*30/7, not a calendar-month observation or annual forecast.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_folio",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 07 folio excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 07: D and reviewed=true mean fictional excerpts inspected WITHIN THE FICTION only. Previously paid 320 GEL; room charge 320 GEL; wine charge 30 GEL. Entries show a 60 GEL room adjustment at 15:31, 30 GEL wine waiver at 15:32 and 60 GEL cash refund at 15:34. Final charges and net retained payments were 260 GEL. Adjustment and refund are one concession; the supplied wine was waived revenue.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_cashbook",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 07 cashbook excerpt",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 07: D and reviewed=true mean the fictional cashbook excerpt was inspected WITHIN THE FICTION only. It records 60 GEL OUT for B's refund at 15:34, matching the folio. No actual cash movement or real loss was verified.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_rework",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 08",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 08: Narrative inspected WITHIN THE FICTION only. Same-evening reconstruction estimated reception 22 minutes, housekeeping eight and manager 13, totaling 43 staff minutes without repeated intervals and excluding normal cleaning/check-in. No timed labor record supports verification. Manager considered repeated explanations worth addressing but could not rank this against a costed weekly problem list or claim all time recoverable.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_process",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turns 09–10",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turns 09–10: Narrative inspected WITHIN THE FICTION only; no formal baseline test or full original review log was supplied. Manager introduced a 12:30 paper-list review on 5 September, reported completion ticks on 12 and 18 September, and a missed review on 19 September. Early requests stayed conditional on 12 September and all nine rooms were released by 14:52, with no missed assurance or readiness compensation recorded. Three housekeeping workers and no post-noon checkout confound the comparison. Setup cost and actual duration are unknown; five minutes was an intended review length. No further change was tested.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_capacity",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 11",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 11: Narrative inspected WITHIN THE FICTION only. Both Saturdays had nine departures and nine arrivals, but workload equivalence is unestablished. On 19 September two housekeeping workers also faced eight stayovers, later access to B, recalled extra cleaning and an interruption. The clean single was not an accepted suitable substitute. Durations, spare capacity and each cause's contribution remain unknown.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_closing",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC interview_transcript_001.md Turn 12",
+      "evidence_label": "I",
+      "reviewed": true,
+      "summary": "SYNTHETIC interview_transcript_001.md Turn 12: Narrative inspected WITHIN THE FICTION only. Manager affirmed the account and said B still showed dirty in the PMS at arrival; the underlying display was not inspected. Manager reported ability to arrange internal record review but no agreed follow-up/date, staff consent, wider sharing authorization, established broader-disclosure approver or authorized trial. Suggested staff review was expressly a proposal, not a commitment. No real consent exists.",
+      "collected_on": "2026-09-23"
+    }
+  ],
+  "root_cause_code": "ARRIVAL_READINESS",
+  "alternative_explanations": [
+    "One experienced attendant was absent, leaving the housekeeping lead and newer seasonal attendant to cover the incident shift.",
+    "B's approved late checkout delayed potential room access; 13:07 is checkout processing, not a verified physical departure time.",
+    "B required extra muddy-bathroom cleaning and experienced an interruption, according to recollection; durations and causal contributions are unmeasured.",
+    "Eight stayover rooms added unmeasured servicing work on the incident day.",
+    "The clean unoccupied single was not a suitable accepted substitute for either affected party.",
+    "The 12 September comparator had three housekeeping workers and no checkout beyond noon; equal turnover counts do not establish equal work or isolate the review's effect.",
+    "Guest corrections or a verbal handover may have occurred without documentation; separate reception accounts were not obtained.",
+    "B reportedly remained marked dirty in the PMS at arrival, so the account does not establish an incorrect clean-status flag.",
+    "The missed paper review and unsupported assurances show implementation and responsibility gaps, but do not establish that a simple control was inherently insufficient or that communication alone could ensure B's readiness by 15:00."
+  ],
+  "a2a_suitability": {
+    "distinct_operational_roles": 4,
+    "asynchronous_state_dependencies": true,
+    "dependencies": [
+      {
+        "from_step_id": "s06",
+        "to_step_id": "s07",
+        "from_role_id": "housekeeping_lead",
+        "to_role_id": "reception",
+        "state_dependency": "Reception's guest commitments and room prioritization depended on housekeeping's capacity warning and inability to confirm the promised times.",
+        "constraint": "The 12:03 reply addressed priority but did not establish guest-contact ownership or completion.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_warning",
+          "a_handover"
+        ]
+      },
+      {
+        "from_step_id": "s10",
+        "to_step_id": "s11",
+        "from_role_id": "housekeeping_lead",
+        "to_role_id": "reception",
+        "state_dependency": "A's key handover depended on inspection release by the housekeeping lead.",
+        "constraint": "Housekeeping alone determined inspection readiness; A was released at 14:18 and keys followed at 14:20.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_context",
+          "a_releases",
+          "a_keys"
+        ]
+      },
+      {
+        "from_step_id": "s13",
+        "to_step_id": "s14",
+        "from_role_id": "housekeeping_lead",
+        "to_role_id": "reception",
+        "state_dependency": "B's key handover depended on inspection release by the housekeeping lead.",
+        "constraint": "B was released at 15:24 and keys followed at 15:26; this successful release handoff does not establish that earlier communication could accelerate cleaning.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_releases",
+          "a_keys",
+          "a_capacity"
+        ]
+      }
+    ],
+    "single_database_crud": null,
+    "simple_rule_inadequacy_rationale": null
+  },
+  "gate_evidence": {
+    "real_problem": {
+      "recent_episode_confirmed": true,
+      "recency_rationale": "Within the synthetic scenario, the episode occurred four days before the scenario interview date and involved the current process introduced on 5 September. The manager reported no subsequent implementation change. This is not confirmation of a real-world problem; is_synthetic remains true.",
+      "operator_confirmed_consequence": true,
+      "confirmation_role_id": "general_manager",
+      "consequence": "Within the fiction, A and B received keys after their promised times, with recorded guest waits of 48 and 86 minutes. B received keys 26 minutes after normal check-in, a 60 GEL cash refund and a separate 30 GEL waiver. Staff rework of 43 minutes remains an estimate.",
+      "artifact_refs": [
+        "a_incident",
+        "a_arrivals",
+        "a_keys",
+        "a_folio",
+        "a_cashbook",
+        "a_rework",
+        "a_closing"
+      ]
+    },
+    "materiality": {
+      "operator_confirmed": true,
+      "rationale": "The fictional manager considered the refund and waiver worth checking and repeated explanations during reduced housekeeping capacity worth addressing. No complete costed comparison, weekly cost share or strongest-priority claim was supplied. The 34-booking weekly denominator was reported, not supported by an inspected complete register.",
+      "artifact_refs": [
+        "a_rework",
+        "a_count",
+        "a_folio",
+        "a_cashbook"
+      ]
+    },
+    "software_leverage": {
+      "software_only": null,
+      "binding_constraint": "unknown",
+      "permitted_action": null,
+      "available_information": "The fictional narrative contains conditional early requests, subsequent assurances, an approved late checkout, an explicit housekeeping warning, room priorities and inspection releases. These facts do not establish integration availability, authorized actions or the preventable portion of physical delay.",
+      "artifact_refs": [
+        "a_requests",
+        "a_timeline",
+        "a_warning",
+        "a_releases",
+        "a_capacity",
+        "a_closing"
+      ]
+    },
+    "access_authority": {
+      "inputs_available": null,
+      "adapter_mode": "unknown",
+      "adapter_description": null,
+      "write_limits": null,
+      "trial_approver_role_id": null,
+      "authority_confirmed": null,
+      "artifact_refs": [
+        "a_closing"
+      ]
+    },
+    "feasibility": {
+      "estimated_hours": null,
+      "bounded_workflow": null,
+      "deterministic_oracle": null,
+      "replay_case_refs": [],
+      "baseline_comparison": null,
+      "failure_recovery_test": null,
+      "artifact_refs": []
+    },
+    "simple_rule": {
+      "tested": null,
+      "baseline_description": "Existing practice introduced on 5 September: reception and the housekeeping lead review a paper arrival list at 12:30, agree priorities and require housekeeping confirmation before early access is promised. Use was reported on 12 and 18 September; no formal comparative test was supplied.",
+      "observed_failure": "The manager reported that the review was missed on 19 September during departures and reduced housekeeping staffing. Reception confirmed early times without housekeeping confirmation, and guest-update responsibility was not explicit. This is evidence of reported nonexecution and missing assignment, not demonstrated inadequacy of a consistently executed simple rule.",
+      "simple_rule_sufficient": null,
+      "artifact_refs": [
+        "a_process",
+        "a_requests",
+        "a_warning",
+        "a_handover",
+        "a_capacity"
+      ]
+    }
+  },
+  "scores": {
+    "severity": {
+      "rating": 2,
+      "rationale": "Reviewer assessment within the synthetic exercise: recorded guest delays and a reconciled 60 GEL cash refund plus 30 GEL waived revenue were meaningful to the manager. Large or recurring financial harm and measured staff labor were not established.",
+      "artifact_refs": [
+        "a_arrivals",
+        "a_keys",
+        "a_folio",
+        "a_cashbook",
+        "a_rework"
+      ]
+    },
+    "a2a_fit": {
+      "rating": 2,
+      "rationale": "Reviewer assessment within the synthetic exercise: housekeeping readiness and reception commitments depend on distinct responsibilities, with a separate manager decision affecting room access. Asynchronous exchanges are present, but adaptive coordination advantages over explicit ownership and simple confirmation rules are untested; single-database sufficiency remains unknown.",
+      "artifact_refs": [
+        "a_context",
+        "a_timeline",
+        "a_warning",
+        "a_handover",
+        "a_process"
+      ]
+    },
+    "feasibility": {
+      "rating": null,
+      "rationale": "No engineering estimate, verified adapter, bounded implementation, replay set, deterministic oracle or recovery test was elicited. Narrative timestamps do not establish build feasibility.",
+      "artifact_refs": []
+    },
+    "evidence": {
+      "rating": 2,
+      "rationale": "Reviewer assessment of narrative completeness within the synthetic exercise only: supplied fictional excerpts reconstruct promises, warning, releases, key handovers and cash reconciliation, with a confounded smooth comparator. Independent staff confirmation, inspected weekly counting records and replay evidence are absent. This rating does not imply real operational evidence; the synthetic case cannot pass the real-problem gate.",
+      "artifact_refs": [
+        "a_requests",
+        "a_warning",
+        "a_arrivals",
+        "a_releases",
+        "a_keys",
+        "a_folio",
+        "a_cashbook",
+        "a_count",
+        "a_process",
+        "a_closing"
+      ]
+    },
+    "frequency": {
+      "rating": 1,
+      "rationale": "Two affected room bookings were identified on one day within a reported seven-day cohort of 34 arrivals. The underlying weekly register and denominator of all early confirmations were not supplied. The 8.571428571428571 figure is only a 30-day-equivalent normalization of two misses in seven days, not demonstrated monthly recurrence.",
+      "artifact_refs": [
+        "a_count",
+        "a_requests",
+        "a_keys"
+      ]
+    },
+    "preventable_share": {
+      "rating": null,
+      "rationale": "The manager identified unsupported promises but could not separate their consequences from reduced staffing, later room access and cleaning work. No permitted intervention or measured preventable share was established.",
+      "artifact_refs": [
+        "a_incident",
+        "a_capacity",
+        "a_closing"
+      ]
+    },
+    "adoption": {
+      "rating": 0,
+      "rationale": "The closing account explicitly states no agreed next step or date, no wider sharing authorization and no authorized trial. Anonymous interview notes and a proposed internal review do not establish adoption or staff consent.",
+      "artifact_refs": [
+        "a_context",
+        "a_closing"
+      ]
+    }
+  },
+  "reviewer": "SYNTHETIC_REVIEWER_001 — model assessment of the delivered fictional transcript only; no real operator evidence, consent or human field verification."
+}
+
+EVALUATION:
+{
+  "normal_evaluation": {
+    "case_id": "CASE_SIMULATED_001",
+    "status": "rejected",
+    "accepted": false,
+    "errors": [],
+    "gates": {
+      "G1": {
+        "passed": false,
+        "reasons": [
+          "Synthetic cases cannot establish a real problem outside --self-test.",
+          "Need reviewed operator record/direct observation; press or analyst opinion alone is insufficient.",
+          "Need a recorded consequence confirmation or direct observation.",
+          "Every trace step needs reviewed primary episode evidence."
+        ]
+      },
+      "G2": {
+        "passed": false,
+        "reasons": [
+          "Need a closed observation period, counted incidents, positive eligible-opportunity denominator, unit, and primary evidence."
+        ]
+      },
+      "G3": {
+        "passed": false,
+        "reasons": [
+          "Need evidenced asynchronous cross-role state/constraint dependencies, not an asserted flag alone.",
+          "Single-database CRUD or an unknown CRUD assessment does not establish A2A fit.",
+          "Identify the consequential negotiation/ownership/acknowledgement failure and its trace steps."
+        ]
+      },
+      "G4": {
+        "passed": false,
+        "reasons": [
+          "Binding physical/hardware, labor-economics, external-demand, or unknown constraint cannot pass as software leverage.",
+          "Specify an evidenced permitted software action and the information available to change the failure path."
+        ]
+      },
+      "G5": {
+        "passed": false,
+        "reasons": [
+          "Need available/redacted inputs and reviewed access evidence.",
+          "Need a usable adapter/import or explicitly honest simulator; assumed integration is insufficient.",
+          "Need explicit write limits and evidenced authority of a role able to approve trial actions."
+        ]
+      },
+      "G6": {
+        "passed": false,
+        "reasons": [
+          "Need an explicit bounded estimate within 115 hours.",
+          "Need an end-to-end boundary, deterministic state oracle, baseline comparison, and recovery test.",
+          "Need available reviewed replay-case artifacts.",
+          "Feasibility needs supporting artifacts, not only an optimistic estimate."
+        ]
+      },
+      "G7": {
+        "passed": false,
+        "reasons": [
+          "A simple rule/task-list baseline must be tested and shown insufficient; unknown or sufficient fails.",
+          "Describe the tested simple control, its observed failure, and why dependency negotiation/adaptation matters.",
+          "Need reviewed evidence of the baseline comparison."
+        ]
+      }
+    },
+    "weighted_score": null,
+    "contributions": {},
+    "selection_reasons": [
+      "Rejected before scoring: G1, G2, G3, G4, G5, G6, G7"
+    ],
+    "synthetic_test": false,
+    "qualification": "Internal screening of recorded evidence; not verified truth or an official GITA result."
+  },
+  "synthetic_exception_evaluation": {
+    "case_id": "CASE_SIMULATED_001",
+    "status": "rejected",
+    "accepted": false,
+    "errors": [],
+    "gates": {
+      "G1": {
+        "passed": false,
+        "reasons": [
+          "Need reviewed operator record/direct observation; press or analyst opinion alone is insufficient.",
+          "Need a recorded consequence confirmation or direct observation.",
+          "Every trace step needs reviewed primary episode evidence."
+        ]
+      },
+      "G2": {
+        "passed": false,
+        "reasons": [
+          "Need a closed observation period, counted incidents, positive eligible-opportunity denominator, unit, and primary evidence."
+        ]
+      },
+      "G3": {
+        "passed": false,
+        "reasons": [
+          "Need evidenced asynchronous cross-role state/constraint dependencies, not an asserted flag alone.",
+          "Single-database CRUD or an unknown CRUD assessment does not establish A2A fit.",
+          "Identify the consequential negotiation/ownership/acknowledgement failure and its trace steps."
+        ]
+      },
+      "G4": {
+        "passed": false,
+        "reasons": [
+          "Binding physical/hardware, labor-economics, external-demand, or unknown constraint cannot pass as software leverage.",
+          "Specify an evidenced permitted software action and the information available to change the failure path."
+        ]
+      },
+      "G5": {
+        "passed": false,
+        "reasons": [
+          "Need available/redacted inputs and reviewed access evidence.",
+          "Need a usable adapter/import or explicitly honest simulator; assumed integration is insufficient.",
+          "Need explicit write limits and evidenced authority of a role able to approve trial actions."
+        ]
+      },
+      "G6": {
+        "passed": false,
+        "reasons": [
+          "Need an explicit bounded estimate within 115 hours.",
+          "Need an end-to-end boundary, deterministic state oracle, baseline comparison, and recovery test.",
+          "Need available reviewed replay-case artifacts.",
+          "Feasibility needs supporting artifacts, not only an optimistic estimate."
+        ]
+      },
+      "G7": {
+        "passed": false,
+        "reasons": [
+          "A simple rule/task-list baseline must be tested and shown insufficient; unknown or sufficient fails.",
+          "Describe the tested simple control, its observed failure, and why dependency negotiation/adaptation matters.",
+          "Need reviewed evidence of the baseline comparison."
+        ]
+      }
+    },
+    "weighted_score": null,
+    "contributions": {},
+    "selection_reasons": [
+      "Rejected before scoring: G1, G2, G3, G4, G5, G6, G7"
+    ],
+    "synthetic_test": true,
+    "qualification": "Internal screening of recorded evidence; not verified truth or an official GITA result."
+  },
+  "diagnostic_only": {
+    "not_a_selection_score": true,
+    "contributions": {
+      "severity": 10.0,
+      "a2a_fit": 10.0,
+      "feasibility": null,
+      "evidence": 7.5,
+      "frequency": 3.75,
+      "preventable_share": null,
+      "adoption": 0.0
+    },
+    "all_ratings_known": false,
+    "weighted_total_if_all_ratings_known": null,
+    "unknown_rating_score_bounds": [
+      31.25,
+      56.25
+    ]
+  },
+  "explanation": "Equivalent to allowing synthetic provenance only, using existing evaluate(card, synthetic_test=True). All G1–G7 checks and score eligibility remain unchanged. Diagnostic subtotal/bounds never override failed gates."
+}

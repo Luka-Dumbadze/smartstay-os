@@ -1,0 +1,1 @@
+{"question":"How was the relocation decision made in this case? If a record of that decision exists, could you show it with private details hidden?","changed":true,"reason":"Removed stacked prompts about participants, options, and authority; retained one concrete process question and a conditional record request."}

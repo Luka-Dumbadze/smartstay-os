@@ -1,0 +1,1 @@
+{"question":"What, if anything, did Sales send to F&B about dinner staffing for this enquiry? Please show the relevant message with names and client details hidden.","changed":false,"reason":"Uses responsibilities and an unresolved item already identified, permits no message, and requests its contents without inferring knowledge or cause."}

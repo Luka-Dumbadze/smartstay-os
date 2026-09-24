@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cccc-48b3-73e0-8673-dd6dc1dfa5d7"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Comparing 103 with the smooth 201 arrival, what differences in available rooms, cleaning work, staffing, and time can you establish, and what remains unknown?"}}
+{"type":"turn.completed","usage":{"input_tokens":485263,"cached_input_tokens":457458,"cache_write_input_tokens":27742,"output_tokens":1614,"reasoning_output_tokens":154}}

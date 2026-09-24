@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What information did you use when reviewing the room discount and possible displacement for this enquiry? Please show the relevant record with names and client details hidden."}}
+{"type":"turn.completed","usage":{"input_tokens":176601,"cached_input_tokens":155607,"cache_write_input_tokens":20967,"output_tokens":677,"reasoning_output_tokens":179}}

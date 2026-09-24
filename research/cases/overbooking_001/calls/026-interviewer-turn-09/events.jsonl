@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What, if anything, changed in how you allocated room availability across channels after 12 September, and when did that change take effect?"}}
+{"type":"turn.completed","usage":{"input_tokens":373004,"cached_input_tokens":346510,"cache_write_input_tokens":26443,"output_tokens":1139,"reasoning_output_tokens":151}}

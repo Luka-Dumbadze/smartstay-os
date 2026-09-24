@@ -1,0 +1,19 @@
+At 13:15, reception recorded that the incoming 201 party had confirmed a 14:00 arrival by phone. She boxed 201 on the housekeeping sheet and obtained the housekeeping lead’s acknowledgement by phone. That reinforced the existing order—201 was already next.
+
+Housekeeping then cleaned the room. I inspected it and phoned reception to release it. Reception could hand over the keys knowing it had passed inspection.
+
+These are the relevant fictional sheet entries, with names hidden:
+
+> 13:15 [Reception]: BOX 201 NEXT. Arrival confirmed 14:00. [Housekeeping lead] acknowledged by phone. Phone desk after inspection.  
+> 201 | Clean complete: 13:50 [Housekeeping lead] | Release inspection: 13:55 [Manager]  
+> 13:55 [Reception]: [Manager] called, 201 released.
+
+And the notebook records:
+
+> 14:03 | Incoming 201 arrived, keys handed over. [Reception]
+
+Those are recorded minutes. The 13:15 annotation groups several actions; it doesn’t separately timestamp the guest call, writing on the sheet and the acknowledgement call.
+
+We didn’t time the calls or the writing. We also didn’t record the cleaning start or inspection start, so I can’t turn those completion times into measured labor durations. There’s no measured saving in staff minutes here.
+
+The result was a confirmed room release before arrival, with keys handed over in the same recorded minute the party arrived. Reception didn’t need another upstairs progress hunt for this room. It worked, but I can’t separate the benefit of the confirmation from the fact that the team had enough time.

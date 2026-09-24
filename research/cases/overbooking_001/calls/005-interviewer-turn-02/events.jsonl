@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What was the most recent booking conflict or guest relocation, if any? If none comes to mind, we can walk through the last completed booking."}}
+{"type":"turn.completed","usage":{"input_tokens":55831,"cached_input_tokens":36839,"cache_write_input_tokens":18983,"output_tokens":197,"reasoning_output_tokens":24}}

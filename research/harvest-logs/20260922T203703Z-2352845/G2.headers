@@ -1,0 +1,29 @@
+HTTP/2 301 
+content-type: text/plain; charset=utf-8
+content-length: 108
+access-control-allow-origin: *
+location: https://ramad.bog.ge/s3/galt/tourism-overview_september-2022_eng_final.pdf
+vary: Accept
+strict-transport-security: max-age=63072000
+x-auditory: public
+cache-control: max-age=0
+date: Tue, 22 Sep 2026 20:37:06 GMT
+server-timing: cdn-cache; desc=MISS
+server-timing: edge; dur=153
+server-timing: origin; dur=467
+alt-svc: h3=":443"; ma=93600
+server-timing: ak_p; desc="1790109425760_1476213511_963315572_62034_13441_6_61_15";dur=1
+
+HTTP/2 200 
+access-control-allow-origin: *
+content-type: application/pdf
+cache-control: public, max-age=3600
+last-modified: Wed Jan 21 2026 12:55:15 GMT+0400 (Georgia Standard Time)
+vary: Accept-Encoding
+etag: "d64a7-gY9iECE57D1T5RZZkZsdevvPLyY"
+content-length: 877735
+x-cache: MISS
+date: Tue, 22 Sep 2026 20:37:06 GMT
+strict-transport-security: max-age=63072000
+x-auditory: public
+

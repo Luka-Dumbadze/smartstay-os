@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What, if anything, have you changed in how corporate proposals are prepared or approved following this enquiry?"}}
+{"type":"turn.completed","usage":{"input_tokens":362157,"cached_input_tokens":336596,"cache_write_input_tokens":25510,"output_tokens":1219,"reasoning_output_tokens":306}}

@@ -1,0 +1,17 @@
+HTTP/2 200 
+date: Tue, 22 Sep 2026 20:37:08 GMT
+content-type: application/pdf
+content-length: 780371
+server: cloudflare
+last-modified: Tue, 26 Nov 2024 12:33:16 GMT
+accept-ranges: bytes
+cache-control: public, max-age=2592000
+expires: Thu, 22 Oct 2026 12:58:07 GMT
+vary: Accept-Encoding
+age: 27541
+cf-cache-status: HIT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=7q9x5xeUoOpVqORTBzFvT5PoPrEGJScqGAMk%2BMgIFDJroePehRGv%2BFA6s2tlFyf9wKVdlUKeGSBsdZJTC3GFnCHrExmcyXR2Hch8iZGGU8i0QwcuG08IVrF8Fjxg"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a3f41b1aeb0bd951-TBS
+alt-svc: h3=":443"; ma=86400
+

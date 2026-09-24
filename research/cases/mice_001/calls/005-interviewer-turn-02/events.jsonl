@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What was the most recent corporate enquiry that was difficult to handle, if any? If none comes to mind, we can walk through the most recent enquiry."}}
+{"type":"turn.completed","usage":{"input_tokens":55855,"cached_input_tokens":36861,"cache_write_input_tokens":18985,"output_tokens":210,"reasoning_output_tokens":24}}

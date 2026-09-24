@@ -1,0 +1,1 @@
+{"question":"What, if anything, changed in how you allocated room availability across channels after 12 September, and when did that change take effect?","changed":false,"reason":"Asks about actual changes and their timing, explicitly permits none, and does not presume a failed workaround or causal link."}

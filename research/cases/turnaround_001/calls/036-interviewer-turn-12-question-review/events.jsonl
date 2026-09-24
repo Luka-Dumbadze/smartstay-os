@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cccc-48b3-73e0-8673-dd6dc1dfa5d7"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"What follow-up, if any, has been agreed, including its date and who has authorized any associated record use? It’s fine if nothing has been agreed or authorization remains unknown.\",\"changed\":false,\"reason\":\"Asks only about actual follow-up and authorization, explicitly permits none or unknown, and does not infer consent from the rehearsal.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":570290,"cached_input_tokens":541577,"cache_write_input_tokens":28641,"output_tokens":1801,"reasoning_output_tokens":154}}

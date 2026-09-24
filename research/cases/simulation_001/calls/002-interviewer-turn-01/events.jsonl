@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccb5-7075-7a32-8211-97ebf44e18a6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"We’re researching how hotels here operate, starting with a recent working day. You can skip any question. Please hide guest names, payment details, and other private information in any records you show. May we take notes? We’ll ask separately before recording or using an attributable quotation.\n\nWhat is your responsibility on a normal shift?"}}
+{"type":"turn.completed","usage":{"input_tokens":18108,"cached_input_tokens":0,"cache_write_input_tokens":18105,"output_tokens":91,"reasoning_output_tokens":20}}

@@ -1,0 +1,11 @@
+PRE-DELIVERY QUESTION REVIEW.
+The prior spoken draft has NOT been delivered. Review it against the respondent's delivered answers already
+in your session. Remove any leading premise, implied cause, assumed assignment, hypothetical, pitch or
+unsupported fact. Do not introduce the researcher's expected problem. Prefer one short main question and,
+only if essential, one tightly related evidence request. Consent/opening may have a short preamble.
+Return ONLY JSON with exactly keys "question" (final spoken wording), "changed" (boolean),
+and "reason" (concise review finding, not spoken). If already neutral retain its wording.
+DRAFT:
+We’re researching how hotels operate between 11:00 and 15:00. You can skip any question. Please hide private details in any records you choose to show; we’ll ask separately before recording or using an attributable quotation. May I take notes?
+
+What are your usual responsibilities between 11:00 and 15:00?

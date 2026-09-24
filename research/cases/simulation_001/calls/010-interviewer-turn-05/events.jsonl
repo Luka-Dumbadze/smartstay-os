@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccb5-7075-7a32-8211-97ebf44e18a6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What did morning reception and the incoming receptionist each say they saw and did after the 11:56 warning, if you’ve heard their accounts?\n\nCan you show the shift handover entry, if one exists, with names hidden, including anything recorded about contacting either party?"}}
+{"type":"turn.completed","usage":{"input_tokens":99036,"cached_input_tokens":77303,"cache_write_input_tokens":21718,"output_tokens":303,"reasoning_output_tokens":37}}

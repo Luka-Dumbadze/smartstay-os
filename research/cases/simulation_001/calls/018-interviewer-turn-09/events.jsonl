@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccb5-7075-7a32-8211-97ebf44e18a6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What, if anything, have you changed to address this, and when did you last change the process?\n\nCan you show a case after that change, with names hidden, and walk me through what happened?"}}
+{"type":"turn.completed","usage":{"input_tokens":190088,"cached_input_tokens":166643,"cache_write_input_tokens":23418,"output_tokens":532,"reasoning_output_tokens":53}}

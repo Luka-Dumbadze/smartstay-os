@@ -1,0 +1,20 @@
+SPOKEN INTERVIEW. Exchange 11/12. Stage: Counterexample and competing cause; simulated minutes 33–37.
+The respondent just said, verbatim:
+I can show the summary, but I need to qualify my earlier description: CTRL-0919 does not contain a timestamped sequence of closure checks and individual Direct confirmations.
+
+The available fictional record reads:
+
+> **FICTIONAL CTRL-0919:** On 2026-09-18, with 26 commitments for 19 September, both OTAs were closed. Closure checks were recorded before two remaining rooms were released exclusively through Direct.
+
+Its completed-outcome summary states:
+
+> For 19–20 September, Direct sold both remaining rooms; 28 parties stayed, no conflicting confirmation and no relocation occurred.
+
+So the recorded sequence is: close Booking.com and Expedia, check closure, then release the remaining two rooms through Direct. I owned the release decision; Channel Operations handled OTA closure, and Front Desk confirmed through the shared PMS.
+
+What’s missing is the underlying detail: exact check times, which searches or rate plans were checked, supporting acknowledgements, and the two Direct reservation IDs and confirmation timestamps. I can’t show those entries or establish the interval between closure and release.
+
+The summary supports that we used the control and had a successful completed Saturday. It does not provide a detailed technical audit of the closure or prove that every possible OTA booking path was unavailable.
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Invite a comparable incident or near-sellout period that went well and what differed; preserve unknowns and avoid suggesting the cause.

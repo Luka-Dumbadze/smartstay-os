@@ -1,0 +1,1037 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:smartstay:case-card:1.0",
+  "title": "Smartstay operational Incident Case Card",
+  "description": "Internal research framework, task_research.md sections 3–4; not an official GITA rubric. Strict shape validation plus evaluate_candidate.py semantic/gate checks. Unknown observations remain null; every object forbids extra fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "is_synthetic": {
+      "type": "boolean"
+    },
+    "case_id": {
+      "$ref": "#/$defs/id"
+    },
+    "property_type": {
+      "enum": [
+        "independent_hotel",
+        "boutique_hotel",
+        "family_hotel",
+        "guesthouse",
+        "wine_hotel",
+        "branded_hotel",
+        "other",
+        "unknown"
+      ]
+    },
+    "room_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "interviewee_role": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/id"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "interview_date": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "incident_date_range": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/role"
+      }
+    },
+    "incident_summary": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step"
+      }
+    },
+    "handover_failure_mechanism": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "step_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "summary",
+        "step_ids",
+        "artifact_refs"
+      ]
+    },
+    "verified_cash_leakage_gel": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "staff_rework_minutes": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "observed_frequency_per_month": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "30-day-equivalent incident count = incident_count * 30 / inclusive observation days. Null if not established; not an annual extrapolation."
+    },
+    "observation_window": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/date_range"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "incident_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "eligible_opportunities": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "opportunity_unit": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "quantification_artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cash": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "rework": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "frequency": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "cash",
+        "rework",
+        "frequency"
+      ]
+    },
+    "supporting_artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "root_cause_code": {
+      "enum": [
+        "ARRIVAL_READINESS",
+        "REQUEST_OWNERSHIP",
+        "BOOKING_PROMISE",
+        "FOLIO_SETTLEMENT",
+        "SHIFT_CONTINUITY",
+        "SERVICE_DEPENDENCY",
+        "OUTSIDE_SOFTWARE_SCOPE"
+      ]
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "a2a_suitability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "distinct_operational_roles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "asynchronous_state_dependencies": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dependency"
+          }
+        },
+        "single_database_crud": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "simple_rule_inadequacy_rationale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "distinct_operational_roles",
+        "asynchronous_state_dependencies",
+        "dependencies",
+        "single_database_crud",
+        "simple_rule_inadequacy_rationale"
+      ]
+    },
+    "gate_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "real_problem": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "recent_episode_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "recency_rationale": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "operator_confirmed_consequence": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "confirmation_role_id": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "consequence": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "recent_episode_confirmed",
+            "recency_rationale",
+            "operator_confirmed_consequence",
+            "confirmation_role_id",
+            "consequence",
+            "artifact_refs"
+          ]
+        },
+        "materiality": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "operator_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "rationale": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "operator_confirmed",
+            "rationale",
+            "artifact_refs"
+          ]
+        },
+        "software_leverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "software_only": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "binding_constraint": {
+              "enum": [
+                "coordination",
+                "software_data",
+                "physical_hardware",
+                "labor_economics",
+                "external_demand",
+                "unknown"
+              ]
+            },
+            "permitted_action": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "available_information": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "software_only",
+            "binding_constraint",
+            "permitted_action",
+            "available_information",
+            "artifact_refs"
+          ]
+        },
+        "access_authority": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "inputs_available": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "adapter_mode": {
+              "enum": [
+                "verified_connector",
+                "redacted_import",
+                "honest_simulator",
+                "unavailable",
+                "unknown"
+              ]
+            },
+            "adapter_description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "write_limits": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "trial_approver_role_id": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/id"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "authority_confirmed": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "inputs_available",
+            "adapter_mode",
+            "adapter_description",
+            "write_limits",
+            "trial_approver_role_id",
+            "authority_confirmed",
+            "artifact_refs"
+          ]
+        },
+        "feasibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "estimated_hours": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            },
+            "bounded_workflow": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "deterministic_oracle": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "replay_case_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            },
+            "baseline_comparison": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "failure_recovery_test": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "estimated_hours",
+            "bounded_workflow",
+            "deterministic_oracle",
+            "replay_case_refs",
+            "baseline_comparison",
+            "failure_recovery_test",
+            "artifact_refs"
+          ]
+        },
+        "simple_rule": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "tested": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "baseline_description": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "observed_failure": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "simple_rule_sufficient": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "artifact_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "tested",
+            "baseline_description",
+            "observed_failure",
+            "simple_rule_sufficient",
+            "artifact_refs"
+          ]
+        }
+      },
+      "required": [
+        "real_problem",
+        "materiality",
+        "software_leverage",
+        "access_authority",
+        "feasibility",
+        "simple_rule"
+      ]
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "severity": {
+          "$ref": "#/$defs/rating"
+        },
+        "a2a_fit": {
+          "$ref": "#/$defs/rating"
+        },
+        "feasibility": {
+          "$ref": "#/$defs/rating"
+        },
+        "evidence": {
+          "$ref": "#/$defs/rating"
+        },
+        "frequency": {
+          "$ref": "#/$defs/rating"
+        },
+        "preventable_share": {
+          "$ref": "#/$defs/rating"
+        },
+        "adoption": {
+          "$ref": "#/$defs/rating"
+        }
+      },
+      "required": [
+        "severity",
+        "a2a_fit",
+        "feasibility",
+        "evidence",
+        "frequency",
+        "preventable_share",
+        "adoption"
+      ]
+    },
+    "reviewer": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/text"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "is_synthetic",
+    "case_id",
+    "property_type",
+    "room_count",
+    "interviewee_role",
+    "interview_date",
+    "incident_date_range",
+    "roles",
+    "incident_summary",
+    "trace",
+    "handover_failure_mechanism",
+    "verified_cash_leakage_gel",
+    "staff_rework_minutes",
+    "observed_frequency_per_month",
+    "observation_window",
+    "incident_count",
+    "eligible_opportunities",
+    "opportunity_unit",
+    "quantification_artifacts",
+    "supporting_artifacts",
+    "root_cause_code",
+    "alternative_explanations",
+    "a2a_suitability",
+    "gate_evidence",
+    "scores",
+    "reviewer"
+  ],
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+    },
+    "date_range": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "role": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "responsibility": {
+          "$ref": "#/$defs/text"
+        },
+        "person_label": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "role_id",
+        "responsibility",
+        "person_label"
+      ],
+      "description": "Responsibilities, not invented agent titles. One person may hold several roles."
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "operator_record",
+            "direct_observation",
+            "operator_confirmation",
+            "baseline_test",
+            "replay_case",
+            "access_record",
+            "commitment_record",
+            "institutional_report",
+            "practitioner_article"
+          ]
+        },
+        "locator": {
+          "$ref": "#/$defs/text"
+        },
+        "evidence_label": {
+          "enum": [
+            "D",
+            "O",
+            "I",
+            "U"
+          ]
+        },
+        "reviewed": {
+          "type": "boolean"
+        },
+        "summary": {
+          "$ref": "#/$defs/text"
+        },
+        "collected_on": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "kind",
+        "locator",
+        "evidence_label",
+        "reviewed",
+        "summary",
+        "collected_on"
+      ],
+      "description": "Locator may be a restricted file or a witnessed/redacted record reference. No network fetch or authenticity inference is performed."
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "occurred_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time_basis": {
+          "enum": [
+            "timestamp",
+            "estimate",
+            "unknown"
+          ]
+        },
+        "time_note": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actor_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "recipient_role_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_system": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "input_state": {
+          "$ref": "#/$defs/text"
+        },
+        "expected_action": {
+          "$ref": "#/$defs/text"
+        },
+        "actual_outcome": {
+          "$ref": "#/$defs/text"
+        },
+        "acknowledged_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "completed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "step_id",
+        "sequence",
+        "occurred_at",
+        "time_basis",
+        "time_note",
+        "actor_role_id",
+        "recipient_role_id",
+        "source_system",
+        "input_state",
+        "expected_action",
+        "actual_outcome",
+        "acknowledged_at",
+        "completed_at",
+        "artifact_refs"
+      ]
+    },
+    "dependency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "from_step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "to_step_id": {
+          "$ref": "#/$defs/id"
+        },
+        "from_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "to_role_id": {
+          "$ref": "#/$defs/id"
+        },
+        "state_dependency": {
+          "$ref": "#/$defs/text"
+        },
+        "constraint": {
+          "$ref": "#/$defs/text"
+        },
+        "asynchronous": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "from_step_id",
+        "to_step_id",
+        "from_role_id",
+        "to_role_id",
+        "state_dependency",
+        "constraint",
+        "asynchronous",
+        "artifact_refs"
+      ]
+    },
+    "rating": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rating": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 4
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/text"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "rating",
+        "rationale",
+        "artifact_refs"
+      ],
+      "description": "Human-adjudicated rating. Unknown is null; no default midpoint."
+    }
+  }
+}

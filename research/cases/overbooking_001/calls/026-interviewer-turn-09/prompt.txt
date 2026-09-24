@@ -1,0 +1,31 @@
+SPOKEN INTERVIEW. Exchange 9/12. Stage: Past attempts and workarounds; simulated minutes 27–30.
+The respondent just said, verbatim:
+I can describe this one conflict, but I don’t have a closed count of comparable conflicts against all relevant bookings. I wouldn’t turn one incident into a rate without that denominator.
+
+The completed count record available is for cancellations, which answers a different question:
+
+```text
+FICTIONAL COHORT-FC-AUG26
+Closed: 2 September 2026
+
+Included:
+100 unique free-cancellation reservation IDs
+scheduled to arrive during August 2026,
+across Booking.com, Expedia and Direct.
+Date amendments retain the original reservation ID.
+Unit: reservations, not room-nights.
+
+Outcomes:
+Cancelled before penalty: 38
+Completed stays:           62
+Unresolved or no-show:      0
+```
+
+That is the basis for my roughly 35–40% cancellation recollection. It has no separate conflict or relocation field. A completed stay also doesn’t, by itself, prove that there was no booking conflict along the way.
+
+For September, we have the documented pair of conflicting reservations for 12 September, resulting in one relocation. We also have the following Saturday’s successful use of exclusive Direct availability, but neither record supplies a complete September booking denominator.
+
+To answer your question properly, we would need a completed reservation register with conflicts identified separately from cancellations, and outcomes distinguishing guests accommodated here from guests relocated. That count is unavailable in this fictional dossier.
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Ask what, if anything, was actually changed in channel allocation or controls and when. Do not presuppose a failed workaround.

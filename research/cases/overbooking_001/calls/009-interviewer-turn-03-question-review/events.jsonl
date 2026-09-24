@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"What source timestamps support the booking order and the roughly 65-second interval, and what does each timestamp represent? If those records are available, could you show the relevant entries with private details hidden?\",\"changed\":false,\"reason\":\"Checks the respondent’s stated sequence through timestamp sources and meanings without assuming acceptance times, causation, or record availability.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":114555,"cached_input_tokens":94661,"cache_write_input_tokens":19876,"output_tokens":381,"reasoning_output_tokens":24}}

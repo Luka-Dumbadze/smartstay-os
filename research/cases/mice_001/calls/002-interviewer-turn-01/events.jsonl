@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"May I take notes? You can skip any question; please hide private details in any records you share. I’ll ask separately before recording or using an attributable quotation.\n\nWhat responsibility, if any, do you have for corporate or group enquiries about future stays and events?"}}
+{"type":"turn.completed","usage":{"input_tokens":18294,"cached_input_tokens":0,"cache_write_input_tokens":18291,"output_tokens":57,"reasoning_output_tokens":0}}

@@ -1,0 +1,1 @@
+{"question":"What information did you use when reviewing the room discount and possible displacement for this enquiry? Please show the relevant record with names and client details hidden.","changed":false,"reason":"Follows the respondent’s stated review and asks about its inputs without assuming a decision, cause, or authority beyond what was described."}

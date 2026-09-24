@@ -1,0 +1,1 @@
+What, if anything, have you changed in how you handle room-readiness information and promises, and when did you last make such a change?

@@ -1,0 +1,1 @@
+{"question":"Please walk me through how you chose the order on that day’s paper sheet and what happened from then until reception went upstairs, distinguishing recorded times from estimates.","changed":false,"reason":"Follows the reported sequence and the respondent’s stated responsibility for the order without implying a cause; distinguishes recorded times from estimates."}

@@ -1,0 +1,19 @@
+test_bad_input_rejected (test_proof.ContractProof.test_bad_input_rejected) ... ok
+test_bad_model_output_rejected (test_proof.ContractProof.test_bad_model_output_rejected) ... ok
+test_concurrent_proposals_only_one_commits (test_proof.ContractProof.test_concurrent_proposals_only_one_commits) ... ok
+test_duplicate_replay_no_second_intent (test_proof.ContractProof.test_duplicate_replay_no_second_intent) ... ok
+test_missing_binding_and_duplicate_mount (test_proof.ContractProof.test_missing_binding_and_duplicate_mount) ... ok
+test_model_deadline (test_proof.ContractProof.test_model_deadline) ... ok
+test_mount_two_roles_and_commit (test_proof.ContractProof.test_mount_two_roles_and_commit) ... ok
+test_policy_blocks_inflated_model_output (test_proof.ContractProof.test_policy_blocks_inflated_model_output) ... ok
+test_restart_keeps_idempotency (test_proof.ContractProof.test_restart_keeps_idempotency) ... ok
+test_reused_key_different_payload_rejected (test_proof.ContractProof.test_reused_key_different_payload_rejected) ... ok
+test_stale_version_rejected (test_proof.ContractProof.test_stale_version_rejected) ... ok
+test_tenants_and_contexts_isolated (test_proof.ContractProof.test_tenants_and_contexts_isolated) ... ok
+test_transaction_rolls_back_state_receipt_and_outbox (test_proof.ContractProof.test_transaction_rolls_back_state_receipt_and_outbox) ... ok
+test_undeclared_tool_and_call_budget (test_proof.ContractProof.test_undeclared_tool_and_call_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.213s
+
+OK

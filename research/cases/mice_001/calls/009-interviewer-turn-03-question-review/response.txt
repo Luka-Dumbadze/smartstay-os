@@ -1,0 +1,1 @@
+{"question":"What was the first response to the enquiry received on 15 September, and when was it sent? Can you show that response with names and client details hidden?","changed":false,"reason":"Follows the stated enquiry with closely related questions about the first response and its timestamp, plus a redacted evidence request; assumes no delay or cause."}

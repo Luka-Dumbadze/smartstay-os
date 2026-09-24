@@ -1,0 +1,10 @@
+{
+  "url": "https://admin.booking.com/hotelreg/terms-and-conditions.html",
+  "retrieved_at_utc": "2026-09-23T06:28:17.880137+00:00",
+  "http_result": "curl --fail succeeded; HTML General Delivery Terms received",
+  "version": "v2601_nE_i",
+  "sha256": "7c3f7e37d260587cde71efbf27a81836068ba25259a262e65c46365e4743ac5d",
+  "bytes": 152629,
+  "fixed_120_text_found": false,
+  "handling_fee_text_found": false
+}

@@ -1,0 +1,9 @@
+The most recent was for Saturday, 12 September, during a busy harvest weekend. We had one room left, with Booking.com, Expedia and Direct still open against the same inventory.
+
+In our fictional records, Booking.com confirmed a one-night reservation, then Expedia confirmed another about 65 seconds later. That happened between two stock-update jobs roughly two minutes apart. We ended up with 29 commitments for 28 rooms. Direct didn’t take another booking.
+
+I had chosen to keep the channels open near sellout, partly because we’d seen substantial cancellations on free-cancellation bookings. That was my risk decision; we hadn’t deliberately authorized selling a 29th room. The timing supports an inventory race, although missing distribution records mean I can’t rule out a mapping or manual-edit contribution.
+
+We accommodated the Expedia guest and arranged an equivalent alternative for the Booking.com guest for one night, with transport and no additional payment from the guest. The stay finished on 13 September.
+
+The competitor cost USD 260 and the taxi USD 30. A fictional invoice also included a claimed EUR 120 handling item. All three were subsequently deducted from our payout, but we disputed the handling item because its contractual basis wasn’t available.

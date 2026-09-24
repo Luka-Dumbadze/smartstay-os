@@ -1,0 +1,26 @@
+The guests had paid 420 GEL in cash the previous evening. We returned 60 GEL in cash on the nineteenth. We retained 360 GEL. There was one compensation refund, with entries recording both the reduction in the accommodation charge and the cash leaving the till.
+
+Here’s the fictional PMS excerpt, with identifying details removed:
+
+> 18 Sep 18:42 | Accommodation payment received | Cash | GEL 420.00  
+> 19 Sep 14:11 | Accommodation allowance | GEL -60.00 | Manager-approved service recovery  
+> 19 Sep 14:11 | Cash refund recorded | GEL 60.00 | RF-0919-01  
+> Revised accommodation charge: GEL 360.00 | Net payment retained: GEL 360.00 | Balance: GEL 0.00
+
+The separate refund voucher reads:
+
+> 19 Sep 2026 | 14:10  
+> Pay guest: GEL 60.00 cash  
+> Reason: Incorrect 12:30 room-readiness assurance; room keys delivered 13:17. Goodwill partial accommodation refund.  
+> Approved: [Manager]  
+> Paid: [Reception]  
+> Related original payment: GEL 420.00 cash, 18 Sep 2026
+
+And the cashbook:
+
+> 11:00 opening cash: GEL 700.00  
+> 14:10 | RF-0919-01 | [Reservation hidden] accommodation refund | OUT GEL 60.00  
+> 15:00 closing cash counted: GEL 640.00  
+> Other cash movements 11:00–15:00: none
+
+Those repeated sixty-GEL entries refer to the same refund. Adding them together would overstate it. No other compensation adjustment is recorded for this occasion. The separate forty-dollar late-checkout quote for 201 produced no charge or payment.

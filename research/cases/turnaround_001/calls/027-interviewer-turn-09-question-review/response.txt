@@ -1,0 +1,1 @@
+{"question":"What, if anything, have you changed in how you handle room-readiness information and promises, and when did you last make such a change?","changed":false,"reason":"Asks about actual process changes and their timing, explicitly permits none, and stays within the topic the respondent supplied."}

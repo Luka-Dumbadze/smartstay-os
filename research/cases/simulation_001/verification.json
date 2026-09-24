@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "model_requested": "gpt-6-astra",
+  "isolated_sessions": 2,
+  "exchanges": 12,
+  "speaker_messages": 24,
+  "schema_and_semantics_valid": true,
+  "read_only_inputs_unchanged": true,
+  "synthetic_flag_preserved": true,
+  "verbatim_transcript_matches_saved_dialogue": true,
+  "lexical_policy_screen_passed": true,
+  "not_a_semantic_fidelity_guarantee": true
+}

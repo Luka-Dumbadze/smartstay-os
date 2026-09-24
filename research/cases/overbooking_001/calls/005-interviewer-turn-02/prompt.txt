@@ -1,0 +1,12 @@
+SPOKEN INTERVIEW. Exchange 2/12. Stage: Last difficult episode; simulated minutes 5–8.
+The respondent just said, verbatim:
+Yes, you can take notes for this fictional rehearsal. Any records I refer to will use fictional identifiers.
+
+I’m the general manager, and I own the decisions about how many rooms we offer, on which channels, and when we close availability. We have 28 rooms, and Booking.com, Expedia and Direct all draw from the same room inventory.
+
+Our Channel Operations colleague maintains the room mappings, checks availability updates and reconciles differences between the booking channels and our property management system. Front Desk and the Night Auditor handle arrivals and direct enquiries. For a telephone or walk-in booking, they must enter the reservation into the system before confirming it. Website bookings also use that shared inventory.
+
+The important boundary is that a change in our system does not instantly reserve or remove a room inside both OTAs. I’m responsible for choosing how much exposure we accept near sellout, including whether to leave several channels open for the last room. If that creates a conflict, the desk escalates it, and I own the relocation decision and expenditure. I wouldn’t put responsibility for that commercial policy on the night auditor.
+Ask the next neutral past/present factual question(s) for this stage. No solution, no hypothetical, no extra analysis.
+NEUTRAL TOPIC GUIDE (not facts to assert):
+Invite the most recent booking conflict or guest relocation, if any; allow a normal booking if none exists.

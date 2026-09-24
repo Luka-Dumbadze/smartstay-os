@@ -1,0 +1,1778 @@
+AUDIT. The interview is complete. Return candid Markdown under 2800 words.
+Audit only delivered questions for leading premises, stacked tasks, hypothetical/pitch violations, weak
+record requests and missing independent accounts; self-review is no guarantee. Extract a chronological
+trace with turn references, clock meaning and unknowns. Separate actual OTA acceptance from inbound
+receipt and outbound update acknowledgement/application; determine what race/lag is actually established.
+A 90-second separation is not sub-minute or sub-second evidence. Reconcile invoice, settled payout offset,
+bank deposit and original guest funds without double counting. Separate fictional transaction rates from
+real FX, operational cost from disputed 'penalty', and elapsed time from staff labor. Count comparable
+bookings and actual walks; cancellation churn is not a conflict rate or mathematical need to overbook.
+Use the real public-policy check to correct unverified Clause 6/EUR 120 universal-fee assumptions; do not
+authenticate a property agreement or infer automatic payout mechanics from unrelated payment provisions.
+Explain exact supplied G1–G7 results and weighted dimensions; no gate waivers, invented score or favorable
+repair. Distinguish proof of software concurrency risk from proof that LLM A2A prevents it. Compare:
+- deterministic channel-specific allotment/exclusive last-room allocation/safety stock;
+- transactional capacity checks, idempotency and reconciliation (deduplication alone does not solve two
+  distinct valid reservations; a local lock does not atomically control independent OTA inventory);
+- slower cross-role relocation/cost approval and guest communication after a conflict.
+Separate prevention from recovery. OTA API availability, write permission, rate limits and end-to-end timing
+are unverified. LLM agent coordination is not a substitute for measured low-latency synchronization. No
+sleeping-human argument proves G7, and flat oversell percentages are not the strongest simple baseline.
+Compare Candidates #1 and #2 using the attached reports only as separate synthetic rehearsals. TEST, do not
+assume, the user's proposition that hedging passes G3/G4/G7. Define the current qualified core-engine verdict,
+remaining physical/inventory/authority/evidence limits, strengths and next empirical/engineering checks.
+No claim of a 'winning' entry is supported without real validation or hackathon judging evidence.
+Use [D] for retrieved primary policy text, [O] for supplied observed tool/evaluator outputs, [I] for engineering
+inferences and [U] for unestablished claims. All hotel incident material and its figures remain SYNTHETIC.
+TRANSCRIPT:
+# Multi-channel overbooking: synthetic Mom Test interview
+
+**SYNTHETIC ROLEPLAY — no real hotelier, guest records, observed losses, or consent.**
+Both logical agents are pinned to `gpt-6-astra` in separate Codex sessions and working directories.
+The respondent's private preparation was not supplied to the interviewer. Only delivered dialogue is below;
+verbatim preparation, draft/retry outputs, prompts, events and execution metadata are retained in `overbooking_001/calls/`.
+
+**Timing:** 12 question–answer exchanges (24 speaker messages) allocated across the seven protocol stages.
+Minute ranges represent the simulated 40-minute agenda, not measured human interview duration.
+The 28-room hotel, cancellation rate, booking timing, charges and settlement conversions are fictional scenario details. Claimed Clause 6 and EUR 120 fee are not authenticated policy. No real guest was interviewed or relocated.
+
+## Turn 01 — Operating context — simulated minutes 0–5
+
+### Interviewer
+
+May I take notes? You can skip any question; please hide private details in any records you choose to show. I’ll ask separately before recording or using an attributable quotation.
+
+What are your responsibilities for room availability across booking channels and direct sales?
+
+### Respondent
+
+Yes, you can take notes for this fictional rehearsal. Any records I refer to will use fictional identifiers.
+
+I’m the general manager, and I own the decisions about how many rooms we offer, on which channels, and when we close availability. We have 28 rooms, and Booking.com, Expedia and Direct all draw from the same room inventory.
+
+Our Channel Operations colleague maintains the room mappings, checks availability updates and reconciles differences between the booking channels and our property management system. Front Desk and the Night Auditor handle arrivals and direct enquiries. For a telephone or walk-in booking, they must enter the reservation into the system before confirming it. Website bookings also use that shared inventory.
+
+The important boundary is that a change in our system does not instantly reserve or remove a room inside both OTAs. I’m responsible for choosing how much exposure we accept near sellout, including whether to leave several channels open for the last room. If that creates a conflict, the desk escalates it, and I own the relocation decision and expenditure. I wouldn’t put responsibility for that commercial policy on the night auditor.
+
+## Turn 02 — Last difficult episode — simulated minutes 5–8
+
+### Interviewer
+
+What was the most recent booking conflict or guest relocation, if any? If none comes to mind, we can walk through the last completed booking.
+
+### Respondent
+
+The most recent was for Saturday, 12 September, during a busy harvest weekend. We had one room left, with Booking.com, Expedia and Direct still open against the same inventory.
+
+In our fictional records, Booking.com confirmed a one-night reservation, then Expedia confirmed another about 65 seconds later. That happened between two stock-update jobs roughly two minutes apart. We ended up with 29 commitments for 28 rooms. Direct didn’t take another booking.
+
+I had chosen to keep the channels open near sellout, partly because we’d seen substantial cancellations on free-cancellation bookings. That was my risk decision; we hadn’t deliberately authorized selling a 29th room. The timing supports an inventory race, although missing distribution records mean I can’t rule out a mapping or manual-edit contribution.
+
+We accommodated the Expedia guest and arranged an equivalent alternative for the Booking.com guest for one night, with transport and no additional payment from the guest. The stay finished on 13 September.
+
+The competitor cost USD 260 and the taxi USD 30. A fictional invoice also included a claimed EUR 120 handling item. All three were subsequently deducted from our payout, but we disputed the handling item because its contractual basis wasn’t available.
+
+## Turn 03 — Last difficult episode — simulated minutes 8–12
+
+### Interviewer
+
+What source timestamps support the booking order and the roughly 65-second interval, and what does each timestamp represent? If those records are available, could you show the relevant entries with private details hidden?
+
+### Respondent
+
+Yes. These are invented rehearsal excerpts with fictional identifiers. All times are on **12 September 2026, Asia/Tbilisi, UTC+04:00**.
+
+| Source/event | Booking.com — F-BKG-912-A | Expedia — F-EXP-912-B |
+|---|---|---|
+| OTA-origin record: booking accepted as confirmed | 00:10:15 — B-ACC-01 | 00:11:20 — E-ACC-01 |
+| Local callback receipt: notification reached our system | 00:10:25 — B-IN-01 | 00:11:30 — E-IN-01 |
+| Local processing: reservation committed to inventory | 00:10:28 — version 8422, availability zero | 00:11:34 — version 8423, one-room deficit |
+
+The **65 seconds comes from the two OTA acceptance timestamps**, not from when staff saw the bookings or when our system processed them.
+
+Those acceptance records have whole-second resolution, with an assumed fictional clock uncertainty of ±5 seconds each. That puts the interval at approximately 55–75 seconds and supports the order within this scenario. Local clock checks have approximately ±2-second uncertainty.
+
+The export ledger separately records stock-update jobs at 00:10:00 and 00:12:00. Receipt acknowledgements followed at 00:12:06 for Booking.com and 00:12:09 for Expedia. Those acknowledgements don’t establish when the rooms actually stopped being sellable.
+
+Both listings were observed unavailable at 00:14, but that check has only minute resolution. Expedia’s outbound payload and detailed edit history are missing, so I can’t establish the exact mapping sent or exclude a manual availability edit.
+
+## Turn 04 — Artifact walkthrough — simulated minutes 12–15
+
+### Interviewer
+
+What do the available stock-update records show about the inventory sent and the meaning of the receipt acknowledgements? If available, could you show the relevant entries for those two jobs?
+
+### Respondent
+
+The surviving ledger shows one room in the first export and an intended zero-stock update in the second. These are the exact fictional entries, using invented identifiers:
+
+```text
+FICTIONAL | 2026-09-12T00:10:00+04:00 | distribution export U-8421 | stay=2026-09-12 | local_inventory_version=8421 | available=1 | targets=Booking.com,Expedia
+
+FICTIONAL | 2026-09-12T00:12:00+04:00 | outbound stock job U-8423 | local_version=8423 | intended_available=0 | Booking.com request=B-OUT-02 | Expedia request=E-OUT-02
+
+FICTIONAL | 2026-09-12T00:12:06+04:00 | acknowledgement B-ACK-02 | request=B-OUT-02 | receipt accepted | consumer sellability not established
+
+FICTIONAL | 2026-09-12T00:12:09+04:00 | acknowledgement E-ACK-02 | request=E-OUT-02 | receipt accepted | consumer sellability not established
+```
+
+By the second job, our system had recorded 29 commitments against 28 rooms. It advertised zero availability; it retained the one-room deficit internally.
+
+The acknowledgements establish receipt acceptance in this mock record. They don’t prove that the intended room and every associated rate plan had closed, or establish the exact time guests could no longer book.
+
+The version numbers are local references, not proof that either OTA enforced inventory versions. Expedia’s outbound payload bodies are missing, so its ledger entry establishes what we intended to send, not the exact mapping transmitted. No first-job acknowledgement is available in these excerpts. The later 00:14 availability observation supports closure for the search checked, with minute-level precision.
+
+## Turn 05 — Artifact walkthrough — simulated minutes 15–18
+
+### Interviewer
+
+How was the relocation decision made in this case? If a record of that decision exists, could you show it with private details hidden?
+
+### Respondent
+
+The night auditor read the over-capacity exception at 00:19 and escalated it to me. We had no internal room available, so I took responsibility for arranging the alternative and approving the expenditure. We accommodated the Expedia guest and relocated the Booking.com guest for one night.
+
+The available fictional recovery entries are:
+
+```text
+FICTIONAL | 2026-09-12 00:23 +04:00 | GM notified; no internal room available.
+
+FICTIONAL | 2026-09-12 09:10 +04:00 | alternative double confirmed at fictional competitor for one night, USD 260.
+
+FICTIONAL | 2026-09-12 09:25 +04:00 | fictional guest accepts alternative and transport without additional payment.
+
+FICTIONAL | 2026-09-13 11:00 +04:00 | relocated stay completed.
+```
+
+Our fictional comparison sheet records a double room with a private bathroom and breakfast, matching those basic booking requirements. Transport cost USD 30.
+
+There’s a gap in the decision record: these entries document escalation, the alternative and acceptance, but they don’t explain why we selected the Booking.com reservation for relocation despite its earlier acceptance. I can’t supply a documented selection rule or reconstruct that reasoning from timestamps alone.
+
+The guest’s accommodation was resolved, but that doesn’t settle the separate question of whether every subsequently invoiced charge had a contractual basis.
+
+## Turn 06 — Artifact walkthrough — simulated minutes 18–20
+
+### Interviewer
+
+What supports the claimed EUR 120 handling charge? If available, could you show the relocation invoice and any terms cited for that item, with private details hidden?
+
+### Respondent
+
+The fictional invoice supports that EUR 120 was charged. It doesn’t establish that the charge was contractually justified. Here is the relevant record:
+
+```text
+FICTIONAL INVOICE F-REL-0914
+Issued and received: 14 September 2026
+Case: FICTIONAL-INC-20260912-01
+Debtor: Fictional Vineyard Court
+
+Alternative accommodation, ONE night, 12–13 September
+USD 260.00 → GEL 702.00
+
+Relocation taxi, 12 September
+USD 30.00 → GEL 81.00
+
+Claimed handling item
+EUR 120.00 → GEL 360.00
+
+TOTAL: GEL 1,143.00
+```
+
+Those conversions use the explicitly fictional transaction schedule FX-F12: USD 1 equals GEL 2.70 and EUR 1 equals GEL 3.00. They are not real market rates.
+
+I remember people referring to “Clause 6,” but I cannot show an applicable signed clause establishing this item. The available invoice doesn’t identify a specific contractual provision for it.
+
+The public terms check you supplied places relocation obligations in clause 2.6.1 and indemnification matters in section 6. It found neither “120” nor “handling fee” in that retrieved text. That does not establish a universal tariff or resolve this particular charge’s legal basis.
+
+The full GEL 1,143 was offset against our fictional payout on 18 September. We disputed the GEL 360 handling component; no credit had been issued by 23 September. So it was deducted, but its contractual basis remains unresolved.
+
+## Turn 07 — Frequency and loss — simulated minutes 20–24
+
+### Interviewer
+
+How does the GEL 1,143 invoice reconcile with the payout deduction, bank receipts and any original guest funds? If those records are available, could you show the linked entries with their recorded currencies and conversions, keeping private details hidden?
+
+### Respondent
+
+The invoice and deduction are the same GEL 1,143 charge, counted once. These linked entries are all fictional.
+
+The invoice uses **FX-F12**, an invented transaction schedule: USD 1 = GEL 2.70; EUR 1 = GEL 3.00.
+
+```text
+F-REL-0914 | 14 September 2026
+Accommodation: USD 260 = GEL 702
+Taxi:          USD  30 = GEL  81
+Handling:      EUR 120 = GEL 360
+Total:                  GEL 1,143
+```
+
+The OTA paid the competitor and taxi; we made no separate supplier payment.
+
+```text
+F-BPAY-0918 | 18 September 2026 | All entries GEL
+Completed settlement period: 1–15 September
+
+Other reservation receipts                  +6,000
+Other commissions                             -900
+F-BKG-912-A original collection                +540
+F-BKG-912-A guest refund                       -540
+Original commission                            -81
+Commission reversal credit                     +81
+F-REL-0914 offset                            -1,143
+NET TRANSFER                                 3,957
+
+F-BANK-0918 | Value date 18 September
+Received GEL 3,957 | Reference F-BPAY-0918
+```
+
+The original guest paid USD 200 on 12 September and received a full USD 200 refund on 13 September—GEL 540 each under FX-F12. We never received that money in cash.
+
+```text
+F-EPAY-0920 | 20 September | Expedia booking
+Gross:      USD 200 = GEL 540
+Commission: USD  32 = GEL 86.40
+Refund: zero
+Net: GEL 453.60
+
+F-BANK-0921 | Value date 21 September
+Received GEL 453.60 | Reference F-EPAY-0920
+```
+
+The invoice balance is zero, but GEL 360 remains disputed without a credit. Expedia’s receipt is ordinary room revenue; it does not automatically offset the relocation expense as incremental earnings.
+
+## Turn 08 — Frequency and loss — simulated minutes 24–27
+
+### Interviewer
+
+For a completed period you can check, how many bookings had a conflict like this, out of how many relevant bookings? If a count record exists, could you show how bookings were included and outcomes distinguished?
+
+### Respondent
+
+I can describe this one conflict, but I don’t have a closed count of comparable conflicts against all relevant bookings. I wouldn’t turn one incident into a rate without that denominator.
+
+The completed count record available is for cancellations, which answers a different question:
+
+```text
+FICTIONAL COHORT-FC-AUG26
+Closed: 2 September 2026
+
+Included:
+100 unique free-cancellation reservation IDs
+scheduled to arrive during August 2026,
+across Booking.com, Expedia and Direct.
+Date amendments retain the original reservation ID.
+Unit: reservations, not room-nights.
+
+Outcomes:
+Cancelled before penalty: 38
+Completed stays:           62
+Unresolved or no-show:      0
+```
+
+That is the basis for my roughly 35–40% cancellation recollection. It has no separate conflict or relocation field. A completed stay also doesn’t, by itself, prove that there was no booking conflict along the way.
+
+For September, we have the documented pair of conflicting reservations for 12 September, resulting in one relocation. We also have the following Saturday’s successful use of exclusive Direct availability, but neither record supplies a complete September booking denominator.
+
+To answer your question properly, we would need a completed reservation register with conflicts identified separately from cancellations, and outcomes distinguishing guests accommodated here from guests relocated. That count is unavailable in this fictional dossier.
+
+## Turn 09 — Past attempts and workarounds — simulated minutes 27–30
+
+### Interviewer
+
+What, if anything, changed in how you allocated room availability across channels after 12 September, and when did that change take effect?
+
+### Respondent
+
+We used an exclusive Direct arrangement for the remaining rooms on the following peak Saturday. It took effect on **18 September for stays on 19–20 September**.
+
+At 26 commitments, Channel Operations closed availability on both Booking.com and Expedia. We recorded closure checks before releasing the two remaining rooms exclusively through Direct. I owned the release decision, and Front Desk used the shared property management system to confirm reservations.
+
+The fictional control record, **CTRL-0919**, shows that Direct sold both rooms. Twenty-eight parties stayed that Saturday, with no conflicting confirmation or relocation.
+
+That was a change from leaving several channels open against the last room. It reduced the exposure by giving the remaining availability to one sales source. It didn’t create a reservation lock across the OTAs.
+
+I can substantiate that specific use of the control in this rehearsal. I can’t claim it had become a permanent policy for every date, or infer a prevention rate from one successful weekend. We also don’t know whether closing the OTAs cost us enquiries or changed the rates we could achieve.
+
+## Turn 10 — Past attempts and workarounds — simulated minutes 30–33
+
+### Interviewer
+
+Could you walk me through the closure checks and Direct release recorded in CTRL-0919? If the record is available, could you show the entries through the two Direct confirmations?
+
+### Respondent
+
+I can show the summary, but I need to qualify my earlier description: CTRL-0919 does not contain a timestamped sequence of closure checks and individual Direct confirmations.
+
+The available fictional record reads:
+
+> **FICTIONAL CTRL-0919:** On 2026-09-18, with 26 commitments for 19 September, both OTAs were closed. Closure checks were recorded before two remaining rooms were released exclusively through Direct.
+
+Its completed-outcome summary states:
+
+> For 19–20 September, Direct sold both remaining rooms; 28 parties stayed, no conflicting confirmation and no relocation occurred.
+
+So the recorded sequence is: close Booking.com and Expedia, check closure, then release the remaining two rooms through Direct. I owned the release decision; Channel Operations handled OTA closure, and Front Desk confirmed through the shared PMS.
+
+What’s missing is the underlying detail: exact check times, which searches or rate plans were checked, supporting acknowledgements, and the two Direct reservation IDs and confirmation timestamps. I can’t show those entries or establish the interval between closure and release.
+
+The summary supports that we used the control and had a successful completed Saturday. It does not provide a detailed technical audit of the closure or prove that every possible OTA booking path was unavailable.
+
+## Turn 11 — Counterexample and competing cause — simulated minutes 33–37
+
+### Interviewer
+
+Beyond the change to exclusive Direct availability, what else, if anything, differed between 12 and 19 September that matters to comparing their outcomes? It’s fine if that’s unknown.
+
+### Respondent
+
+One clear difference is when we acted. For 12 September, we still had several channels open with just one room left. For 19 September, we closed the OTAs at 26 commitments, leaving two rooms to sell through Direct. So we changed both the sales source and the point at which we restricted availability.
+
+Both were peak Saturdays, and both ended with 28 parties staying in the hotel. But that doesn’t establish equal booking pressure. On 12 September, we have two OTA acceptances about 65 seconds apart. For 19 September, we don’t have the individual Direct confirmation times or evidence that similarly simultaneous requests occurred.
+
+We also don’t have a matched comparison of enquiry volumes, cancellations, rates, staffing or distribution-system conditions. We don’t know how much demand we missed after closing the OTAs.
+
+I’d therefore describe 19 September as one successful use of a practical control. It shows we could fill the remaining rooms through Direct without a recorded conflict that weekend. It doesn’t isolate the control’s effect from differences in demand and timing, or establish how often it would prevent relocation.
+
+## Turn 12 — Concrete next step — simulated minutes 37–40
+
+### Interviewer
+
+What, if anything, needs correcting in our reconstruction? What specific next step, if any, do you agree to now?
+
+### Respondent
+
+I’d tighten three points.
+
+First, the records support two acceptances about 65 seconds apart and a two-minute interval between export jobs. They don’t prove precisely when either OTA stopped selling. The missing Expedia payload and edit history leave the mapping or manual-edit explanation unresolved.
+
+Second, the EUR 120 handling item was invoiced and deducted in the fictional transactions, but its contractual basis remains unknown. My “Clause 6” recollection is not verification. The invoice and deduction are one expense, not two.
+
+Third, the following Saturday was one successful use of exclusive Direct availability. We have a summary, not detailed closure and confirmation logs or a matched comparison. And the 38% figure describes cancellations in the August cohort, not a conflict rate or justification for overselling.
+
+I also accept that we haven’t documented why the earlier Booking.com reservation was selected for relocation. That gap should stay visible.
+
+The specific next step I agree to now is a written rehearsal case summary incorporating those corrections and listing the missing records separately. That’s the extent of the commitment: this exercise provides no real hotel access, operational trial or permission to use an attributable real-world quotation.
+
+
+CASE:
+{
+  "schema_version": "1.0",
+  "is_synthetic": true,
+  "case_id": "CASE_OVERBOOKING_001",
+  "property_type": "unknown",
+  "room_count": 28,
+  "interviewee_role": "gm",
+  "interview_date": "2026-09-23",
+  "incident_date_range": {
+    "start": "2026-09-12",
+    "end": "2026-09-13"
+  },
+  "roles": [
+    {
+      "role_id": "gm",
+      "responsibility": "Chooses room offers, channel availability and accepted exposure near sellout; owns relocation decisions and expenditure. Owned the subsequent exclusive Direct release decision.",
+      "person_label": "Fictional general manager"
+    },
+    {
+      "role_id": "channel_operations",
+      "responsibility": "Maintains room mappings, checks availability updates and reconciles channel/PMS differences; handled the subsequent OTA closure. Technical trace events are grouped under this responsibility, not evidence that this colleague personally performed or knew of each event at its timestamp.",
+      "person_label": "Fictional Channel Operations colleague"
+    },
+    {
+      "role_id": "night_auditor",
+      "responsibility": "Handles arrivals and direct enquiries, enters telephone or walk-in reservations before confirmation, and escalated this over-capacity exception to the GM.",
+      "person_label": "Fictional Night Auditor"
+    },
+    {
+      "role_id": "front_desk",
+      "responsibility": "Handles arrivals and direct enquiries; enters telephone or walk-in reservations before confirmation and confirmed the subsequent exclusive Direct reservations through the shared PMS.",
+      "person_label": "Fictional Front Desk participant"
+    }
+  ],
+  "incident_summary": "SYNTHETIC rehearsal: with one room remaining, Booking.com, Expedia and Direct remained open against shared inventory. Booking.com and Expedia accepted reservations nominally 65 seconds apart, producing 29 commitments for 28 rooms. Direct took no additional booking. The Expedia guest stayed at the hotel; the earlier Booking.com guest was relocated for one night with transport. The selection rationale is undocumented. A GEL 1,143 relocation invoice was deducted once from the payout; GEL 360 remains disputed without credit. Missing distribution records prevent a definitive causal finding. The later exclusive Direct control had one successful use, with only a summary available.",
+  "trace": [
+    {
+      "step_id": "s01",
+      "sequence": 1,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "Before the recorded booking acceptances on 12 September; decision time unavailable.",
+      "actor_role_id": "gm",
+      "recipient_role_id": null,
+      "source_system": "GM account",
+      "input_state": "28 rooms; one remaining room offered through Booking.com, Expedia and Direct.",
+      "expected_action": "GM chooses near-sellout exposure and channel availability.",
+      "actual_outcome": "GM left several sources open, citing cancellation experience; selling a 29th room was not deliberately authorized.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_context",
+        "a_incident"
+      ]
+    },
+    {
+      "step_id": "s02",
+      "sequence": 2,
+      "occurred_at": "2026-09-12T00:10:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Shown fictional ledger timestamp; local clock uncertainty approximately ±2 seconds.",
+      "actor_role_id": "channel_operations",
+      "recipient_role_id": null,
+      "source_system": "Distribution export ledger",
+      "input_state": "U-8421; local_inventory_version=8421; stay=2026-09-12; available=1.",
+      "expected_action": "Export the recorded availability to Booking.com and Expedia.",
+      "actual_outcome": "Ledger records both external targets. No first-job acknowledgement is available; external application and staff awareness are unknown.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_distribution",
+        "a_booking_times"
+      ]
+    },
+    {
+      "step_id": "s03",
+      "sequence": 3,
+      "occurred_at": "2026-09-12T00:10:15+04:00",
+      "time_basis": "timestamp",
+      "time_note": "OTA acceptance timestamp: whole-second resolution, fictional uncertainty ±5 seconds. Local receipt and processing clocks approximately ±2 seconds.",
+      "actor_role_id": "channel_operations",
+      "recipient_role_id": null,
+      "source_system": "Booking.com origin record and local callback/processing records",
+      "input_state": "F-BKG-912-A; B-ACC-01 records external acceptance at 00:10:15.",
+      "expected_action": "Local inventory reflects the accepted reservation; external closure timing is not established.",
+      "actual_outcome": "B-IN-01 reached the local system at 00:10:25; processing committed version 8422 with availability zero at 00:10:28. These are distinct events, not staff-reading timestamps.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_booking_times"
+      ]
+    },
+    {
+      "step_id": "s04",
+      "sequence": 4,
+      "occurred_at": "2026-09-12T00:11:20+04:00",
+      "time_basis": "timestamp",
+      "time_note": "OTA acceptance uncertainty ±5 seconds; the interval from Booking.com acceptance is approximately 55–75 seconds. Local clocks approximately ±2 seconds.",
+      "actor_role_id": "channel_operations",
+      "recipient_role_id": null,
+      "source_system": "Expedia origin record and local callback/processing records",
+      "input_state": "F-EXP-912-B; E-ACC-01 records external acceptance at 00:11:20.",
+      "expected_action": "Local inventory reflects the accepted reservation.",
+      "actual_outcome": "E-IN-01 reached the local system at 00:11:30; processing committed version 8423 with a one-room deficit at 00:11:34. There were 29 commitments for 28 rooms.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_booking_times",
+        "a_distribution"
+      ]
+    },
+    {
+      "step_id": "s05",
+      "sequence": 5,
+      "occurred_at": "2026-09-12T00:12:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Shown fictional dispatch timestamp; local clock uncertainty approximately ±2 seconds.",
+      "actor_role_id": "channel_operations",
+      "recipient_role_id": null,
+      "source_system": "Outbound stock job and receipt acknowledgements",
+      "input_state": "U-8423; local_version=8423; intended_available=0; requests B-OUT-02 and E-OUT-02.",
+      "expected_action": "Send intended zero availability while retaining the internal deficit.",
+      "actual_outcome": "B-ACK-02 records receipt acceptance at 00:12:06 and E-ACK-02 at 00:12:09. Neither establishes consumer sellability or application time. Expedia payload bodies and detailed edit history are missing; local versions do not establish OTA version enforcement.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_distribution"
+      ]
+    },
+    {
+      "step_id": "s06",
+      "sequence": 6,
+      "occurred_at": null,
+      "time_basis": "estimate",
+      "time_note": "Reported 00:14 on 12 September, minute resolution; underlying check was not shown.",
+      "actor_role_id": "channel_operations",
+      "recipient_role_id": null,
+      "source_system": "Reported availability observation",
+      "input_state": "Both listings were checked after the second export; exact search details are unavailable.",
+      "expected_action": "Check availability; scope of the actual check remains unknown.",
+      "actual_outcome": "Respondent reports both listings unavailable for the search checked. This does not establish when all booking paths closed or who performed the check.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_availability_report"
+      ]
+    },
+    {
+      "step_id": "s07",
+      "sequence": 7,
+      "occurred_at": null,
+      "time_basis": "estimate",
+      "time_note": "Respondent reports the Night Auditor read the exception at 00:19 on 12 September; no underlying read record shown.",
+      "actor_role_id": "night_auditor",
+      "recipient_role_id": "gm",
+      "source_system": "Reported over-capacity exception",
+      "input_state": "Over-capacity exception following 29 commitments against 28 rooms.",
+      "expected_action": "Escalate a conflict to the GM, who owns relocation expenditure.",
+      "actual_outcome": "Night Auditor reportedly read and escalated the exception. No measured staff labor or failed escalation is established.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_recovery_account"
+      ]
+    },
+    {
+      "step_id": "s08",
+      "sequence": 8,
+      "occurred_at": "2026-09-12T00:23:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Shown recovery entry has minute resolution; :00 encodes the recorded minute, not verified second precision.",
+      "actor_role_id": "gm",
+      "recipient_role_id": null,
+      "source_system": "Fictional recovery entries",
+      "input_state": "GM notified; no internal room available.",
+      "expected_action": "GM owns the relocation decision and expenditure.",
+      "actual_outcome": "GM notification is recorded. The reason for selecting the earlier Booking.com reservation for relocation is not documented.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_recovery",
+        "a_recovery_account"
+      ]
+    },
+    {
+      "step_id": "s09",
+      "sequence": 9,
+      "occurred_at": "2026-09-12T09:10:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Shown recovery entry has minute resolution.",
+      "actor_role_id": "gm",
+      "recipient_role_id": null,
+      "source_system": "Fictional recovery entries",
+      "input_state": "No internal room; one-night relocation required.",
+      "expected_action": "Arrange the alternative under the GM's stated responsibility.",
+      "actual_outcome": "External competitor double confirmed for one night at USD 260. Respondent reports a private bathroom and breakfast matching basic booking requirements; the comparison sheet itself was not shown.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_recovery",
+        "a_recovery_account"
+      ]
+    },
+    {
+      "step_id": "s10",
+      "sequence": 10,
+      "occurred_at": "2026-09-12T09:25:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Shown recovery entry has minute resolution.",
+      "actor_role_id": "gm",
+      "recipient_role_id": null,
+      "source_system": "Fictional recovery entries",
+      "input_state": "Alternative accommodation and transport offered to the Booking.com guest.",
+      "expected_action": "Record the guest's response to the arrangement.",
+      "actual_outcome": "External guest accepted the alternative and transport without additional payment. Transport cost USD 30.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_recovery",
+        "a_invoice"
+      ]
+    },
+    {
+      "step_id": "s11",
+      "sequence": 11,
+      "occurred_at": "2026-09-13T11:00:00+04:00",
+      "time_basis": "timestamp",
+      "time_note": "Shown recovery entry has minute resolution. The separate guest refund has a date only; its order relative to this completion is unknown.",
+      "actor_role_id": "gm",
+      "recipient_role_id": null,
+      "source_system": "Fictional recovery entries and settlement account",
+      "input_state": "Relocated stay for 12–13 September.",
+      "expected_action": "Complete the arranged one-night stay.",
+      "actual_outcome": "Relocated stay recorded completed. Separately, the original USD 200 guest payment was fully refunded on 13 September; original collection and refund cancel in the hotel settlement.",
+      "acknowledged_at": null,
+      "completed_at": "2026-09-13T11:00:00+04:00",
+      "artifact_refs": [
+        "a_recovery",
+        "a_settlement"
+      ]
+    },
+    {
+      "step_id": "s12",
+      "sequence": 12,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "Invoice issued and received 14 September; time of day unavailable.",
+      "actor_role_id": "gm",
+      "recipient_role_id": null,
+      "source_system": "F-REL-0914 and fictional FX-F12",
+      "input_state": "USD 260 accommodation, USD 30 taxi and claimed EUR 120 handling item.",
+      "expected_action": "GM owns expenditure; applicable contractual support for the handling item is unknown.",
+      "actual_outcome": "Invoice totals GEL 1,143: accommodation 702, taxi 81, handling 360. Fictional FX-F12 uses USD/GEL 2.70 and EUR/GEL 3.00. Handling item disputed; invoice does not establish its legal basis.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_invoice",
+        "a_corrections"
+      ]
+    },
+    {
+      "step_id": "s13",
+      "sequence": 13,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "Payout and bank value date 18 September; ordering relative to the same-date control change is unknown.",
+      "actor_role_id": "gm",
+      "recipient_role_id": null,
+      "source_system": "F-BPAY-0918 and F-BANK-0918",
+      "input_state": "GEL 6,000 other receipts minus 900 commissions; original guest collection/refund +540/-540; original commission/reversal -81/+81; relocation offset -1,143.",
+      "expected_action": "Reconcile the invoice offset to the actual payout without duplicate expense recognition.",
+      "actual_outcome": "Net GEL 3,957 matches bank receipt. OTA paid competitor and taxi; hotel made no separate supplier payment. Invoice and offset are one GEL 1,143 expense. No credit for disputed GEL 360 by 23 September.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_settlement",
+        "a_invoice",
+        "a_corrections"
+      ]
+    },
+    {
+      "step_id": "s14",
+      "sequence": 14,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "Comparator control initiated 18 September for 19–20 September; exact closure and check times absent.",
+      "actor_role_id": "channel_operations",
+      "recipient_role_id": "gm",
+      "source_system": "CTRL-0919 summary",
+      "input_state": "26 commitments for 19 September, with two rooms remaining.",
+      "expected_action": "Close both OTAs and check closure before exclusive Direct release.",
+      "actual_outcome": "Summary records closure and checks before release. Search scope, rate plans, acknowledgement records and exact closure/application times are unavailable.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_control",
+        "a_control_account"
+      ]
+    },
+    {
+      "step_id": "s15",
+      "sequence": 15,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "Release followed the recorded closure checks; confirmations lack timestamps. Completed outcome covers 19–20 September.",
+      "actor_role_id": "gm",
+      "recipient_role_id": "front_desk",
+      "source_system": "CTRL-0919 summary and respondent's responsibility account",
+      "input_state": "Two rooms released exclusively through Direct after the recorded checks.",
+      "expected_action": "GM owns release; Front Desk confirms through the shared PMS.",
+      "actual_outcome": "Direct sold both rooms; 28 parties stayed with no conflicting confirmation or relocation recorded. Underlying reservation IDs and confirmation times are unavailable; one successful use does not establish a prevention rate.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_control",
+        "a_control_account",
+        "a_comparison"
+      ]
+    },
+    {
+      "step_id": "s16",
+      "sequence": 16,
+      "occurred_at": null,
+      "time_basis": "unknown",
+      "time_note": "Expedia settlement dated 20 September and bank value dated 21 September; no times of day supplied.",
+      "actor_role_id": "gm",
+      "recipient_role_id": null,
+      "source_system": "F-EPAY-0920 and F-BANK-0921",
+      "input_state": "Expedia gross USD 200/GEL 540, commission USD 32/GEL 86.40, refund zero.",
+      "expected_action": "Distinguish ordinary room revenue from the separate relocation expense.",
+      "actual_outcome": "GEL 453.60 net settlement matches the 21 September bank receipt. This ordinary revenue is not established as incremental earnings that offset relocation leakage.",
+      "acknowledged_at": null,
+      "completed_at": null,
+      "artifact_refs": [
+        "a_expedia_settlement"
+      ]
+    }
+  ],
+  "handover_failure_mechanism": {
+    "summary": "Inference within this fiction: external acceptance and local inventory updates were distinct events. A second OTA accepted a reservation after local availability reached zero and before the next recorded export. This supports a possible inventory race, but missing Expedia payloads, edit history and application times prevent definitive attribution. No failed hotel-role handoff is established; the Night Auditor escalated to the GM. The GM's exposure decision and the lack of an internal room are relevant constraints.",
+    "step_ids": [
+      "s01",
+      "s02",
+      "s03",
+      "s04",
+      "s05",
+      "s07",
+      "s08"
+    ],
+    "artifact_refs": [
+      "a_incident",
+      "a_booking_times",
+      "a_distribution",
+      "a_recovery",
+      "a_corrections"
+    ]
+  },
+  "verified_cash_leakage_gel": 1143,
+  "staff_rework_minutes": null,
+  "observed_frequency_per_month": null,
+  "observation_window": null,
+  "incident_count": null,
+  "eligible_opportunities": null,
+  "opportunity_unit": null,
+  "quantification_artifacts": {
+    "cash": [
+      "a_invoice",
+      "a_settlement"
+    ],
+    "rework": [],
+    "frequency": []
+  },
+  "supporting_artifacts": [
+    {
+      "artifact_id": "a_context",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 01",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turn 01 respondent account supplies 28 rooms and GM, Channel Operations, Front Desk and Night Auditor responsibilities. No underlying operational record inspected; rehearsal note-taking consent is not real-world consent.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_incident",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 02",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turn 02 GM recounts the latest conflict, shared last-room exposure, 29 commitments, one relocation and unresolved mapping/manual-edit alternatives. Narrative confirmation only; no independent operator verification.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_booking_times",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 03 booking timestamp table",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC Turn 03 shown table distinguishes OTA acceptance, callback receipt and inventory commits 8422/8423. Nominal acceptance interval 65 seconds, uncertainty 55–75 seconds. D and reviewed=true mean inspected WITHIN THE FICTION only, not real-world verification.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_distribution",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 04 U-8421, U-8423 and acknowledgement excerpts",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC Turn 04 shown exports record version 8421/available=1 and version 8423/intended_available=0; B-ACK-02 and E-ACK-02 establish receipt only. Missing first acknowledgement, Expedia bodies and edit history remain missing. D and reviewed=true mean inspected WITHIN THE FICTION only.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_availability_report",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 03 and Turn 04 availability-check account",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turns 03–04 report listings unavailable at 00:14 with minute resolution for the search checked. Underlying observation record, observer and full search scope were not shown; no directly inspected closure evidence.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_recovery_account",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 05 recovery narrative",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turn 05 reports the Night Auditor's 00:19 read/escalation, GM expenditure responsibility and basic room equivalence. Read log and comparison sheet not shown. Reason for selecting the earlier booking is explicitly unknown.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_recovery",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 05 recovery-entry block",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC Turn 05 shown entries record GM notification at 00:23, alternative confirmation at 09:10, guest acceptance at 09:25 and completion on 13 September at 11:00. D and reviewed=true mean inspected WITHIN THE FICTION only; external guest and competitor are not hotel departments.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_invoice",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 06 and Turn 07 F-REL-0914",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC Turns 06–07 show GEL 702 accommodation, GEL 81 taxi and GEL 360 disputed handling, totaling GEL 1,143 using fictional FX-F12. Invoice proves neither a signed clause nor a universal tariff. D and reviewed=true mean inspected WITHIN THE FICTION only.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_settlement",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 07 F-BPAY-0918 and F-BANK-0918",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC Turn 07 shown payout and bank entries reconcile to GEL 3,957 after one GEL 1,143 offset. Original collection/refund +540/-540 and commission/reversal -81/+81 cancel. No separate hotel supplier payment; guest funds were never received by the hotel in cash. D and reviewed=true mean inspected WITHIN THE FICTION only.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_expedia_settlement",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 07 F-EPAY-0920 and F-BANK-0921",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC Turn 07 shown Expedia settlement gives GEL 540 gross less GEL 86.40 commission, no refund, and GEL 453.60 received. Ordinary room revenue is not established as incremental recovery earnings. D and reviewed=true mean inspected WITHIN THE FICTION only.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_cancellation_cohort",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 08 COHORT-FC-AUG26",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC Turn 08 shown August-arrival cohort, closed 2 September, counts 100 unique free-cancellation reservations: 38 cancelled before penalty and 62 completed, with no unresolved/no-show outcomes. No conflict or relocation field; not a conflict denominator. D and reviewed=true mean inspected WITHIN THE FICTION only.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_count_gap",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 08 count limitations",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turn 08 explicitly states no closed conflict count or complete relevant-booking denominator is available. One conflicting pair and one relocation do not supply a period frequency. No missing register was inspected.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_control",
+      "kind": "operator_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 10 CTRL-0919 quoted summaries",
+      "evidence_label": "D",
+      "reviewed": true,
+      "summary": "SYNTHETIC Turn 10 shown summary records OTA closure at 26 commitments, checks before exclusive Direct release, two rooms sold and 28 parties staying without conflict or relocation. Detailed closure/confirmation logs are absent. D and reviewed=true mean inspected WITHIN THE FICTION only; this is not a replay or engineering benchmark.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_control_account",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 09 and Turn 10 responsibility accounts",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turns 09–10 identify Channel Operations closing OTAs, GM owning release and Front Desk confirming through the PMS. These responsibility accounts lack separate participant confirmation; no cross-OTA lock or permanent policy is established.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_comparison",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 11",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turn 11 distinguishes both sales-source allocation and restriction threshold. Demand, cancellations, rates, staffing and distribution conditions were not matched. Missed demand is unknown; no matched comparison records were inspected.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_corrections",
+      "kind": "operator_confirmation",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 12 corrections",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turn 12 reiterates unknown sellability timing, missing Expedia records, disputed handling basis, one-time expense recognition, unmatched comparator and undocumented relocation selection. Narrative corrections only; no new underlying record inspected.",
+      "collected_on": "2026-09-23"
+    },
+    {
+      "artifact_id": "a_commitment",
+      "kind": "commitment_record",
+      "locator": "SYNTHETIC transcript_overbooking_hedging.md Turn 12 verbal rehearsal commitment",
+      "evidence_label": "U",
+      "reviewed": false,
+      "summary": "SYNTHETIC Turn 12 agrees only to a written rehearsal summary with corrections and missing records listed. No separately shown commitment document, real hotel access, operational trial or attributable real-world quotation permission exists.",
+      "collected_on": "2026-09-23"
+    }
+  ],
+  "root_cause_code": "BOOKING_PROMISE",
+  "alternative_explanations": [
+    "The nominal 65-second acceptance interval and two-minute export interval support an inventory-race hypothesis, not a proven exclusive cause or synchronization guarantee.",
+    "Missing Expedia payload bodies and detailed edit history leave room-mapping or manual-availability-edit contributions unresolved.",
+    "The GM deliberately left multiple sources open near sellout, but did not deliberately authorize a 29th commitment.",
+    "There was no internal room once commitments exceeded capacity; no failed Night Auditor-to-GM handoff is established.",
+    "The reason for relocating the earlier Booking.com reservation remains undocumented.",
+    "The later control changed both the sales source and the restriction threshold; unmatched demand, cancellations, rates, staffing and distribution conditions confound causal comparison.",
+    "The August 38% cancellation cohort is not a conflict rate and does not establish a justification for overselling.",
+    "The handling charge was deducted, but its contractual basis remains unknown. The respondent's account of a public-terms check was not supplied as inspected evidence; neither Clause 6 recollection nor the invoice establishes a universal tariff."
+  ],
+  "a2a_suitability": {
+    "distinct_operational_roles": 4,
+    "asynchronous_state_dependencies": true,
+    "dependencies": [
+      {
+        "from_step_id": "s07",
+        "to_step_id": "s08",
+        "from_role_id": "night_auditor",
+        "to_role_id": "gm",
+        "state_dependency": "GM recovery decision follows the Night Auditor's reported exception escalation.",
+        "constraint": "GM owns relocation expenditure and no internal room was available; this dependency does not establish a failed handoff.",
+        "asynchronous": true,
+        "artifact_refs": [
+          "a_recovery_account",
+          "a_recovery"
+        ]
+      },
+      {
+        "from_step_id": "s14",
+        "to_step_id": "s15",
+        "from_role_id": "channel_operations",
+        "to_role_id": "gm",
+        "state_dependency": "Comparator Direct release followed the summary's OTA closure checks.",
+        "constraint": "Channel Operations handled closure and GM owned release; exact acknowledgement and release times are missing.",
+        "asynchronous": null,
+        "artifact_refs": [
+          "a_control",
+          "a_control_account"
+        ]
+      }
+    ],
+    "single_database_crud": null,
+    "simple_rule_inadequacy_rationale": "No inadequacy demonstrated. Exclusive Direct allocation after OTA closure had one successful recorded use. The summary lacks detailed logs and a matched comparison, but supplies no evidence of A2A superiority over this simple control."
+  },
+  "gate_evidence": {
+    "real_problem": {
+      "recent_episode_confirmed": true,
+      "recency_rationale": "Within the fictional scenario, the GM identifies 12–13 September as the latest conflict before the 23 September interview; a subsequent control changed the exposure policy. This is not real operator confirmation, and is_synthetic remains true.",
+      "operator_confirmed_consequence": true,
+      "confirmation_role_id": "gm",
+      "consequence": "Within the fiction: one relocated stay completed, no additional guest payment, and GEL 1,143 settled through a payout deduction, including GEL 360 disputed without credit.",
+      "artifact_refs": [
+        "a_incident",
+        "a_recovery",
+        "a_settlement",
+        "a_corrections"
+      ]
+    },
+    "materiality": {
+      "operator_confirmed": null,
+      "rationale": "The fictional consequence and expense are described, but comparative importance to the business was not elicited. No closed conflict count or denominator exists.",
+      "artifact_refs": [
+        "a_settlement",
+        "a_count_gap"
+      ]
+    },
+    "software_leverage": {
+      "software_only": null,
+      "binding_constraint": "unknown",
+      "permitted_action": null,
+      "available_information": "Shown fictional records contain local inventory versions, external acceptance timestamps, callback receipts, export intentions and receipt acknowledgements. They do not establish external application times or staff knowledge at those times; Expedia payload/edit history is missing.",
+      "artifact_refs": [
+        "a_booking_times",
+        "a_distribution",
+        "a_control"
+      ]
+    },
+    "access_authority": {
+      "inputs_available": null,
+      "adapter_mode": "unknown",
+      "adapter_description": "Narrated fictional excerpts only; no connector, import implementation or functioning simulator was supplied.",
+      "write_limits": null,
+      "trial_approver_role_id": null,
+      "authority_confirmed": null,
+      "artifact_refs": [
+        "a_commitment"
+      ]
+    },
+    "feasibility": {
+      "estimated_hours": null,
+      "bounded_workflow": null,
+      "deterministic_oracle": null,
+      "replay_case_refs": [],
+      "baseline_comparison": null,
+      "failure_recovery_test": null,
+      "artifact_refs": []
+    },
+    "simple_rule": {
+      "tested": true,
+      "baseline_description": "One actual use within the fiction: close both OTAs at 26 commitments, record closure checks, then release two rooms exclusively through Direct. CTRL-0919 reports both sold and no conflicting confirmation or relocation; this was not an engineering replay or matched benchmark.",
+      "observed_failure": null,
+      "simple_rule_sufficient": null,
+      "artifact_refs": [
+        "a_control",
+        "a_control_account",
+        "a_comparison"
+      ]
+    }
+  },
+  "scores": {
+    "severity": {
+      "rating": 2,
+      "rationale": "Reviewer assessment within the fiction: a completed relocation and settled GEL 1,143 expense substantiate a consequence. No recurrence, measured labor or operator-confirmed relative materiality supports a higher assessment.",
+      "artifact_refs": [
+        "a_recovery",
+        "a_settlement"
+      ]
+    },
+    "a2a_fit": {
+      "rating": null,
+      "rationale": "Actual responsibilities and a recovery escalation are described, but no consequential failed cross-role dependency or advantage over simple allocation is established.",
+      "artifact_refs": [
+        "a_recovery",
+        "a_distribution",
+        "a_control"
+      ]
+    },
+    "feasibility": {
+      "rating": null,
+      "rationale": "No bounded implementation, estimate, adapter, oracle, replay or failure-recovery test was elicited.",
+      "artifact_refs": []
+    },
+    "evidence": {
+      "rating": 2,
+      "rationale": "Within-fiction assessment only: shown incident and settlement excerpts plus a plausible comparator summary support partial reconstruction. Missing logs, absent independent confirmation and no conflict denominator prevent a stronger rating; none constitutes real field evidence.",
+      "artifact_refs": [
+        "a_booking_times",
+        "a_distribution",
+        "a_recovery",
+        "a_settlement",
+        "a_control",
+        "a_count_gap"
+      ]
+    },
+    "frequency": {
+      "rating": 0,
+      "rationale": "One isolated conflict is described; a closed count of affected opportunities and its denominator are unavailable. This score does not mean zero incidents. The cancellation cohort cannot supply conflict frequency.",
+      "artifact_refs": [
+        "a_count_gap",
+        "a_cancellation_cohort"
+      ]
+    },
+    "preventable_share": {
+      "rating": null,
+      "rationale": "One successful exclusive Direct use does not quantify preventable share. The causal mechanism, external application timing and permitted engineering action remain unresolved.",
+      "artifact_refs": [
+        "a_distribution",
+        "a_control",
+        "a_comparison"
+      ]
+    },
+    "adoption": {
+      "rating": null,
+      "rationale": "The sole commitment is a written rehearsal summary. It does not establish product adoption, real access, a trial owner or a supervised test window.",
+      "artifact_refs": [
+        "a_commitment"
+      ]
+    }
+  },
+  "reviewer": "SYNTHETIC_REVIEWER_001 — model assessment of the delivered fictional transcript only; no real-world verification or human field review."
+}
+
+EVALUATION:
+{
+  "normal_evaluation": {
+    "case_id": "CASE_OVERBOOKING_001",
+    "status": "rejected",
+    "accepted": false,
+    "errors": [],
+    "gates": {
+      "G1": {
+        "passed": false,
+        "reasons": [
+          "Synthetic cases cannot establish a real problem outside --self-test.",
+          "Need reviewed operator record/direct observation; press or analyst opinion alone is insufficient.",
+          "Need a recorded consequence confirmation or direct observation.",
+          "Every trace step needs reviewed primary episode evidence."
+        ]
+      },
+      "G2": {
+        "passed": false,
+        "reasons": [
+          "Need a closed observation period, counted incidents, positive eligible-opportunity denominator, unit, and primary evidence.",
+          "Need repeated incidents or an operator-confirmed sufficiently serious consequence with evidence."
+        ]
+      },
+      "G3": {
+        "passed": false,
+        "reasons": [
+          "Need evidenced asynchronous cross-role state/constraint dependencies, not an asserted flag alone.",
+          "Single-database CRUD or an unknown CRUD assessment does not establish A2A fit.",
+          "Identify the consequential negotiation/ownership/acknowledgement failure and its trace steps."
+        ]
+      },
+      "G4": {
+        "passed": false,
+        "reasons": [
+          "Binding physical/hardware, labor-economics, external-demand, or unknown constraint cannot pass as software leverage.",
+          "Specify an evidenced permitted software action and the information available to change the failure path."
+        ]
+      },
+      "G5": {
+        "passed": false,
+        "reasons": [
+          "Need available/redacted inputs and reviewed access evidence.",
+          "Need a usable adapter/import or explicitly honest simulator; assumed integration is insufficient.",
+          "Need explicit write limits and evidenced authority of a role able to approve trial actions."
+        ]
+      },
+      "G6": {
+        "passed": false,
+        "reasons": [
+          "Need an explicit bounded estimate within 115 hours.",
+          "Need an end-to-end boundary, deterministic state oracle, baseline comparison, and recovery test.",
+          "Need available reviewed replay-case artifacts.",
+          "Feasibility needs supporting artifacts, not only an optimistic estimate."
+        ]
+      },
+      "G7": {
+        "passed": false,
+        "reasons": [
+          "A simple rule/task-list baseline must be tested and shown insufficient; unknown or sufficient fails.",
+          "Describe the tested simple control, its observed failure, and why dependency negotiation/adaptation matters.",
+          "Need reviewed evidence of the baseline comparison."
+        ]
+      }
+    },
+    "weighted_score": null,
+    "contributions": {},
+    "selection_reasons": [
+      "Rejected before scoring: G1, G2, G3, G4, G5, G6, G7"
+    ],
+    "synthetic_test": false,
+    "qualification": "Internal screening of recorded evidence; not verified truth or an official GITA result."
+  },
+  "synthetic_exception_evaluation": {
+    "case_id": "CASE_OVERBOOKING_001",
+    "status": "rejected",
+    "accepted": false,
+    "errors": [],
+    "gates": {
+      "G1": {
+        "passed": false,
+        "reasons": [
+          "Need reviewed operator record/direct observation; press or analyst opinion alone is insufficient.",
+          "Need a recorded consequence confirmation or direct observation.",
+          "Every trace step needs reviewed primary episode evidence."
+        ]
+      },
+      "G2": {
+        "passed": false,
+        "reasons": [
+          "Need a closed observation period, counted incidents, positive eligible-opportunity denominator, unit, and primary evidence.",
+          "Need repeated incidents or an operator-confirmed sufficiently serious consequence with evidence."
+        ]
+      },
+      "G3": {
+        "passed": false,
+        "reasons": [
+          "Need evidenced asynchronous cross-role state/constraint dependencies, not an asserted flag alone.",
+          "Single-database CRUD or an unknown CRUD assessment does not establish A2A fit.",
+          "Identify the consequential negotiation/ownership/acknowledgement failure and its trace steps."
+        ]
+      },
+      "G4": {
+        "passed": false,
+        "reasons": [
+          "Binding physical/hardware, labor-economics, external-demand, or unknown constraint cannot pass as software leverage.",
+          "Specify an evidenced permitted software action and the information available to change the failure path."
+        ]
+      },
+      "G5": {
+        "passed": false,
+        "reasons": [
+          "Need available/redacted inputs and reviewed access evidence.",
+          "Need a usable adapter/import or explicitly honest simulator; assumed integration is insufficient.",
+          "Need explicit write limits and evidenced authority of a role able to approve trial actions."
+        ]
+      },
+      "G6": {
+        "passed": false,
+        "reasons": [
+          "Need an explicit bounded estimate within 115 hours.",
+          "Need an end-to-end boundary, deterministic state oracle, baseline comparison, and recovery test.",
+          "Need available reviewed replay-case artifacts.",
+          "Feasibility needs supporting artifacts, not only an optimistic estimate."
+        ]
+      },
+      "G7": {
+        "passed": false,
+        "reasons": [
+          "A simple rule/task-list baseline must be tested and shown insufficient; unknown or sufficient fails.",
+          "Describe the tested simple control, its observed failure, and why dependency negotiation/adaptation matters.",
+          "Need reviewed evidence of the baseline comparison."
+        ]
+      }
+    },
+    "weighted_score": null,
+    "contributions": {},
+    "selection_reasons": [
+      "Rejected before scoring: G1, G2, G3, G4, G5, G6, G7"
+    ],
+    "synthetic_test": true,
+    "qualification": "Internal screening of recorded evidence; not verified truth or an official GITA result."
+  },
+  "diagnostic_only": {
+    "not_a_selection_score": true,
+    "contributions": {
+      "severity": 10.0,
+      "a2a_fit": null,
+      "feasibility": null,
+      "evidence": 7.5,
+      "frequency": 0.0,
+      "preventable_share": null,
+      "adoption": null
+    },
+    "all_ratings_known": false,
+    "weighted_total_if_all_ratings_known": null,
+    "unknown_rating_score_bounds": [
+      17.5,
+      67.5
+    ]
+  },
+  "explanation": "Equivalent to allowing synthetic provenance only, using existing evaluate(card, synthetic_test=True). All G1–G7 checks and score eligibility remain unchanged. Diagnostic subtotal/bounds never override failed gates."
+}
+
+QUESTION REVIEWS:
+[{"turn": 1, "question": "May I take notes? You can skip any question; please hide private details in any records you choose to show. I\u2019ll ask separately before recording or using an attributable quotation.\n\nWhat are your responsibilities for room availability across booking channels and direct sales?", "changed": false, "reason": "Neutral opening consent and one operating-context question; no assumed fault, cause, or specific assignment."}, {"turn": 2, "question": "What was the most recent booking conflict or guest relocation, if any? If none comes to mind, we can walk through the last completed booking.", "changed": false, "reason": "Uses topics the respondent introduced, permits no incident, and offers a normal booking without assuming failure or cause."}, {"turn": 3, "question": "What source timestamps support the booking order and the roughly 65-second interval, and what does each timestamp represent? If those records are available, could you show the relevant entries with private details hidden?", "changed": false, "reason": "Checks the respondent\u2019s stated sequence through timestamp sources and meanings without assuming acceptance times, causation, or record availability."}, {"turn": 4, "question": "What do the available stock-update records show about the inventory sent and the meaning of the receipt acknowledgements? If available, could you show the relevant entries for those two jobs?", "changed": false, "reason": "Examines the reported update trail without assuming payload contents, effective closure times, or a cause; the record request is conditional."}, {"turn": 5, "question": "How was the relocation decision made in this case? If a record of that decision exists, could you show it with private details hidden?", "changed": true, "reason": "Removed stacked prompts about participants, options, and authority; retained one concrete process question and a conditional record request."}, {"turn": 6, "question": "What supports the claimed EUR 120 handling charge? If available, could you show the relocation invoice and any terms cited for that item, with private details hidden?", "changed": false, "reason": "Examines the charge already reported without endorsing its contractual basis; the related record request is conditional."}, {"turn": 7, "question": "How does the GEL 1,143 invoice reconcile with the payout deduction, bank receipts and any original guest funds? If those records are available, could you show the linked entries with their recorded currencies and conversions, keeping private details hidden?", "changed": false, "reason": "One reconciliation question with a related conditional record request; it does not assume guest funds were received or treat the invoiced amount as additional loss."}, {"turn": 8, "question": "For a completed period you can check, how many bookings had a conflict like this, out of how many relevant bookings? If a count record exists, could you show how bookings were included and outcomes distinguished?", "changed": false, "reason": "Requests a closed-period count and denominator without presuming recurrence or cause; the conditional record request checks inclusion and outcome definitions."}, {"turn": 9, "question": "What, if anything, changed in how you allocated room availability across channels after 12 September, and when did that change take effect?", "changed": false, "reason": "Asks about actual changes and their timing, explicitly permits none, and does not presume a failed workaround or causal link."}, {"turn": 10, "question": "Could you walk me through the closure checks and Direct release recorded in CTRL-0919? If the record is available, could you show the entries through the two Direct confirmations?", "changed": false, "reason": "Follows the reported use of the control without presuming failure or broader effectiveness; the related request to inspect entries is conditional."}, {"turn": 11, "question": "Beyond the change to exclusive Direct availability, what else, if anything, differed between 12 and 19 September that matters to comparing their outcomes? It\u2019s fine if that\u2019s unknown.", "changed": false, "reason": "Invites other differences without assigning causation to the control, and explicitly permits none or unknown."}, {"turn": 12, "question": "What, if anything, needs correcting in our reconstruction? What specific next step, if any, do you agree to now?", "changed": false, "reason": "Briefly invites correction and an optional concrete next step without presuming commitment, access, approval, or a trial."}]
+PUBLIC POLICY CHECK:
+# Public Booking.com terms check — separate from synthetic evidence
+
+[D] Source: https://admin.booking.com/hotelreg/terms-and-conditions.html ; displayed version `v2601_nE_i`.
+[O] Retrieved public HTML and extracted text are retained beside this note; fingerprint and retrieval time are in `source.json`.
+[D] Clause 2.6.1 addresses overbooking/relocation, suitable equal-or-better alternatives without extra charge to the guest,
+reasonable relocation/transport/telephone costs, and invoiced sums payable within 14 days. Its response windows concern
+finding alternatives after Booking.com notification, not a channel inventory synchronization SLA.
+[D] Section 6 is Indemnification & Liability; clause 6.2.1 includes overbooking among indemnity matters.
+[U] The specific property's signed agreement, applicable payment arrangement, and exact version are unavailable.
+[O] No literal `120` or `handling fee` occurs in this retrieved text. [U] A universal fixed EUR 120 relocation tariff and
+an automatic monthly-payout deduction specifically for that charge are NOT established by this retrieval.
+This absence does not prove that a particular property could never receive such a charge under other applicable terms.
+The simulation's claimed fee and payout entries are fictional transaction evidence, not public policy evidence.
+Do not turn the manager's 'Clause 6' shorthand into a verified contractual rule or identify normal refunds/set-off
+clauses as proof that a particular disputed invoice is enforceable. No legal conclusion about a real hotel is made.
+
+## Verbatim retrieved clause 2.6.1 and adjoining cancellation provisions
+
+2.6.1 The Accommodation shall provide the Guest with the booked room(s). If the Accommodation is unable to do so, it will use its best endeavours to provide an alternative room(s) or suitable alternative accommodation of an equal or better standard without additional charge to the Guest. The Accommodation shall promptly inform Booking.com of its inability to accommodate the Guest with the booked room(s), and will confirm whether it is able to offer suitable alternative accommodation, via Booking.com’s customer service in accordance with the Booking.com overbooking procedure as set out in the Partner Hub. When a Guest informs Booking.com that the Accommodation is unable to provide the booked room(s), the Accommodation must offer any alternative accommodation within the following time periods, starting from the time at which Booking.com informs the Accommodation that it needs to find an alternative: - for relocations on the date of or within 24 hours prior to check-in: 30 minutes; - for relocations between 24 hours and 7 days before check-in: 2 hours; - for relocations more than 7 days before check-in: 24 hours. If the Accommodation does not find suitable alternative accommodation within the specified time period, or if the Guest rejects the Accommodation’s proposed alternative, Booking.com will use its best endeavours to find alternative accommodation for the Guest. The Accommodation will reimburse and compensate the Guest and/or Booking.com for all reasonable costs and expenses (e.g. costs of the alternative accommodation, transportation, telephone costs) incurred by the Guest and/or Booking.com as a result of the Accommodation’s inability to provide the Guest with the booked room(s). Any sum due to Booking.com under this Clause 2.6.1 shall be paid by the Accommodation within 14 days after receipt of the invoice. Booking.com shall provide a break-down for these costs at the Accommodation’s request. 2.6.2 The Accommodation may not cancel any online reservation. Where any fraudulent activities are alleged or suspected (e.g. in respect of reservations, credit card fraud, money laundering or payment of the Room Price), Booking.com may cancel the relevant reservation. Where Facilitated Payment has been used, Booking.com may withhold, suspend or cancel the transfer of any associated funds to the Accommodation, or execute a chargeback of the relevant funds from the Accommodation. Booking.com shall inform the Accommodation of any action that it takes pursuant to this Clause 2.6.2. 2.6.3 Cancellations made by Guests before the point at which a cancellation fee applies will not attract Commission. Cancellations made by Guests after this point will attract Commission in accordance with the terms of the Agreement. 
+
+## Verbatim retrieved clause 6.2.1
+
+6.2.1 To the maximum extent permitted by law, the Accommodation shall fully indemnify, compensate and hold Booking.com and its Affiliated Companies, directors, officers, employees, agents, representatives and subcontractors harmless for and against any direct damages, losses, liabilities, obligations, costs, claims of any kind, interest, penalties, administrative fees, fines, legal costs and expenses (including, without limitation, reasonable attorneys’ fees and expenses) in connection with: (i) all claims made by Guests concerning inaccurate, erroneous or misleading Accommodation Information; (ii) all claims made by Guests concerning or related to a stay in the Accommodation, overbooking or cancelled (in whole or in part) or wrong reservations or repayment, refund or chargeback of the Room Price; (iii) claims by Guests relating to We Price Match in circumstances where Booking.com is entitled to Rate and Conditions Parity and where the Guest is charged in excess of the lower applicable rate. Where the Accommodation (meaning property) is located in a No Parity Country, this Clause 6.2.1 (iii) does not apply. Where the Accommodation (meaning property) is located in a Wide Parity Country, this Clause 6.2.1 (iii) does not apply and is deleted and replaced by the alternative wording in Annex 5. (iv) all monetary and non-monetary claims from Guests arising pursuant to or in connection with (national laws implementing, relating to or similar in substance to) the Package Travel Directive, and obligations that Booking.com has, or reasonably deems to have, further to (national laws implementing, relating to or similar in substance to) the Package Travel Directive; and (v) all other claims from Guests which are wholly or partly attributable to the Accommodation (including its directors, employees, agents, subcontractors, representatives and premises); (vi) all claims including costs, expenses, interest, fines and other liabilities against or brought or incurred by Booking.com in relation to or as a result of: (a) the failure or negligence of the Accommodation to timely and accurately register with the relevant authorities and/or provide information required by law; or (b) the failure or negligence of the Accommodation to timely and accurately pay, collect, remit or withhold any applicable Taxes levied or based on the Accommodation’s services or any other charges relating to the Agreement in the relevant jurisdiction, including any Taxes collected by Booking.com and transferred to the Accommodation for remittance to the relevant tax authority; or (c) tax claims against and liabilities on Booking.com for Taxes for which the Accommodation is responsible or liable, or where the obligation to pay, collect, withhold and/or remit is by law put on Booking.com for, on behalf or instead of the Accommodation; (vii) all monetary and non-monetary claims and investigations by third parties and authorities in connection with the Accommodation’s representations, warranties and obligations pursuant to the Agreement. (viii) all claims or complaints of non-compliance with applicable laws by Booking.com to the extent that such non-compliance is attributable to the Accommodation in whole or in part (in which case the Accommodation undertakes to pay the appropriate proportion of any related damages or fines to Booking.com). 
+
+COMPARISON #1:
+# Candidate #1: the 11:00–15:00 turnaround deadlock
+
+## Executive verdict
+
+**DOES NOT QUALIFY as the hackathon core engine on the evidence currently available.**
+[O] The unchanged evaluator returned **rejected** with synthetic provenance enabled.
+Ordinary evaluation returned **rejected**. Formal weighted score:
+**unavailable (null; incomplete eligibility is not a zero score)**.
+
+**This is an executed synthetic discovery rehearsal, not empirical hotel validation.** All incident records,
+quotes, quantities, commitments and personnel below are invented roleplay. [O] The execution and gate results
+were actually observed locally. [I] Architecture interpretations are engineering judgments. [U] Real hotel
+prevalence, recoverable revenue, causal effect and A2A superiority remain unestablished. D/O labels in the
+synthetic case describe evidence within the fiction only; they never establish genuine operator records.
+
+**Simulated incident:** SYNTHETIC episode: On 19 September 2026, the party assigned fixed twin 103 arrived at 12:00 rather than the listed expected arrival of 15:00. Reception gave a 12:30 readiness assurance at 12:01 before checking with housekeeping. The team was following the manager's numerical order and had not started 103 when reception checked upstairs at approximately 12:08. The manager subsequently gave an approximate 13:15 estimate subject to inspection. Cleaning completion was recorded at 13:05, inspection and release communication at 13:12, and key handover at 13:17. The arrival-to-key interval was 77 minutes; keys were delivered 47 minutes after the original assurance. A single 60 GEL cash refund reduced the previously paid 420 GEL to 360 GEL retained. Normal check-in remained 15:00 and no early check-in guarantee was recorded. Physical cleaning, unavailable alternative twin accommodation, unchecked promises, and progress visibility all matter to interpretation. The separate declined USD 40 late-checkout quote for 201 generated no charge or payment. A later paper-and-phone confirmation for 201 succeeded without changing its place in the cleaning order.
+
+The 18-room setting, sequential 101/102/103 route, early guests in a courtyard and $30–$50 extension quotes
+were imposed scenario premises. The harvested market report documents broader staffing/cost/information
+concerns; it does not validate those premises. Rejected quotes are not collected cash, verified profits or GEL
+amounts. No exchange-rate conversion or extrapolated annual savings is supplied.
+
+## Actual execution and provenance
+
+- [O] Both roles pinned to **`gpt-6-astra`** on every call; no alternative-model fallback.
+- [O] Interviewer session: `01a0cccc-48b3-73e0-8673-dd6dc1dfa5d7`.
+- [O] Respondent session: `01a0ccca-dd26-7873-a3af-b908426e6b73`.
+- [O] **12 Q/A exchanges**, **24 delivered speaker messages**, seven chronological stages.
+- [O] **39 calls** including private preparation, pre-delivery reviews, synthesis and audit;
+  cumulative subprocess time **768.4 seconds**.
+- Minute labels represent the simulated 40-minute agenda, not 40 elapsed minutes with a person.
+- Separate sessions/directories, tools disabled/forbidden; the respondent dossier was not sent to the interviewer.
+- [O] CLI `codex-cli 0.155.1`; 39 calls recorded the known nonfatal
+  model-catalog refresh warning. Successful calls required exit zero and a completed turn. Model identity is
+  supported by invocation/configuration, not independent attestation of provider internals.
+
+[Verbatim transcript](../research/cases/transcript_turnaround_deadlock.md) ·
+[Strict case card](../research/cases/case_turnaround_deadlock.json) ·
+[Evaluation JSON](../research/cases/turnaround_001/evaluation.json) ·
+[State, commands and input SHA-256 hashes](../research/cases/turnaround_001/state.json) ·
+[Verification](../research/cases/turnaround_001/verification.json).
+Raw prompts, drafts, reviews, responses, events and stderr are retained under `research/cases/turnaround_001/calls/`.
+
+## G1–G7 exact evaluator audit
+
+| Gate | Outcome | Unmodified evaluator explanation |
+|---|---|---|
+| G1 | FAIL | Need reviewed operator record/direct observation; press or analyst opinion alone is insufficient.; Need a recorded consequence confirmation or direct observation.; Every trace step needs reviewed primary episode evidence. |
+| G2 | FAIL | Need repeated incidents or an operator-confirmed sufficiently serious consequence with evidence. |
+| G3 | FAIL | Need evidenced asynchronous cross-role state/constraint dependencies, not an asserted flag alone.; Single-database CRUD or an unknown CRUD assessment does not establish A2A fit.; Identify the consequential negotiation/ownership/acknowledgement failure and its trace steps. |
+| G4 | FAIL | Binding physical/hardware, labor-economics, external-demand, or unknown constraint cannot pass as software leverage.; Specify an evidenced permitted software action and the information available to change the failure path. |
+| G5 | FAIL | Need available/redacted inputs and reviewed access evidence.; Need a usable adapter/import or explicitly honest simulator; assumed integration is insufficient.; Need explicit write limits and evidenced authority of a role able to approve trial actions. |
+| G6 | FAIL | Need an explicit bounded estimate within 115 hours.; Need an end-to-end boundary, deterministic state oracle, baseline comparison, and recovery test.; Need available reviewed replay-case artifacts.; Feasibility needs supporting artifacts, not only an optimistic estimate. |
+| G7 | FAIL | A simple rule/task-list baseline must be tested and shown insufficient; unknown or sufficient fails.; Describe the tested simple control, its observed failure, and why dependency negotiation/adaptation matters.; Need reviewed evidence of the baseline comparison. |
+
+[O] The read-only evaluator is called as `evaluate(card, synthetic_test=True)`; this is its existing synthetic
+qualification exception, not a gate waiver. It still applies all other gates, evidence eligibility and threshold checks.
+Its `supported()` requires **every** referenced artifact to be reviewed, D/O and an allowed kind. A mixed D/I
+reference list can fail even with a fictional primary excerpt present. No artifact labels were upgraded to force a pass.
+
+## Weighted score and contributions
+
+[O] Exact weights: Severity 20, A2A fit 20, Feasibility 15, Evidence 15, Frequency 15,
+Preventable share 10, Adoption 5. Formula: `sum(weight * rating / 4)`. Selection requires all gates,
+score ≥70, eligible evidence and no zero in the core dimensions defined by the evaluator.
+
+| Dimension | Weight | Rating / 4 | Diagnostic contribution / 100 | Rationale from case synthesis |
+|---|---:|---:|---:|---|
+| severity | 20 | 1 | 5.0 | Provisional reviewer assessment of the SYNTHETIC account: one reconciled 60 GEL cash refund and a missed readiness assurance establish a concrete consequence within the fiction. Broader seriousness, recurrence, staff rework, and the operator's materiality judgment were not established. |
+| a2a_fit | 20 | 2 | 10.0 | Provisional reviewer assessment within the fiction: manager, reception, and housekeeping have sequential state dependencies around cleaning, inspection, and key release. The observed successful paper-and-phone control supports a mostly fixed handoff interpretation; superiority of adaptive coordination and rejection of a simpler shared-state workflow remain unestablished. |
+| feasibility | 15 | unknown | unscored | No build estimate, adapter, permitted workflow, replay set, deterministic oracle, baseline benchmark, or recovery test was elicited. Narrative excerpts do not establish engineering feasibility. |
+| evidence | 15 | 2 | 7.5 | Provisional reviewer assessment of internal completeness only: the supplied SYNTHETIC excerpts reconstruct several event times, one cash refund, a six-arrival denominator, and a smooth comparator. Important timestamps remain reported or unknown, five promise histories are missing, and there is no independent role confirmation. This rating does not represent authentic hotel evidence or override rejection of synthetic cases. |
+| frequency | 15 | 1 | 3.75 | Only one documented affected party was established among six arrivals in the four-hour window on one day. Other parties' promise histories are unknown, so recurrence and a complete failure rate remain unestablished. The top-level value 30 is the required one-day count normalization of the confirmed minimum, not an observed monthly frequency or extrapolation. |
+| preventable_share | 10 | unknown | unscored | The respondent distinguished better-informed promises from the physical work needed to prepare a twin. No tested, permitted intervention or quantified preventable share was established, and the smoother 201 case had different time available before arrival. |
+| adoption | 5 | 0 | 0.0 | The respondent explicitly stated that no follow-up date, trial, further-record provision, or real record-use authorization was agreed. Rehearsal note-taking consent does not establish adoption or operational access. |
+
+[O] Diagnostic total if all ratings exist: **unavailable**.
+Diagnostic mathematical bounds with unknown dimensions ranging from 0 to 4:
+**26.25–51.25 / 100**.
+These bounds do not impute ratings, satisfy evidence eligibility or override rejected gates.
+
+## Question review and interview fidelity
+
+[O] Each draft was reviewed in the same interviewer session before delivery. This adds no third persona and
+exposes no private respondent dossier. Lexical checks and model self-review reduce errors; neither proves
+non-leading fidelity. The substantive audit below assesses the delivered transcript candidly.
+
+| Turn | Review action | Review reason |
+|---|---|---|
+| 01 | Retained | Neutral opening requests consent and asks about present responsibilities without assuming a problem, cause, or assignment. No respondent answers have been delivered. |
+| 02 | Retained | Invites a specific recent occasion without assuming difficulty, permits a normal shift, and respects the request to omit staff names. |
+| 03 | Retained | Follows the reported sequence and the respondent’s stated responsibility for the order without implying a cause; distinguishes recorded times from estimates. |
+| 04 | Retained | Requests contemporaneous evidence for responsibilities already identified, permits missing evidence, and preserves privacy without implying a cause. |
+| 05 | Retained | Traces a request and decision already described, asks about information actually used, and includes one closely related record request without implying a cause or loss. |
+| 06 | Retained | Follows the reported episode without implying a cause, separates physical readiness from reception’s knowledge, and requests related records while preserving timing uncertainty. |
+| 07 | Retained | Uses the reported refund, permits no other adjustments, and requests records to check duplicate counting without treating the conditional quote as lost revenue. |
+| 08 | Retained | Defines a count tied to the reported episode and a denominator covering the same period and arrival window, permits none or unknown, and requests supporting records. |
+| 09 | Retained | Asks about actual process changes and their timing, explicitly permits none, and stays within the topic the respondent supplied. |
+| 10 | Retained | Examines the reported use, effort, and outcome without assuming failure or attributing success to the control; requests related records and preserves uncertainty. |
+| 11 | Retained | Compares reported occasions using factors the respondent introduced, permits uncertainty, and does not attribute either outcome to a particular cause. |
+| 12 | Retained | Asks only about actual follow-up and authorization, explicitly permits none or unknown, and does not infer consent from the rehearsal. |
+
+## Incident trace, G3/G7 analysis, risks and next evidence
+
+[I] The candidate title uses “deadlock” as a workflow label. A circular waiting condition has not been
+demonstrated. The following audit has two minor prose corrections (an article and a malformed acronym);
+the [raw model audit](../research/cases/turnaround_001/interviewer_audit.md) and delivered transcript are preserved.
+
+[I] **Candidate #1, the 11:00–15:00 turnaround deadlock, does not currently qualify as the hackathon’s core engine.** The rehearsal identifies a useful operational investigation, but does not establish a recurrent material problem, a permitted software intervention, implementation feasibility, or an advantage over a simple confirmation process.
+
+[O] The supplied evaluator rejects the case under both normal evaluation and the synthetic-provenance exception. Both report `errors: []`, fail G1–G7, and return `weighted_score: null`. These are evaluator results, not verification of hotel operations. All incident details below are **synthetic transcript content**.
+
+**[I] Interviewer fidelity was strongest on neutrality and weakest on question compression and independent corroboration.**
+
+The delivered questions contained no product pitch, willingness-to-pay question, or hypothetical intervention. “Could you show…” requested existing records; it was not a counterfactual. The respondent supplied room numbers, amounts, responsibilities, and the numerical order before the interviewer reused them.
+
+Nevertheless, several questions packed substantial work into one sentence. A question can have one question mark and still be stacked.
+
+| Delivered turn and verbatim fragment | Fidelity assessment |
+|---|---|
+| **01:** “May I take notes?” and “What are your usual responsibilities…” | Appropriate consent plus operating context. Consent was requested alongside the substantive question rather than awaited separately. The respondent explicitly limited it to rehearsal notes without staff names. |
+| **02:** “when things did not go as planned, if any” | Invited difficulty without requiring it; the normal-shift fallback preserved a useful alternative. |
+| **03:** “how you chose the order” | Mild premise: implies an active selection, although the respondent had already accepted responsibility for leaving the order. “How was the order established?” would better accommodate an unchanged default. The question also combined order-setting, chronology, and timestamp classification. |
+| **04:** “best establish what reception and housekeeping each knew” | Overstates what records can establish about knowledge and asks for two perspectives through one respondent. The final uncertainty allowance helped, but separate questions about what each person consulted would be stronger. |
+| **05:** “from reception receiving it to your decision” | A focused, grounded episode walkthrough with a closely related notebook request. It appropriately examined information available at the decision time. |
+| **06:** “when cleaning finished, inspection occurred, and reception learned” | Relevant distinctions, but three event probes plus a record request were stacked. The respondent supplied unusually disciplined answers; a real interview may need these asked sequentially. |
+| **07:** “What was actually paid or refunded” | Strong factual framing. Reusing the already-mentioned 60 GEL was justified. The duplicate-entry request did not assume duplication. |
+| **08:** “how many parties…out of all parties” | Correctly paired numerator and denominator, but was cognitively dense. It also selected a researcher-defined outcome—keys after a stated readiness time—without first separating assurances, conditional estimates, and revisions. |
+| **09:** “What, if anything, have you changed” | Appropriately allowed no change. Asking when the change occurred was a narrow, related follow-up. |
+| **10:** “the work each person did, any time spent… and the result” | Stacked process, effort, outcome, and records. It sought effort for the successful comparator but left incident-specific rework insufficiently explored. |
+| **11:** “differences in available rooms, cleaning work, staffing, and time” | These factors came from the respondent, so they were not invented causes. Still, listing four dimensions narrowed the comparison and increased cognitive load. “What differed?” would give the respondent more control. |
+| **12:** “what follow-up, if any, has been agreed” | Did not manufacture commitment. However, it combined agreement, date, and authorization and omitted a final correction of the reconstructed account. |
+
+[I] **The pre-delivery reviews were too permissive.** All twelve returned `changed: false`; therefore this audit concerns the same wording that was delivered, not rejected drafts. The reviews correctly found no overt pitch or hypothetical violation, but should have flagged the active-choice implication in Turn 03, the knowledge claim in Turn 04, and the stacking in Turns 06, 08, 10, and 11.
+
+[I] Several important distinctions emerged because the respondent volunteered them, not because the interviewer fully elicited them: one joint cleaning team, the unaccepted USD quote, incomplete promise histories, the absence of measured labor savings, and the confounding effect of available cleaning time. That makes the apparent interview quality partly dependent on an unusually careful simulated respondent.
+
+**Synthetic event trace**
+
+All times are on **19 September 2026, UTC+04:00**, except the original payment. “Excerpt” means text quoted inside the fiction, never a genuine inspected record. Reported times without a supplied excerpt remain unverified even within this extraction convention.
+
+| Time | Synthetic event | Basis and limitation |
+|---|---|---|
+| 18 Sep, 18:42 | Original accommodation payment: 420 GEL cash. | Fictional financial excerpt, **Turn 07**. Payment-taking actor not identified. |
+| 11:00 | Sheet issued: 101, 102, 103, 201, 202, 203. | Fictional sheet excerpt, **Turn 04**. Does not timestamp the manager’s actual decision or prove an arrival review. |
+| 11:03 | Outgoing 201 guest requests departure at 13:00; USD 40 quoted subject to approval, without acceptance. | Fictional notebook excerpt, **Turn 05**. |
+| 11:08 | Manager declines because next-arrival timing and cleaning readiness are uncertain. | Fictional notebook excerpt, **Turn 05**. |
+| Reported 11:15 | 201 checkout entry; no late-checkout charge. | Described record, not supplied excerpt, **Turn 05**. |
+| Reported 11:35 / 11:40 | 101 cleaning completion / manager inspection. | Described sheet rows, not supplied excerpts, **Turn 03**. |
+| 12:00 | 103 party arrives; listed expected arrival was 15:00. | Fictional arrival register, **Turn 08**; reservation excerpt, **Turn 04**, is not a historical snapshot. |
+| 12:01 | Reception gives a 12:30 readiness assurance before checking. | Fictional notebook excerpt, **Turn 08**. |
+| 12:04 | Reception asks whether 103 has started and requests confirmation. | Fictional message excerpt, **Turn 04**. Read time unknown. |
+| Approximately 12:08 | Reception checks upstairs: team finishing 102, 103 untouched. | Recollection, **Turns 03 and 06**. |
+| Untimed | Manager decides to finish 102 first. | Recollection, **Turn 06**. Exact placement relative to other untimed actions is not established. |
+| Reported 12:12 | Manager revises estimate to approximately 13:15, subject to inspection; temporary double declined. | Described notebook entry and account, **Turn 06**. |
+| 12:15 / 12:18 | 102 cleaning completion / release inspection. | Fictional sheet excerpt, **Turn 06**. |
+| 12:19 | Housekeeping reports moving into 103. | Fictional message excerpt, **Turn 06**; not an exact cleaning-start record. |
+| 13:05 | 103 cleaning complete. | Fictional sheet excerpt, **Turn 06**. |
+| 13:12 | Manager inspects and communicates release of 103. | Fictional sheet and message excerpts, **Turn 06**. |
+| 13:14 | Reception records manager’s confirmation. | Fictional note, **Turn 06**; not the exact message-read time. |
+| 13:15 | Reception records 201’s expected 14:00 arrival, boxes 201, and records housekeeping phone acknowledgement. | Grouped fictional annotation, **Turn 10**. Individual action times unknown; order unchanged. |
+| 13:17 | 103 keys handed over. | Fictional notebook/register, **Turns 06 and 08**. |
+| Reported 13:18 | Administrative check-in entered. | Described entry, **Turn 06**; distinct from key handover. |
+| 13:50 / 13:55 | 201 cleaning complete / manager inspection and release call. | Fictional sheet excerpts, **Turn 10**. |
+| 14:03 | 201 arrival and keys in the same recorded minute. | Fictional notebook/register, **Turns 08 and 10**. |
+| 14:10 | Reception pays the manager-approved 60 GEL cash refund. | Fictional voucher and cashbook, **Turn 07**. |
+| 14:11 | PMS records allowance and cash refund for that same transaction. | Fictional financial excerpt, **Turn 07**. |
+| 15:00 | Closing cash counted at 640 GEL, against 700 GEL opening cash and no other window movements. | Fictional cashbook, **Turn 07**. |
+
+**[I] Money, time, and exposure were mostly preserved correctly, with one important presentation risk.**
+
+- **Cash:** The synthetic reconciliation is **420 − 60 = 360 GEL retained** (**Turn 07**). The allowance and refund entries describe one compensation event. They do not establish 120 GEL of loss. Retained payment is not profit or contribution margin.
+- **Opportunity revenue:** The **USD 40** late-checkout quote was conditional, unaccepted, and never charged (**Turns 05 and 07**). It establishes neither collectible lost revenue nor a cash loss. No currency conversion or margin assumption is justified.
+- **Guest time:** **77 minutes** elapsed from arrival to keys; **47 minutes** elapsed after the original 12:30 assurance (**Turns 06 and 08**). Neither is staff labor. The revised approximately 13:15 estimate was conditional; a 13:17 handover should not automatically become another counted failure.
+- **Staff effort:** The upstairs visit was described, but its duration and any repeated work were not measured. Cleaning-start, inspection-start, call, and writing times are missing (**Turns 06 and 10**). `staff_rework_minutes: null` is appropriate.
+- **Exposure:** The synthetic register contains **six arriving parties**, with **one documented affected party and five unknown promise histories** (**Turn 08**). This is not a fully ascertained one-in-six failure rate. Same-minute arrival and keys do not establish compliance with earlier promises.
+- **Normalization:** The case’s `30` follows the stipulated arithmetic, `1 × 30 / 1`. It is only a normalization of a documented minimum from one four-hour window. Presenting it as “30 incidents per month” would be misleading. It supplies no recurrence evidence.
+
+**[I] Capacity and information problems must remain separate causal claims.**
+
+Within the synthetic account, reception lacked dependable progress information and gave an assurance before checking. However, there is no historical state record proving that a displayed status was stale or incorrect. A room marked dirty can be accurately marked dirty while providing insufficient detail about progress. Missing read timestamps also do not establish an ignored or failed message.
+
+The physical constraint is substantial: 103 had not started at the remembered check; the two cleaners worked together; suitable alternative rooms were reported occupied; and the guests declined a double (**Turns 06 and 11**). Those facts explain why information alone could not produce a ready twin at noon.
+
+For 201, the same team had the room released **eight recorded minutes before arrival** (**Turn 11**). Its successful outcome combines clearer confirmation with more time before arrival. Neither the benefit of confirmation nor a physical-capacity benefit was isolated.
+
+[U] The transcript does not establish how much waiting, compensation, or work another process could have prevented. It also does not establish that approving 201’s late checkout was physically feasible at the earlier decision point.
+
+**[I] Numerical order, FIFO, and priority control are different baselines.**
+
+| Approach | What it means | What this rehearsal establishes |
+|---|---|---|
+| Static numerical order | Follow room identifiers in sequence. | The manager retained this order; housekeeping followed it (**Turns 03–04**). |
+| FIFO | Process work according to entry into a defined queue—for example, checkout or request time. | Queue-entry times and a FIFO rule were not supplied. Numerical order is not necessarily FIFO. |
+| Manually updated priority queue with acknowledgement | Update priorities using known deadlines and room constraints; identify responsibility and confirm readiness. | 201 shows part of this: a marked priority, acknowledgement, and explicit release. It does not demonstrate a complete deadline/room-type scheduling rule (**Turns 09–10**). |
+| Dynamic reordering | Change sequence when new information or constraints arrive, manually or computationally. | No reordering was demonstrated. 201 was already next; the manager retained 102 ahead of 103. No replay or comparative capacity gain was measured. |
+
+[I] A fair engineering comparison would include a maintained shared priority queue, explicit ownership, acknowledgement, and inspection-based release—not only the weakest numerical-order baseline. Such a comparison is a future investigation, not an authorized or completed test. Dynamic reordering can also be deterministic; its usefulness would not itself establish a need for A2A coordination.
+
+**[I] G3 and G7 ask different questions.**
+
+- **G3: Is there an evidenced consequential dependency across responsibilities?** The synthetic sequence contains housekeeping completion, manager inspection, and reception handover. But multiple roles and elapsed work do not establish that advanced coordination is necessary. The clearest narrated failure is an unchecked assurance; the later inspection-to-key sequence may have worked normally. The case leaves `single_database_crud` unknown, and does not fully establish the contemporaneous ownership or acknowledgement requirement that failed.
+- **G4: Is there a permitted software action using information available then?** No such permission or intervention was established. Better visibility is an engineering possibility, but physical cleaning remained necessary. In particular, 201’s 13:15 arrival confirmation cannot be treated as information available at the 11:08 refusal.
+- **G7: Does the candidate outperform a sufficiently strong simple control?** The paper-and-phone example succeeded within the fiction. There is no observed insufficiency of that control, no controlled comparison, and no measured need for adaptation. G3 could eventually pass while G7 still fails.
+
+[I] The case’s `simple_rule.tested: true` is semantically generous. It can describe one narrated operational use within the fiction, but must not imply a benchmark. General sufficiency remains unknown, and the absence of an observed failure must not be repaired by inventing one.
+
+**[O] The supplied evaluator’s rejection is broader than the synthetic-provenance restriction.**
+
+| Gate | Meaning of the supplied result |
+|---|---|
+| **G1** | Normal evaluation rejects synthetic provenance. Both evaluations also reject primary-support coverage and consequence-confirmation support. The trace includes recollections and inferred artifact references; quoted fictional excerpts do not make every linked claim primary evidence. |
+| **G2** | Neither recurrence nor an explicitly evidenced operator materiality judgment was established. |
+| **G3** | The dependency and failure evidence does not satisfy the gate, and the CRUD assessment is unknown. |
+| **G4** | Binding constraint and permitted intervention remain unestablished. |
+| **G5** | No usable adapter, approved inputs, write limits, or trial authority. Rehearsal notes are not operational access. |
+| **G6** | No bounded estimate, executable workflow, oracle, replay set, comparison, or recovery test. |
+| **G7** | No demonstrated inadequacy of the simple baseline or qualifying comparison evidence. |
+
+[O] Allowing synthetic provenance removes only the first synthetic-specific objection; **all seven gates still fail**. The diagnostic interval **26.25–51.25** is arithmetic over assigned and missing ratings, not an eligible final score. Neither endpoint establishes qualification.
+
+[I] My extraction also deserves caution: the three traced operational roles are not four independently evidenced actors; the seasonal worker has no separate attributed action. Generic “housekeeping” entries should not imply proof of the individual author. Likewise, the manager’s later statement about checking before promising does not prove an already-communicated rule at 12:01.
+
+**[I] Concrete replacements for the Human Director**
+
+Ask these individually, selecting only those relevant to the next evidence gap:
+
+| Gap | Neutral replacement |
+|---|---|
+| Order-setting premise, Turn 03 | “How was that morning’s cleaning order established?” |
+| Record versus knowledge, Turn 04 | “What did reception consult before giving the 12:30 time?” |
+| Independent reception perspective | “Please walk me through your handling of 103 from arrival to key handover.” |
+| Independent housekeeping perspective | “When did you first learn that 103’s guests had arrived?” |
+| Existing responsibility | “What, if anything, had been agreed about answering progress requests that morning?” |
+| Contemporaneous rule or training | “What instructions about giving readiness times had reception received before that shift?” |
+| Stacked timeline, Turn 06 | “What is the next recorded event after the upstairs check?” |
+| Incident rework | “What work, if any, did someone repeat while handling 103?” |
+| Labor measurement, if work is identified | “Which record establishes the time spent on that work?” |
+| Promise classification and denominator | “For which of these six parties can you reconstruct every readiness time communicated?” |
+| Materiality | “How did this consequence compare with the other problems you handled that period?” |
+| Baseline persistence | “What is the next recorded occasion when the boxed-sheet and phone process was used?” |
+| Comparable capacity | “What differed between the work required for 103 and 201?” |
+| Closing correction | “What have I misunderstood in the sequence and consequence?” |
+
+[I] Before a real core-engine decision, the minimum next evidence is an independently reconstructed real episode; actual permission to inspect redacted records; separate reception and housekeeping accounts; contemporaneous instruction and state history; comparable cases with counted exposure; incident-specific cash and labor measurements; and an operator materiality judgment. Engineering qualification then requires an authorized bounded workflow, usable inputs, a deterministic baseline comparison, replay outcomes, recovery testing, and an evidence-backed estimate within the permitted build time.
+
+[I] The operational strengths of this rehearsal are its clear cleaning–inspection–release distinctions, preserved physical constraints, reconciled fictional cash transaction, and a useful simple-control comparator. The remaining risks are causal ambiguity, incomplete ascertainment, manager-only testimony, unknown labor effects, and no implementation or adoption evidence. These are lessons for the next rehearsal and field investigation; they provide no market validation or present basis for selecting this candidate as the hackathon core engine.
+
+## Reproduce and verify
+
+```bash
+python3 scripts/run_turnaround_eval.py run          # authenticated fresh run; refuses existing state
+python3 scripts/run_turnaround_eval.py run --resume # continue from persisted checkpoint
+python3 scripts/run_turnaround_eval.py evaluate     # offline, existing synthetic exception
+python3 scripts/run_turnaround_eval.py verify       # offline schema, semantics, hashes and transcript
+```
+
+The driver reuses the local transport in `scripts/simulate_mom_test.py`, fingerprinted alongside the four
+read-only inputs. It neither changes that file nor overwrites the previous simulation. Python 3.11+,
+`jsonschema` and authenticated `codex exec` access are required for a fresh run. No hardware/IoT is in scope.
+The wrapper's zero exit status means execution/validation succeeded; the evaluation JSON's `accepted`
+and `status` fields determine candidate qualification. A valid rejected case is a successful pipeline run.
+
+COMPARISON #2:
+# Candidate #2: MICE RFP multi-role arbitration
+
+## Executive verdict
+
+**DOES NOT QUALIFY as the hackathon core engine on the evidence currently available.**
+[O] The unchanged evaluator returned **rejected** with synthetic provenance enabled.
+Ordinary evaluation returned **rejected**. Formal weighted score:
+**unavailable (null; incomplete eligibility is not a zero score)**.
+
+**This is an executed synthetic discovery rehearsal, not empirical hotel validation.** All incident records,
+quotes, quantities, commitments and personnel below are invented roleplay. [O] The execution and gate results
+were actually observed locally. [I] Architecture interpretations are engineering judgments. [U] Real hotel
+prevalence, recoverable revenue, causal effect and A2A superiority remain unestablished. D/O labels in the
+synthetic case describe evidence within the fiction only; they never establish genuine operator records.
+
+**Simulated incident:** SYNTHETIC rehearsal only. A corporate enquiry received on 15 September requested 18 rooms for 36 people over two November nights, meeting facilities, coffee breaks and a wine gala dinner, near a USD 10,000 budget. Room configuration, dinner arrangements and payment terms differed from the request. The respondent reports that two conditional proposals preceded a USD 10,296 gross authorized offer sent at 14:00 on 17 September, four hours after the client's deadline. A supplied fictional client email reports choosing another venue at 11:40, citing missing final terms and preferable dinner space and payment terms. Conversion with an earlier offer is unknown. No incremental cash expenditure was recorded; staff effort was not measured.
+
+The 24-room hotel, 30–45% off-season corporate revenue share, bespoke 18-room package and USD
+8,000–15,000 prospective deal were imposed fictional premises. The [market corpus](../research/derived/market_findings.md)
+does not establish these shares, response-time distributions or conversion losses. A potential booking is
+not collected cash or profit; no assumed exchange rate, guaranteed conversion or annual savings is supplied.
+
+## Actual execution and provenance
+
+- [O] Both roles pinned to **`gpt-6-astra`** on every call; no alternative-model fallback.
+- [O] Interviewer session: `01a0cce4-2f59-7633-9f05-d31f0b498dc9`.
+- [O] Respondent session: `01a0cce2-d15b-7070-b814-12517947eb51`.
+- [O] **12 Q/A exchanges**, **24 delivered speaker messages**, seven chronological stages.
+- [O] **39 calls** including private preparation, pre-delivery reviews, synthesis and audit;
+  cumulative subprocess time **687.6 seconds**.
+- Minute labels represent the simulated 40-minute agenda, not 40 elapsed minutes with a person.
+- Separate sessions/directories, tools disabled/forbidden; the respondent dossier was not sent to the interviewer.
+- [O] CLI `codex-cli 0.155.1`; 39 calls recorded the known nonfatal
+  model-catalog refresh warning. Successful calls required exit zero and a completed turn. Model identity is
+  supported by invocation/configuration, not independent attestation of provider internals.
+
+[Verbatim transcript](../research/cases/transcript_mice_rfp.md) ·
+[Strict case card](../research/cases/case_mice_rfp.json) ·
+[Evaluation JSON](../research/cases/mice_001/evaluation.json) ·
+[State, commands and input SHA-256 hashes](../research/cases/mice_001/state.json) ·
+[Verification](../research/cases/mice_001/verification.json).
+Raw prompts, drafts, reviews, responses, events and stderr are retained under `research/cases/mice_001/calls/`.
+
+## G1–G7 exact evaluator audit
+
+| Gate | Outcome | Unmodified evaluator explanation |
+|---|---|---|
+| G1 | FAIL | Need reviewed operator record/direct observation; press or analyst opinion alone is insufficient.; Need a recorded consequence confirmation or direct observation.; Every trace step needs reviewed primary episode evidence. |
+| G2 | FAIL | Need a closed observation period, counted incidents, positive eligible-opportunity denominator, unit, and primary evidence.; Need repeated incidents or an operator-confirmed sufficiently serious consequence with evidence.; Non-null verified cash/rework values require reviewed primary measurement artifacts, including a claimed zero. |
+| G3 | FAIL | Need evidenced asynchronous cross-role state/constraint dependencies, not an asserted flag alone.; Single-database CRUD or an unknown CRUD assessment does not establish A2A fit.; Identify the consequential negotiation/ownership/acknowledgement failure and its trace steps. |
+| G4 | FAIL | Binding physical/hardware, labor-economics, external-demand, or unknown constraint cannot pass as software leverage.; Specify an evidenced permitted software action and the information available to change the failure path. |
+| G5 | FAIL | Need available/redacted inputs and reviewed access evidence.; Need a usable adapter/import or explicitly honest simulator; assumed integration is insufficient.; Need explicit write limits and evidenced authority of a role able to approve trial actions. |
+| G6 | FAIL | Need an explicit bounded estimate within 115 hours.; Need an end-to-end boundary, deterministic state oracle, baseline comparison, and recovery test.; Need available reviewed replay-case artifacts.; Feasibility needs supporting artifacts, not only an optimistic estimate. |
+| G7 | FAIL | A simple rule/task-list baseline must be tested and shown insufficient; unknown or sufficient fails.; Describe the tested simple control, its observed failure, and why dependency negotiation/adaptation matters.; Need reviewed evidence of the baseline comparison. |
+
+[O] The read-only evaluator is called as `evaluate(card, synthetic_test=True)`; this is its existing synthetic
+qualification exception, not a gate waiver. It still applies all other gates, evidence eligibility and threshold checks.
+Its `supported()` requires **every** referenced artifact to be reviewed, D/O and an allowed kind. A list mixing
+D/O records with I/U or unreviewed references can fail even with a fictional primary excerpt present.
+No artifact labels were upgraded to force a pass.
+
+## Weighted score and contributions
+
+[O] Exact weights: Severity 20, A2A fit 20, Feasibility 15, Evidence 15, Frequency 15,
+Preventable share 10, Adoption 5. Formula: `sum(weight * rating / 4)`. Selection requires all gates,
+score ≥70, eligible evidence and no zero in the core dimensions defined by the evaluator.
+
+| Dimension | Weight | Rating / 4 | Diagnostic contribution / 100 | Rationale from case synthesis |
+|---|---:|---:|---:|---|
+| severity | 20 | 1 | 5.0 | Reviewer assessment of the fictional account: a client chose elsewhere and the respondent identified a missed opportunity, but actual cash leakage was zero and neither labor cost nor lost contribution was measured. Serious or recurring harm is not established. |
+| a2a_fit | 20 | 2 | 10.0 | Reviewer assessment of the fictional account: service confirmation and commercial review affected the Sales response across several responsibilities. Exact failed handoffs and a need beyond explicit rules or ordinary approval controls remain unproven. |
+| feasibility | 15 | unknown | unscored | No engineering estimate, integration, permitted writes, replay cases, deterministic oracle or recovery test was supplied. |
+| evidence | 15 | 2 | 7.5 | Assessment only of rehearsal evidence completeness: several fictional excerpts support parts of the incident and a signed-booking comparator, but key versions, approvals, a valid denominator and independent responsibility accounts are missing. This rating establishes no real-world evidence. |
+| frequency | 15 | 0 | 0.0 | Only one affected enquiry is identified. The described 12-enquiry register lacks client deadlines and was not supplied, so neither recurrence nor a 30-day-equivalent missed-deadline rate is established. |
+| preventable_share | 10 | unknown | unscored | No permitted intervention or quantified preventable loss was established. Client preferences and substantive service/payment constraints prevent attributing the opportunity entirely to response timing. |
+| adoption | 5 | 1 | 1.25 | The respondent made a dated rehearsal commitment to draft an existing-process revision. This supports limited process-change intent, not adoption of technology, colleague agreement, trial authorization or completed implementation. |
+
+[O] Diagnostic total if all ratings exist: **unavailable**.
+Diagnostic mathematical bounds with unknown dimensions ranging from 0 to 4:
+**23.75–48.75 / 100**.
+These bounds do not impute ratings, satisfy evidence eligibility or override rejected gates.
+
+## Question review and interview fidelity
+
+[O] Each draft was reviewed in the same interviewer session before delivery. This adds no third persona and
+exposes no private respondent dossier. Lexical checks and model self-review reduce errors; neither proves
+non-leading fidelity. The substantive audit below assesses the delivered transcript candidly.
+
+| Turn | Review action | Review reason |
+|---|---|---|
+| 01 | Retained | Neutral opening consent and one present factual question; permits no responsibility and assumes no problem, cause, or assignment. |
+| 02 | Retained | Invites a recent concrete enquiry without assuming difficulty and permits a smooth case. |
+| 03 | Retained | Follows the stated enquiry with closely related questions about the first response and its timestamp, plus a redacted evidence request; assumes no delay or cause. |
+| 04 | Retained | Uses responsibilities and an unresolved item already identified, permits no message, and requests its contents without inferring knowledge or cause. |
+| 05 | Retained | Follows the respondent’s stated review and asks about its inputs without assuming a decision, cause, or authority beyond what was described. |
+| 06 | Retained | Seeks the client’s wording and message timestamp without assuming why they chose elsewhere or that a booking was guaranteed. |
+| 07 | Retained | Asks about actual cash movements, permits none, and requests supporting entries without treating the quoted offer as a loss. |
+| 08 | Retained | Defines a closed period and consistent enquiry denominator, permits no late responses, and requests supporting records without assuming recurrence or counting proposal versions. |
+| 09 | Retained | Asks about actual changes, permits none, and does not assume a remedy, commitment, or cause. |
+| 10 | Retained | Examines one stated control at a specific event, permits an unavailable version, and makes no inference about knowledge, effectiveness, or cause. |
+| 11 | Retained | Invites a concrete comparison, permits none, and leaves differences and explanations to the respondent without suggesting causes. |
+| 12 | Revised | Makes correction explicitly optional while preserving the supported reconstruction and a next-step invitation that permits no commitment. |
+
+## Incident trace, G3/G7 analysis, risks and next evidence
+
+[I] “48-hour leakage” is the candidate's hypothesis, not a measured market statistic. The audit distinguishes
+actual request/offer times and client deadlines from that label, then compares the separate Candidate #1 rehearsal.
+The [raw model audit](../research/cases/mice_001/interviewer_audit.md) is preserved verbatim.
+
+**Candidate #2 does not currently qualify as the core engine.** [O] The supplied normal and synthetic-exception evaluations both reject it: **G1–G7 fail, `errors: []`, and `weighted_score: null`**. These are supplied evaluator results, not a fresh execution or verification of hotel operations.
+
+All hotel material below is **SYNTHETIC**. Turn citations refer to the delivered MICE transcript. [I] marks analysis and engineering inference; [U] marks unestablished claims. Neither this rehearsal nor Candidate #1 supplies independent hotel evidence.
+
+**Interview fidelity**
+
+[I] The delivered questions contain no pitch, willingness-to-pay probe or hypothetical intervention. They generally reuse respondent-supplied facts, permit missing evidence and distinguish records from recollection. However, the pre-delivery reviews were too permissive about question compression and conditional premises.
+
+| Turns | Audit |
+|---|---|
+| 01–02 | Appropriate rehearsal consent and responsibility question; difficulty was optional and a smooth-case fallback was offered. Consent and discovery were presented together, although the respondent explicitly granted rehearsal note-taking consent. |
+| 03, 06 | Response/message content, timestamp and the corresponding record are closely related. These are reasonable compact questions, but should be separated if recall becomes difficult. |
+| 04 | “What, if anything” avoids assuming a Sales-to-F&B message existed. The immediate request to “show the relevant message” slightly reinstates that premise. “If there is one” would improve it. |
+| 05 | Grounded in the respondent’s stated review. It asks about inputs without assuming that the worksheet proves knowledge or authorship. |
+| 07 | Strong separation of actual cash movements from the prospective quote. It did not measure labor or investigate committed but unpaid costs; the respondent volunteered much of that distinction. |
+| 08 | A defensible numerator/denominator pair, but cognitively dense. “Received those terms after” also leaves enquiries that never received firm terms outside the stated outcome unless classified separately. |
+| 09–10 | No assumed remedy or worksheet failure. Turn 09’s focus on changes *following this enquiry* could miss earlier attempted remedies. Turn 10 correctly requested a historical version rather than treating the current worksheet as historical evidence. |
+| 11 | The clearest stacking: identify a comparable case, explain differences and retrieve correspondence. Comparability should be examined after selecting the case. |
+| 12 | Accurate, balanced reconstruction; “if any” permits no commitment. Correction and agreement are distinct tasks and should be asked sequentially. The actual commitment remains limited to drafting and reviewing a process revision. |
+
+[I] **Independent corroboration was missed.** No separate Sales, F&B/chef or owner account was requested. The F&B excerpt supplies another responsibility’s recorded position within the fiction, but not an independent interview or confirmed receipt history. The owner’s actual decision remains entirely untraced.
+
+[U] Several safeguards depended on an unusually careful simulated respondent: distinguishing opportunity from guaranteed sale, estimates from costs, elapsed time from labor, and ordinary worksheet use from a benchmark. Their volunteered precision does not establish that the questions reliably elicit these distinctions from real participants.
+
+**SYNTHETIC event trace and constraints**
+
+Times use the scenario’s **UTC+04:00**. “Excerpt” means supplied fictional text, never an authenticated operational record.
+
+| Time | Event and evidence | Limitation |
+|---|---|---|
+| Reported 15 Sep, 10:00 | Enquiry for 18 rooms/36 people; receipt time follows the reported 35-minute acknowledgement interval (T02–03). | Original enquiry absent. |
+| 15 Sep, 10:35 | Sales acknowledgement names response ownership, notes Thursday 10:00, offers 14 twins plus four doubles subject to acceptance, and promises an outline (T03; A03). | **Acknowledgement, not usable firm terms.** |
+| Worksheet dated 15 Sep, 11:20 | Inventory/displacement input: 20 and 19 uncommitted rooms across the requested nights (T05; A05). | Record timestamp does not date the GM’s review or identify its author. |
+| 15 Sep, 13:10 | F&B/chef entry records restaurant conflict, cellar capacity and staffing requirements; supplies a service alternative (T04; A04). | Incoming request, recipients and acknowledgements absent. |
+| 15 Sep, 15:00 | **V1:** priced conditional outline; standard 30% deposit, five wines, no guaranteed exclusivity; staffing and deposit exception unresolved (T10; A10). | Not an approved concession or firm package. |
+| Unknown, after V1 | Second conditional proposal and alternative discussions reported (T02, T09). | No version excerpt, timestamp or reliable placement relative to the deadline/client decision. |
+| 17 Sep, 10:00 | Client deadline for firm terms (T02, T08, T12); acknowledgement also records Thursday 10:00. | Deadline is distinct from the later committee decision. |
+| 17 Sep, 11:40 | Client email says another venue was confirmed after its committee meeting (T06; A06). | Exact time asserted inside the excerpt; no other-venue contract inspected. |
+| 17 Sep, 12:10 | Outcome email reportedly received, citing missing final terms and preferred dinner room/payment schedule (T06; A06). | Disclosure occurred **30 minutes after** the reported decision; recipient unidentified. |
+| Reported 17 Sep, 14:00 | Authorized offer at USD 10,296 gross (T02, T08, T12). | Final version, dispatch record, payment terms, approvers and individual sender absent. “Usable” is the respondent’s characterization, not independently checked completeness. |
+| 17 Sep, date only | Close-out ledger: no contract, invoice or supplier orders; zero deposit receipts and cancellation fees (T07; A07). | Entry author and clock time unknown. |
+| 23 Sep | No completed process change; commitment to draft a worksheet revision by 25 September (T09, T12). | Future drafting/review, not completion or trial authorization. |
+
+SYNTHETIC role constraints:
+
+- **Sales:** owns the response and can quote within approved bounds; ownership does not establish authorship of every proposal.
+- **Revenue/GM:** reviews inventory, displacement and package contribution; reported room-rate authority reaches USD 175 gross, subject to package review.
+- **F&B/chef:** an existing 12-person restaurant booking prevents exclusivity; cellar capacity is 24. The premium option requires two extra servers and a prep cook. The alternative changes wines, grouping, menu, timing and privacy.
+- **Owner:** payment exceptions require a decision; request, response and approval times are unknown.
+- **Client:** requests 18 twins, private dinner, five premium wines and 10% upfront with balance after the event; deadline and competing venue preferences constrain acceptability.
+
+[I] The case card needs interpretive caution. Its **four traced roles include the client**, not four internal departments. The owner has no traced action. Sales assignments for later proposals represent response ownership rather than identified dispatch actors. The GM review and second proposal have only partial chronological ordering. Post-interview commitments should remain distinct from incident operations.
+
+**SYNTHETIC money, labor and exposure**
+
+| Category | Supported interpretation |
+|---|---|
+| Quote | USD 10,296 including VAT was a prospective package price, USD 296 above the stated budget (T02, T07). It was not collected, earned or guaranteed. |
+| Cash | The ledger and accompanying account support **zero recorded incremental cash leakage within the fiction** (T07). No exchange rate is needed to express zero. |
+| Profit/contribution | Unknown. No completed delivery, actual cost reconciliation or established conversion probability supports lost profit. |
+| Displacement | Existing bookings would remain untouched. Four to eight potentially forgone room-nights and approximately USD 110 contribution per night are forecasts; no additional pickup was also possible (T05). These are neither actual displaced revenue nor realized loss. |
+| Avoided costs | No supplier orders or paid staffing booking existed. Unincurred estimated delivery costs are not measured savings. Any other unpaid liability remains unestablished. |
+| Labor | Proposal preparation/revision occurred, but no timesheets or wage allocation were available (T07). Four hours past deadline is not four staff-hours. |
+| Exposure | One selected affected enquiry is known. August is unknown; the described 12-enquiry September register lacks client deadlines and was not shown (T08). No valid missed-deadline rate or monthly normalization follows. |
+
+[I] The zero-cash conclusion and the evaluator’s G2 rejection are compatible: the narrative contains a fictional ledger, but the measurement reference list also includes unreviewed `A07_ACCOUNT`. It does not satisfy the supplied strict support requirements. Do not relabel that testimony to make the gate pass.
+
+The SYNTHETIC comparator secured a signed booking on 10 September and recorded a USD 2,880 deposit on 11 September; the event remained undelivered (T11). Its reported 30-hour response time lacks correspondence. Fewer rooms, no restaurant conflict and standard payment terms confound any speed comparison. The deposit is not earned revenue or profit.
+
+**Exact qualification and score interpretation**
+
+[O] Both supplied evaluations fail every gate. The synthetic exception removes only the provenance-specific objection; it does not waive evidence or engineering requirements.
+
+| Gate | Supplied outcome and remaining requirement |
+|---|---|
+| **G1 — FAIL** | Normal evaluation rejects synthetic provenance. Both reject qualifying primary-support coverage, consequence confirmation and support for every trace step. Some excerpts exist, but mixed/unreviewed references and missing records remain. |
+| **G2 — FAIL** | Missing closed observation period, complete incident count, eligible denominator and primary count evidence; neither recurrence nor evidenced seriousness established. Cash measurement references also fail support requirements. |
+| **G3 — FAIL** | Asynchronous dependency flags do not establish the required dependency evidence; CRUD assessment is unknown; consequential negotiation/ownership/acknowledgement failure is not localized. |
+| **G4 — FAIL** | Binding constraint remains unknown. No evidenced permitted software action using contemporaneously available information was established. |
+| **G5 — FAIL** | No qualifying input/access evidence, usable adapter/import or honest simulator, write limits or trial authority. Fictional excerpts are not an implemented simulator. |
+| **G6 — FAIL** | No estimate within 115 hours, bounded workflow, deterministic oracle, reviewed replay cases, baseline comparison, recovery test or supporting feasibility artifacts. |
+| **G7 — FAIL** | No tested simple baseline shown insufficient, documented baseline failure, adaptation advantage or reviewed comparison evidence. |
+
+[O] Supplied ratings and diagnostic arithmetic remain unchanged:
+
+| Dimension | Rating / 4 | Contribution |
+|---|---:|---:|
+| Severity | 1 | 5.00 |
+| A2A fit | 2 | 10.00 |
+| Feasibility | Unknown | null |
+| Evidence | 2 | 7.50 |
+| Frequency | 0 | 0.00 |
+| Preventable share | Unknown | null |
+| Adoption | 1 | 1.25 |
+
+[I] Severity reflects one missed opportunity without measured cash loss or labor. A2A fit reflects dependent responsibilities without demonstrated necessity. Evidence rates fictional completeness, not authenticity. Frequency zero means recurrence was not established, not zero incidents. Adoption one reflects a process-drafting commitment, not technology adoption.
+
+[O] Known diagnostic contributions total **23.75**; allowing unknown ratings to range from 0–4 gives **23.75–48.75**. These are not selection scores. Even their upper bound is below 70, holding supplied ratings fixed; failed gates independently prevent qualification.
+
+**Does MICE overcome the physical-capacity and simple-control problem?**
+
+[I] **It offers a more promising informational decision point, but does not yet overcome either constraint.**
+
+For **G3**, MICE contains plausible coupled trade-offs: changing dinner format changes staffing and package economics; room discounts interact with displacement; payment exceptions affect acceptable terms. This is richer than merely handing completed work to the next role. Nevertheless, the delivered evidence does not show which decision changed another, required renewed negotiation or invalidated an earlier commitment. Parallel independent sign-offs remain a plausible explanation. Naming departmental agents would add no evidence.
+
+For **G4**, a future bounded action could assemble version-consistent information, draft an offer within preapproved bounds, or flag unresolved exceptions before a deadline. [U] Its permission, timely inputs and causal benefit are unestablished. Such an action cannot create twin rooms, enlarge the cellar, remove another booking, supply uncommitted staff or approve owner-reserved payment terms.
+
+For **G7**, a strong baseline may suffice: a versioned shared costing/displacement worksheet, preapproved rates and menus, explicit response ownership, parallel approvals, and deadline escalation. [I] These controls could distinguish a conditional outline from firm terms and surface unresolved exceptions. They are proposed engineering comparisons, not demonstrated remedies. Ordinary use of an earlier worksheet does not establish failure of this stronger baseline.
+
+| Dimension | Candidate #1, SYNTHETIC turnaround | Candidate #2, SYNTHETIC MICE |
+|---|---|---|
+| Main opportunity | Better readiness promises and release confirmation | Earlier assembly of an acceptable, authorized package |
+| Physical constraint | Cleaning time and unavailable suitable twin | Room mix, cellar/restaurant capacity and staffing |
+| Measured cash | One 60 GEL refund | Zero recorded incremental expenditure |
+| Simple-control evidence | Paper-and-phone comparator succeeded | Worksheet reportedly helped an easier booking; stronger checkpoint untested |
+| Authority | Inspection/release responsibilities | Rate/package bounds and owner-reserved exceptions |
+| Current qualification | All gates fail; score null | All gates fail; score null |
+
+[U] Neither comparison establishes prevalence, recoverable revenue or A2A superiority. The scenario’s 30–45% corporate revenue share was not supplied by the respondent and cannot become a hotel finding.
+
+**Next evidence and neutral questions for the Human Director**
+
+[I] Prioritize a real, independently reconstructed episode before architecture selection. Obtain permitted redacted enquiry/proposal versions, dispatch records and approval history; interview Sales, F&B and the owner separately; reconcile actual cash, commitments and repeated work; then count a closed cohort with explicit deadlines and terminal outcomes.
+
+Ask individually:
+
+- “Please walk me through your handling of this enquiry.” — separately to each participant.
+- “What did the second proposal contain?”
+- “Which record shows when the final offer was sent?”
+- “What did the owner receive about the payment exception?”
+- “What decision followed that request?”
+- “What, if anything, changed in the package after that decision?”
+- “What work, if any, was repeated?”
+- “Which record shows the time spent on that work?”
+- “How did this consequence compare with other issues that period?”
+- “What happened on the next enquiry handled with the worksheet?”
+- “What record-inspection permissions are currently in place?”
+
+[I] Engineering qualification then requires an explicitly permitted workflow, usable inputs, a strong simple-control baseline, comparable replay cases, a state oracle, recovery testing and a supported estimate within 115 hours. Measure proposal correctness and authorization as well as response time; do not presume conversion.
+
+[I] The rehearsal’s operational strengths are clear proposal-state distinctions, explicit capacity constraints, restrained financial interpretation and a concrete process commitment. Its remaining risks are manager-only explanation, incomplete versions and approvals, uncertain materiality, missing exposure and untested simpler controls. **Current verdict: retain MICE as a discovery hypothesis; do not select Candidate #2 as the qualified core engine.**
+
+## Reproduce and verify
+
+```bash
+python3 scripts/run_mice_eval.py run          # authenticated fresh run; refuses existing state
+python3 scripts/run_mice_eval.py run --resume # continue from persisted checkpoint
+python3 scripts/run_mice_eval.py evaluate     # offline, existing synthetic exception
+python3 scripts/run_mice_eval.py verify       # offline schema, semantics, hashes and transcript
+```
+
+The driver reuses the local transport in `scripts/simulate_mom_test.py`, fingerprinted alongside the four
+read-only inputs and the Candidate #1 comparison report. It neither changes that file nor overwrites the previous simulation. Python 3.11+,
+`jsonschema` and authenticated `codex exec` access are required for a fresh run. No hardware/IoT is in scope.
+The wrapper's zero exit status means execution/validation succeeded; the evaluation JSON's `accepted`
+and `status` fields determine candidate qualification. A valid rejected case is a successful pipeline run.

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"How does the GEL 1,143 invoice reconcile with the payout deduction, bank receipts and any original guest funds? If those records are available, could you show the linked entries with their recorded currencies and conversions, keeping private details hidden?\",\"changed\":false,\"reason\":\"One reconciliation question with a related conditional record request; it does not assume guest funds were received or treat the invoiced amount as additional loss.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":294904,"cached_input_tokens":269820,"cache_write_input_tokens":25042,"output_tokens":926,"reasoning_output_tokens":96}}

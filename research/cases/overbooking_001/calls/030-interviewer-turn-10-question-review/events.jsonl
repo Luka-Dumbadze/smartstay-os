@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccf8-31ee-7803-ab25-062e27d35869"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"question\":\"Could you walk me through the closure checks and Direct release recorded in CTRL-0919? If the record is available, could you show the entries through the two Direct confirmations?\",\"changed\":false,\"reason\":\"Follows the reported use of the control without presuming failure or broader effectiveness; the related request to inspect entries is conditional.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":454032,"cached_input_tokens":426676,"cache_write_input_tokens":27296,"output_tokens":1340,"reasoning_output_tokens":170}}

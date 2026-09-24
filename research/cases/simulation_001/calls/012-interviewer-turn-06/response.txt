@@ -1,0 +1,3 @@
+Can you show the room-release messages and key handover entries for A and B, with names hidden?
+
+What happened between each party’s arrival and receiving their keys, including what you personally saw and what you learned from others?

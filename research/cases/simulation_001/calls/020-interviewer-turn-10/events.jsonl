@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0ccb5-7075-7a32-8211-97ebf44e18a6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What staff time or spending did introducing and running the 12:30 review involve, and what part is recorded versus estimated?\n\nBefore 19 September, on what occasions, if any, was the review missed, and what happened to the early-room requests on those occasions?"}}
+{"type":"turn.completed","usage":{"input_tokens":213888,"cached_input_tokens":190061,"cache_write_input_tokens":23797,"output_tokens":678,"reasoning_output_tokens":139}}

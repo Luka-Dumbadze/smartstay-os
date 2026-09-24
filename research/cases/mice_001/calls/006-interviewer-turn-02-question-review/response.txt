@@ -1,0 +1,1 @@
+{"question":"What was the most recent corporate enquiry that was difficult to handle, if any? If none comes to mind, we can walk through the most recent enquiry.","changed":false,"reason":"Invites a recent concrete enquiry without assuming difficulty and permits a smooth case."}

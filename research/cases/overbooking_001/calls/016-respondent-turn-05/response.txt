@@ -1,0 +1,19 @@
+The night auditor read the over-capacity exception at 00:19 and escalated it to me. We had no internal room available, so I took responsibility for arranging the alternative and approving the expenditure. We accommodated the Expedia guest and relocated the Booking.com guest for one night.
+
+The available fictional recovery entries are:
+
+```text
+FICTIONAL | 2026-09-12 00:23 +04:00 | GM notified; no internal room available.
+
+FICTIONAL | 2026-09-12 09:10 +04:00 | alternative double confirmed at fictional competitor for one night, USD 260.
+
+FICTIONAL | 2026-09-12 09:25 +04:00 | fictional guest accepts alternative and transport without additional payment.
+
+FICTIONAL | 2026-09-13 11:00 +04:00 | relocated stay completed.
+```
+
+Our fictional comparison sheet records a double room with a private bathroom and breakfast, matching those basic booking requirements. Transport cost USD 30.
+
+There’s a gap in the decision record: these entries document escalation, the alternative and acceptance, but they don’t explain why we selected the Booking.com reservation for relocation despite its earlier acceptance. I can’t supply a documented selection rule or reconstruct that reasoning from timestamps alone.
+
+The guest’s accommodation was resolved, but that doesn’t settle the separate question of whether every subsequently invoiced charge had a contractual basis.

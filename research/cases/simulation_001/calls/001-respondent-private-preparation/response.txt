@@ -1,0 +1,451 @@
+{
+  "dossier_status": {
+    "purpose": "Private preparation for fictional interview rehearsal; reveal details progressively, only when relevant to the current question.",
+    "fictionality": "All hotel names, people, events, records and amounts below are invented. Verified-in-fiction means supported by an invented record within this dossier, never real-world verification.",
+    "scenario_date": "2026-09-23",
+    "timezone": "Asia/Tbilisi",
+    "stability_rule": "Keep these facts fixed. Do not invent additional evidence, permissions or outcomes to strengthen a technology case."
+  },
+  "hotel": {
+    "name": "Vine Courtyard Hotel",
+    "location": "Telavi, Kakheti",
+    "rooms": 18,
+    "type": "Independent boutique hotel with a small wine service",
+    "fictional_operating_assumptions": {
+      "occupancy": "Usually above 85% on harvest weekends, lower midweek; a persona assumption, not a finding from the supplied reports.",
+      "tools": ["Cloudbeds PMS", "Staff WhatsApp group", "Paper front-desk notebook"],
+      "standard_check_in": "15:00",
+      "standard_check_out": "12:00"
+    }
+  },
+  "people": [
+    {
+      "name": "Maia Beridze",
+      "role": "General manager and interview persona",
+      "position": "Protects staff, watches cash and dislikes adding another place to update room status."
+    },
+    {
+      "name": "Nino Kapanadze",
+      "role": "Experienced morning receptionist",
+      "incident_shift": "07:00–14:00"
+    },
+    {
+      "name": "Luka Maisuradze",
+      "role": "Local student and recently hired afternoon receptionist",
+      "incident_shift": "13:30–22:00",
+      "experience": "Joined 8 September; completed four shadow shifts."
+    },
+    {
+      "name": "Eka Japaridze",
+      "role": "Housekeeping lead",
+      "authority": "Inspects rooms and tells reception when they may be released."
+    },
+    {
+      "name": "Salome Gelashvili",
+      "role": "Seasonal room attendant",
+      "experience": "Joined 10 September; still needs help with unfamiliar room layouts and final checks."
+    },
+    {
+      "name": "Mariam Chikovani",
+      "role": "Experienced room attendant",
+      "incident_status": "Reported sick before the shift; no replacement found."
+    },
+    {
+      "name": "Giorgi Danelia",
+      "role": "Owner",
+      "authority": "Approves permanent headcount and recurring payroll increases."
+    }
+  ],
+  "seasonal_staffing_context": {
+    "facts": [
+      "Two summer seasonal employees left before September; their replacements were still learning.",
+      "Three housekeeping workers were scheduled for the incident day; only Eka and Salome attended.",
+      "Maia had retained a small permanent team but had not secured paid standby cover for harvest weekends.",
+      "Maia arranged substantial reception overlap, but had not defined a consistent handover for conditional early-arrival requests."
+    ],
+    "gm_accountability": "I knew we were thin. I also approved a late checkout without checking what reception had already suggested to the next guest. That is not something I can put entirely on Luka."
+  },
+  "incident": {
+    "date": "2026-09-19",
+    "title": "Two early-room assurances during a short-staffed Saturday turnover",
+    "inventory": {
+      "previous_night_occupied_rooms": 17,
+      "departures": 9,
+      "stayover_rooms": 8,
+      "arrival_room_bookings": 9,
+      "occupied_rooms_that_night": 17,
+      "occupancy_percent_rounded": 94.4,
+      "remaining_room": "Room 18 was a clean single; neither affected two-person booking accepted it as a suitable substitute."
+    },
+    "affected_bookings": [
+      {
+        "id": "VC-0919-06",
+        "assigned_room": "06",
+        "party": "Two adults, one-night double booking",
+        "assurance": "Room available at 14:00",
+        "arrival": "14:00",
+        "inspection_release": "15:24",
+        "keys_handed_over": "15:26",
+        "arrival_to_keys_minutes": 86,
+        "keys_after_assured_time_minutes": 86,
+        "keys_after_standard_check_in_minutes": 26,
+        "distinction": "Both an unsupported early assurance and a genuine failure to deliver by standard check-in."
+      },
+      {
+        "id": "VC-0919-11",
+        "assigned_room": "11",
+        "party": "Two adults, one-night twin booking",
+        "assurance": "Room available at 13:30",
+        "arrival": "13:32",
+        "inspection_release": "14:18",
+        "keys_handed_over": "14:20",
+        "arrival_to_keys_minutes": 48,
+        "keys_after_assured_time_minutes": 50,
+        "keys_after_standard_check_in_minutes": 0,
+        "distinction": "An early assurance was missed; standard check-in was met."
+      }
+    ],
+    "chronology": [
+      {
+        "time": "07:12",
+        "status": "verified_in_fiction",
+        "source": "WhatsApp",
+        "event": "Mariam reports sick."
+      },
+      {
+        "time": "08:05",
+        "status": "verified_in_fiction",
+        "source": "Notebook",
+        "event": "Nino records early-room requests as conditional."
+      },
+      {
+        "time": "09:10",
+        "status": "verified_in_fiction",
+        "source": "PMS reservation note",
+        "event": "Maia approves the departing room 06 guest staying until 13:00, without checking the early-arrival notebook."
+      },
+      {
+        "time": "10:42",
+        "status": "verified_in_fiction",
+        "source": "Notebook entry made by Nino",
+        "event": "Nino records telling the incoming room 06 guest that 14:00 would be available."
+      },
+      {
+        "time": "10:48",
+        "status": "verified_in_fiction",
+        "source": "Notebook entry made by Nino",
+        "event": "Nino records confirming 13:30 for room 11."
+      },
+      {
+        "time": "11:56",
+        "status": "verified_in_fiction",
+        "source": "WhatsApp",
+        "event": "Eka says she cannot confirm either early time and requests prioritisation."
+      },
+      {
+        "time": "13:07",
+        "status": "verified_in_fiction",
+        "source": "PMS checkout entry",
+        "event": "Room 06 departure is processed. Exact physical departure time is not independently established."
+      },
+      {
+        "time": "Approximately 13:25",
+        "status": "estimated",
+        "source": "Salome's later recollection",
+        "event": "Salome begins room 11."
+      },
+      {
+        "time": "13:30–14:00",
+        "status": "verified_in_fiction",
+        "source": "Reception rota",
+        "event": "Reception shifts overlap. No written acknowledgement links the two early assurances to Eka's warning."
+      },
+      {
+        "time": "13:32",
+        "status": "verified_in_fiction",
+        "source": "Notebook arrival entry",
+        "event": "Room 11 party arrives; Luka repeats an expectation of only a short wait."
+      },
+      {
+        "time": "14:00",
+        "status": "verified_in_fiction",
+        "source": "Notebook arrival entry",
+        "event": "Room 06 party arrives and challenges the missed assurance."
+      },
+      {
+        "time": "Approximately 14:12–15:15",
+        "status": "estimated",
+        "source": "Eka's later recollection",
+        "event": "Eka cleans room 06, including extra work on a muddy bathroom. This is elapsed time, includes an interruption, and is not a measured cleaning labour total."
+      },
+      {
+        "time": "14:18",
+        "status": "verified_in_fiction",
+        "source": "WhatsApp",
+        "event": "Eka releases room 11 after inspection."
+      },
+      {
+        "time": "14:20",
+        "status": "verified_in_fiction",
+        "source": "Notebook",
+        "event": "Room 11 keys handed over."
+      },
+      {
+        "time": "14:22",
+        "status": "verified_in_fiction",
+        "source": "PMS housekeeping entry",
+        "event": "Reception updates room 11 to clean."
+      },
+      {
+        "time": "14:40–14:48",
+        "status": "estimated",
+        "source": "Maia's same-evening reconstruction",
+        "event": "Maia handles the room 06 complaint and agrees a 60 GEL room reduction plus waiver of a 30 GEL wine service."
+      },
+      {
+        "time": "15:24",
+        "status": "verified_in_fiction",
+        "source": "WhatsApp",
+        "event": "Eka releases room 06 after inspection."
+      },
+      {
+        "time": "15:26",
+        "status": "verified_in_fiction",
+        "source": "Notebook",
+        "event": "Room 06 keys handed over."
+      },
+      {
+        "time": "15:29",
+        "status": "verified_in_fiction",
+        "source": "PMS housekeeping entry",
+        "event": "Reception updates room 06 to clean."
+      },
+      {
+        "time": "15:34",
+        "status": "verified_in_fiction",
+        "source": "Folio and cashbook",
+        "event": "Luka pays the agreed 60 GEL refund from the till."
+      }
+    ]
+  },
+  "fictional_record_snippets": {
+    "reading_rule": "When asked, identify the record as fictional and quote only the relevant contents. These are readable invented excerpts, not authentic exports or files.",
+    "pms": {
+      "kind": "Fictional PMS reservation and housekeeping excerpts",
+      "exact_contents": [
+        "19 Sep 09:10 | Room 06 departing reservation | MB: Late checkout approved to 13:00.",
+        "19 Sep 13:07 | Room 06 | Departure checked out; housekeeping Dirty.",
+        "19 Sep 14:00 | VC-0919-06 | Assigned room 06; housekeeping Dirty.",
+        "19 Sep 14:22 | Room 11 | Housekeeping Clean | LM.",
+        "19 Sep 15:29 | Room 06 | Housekeeping Clean | LM."
+      ]
+    },
+    "whatsapp": {
+      "kind": "Fictional staff WhatsApp thread",
+      "exact_contents": [
+        "19 Sep 07:12 Mariam: I'm sick and cannot come today. Sorry, Eka.",
+        "19 Sep 11:56 Eka: Only Salome and me. 06 has late checkout. Cannot confirm 13:30 for 11 or 14:00 for 06. Which first?",
+        "19 Sep 12:03 Nino: 11 first please. Both early arrivals in notebook.",
+        "19 Sep 14:18 Eka: 11 checked, ready. 06 still being cleaned.",
+        "19 Sep 15:24 Eka: 06 checked and ready. You can give keys."
+      ],
+      "limits": "No preserved read receipts establish when Luka saw the earlier warning. Nino's reply establishes awareness of pressure, not that she revised the guest assurances."
+    },
+    "notebook": {
+      "kind": "Fictional front-desk notebook excerpts",
+      "exact_contents": [
+        "19/9 08:05 NK — 11 asks 13:30; 06 asks 14:00. Subject to HK.",
+        "10:42 NK — 06 called. Told them 14:00 room available.",
+        "10:48 NK — 11 confirmed 13:30 by phone.",
+        "13:32 LM — 11 arrived. Waiting in courtyard.",
+        "14:00 LM — 06 arrived. Says 14:00 was promised.",
+        "14:20 LM — 11 keys given.",
+        "15:26 LM — 06 keys given. Maia agreed 60 back + wine 30 waived."
+      ],
+      "limits": "The telephone wording is supported by Nino's own notes, not a recording. The guests' complete conversations are unavailable."
+    },
+    "folio": {
+      "kind": "Fictional room 06 folio and cashbook excerpts",
+      "exact_contents": [
+        "VC-0919-06 | 18 Sep | Card payment received | 320.00 GEL",
+        "VC-0919-06 | 19 Sep | One-night room charge | 320.00 GEL",
+        "VC-0919-06 | 19 Sep | Reserved wine service for two | 30.00 GEL",
+        "VC-0919-06 | 19 Sep 15:31 | Room service-recovery adjustment, MB | -60.00 GEL",
+        "VC-0919-06 | 19 Sep 15:32 | Wine service waived, MB | -30.00 GEL",
+        "VC-0919-06 | 19 Sep 15:34 | Cash refund paid | 60.00 GEL",
+        "Cashbook 19 Sep 15:34 | OUT 60.00 GEL | VC-0919-06 refund | LM",
+        "VC-0919-06 | Closing charges 260.00 GEL | Net payments retained 260.00 GEL | Balance 0.00 GEL"
+      ]
+    }
+  },
+  "financial_consequences": {
+    "currency": "GEL",
+    "cash_actually_refunded_in_fiction": 60,
+    "waived_prebooked_wine_revenue": 30,
+    "total_reduction_from_original_charges": 90,
+    "accounting_boundary": "The 60 GEL room adjustment and 60 GEL cash payment describe the same concession; do not count them twice. Only 60 GEL left the till. The unpaid 30 GEL wine charge was waived and the wine service was delivered.",
+    "unknowns": [
+      "Incremental cost of the wine service",
+      "Any future booking loss",
+      "Any reputational effect",
+      "How much of the concession better communication would have avoided"
+    ],
+    "room_11_compensation": "No financial concession recorded."
+  },
+  "staff_rework": {
+    "measurement": "Estimated same-evening reconstruction, rounded to whole minutes; not stopwatch data.",
+    "entries": [
+      {
+        "person": "Luka",
+        "interval": "14:00–14:08",
+        "minutes": 8,
+        "activity": "Reconstruct early assurance and handle initial complaint."
+      },
+      {
+        "person": "Eka",
+        "interval": "14:08–14:12",
+        "minutes": 4,
+        "activity": "Repeat room progress information to reception."
+      },
+      {
+        "person": "Luka",
+        "interval": "14:25–14:32",
+        "minutes": 7,
+        "activity": "Check substitute room suitability and repeat explanation."
+      },
+      {
+        "person": "Eka",
+        "interval": "14:32–14:36",
+        "minutes": 4,
+        "activity": "Interrupt cleaning to answer another readiness enquiry."
+      },
+      {
+        "person": "Maia",
+        "interval": "14:40–14:48",
+        "minutes": 8,
+        "activity": "Complaint discussion and concession decision."
+      },
+      {
+        "person": "Luka",
+        "interval": "15:30–15:37",
+        "minutes": 7,
+        "activity": "Post adjustments, issue refund and complete cashbook."
+      },
+      {
+        "person": "Maia",
+        "interval": "15:40–15:45",
+        "minutes": 5,
+        "activity": "Check refund and reconcile concession instructions."
+      }
+    ],
+    "totals_minutes": {
+      "reception": 22,
+      "housekeeping": 8,
+      "management": 13,
+      "all_staff": 43
+    },
+    "counting_boundary": "Intervals do not overlap. Each minute appears once. Excludes ordinary cleaning, normal check-in, guest waiting and the later reconstruction itself. Not all 43 minutes are necessarily preventable; no wage saving is inferred."
+  },
+  "closed_observation_period": {
+    "start": "2026-09-14T00:00:00+04:00",
+    "end_exclusive": "2026-09-21T00:00:00+04:00",
+    "unit": "Arriving room booking, not individual guest or occupied room-night",
+    "daily_arrivals": {
+      "2026-09-14": 3,
+      "2026-09-15": 2,
+      "2026-09-16": 4,
+      "2026-09-17": 3,
+      "2026-09-18": 8,
+      "2026-09-19": 9,
+      "2026-09-20": 5
+    },
+    "total_arrivals": 34,
+    "recorded_arrivals_missing_an_explicit_room_time_assurance": 2,
+    "recorded_arrivals_receiving_keys_after_standard_check_in_because_room_was_not_ready": 1,
+    "relationship": "The one standard-check-in failure is room 06, already included among the two missed assurances.",
+    "basis": "Fictional retrospective comparison of arrival entries, notebook assurances and room-release messages.",
+    "limits": "This is one bounded fictional week. Unwritten expectations and unrecorded minor delays may be missing. It is not a monthly incident rate or a regional estimate."
+  },
+  "past_workaround": {
+    "introduced": "2026-09-05",
+    "practice": "At 12:30 reception and Eka briefly review a paper arrival list. Eka marks priorities and reception is supposed to call before confirming early access.",
+    "observed_use": "Notebook ticks show the review happened on 12 and 18 September. It was missed on 19 September while reception handled departures and Eka covered the absent attendant.",
+    "limitations": [
+      "The paper list does not update when Maia approves a late checkout elsewhere.",
+      "A priority mark does not mean a room is ready.",
+      "Calling Eka repeatedly interrupts cleaning.",
+      "The rule depends on people being available and remembering what a tick means."
+    ],
+    "gm_view": "The five-minute conversation sometimes helps. Another screen will not help if we still cannot spare five minutes or agree who may promise what."
+  },
+  "successful_comparable_day": {
+    "date": "2026-09-12",
+    "arrivals": 9,
+    "departures": 9,
+    "housekeeping_staff_present": 3,
+    "facts": [
+      "The 12:30 paper review was recorded.",
+      "Two early-room requests remained conditional until inspection.",
+      "No departing guest received checkout later than noon.",
+      "All nine assigned arrival rooms were released by 14:52.",
+      "No missed explicit readiness assurance or room-readiness compensation was recorded."
+    ],
+    "interpretation_limit": "The same arrival count makes this useful to discuss, but fuller staffing and earlier access to rooms also helped. It does not isolate the value of the paper review."
+  },
+  "causes_and_authority": {
+    "physical_capacity": [
+      "One experienced attendant was absent.",
+      "The replacement seasonal worker still needed supervision.",
+      "Room 06 remained occupied beyond normal checkout and needed extra bathroom cleaning.",
+      "There was no suitable spare double or twin available to satisfy both parties."
+    ],
+    "information_and_promises": [
+      "Conditional requests became firm assurances without housekeeping confirmation.",
+      "Maia's late-checkout approval and reception's early promise were recorded in separate places.",
+      "Housekeeping's warning did not produce a documented correction to either guest.",
+      "The PMS showed room 06 as dirty at arrival; this was not a false-clean status incident."
+    ],
+    "uncertainty": "Better handling probably could have prevented the early assurances or warned guests sooner. It cannot be claimed that accurate messages alone would have made room 06 ready by 15:00.",
+    "gm_authority": {
+      "can": [
+        "Set the early-check-in confirmation rule",
+        "Prioritise rooms with Eka",
+        "Approve service recovery up to 100 GEL per booking",
+        "Approve a one-shift casual replacement within an existing allowance"
+      ],
+      "cannot": [
+        "Guarantee that a trained replacement is available at short notice",
+        "Add permanent payroll without the owner",
+        "Release an uninspected room over Eka's safety or cleanliness objection",
+        "Guarantee all early arrivals without enough ready rooms"
+      ]
+    }
+  },
+  "modest_follow_up_if_asked": {
+    "offer": "Maia would be willing to discuss a single paper handover line containing requested time, confirmed time, confirmer and inspection status.",
+    "conditions": "Any actual next step would still need to be agreed. It should take less than five minutes and avoid duplicating every PMS entry.",
+    "current_status": "No follow-up test has been authorised, scheduled or completed.",
+    "technology_position": "A reminder might help with an unsupported promise. It cannot clean the bathroom, recruit a trained attendant or take responsibility for a guest concession."
+  },
+  "market_evidence_boundary": {
+    "supplied_context": "The supplied research describes regional advertised prices, bank-channel spending, practitioner staffing concerns and national reporting limitations within their stated populations.",
+    "not_established_by_that_context": [
+      "This fictional hotel's occupancy, rates, staffing or software",
+      "Any actual hotel incident or property-level loss",
+      "A representative Telavi boutique occupancy rate",
+      "An AI business case or causal savings estimate"
+    ],
+    "source_caution": "If discussing the supplied TBC findings, retain the unresolved conflict between the summary's increase claim and hotel chart endpoints of 531 to 483. Do not invent a unit or silently resolve it.",
+    "access_claim": "No source files were opened or independently checked in preparing this dossier."
+  },
+  "fixed_absences": [
+    "No real guest or operator evidence or consent",
+    "No authentic folio, receipt or invoice",
+    "No AI prototype",
+    "No benchmark",
+    "No deployment",
+    "No completed experiment",
+    "No authorised future trial",
+    "No demonstrated automation savings"
+  ]
+}

@@ -1,0 +1,9 @@
+PRE-DELIVERY QUESTION REVIEW.
+The prior spoken draft has NOT been delivered. Review it against the respondent's delivered answers already
+in your session. Remove any leading premise, implied cause, assumed assignment, hypothetical, pitch or
+unsupported fact. Do not introduce the researcher's expected problem. Prefer one short main question and,
+only if essential, one tightly related evidence request. Consent/opening may have a short preamble.
+Return ONLY JSON with exactly keys "question" (final spoken wording), "changed" (boolean),
+and "reason" (concise review finding, not spoken). If already neutral retain its wording.
+DRAFT:
+What was actually paid or refunded for this occasion, including the 60 GEL cash refund you mentioned and any other adjustment, if any? Could you show the relevant payment entries, with private details hidden, so we can check whether any amount appears more than once?

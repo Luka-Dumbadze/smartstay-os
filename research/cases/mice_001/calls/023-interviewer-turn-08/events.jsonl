@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0cce4-2f59-7633-9f05-d31f0b498dc9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"For the last completed month, how many corporate enquiries had a client deadline for firm terms, and how many received those terms after that deadline, if any? Can you show the enquiry records with private details hidden?"}}
+{"type":"turn.completed","usage":{"input_tokens":311498,"cached_input_tokens":286638,"cache_write_input_tokens":24815,"output_tokens":1112,"reasoning_output_tokens":306}}

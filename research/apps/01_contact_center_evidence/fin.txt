@@ -1,0 +1,320 @@
+Perfect customer experiences made possible with Fin
+View demo
+Start free trial
+22 reasons
+to hire Fin
+0
+1
+Fin is the highest performing customer agent on the market
+Fin has industry leading resolution rates, averaging 76% across 12,000+ customers, with many seeing over 85%.
+Fin keeps getting better the more it is used. Currently at 2 million weekly resolutions and growing fast, the average resolution rate increases 1% every month.
+[ 01.A ]
+Hear why Anthropic chose Fin over building their own AI solution.
+0
+2
+Fin is used by over 12,000 of the world's most forward-looking brands
+Our customers include
+Anthropic
+,
+Clay
+,
+Lightspeed
+,
+Rocket Money
+,
+Gamma
+and many more.
+Fin works for customers across many verticals including Software and Technology, Retail and eCommerce, Gaming, and in heavily regulated industries like Financial Services, and large Enterprise businesses.
+Our customers are very happy, Fin is the
+leader on G2
+, with a 90% satisfaction score, beating the nearest competitor by 8 percentage points.
+0
+3
+Fin performs best because it runs on our proprietary AI Models
+Fin runs on
+Apex 1.0
+and Apex Flash, models that are custom trained on billions of customer experience interactions.
+Apex and Apex Flash are the highest performing, fastest, and cheapest models for customer experience.
+Our models have sophisticated checks and balances to ensure that Fin delivers accurate answers and acts as you intended.
+2.8%
+higher resolution rate
+0.6 seconds
+faster time to first token
+-65%
+reduction in hallucinations
+*
+*Compared to Sonnet 4.6
+0
+4
+Fin works across the entire customer journey
+Fin is pioneering the
+Customer Agent
+, a single customer facing Agent that works across the customer journey, from day 1 to year 10.
+Fin can handle every role, from
+Service
+to
+Sales
+, using pre-trained skills and knowledge.
+Fin combines its training with customer history and context to do the right thing for the customer and business, every single time.
+Fin for Service
+Delivers perfect customer service
+Fin for Sales
+Handles inbound sales end-to-end
+Fin for Ecommerce
+Handles the entire shopping journey
+Fin for Service
+Delivers perfect customer service
+Fin for Sales
+Handles inbound sales end-to-end
+Fin for Ecommerce
+Handles the entire shopping journey
+0
+5
+Fin gets better every week
+We improve Fin at a rapid pace. In 2025, we shipped 226
+product updates
+.
+As of June 2026, we have already shipped 191 this year. We are on track to 3x our productivity, thanks to our deep investment in
+AI engineering
+.
+0
+6
+Fin can resolve every customer issue, no matter how complex
+Fin resolves incredibly
+complex queries
+for our thousands of customers, reading and writing to complicated 3rd party systems, and does so with ease.
+Fin updates accounts, processes payments and refunds, troubleshoots technical issues, and much more.
+[ 06.A ]
+Watch the latest updates on Procedures.
+0
+7
+Fin integrates with your entire tech stack
+Fin
+connects to all your systems
+, pulling in customer data, personalising responses, and taking actions via API, Data Connectors, or MCP.
+Extend Fin with custom actions, workflows, and integrations through a fully documented
+API platform
+.
+“
+With
+Fin seamlessly pulling real-time order statuses
+and estimated delivery updates straight from Shopify, our customers get answers instantly without waiting for an agent.
+”
+Loren Kornegay
+Senior CX Manager
+at Avocado
+0
+8
+Fin works excellently on every customer channel
+Fin meets customers where they are, by working natively across
+all channels
+, including Voice, Chat, email, Slack, social, and many more.
+Fin over
+Voice
+uses Apex Flash, a model designed for low latency interactions, delivering experiences that feel natural.
+[ 08.A ]
+Watch Fin Voice in action.
+0
+9
+Fin works seamlessly with every helpdesk
+Fin hands off to your human team effortlessly, maintaining full customer context no matter which helpdesk you use.
+It is easy to set up, because you don't need a big migration project to use Fin. Fin is natively integrated with
+Intercom
+, but also works excellently with
+Salesforce
+,
+Hubspot
+,
+Freshdesk
+, and
+many other helpdesks
+.
+Thanks to our investment in building an easy to use product, Fin can be live with any helpdesk in less than an hour.
+[
+Matterport
+]
+“
+Fin for Salesforce has been a game-changer. Fin's seamless integration meant no disruption to our existing setup, leading to faster customer responses.
+”
+Arminder Singh
+,
+Vice President, Customer Support
+1
+0
+Fin gives you full confidence because you're in control
+Because every business is unique, Fin is built to put you in control.
+Fin is the only Agent you can fully manage yourself, configuring tone, behavior, knowledge and more, all without needing any engineering resources.
+This empowers you to experiment and learn, quickly. Unlike competitors, you never need to contact us to make changes to any part of the system. Every aspect of configuring and customising Fin is designed to be easy to do by yourself.
+1
+1
+Fin is built with trust, safety and reliability at the core
+Trust and safety
+are at the center of what we do. Built by a team with decades of experience in the world's most secure technology companies, Fin is architected for continuous uptime, with redundancy across regions and backed by a 99.8% SLA.
+Fin has the reliability global enterprises depend on, and the certs you expect: SOC2 and ISO 27001, ISO 42001 and AIUC-1, ISO 27701 and HIPAA.
+Fin works with Okta, Azure AD, OneLogin for SSO; supports 2FA, SCIM, and IP restrictions, with data hosted in the US, EU, or Australia based on residency needs.
+ISO 42001
+SOC2
+HIPAA
+ISO 27701
+AIUC-1
+1
+2
+Fin learns from every interaction and continuously improves
+Fin is built around a
+flywheel
+where every conversation makes Fin smarter. As Fin does work, it learns, and automatically turns insights into recommendations and improvements.
+As your business evolves, Fin evolves, in a cycle of continuous improvement and higher performance.
+[
+Personio
+]
+“
+We didn't just want an AI answer engine. What stood out about Fin was its ability to show us where the problems are, recommend improvements, and continuously get better over time.
+”
+Alessandro Presa Perez
+,
+CX AI Operations Lead at Personio
+[
+Personio
+]
+“
+We didn't just want an AI answer engine. What stood out about Fin was its ability to show us where the problems are, recommend improvements, and continuously get better over time.
+”
+Alessandro Presa Perez
+,
+CX AI Operations Lead at Personio
+“
+We looked at a few different vendors, including in-house options. Some had flashy demos, but required engineers for every change.
+I needed control — and Fin gave me that.
+”
+Emily Shirley
+Business Manager, Growth Product
+at WHOOP
+1
+3
+Fin is trained to understand your business deeply
+Fin is
+trained
+to understand your business goals, all your policies, rules, guidelines, and operating procedures. This understanding enables Fin to reason about problems, and resolve very complex, multi-step workflows via
+Procedures
+.
+Fin communicates like your best employee, because it understands your brand voice, brand messaging, communication style, and anything else you want to teach it.
+Fin speaks dozens of languages, and works 24 hours a day, every day.
+1
+4
+Fin has a full testing suite to give you confidence before setting changes live
+It is critical to understand how changes to Fin will work in production and at scale.
+So Fin has a full
+testing
+suite to run simulations, regression testing, and manual inspection. This gives you the confidence to set changes live, knowing they will improve the customer experience.
+1
+5
+Fin has a full observability suite to understand and improve
+Fin empowers you to measure and monitor everything happening within your customer experience and operations, and get alerted to the things you care about most.
+You get AI powered
+Insights and QA products
+, proactively showing you dominant and emergent trends and topics in your customer experience, as well as one-click recommendations to set live and immediately improve Fin's performance.
+[ 15.A ]
+See how Recommendations improve Fin in production.
+1
+6
+Fin runs your customer operations for you
+Fin Operator
+is an agent that runs your customer operations in a way that has never been possible before, orchestrating and automating the work behind the scenes.
+Operator spots problems, finds opportunities to improve, and acts on them, for example tuning Fin, keeping your knowledge current, and scaling automation as your business changes.
+[ 16.A ]
+See how Operator detects an issue and ships a fix, start to finish.
+1
+7
+Fin comes with the Blueprint for AI transformation
+We can teach you what to do because we have fully transformed our own customer experience, and partnered with thousands of our customers to do the same.
+We have encoded everything into a practical step-by-step guide called the
+Blueprint
+, and we run
+Blueprint Events
+to teach people in person.
+1
+8
+Fin delivers best-in-market results by partnering deeply with customers
+Our
+deployment team
+works directly with customers to optimize for their bespoke requirements, ensuring they are getting the best results possible.
+We see our customers as partners in this journey, and co-develop Fin in direct collaboration with the most forward thinking of them, to ensure we're building the best product possible.
+Alek Toumert
+Director, Deployment Services
+Diego Ballona
+Senior Director, R&D Services
+Amanda Middleton
+AI Deployment Consultant
+Tiago Alves
+AI Deployment Consultant
+Elena Ortiz
+AI Deployment Consultant
+Chris Murray
+Principal Customer Experience Architect
+Maxime Lanoy
+Sr AI Deployment Architect
+Matt Pelyhes
+AI Agent Engineer
+Laura Owens
+AI Agent Engineer
+Kevin Lynch
+Senior AI Agent Engineer
+Mailson Corrêa
+AI Engineering Manager
+Sam Murray
+Staff AI Agent Engineer
+Julia Godinho
+AI Group Product Manager
+1
+9
+Fin's groundbreaking AI research is public by default
+We believe in sharing as much as we can, so others can learn.
+We publish cutting edge, industry-first
+AI Research papers
+, and heavily cited
+industry reports
+.
+How We Built a World-Class Reranker
+Read more
+Using LLMs as a Reranker for RAG
+Read more
+Finetuning Retrieval for Fin
+Read more
+Building out Intercom's AI infra
+Read more
+2
+0
+Fin events deliver world class thought leadership and education
+In the age of AI, we are all hungry to learn from each other. We organise many events, big and small, spending a lot of time in person with our customers so we can build the future together.
+We teach them what we know, we learn from what they are doing, and very importantly, we help them connect and learn from each other.
+2
+1
+Fin invented and championed outcome based pricing
+We believe that you should only pay for Fin when it delivers value.
+We were first to introduce
+outcome based pricing
+to the market, and championed it ever since.
+Control is built in with configurable alerts, limits, and real time reporting.
+As Fin does more work for you, your support costs go down, meaning you can reinvest in more strategic work to deliver superior customer experiences.
+“
+Intercom [launched Fin] with a disruptive outcome-based pricing model, which they launched in early 2023...
+a year ahead of most competitors.
+”
+Kyle Poyar
+Editor, Growth Unhinged
+2
+2
+Fin has the most compelling vision and plan for the future
+Three years ago, Fin was launched as the first Agent for Customer Service, thereby creating the Service Agent category.
+We are now pioneering the next big leap, making perfect customer experiences truly possible across the entire customer journey.
+This vision requires three things that only Fin can provide:
+1
+You need a single Customer Agent to deliver seamless experiences
+2
+You need full control of everything, so you can experiment fast and learn
+3
+You need full stack, vertical AI, trained specifically for customer experience
+Perfect customer experiences
+made possible with Fin
+View demo
+Start free trial
