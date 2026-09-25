@@ -13,6 +13,7 @@ export type Task = {
   title: string; detail: string; room_id: string | null; quantity: number | null; priority: 'ROUTINE' | 'URGENT'
   status: 'QUEUED' | 'CLAIMED' | 'IN_PROGRESS' | 'COMPLETED' | 'CANCELLED'; state_version: number; assignee_id: string | null
   requires_staff_confirmation: boolean; due_at: string; created_at: string; completed_at: string | null
+  required_sop_document_id: string | null; required_sop_version: number | null; arrival_deadline_at: string | null
 }
 export type Channel = { id: string; kind: 'telegram' | 'whatsapp' | 'web'; display_name: string; bot_username: string | null; enabled: boolean }
 export type Conversation = {
@@ -32,6 +33,17 @@ export type Preference = { id: string; profile_id: string; domain: string; label
 export type Doc = { id: string; doc_key: string; title: string; kind: string; folder: string; version: number; state: string; approved_by: string | null; approved_at: string | null; valid_during: string }
 export type Structured = { item?: string; vintage?: number; price_gel?: number; unit?: string; allergens?: string[]; allergen_verified?: boolean; notes?: string; topic?: string }
 export type Chunk = { id: string; document_id: string; ordinal: number; content: string; structured: Structured; content_sha256: string; embedded_at: string | null; embedding_model: string | null }
+export type StaffCompetency = {
+  id: string; space_id: string; staff_id: string; sop_document_id: string; sop_version: number
+  status: 'NOT_TRAINED' | 'KNOWLEDGE_CHECK_PASSED' | 'SUPERVISED' | 'PRACTICALLY_APPROVED'
+  quiz_score: number | null; quiz_attempts: number; quiz_completed_at: string | null; supervised_at: string | null
+  supervised_by_staff_id: string | null; practical_approved_at: string | null; approved_by_staff_id: string | null
+  created_at: string; updated_at: string
+}
+export type TrainingEvent = {
+  id: string; space_id: string; task_id: string | null; target_staff_id: string; actor_staff_id: string
+  sop_document_id: string; sop_version: number; event_type: string; details: Record<string, unknown>; created_at: string
+}
 export type Agent = { id: string; key: string; display_name: string; role: string; persona: string; instructions: string; model: string; thinking_level: 'low' | 'medium' | 'high'; enabled: boolean }
 export type Session = {
   id: string; conversation_id: string; trigger_message_id: string; state: 'RUNNING' | 'COMPLETED' | 'HANDED_TO_HUMAN' | 'FAILED'
@@ -49,6 +61,7 @@ export type Throughput = { day: string; category: string; created: number; compl
 export type Snapshot = {
   space: Space; staff: Staff[]; rooms: Room[]; tasks: Task[]; channels: Channel[]; conversations: Conversation[]; chapters: Chapter[]
   messages: Message[]; profiles: Profile[]; identities: Identity[]; stays: Stay[]; preferences: Preference[]; documents: Doc[]; chunks: Chunk[]
+  competencies: StaffCompetency[]; trainingEvents: TrainingEvent[]; trainingSchemaReady: boolean
   agents: Agent[]; sessions: Session[]; steps: Step[]; kpis: Kpis | null; daily: DailyMessages[]; throughput: Throughput[]
 }
 

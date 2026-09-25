@@ -2,8 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { RealtimePostgresChangesPayload, SupabaseClient } from '@supabase/supabase-js'
-import { Check, CircleAlert, Loader2, Lock, Sparkles, X } from 'lucide-react'
+import { Building2, Check, CircleAlert, Loader2, Lock, Sparkles, X } from 'lucide-react'
 import { supabaseBrowser } from '@/lib/supabase/client'
+import { Button, Card, IconButton } from './primitives'
 import LeftRail from './LeftRail'
 import Header, { type Note } from './Header'
 import BottomDock from './BottomDock'
@@ -18,6 +19,17 @@ import { APPS, HOME_APP, Avatar, cx, type OsActions, type OsContext, type Snapsh
 
 const VIEWS: ViewKey[] = ['home', 'contact', 'crm', 'ops', 'drive', 'ai', 'analytics', 'builder', 'store']
 const DOCK: ViewKey[] = ['home', 'contact', 'crm', 'ops', 'drive', 'ai', 'analytics']
+const PAGE_LABELS: Record<ViewKey, string> = {
+  home: 'Home',
+  contact: 'Contact Center',
+  crm: 'Guests',
+  ops: 'Operations',
+  drive: 'Knowledge',
+  ai: 'AI Team',
+  analytics: 'Insights',
+  builder: 'Builder',
+  store: 'App Store',
+}
 
 function viewFromHash(): ViewKey {
   if (typeof window === 'undefined') return 'home'
@@ -31,12 +43,24 @@ async function rows<T>(q: PromiseLike<{ data: T[] | null; error: { message: stri
   return data ?? []
 }
 
+async function optionalTrainingRows<T>(q: PromiseLike<{ data: T[] | null; error: { message: string; code?: string } | null }>, what: string) {
+  const { data, error } = await q
+  if (error) {
+    if (error.code === 'PGRST205' || error.code === '42P01') {
+      console.info(`[snapshot] ${what} not available; apply the housekeeping readiness migration to enable training`)
+      return { rows: [] as T[], available: false }
+    }
+    throw new Error(`${what}: ${error.message}`)
+  }
+  return { rows: data ?? [], available: true }
+}
+
 /** Loads the property snapshot through the browser client (RLS: only this staff member's properties are visible). */
 async function loadSnapshot(sb: SupabaseClient, spaceId: string): Promise<Snapshot> {
   const p = sb.schema('platform'), cc = sb.schema('contact_center'), crm = sb.schema('guest_crm'), ops = sb.schema('ops'),
     kb = sb.schema('kb'), ai = sb.schema('ai_team'), an = sb.schema('analytics')
   const [space, staff, rooms, tasks, channels, conversations, chapters, messages, profiles, identities, stays, preferences,
-    documents, chunks, agents, sessions, kpis, daily, throughput] = await Promise.all([
+    documents, chunks, competencyResult, trainingEventResult, agents, sessions, kpis, daily, throughput] = await Promise.all([
     rows(p.from('spaces').select('id, property_code, name, region, timezone, lifecycle').eq('id', spaceId), 'spaces'),
     rows(p.from('staff').select('id, space_id, display_name, role, user_id, enabled').eq('space_id', spaceId).order('display_name'), 'staff'),
     rows(ops.from('rooms').select('id, number, room_type, floor, cleaning_state, version, updated_at').eq('space_id', spaceId).order('number'), 'rooms'),
@@ -52,6 +76,8 @@ async function loadSnapshot(sb: SupabaseClient, spaceId: string): Promise<Snapsh
     rows(crm.from('preferences').select('id, profile_id, domain, label, value, sensitive, basis, evidence, status').eq('space_id', spaceId).eq('status', 'active'), 'preferences'),
     rows(kb.from('documents').select('id, doc_key, title, kind, folder, version, state, approved_by, approved_at, valid_during').eq('space_id', spaceId).order('title'), 'documents'),
     rows(kb.from('chunks').select('id, document_id, ordinal, content, structured, content_sha256, embedded_at, embedding_model').eq('space_id', spaceId).order('ordinal'), 'chunks'),
+    optionalTrainingRows(ops.from('staff_competencies').select('*').eq('space_id', spaceId).order('updated_at', { ascending: false }), 'staff competencies'),
+    optionalTrainingRows(ops.from('training_events').select('*').eq('space_id', spaceId).order('created_at', { ascending: false }).limit(500), 'training events'),
     rows(ai.from('agents').select('id, key, display_name, role, persona, instructions, model, thinking_level, enabled').eq('space_id', spaceId), 'agents'),
     rows(ai.from('sessions').select('*').eq('space_id', spaceId).order('started_at', { ascending: false }).limit(50), 'sessions'),
     rows(an.from('kpis').select('*').eq('space_id', spaceId), 'kpis'),
@@ -63,9 +89,13 @@ async function loadSnapshot(sb: SupabaseClient, spaceId: string): Promise<Snapsh
     ? await rows(ai.from('steps').select('id, session_id, seq, agent_key, kind, title, detail, created_at').in('session_id', recent).order('seq'), 'steps')
     : []
   if (!space.length) throw new Error('property not visible — is this account linked to platform.staff?')
+  const competencies = competencyResult.rows
+  const trainingEvents = trainingEventResult.rows
   return {
     space: space[0], staff, rooms, tasks, channels, conversations, chapters, messages: (messages as Snapshot['messages']).reverse(),
-    profiles, identities, stays, preferences, documents, chunks, agents, sessions, steps, kpis: (kpis[0] as Snapshot['kpis']) ?? null,
+    profiles, identities, stays, preferences, documents, chunks, competencies, trainingEvents,
+    trainingSchemaReady: competencyResult.available && trainingEventResult.available,
+    agents, sessions, steps, kpis: (kpis[0] as Snapshot['kpis']) ?? null,
     daily, throughput,
   } as Snapshot
 }
@@ -83,6 +113,7 @@ export default function OsShell({ me, email }: { me: Staff; email: string }) {
   const supabase = useMemo(() => supabaseBrowser(), [])
   const spaceId = me.space_id
   const [snap, setSnap] = useState<Snapshot | null>(null)
+  const [trainingSchemaReady, setTrainingSchemaReady] = useState(false)
   const [loadError, setLoadError] = useState<string | null>(null)
   const [view, setView] = useState<ViewKey>('home')
   const [live, setLive] = useState<OsContext['live']>('connecting')
@@ -91,8 +122,11 @@ export default function OsShell({ me, email }: { me: Staff; email: string }) {
   const [toasts, setToasts] = useState<Toast[]>([])
   const [flash, setFlash] = useState<Record<string, number>>({})
   const [miaOpen, setMiaOpen] = useState(false)
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const [seenInbound, setSeenInbound] = useState<number | null>(null)
   const debounce = useRef<Record<string, ReturnType<typeof setTimeout>>>({})
+
+  const closeMobileNav = useCallback(() => setMobileNavOpen(false), [])
 
   const toast = useCallback((text: string, tone: 'ok' | 'error' = 'ok') => {
     const id = Date.now() + Math.random()
@@ -101,7 +135,10 @@ export default function OsShell({ me, email }: { me: Staff; email: string }) {
   }, [])
 
   const load = useCallback(async () => {
-    try { setSnap(await loadSnapshot(supabase, spaceId)); setLoadError(null) }
+    try {
+      const next = await loadSnapshot(supabase, spaceId)
+      setSnap(next); setTrainingSchemaReady(next.trainingSchemaReady); setLoadError(null)
+    }
     catch (e) { setLoadError(e instanceof Error ? e.message : String(e)) }
   }, [supabase, spaceId])
 
@@ -148,6 +185,8 @@ export default function OsShell({ me, email }: { me: Staff; email: string }) {
           case 'conversations': return { ...s, conversations: upsert(s.conversations, row as unknown as Snapshot['conversations'][number], true) }
           case 'tasks': return { ...s, tasks: upsert(s.tasks, row as unknown as Snapshot['tasks'][number], true) }
           case 'rooms': return { ...s, rooms: upsert(s.rooms, row as unknown as Snapshot['rooms'][number]) }
+          case 'staff_competencies': return { ...s, competencies: upsert(s.competencies, row as unknown as Snapshot['competencies'][number]) }
+          case 'training_events': return { ...s, trainingEvents: upsert(s.trainingEvents, row as unknown as Snapshot['trainingEvents'][number], true) }
           case 'sessions': return { ...s, sessions: upsert(s.sessions, row as unknown as Snapshot['sessions'][number], true) }
           case 'steps': return { ...s, steps: upsert(s.steps, row as unknown as Snapshot['steps'][number]) }
           default: return s
@@ -171,8 +210,13 @@ export default function OsShell({ me, email }: { me: Staff; email: string }) {
       if (table === 'conversations' && payload.eventType === 'INSERT') later('full', load, 800)   // new guest: chapters/profile too
       if (table === 'messages' || table === 'tasks' || table === 'rooms' || table === 'sessions') later('analytics', refreshAnalytics, 700)
     }
-    for (const [schema, table] of [['contact_center', 'messages'], ['contact_center', 'conversations'], ['ops', 'tasks'], ['ops', 'rooms'], ['ai_team', 'sessions'], ['ai_team', 'steps']] as const) {
+    const liveTables = [['contact_center', 'messages'], ['contact_center', 'conversations'], ['ops', 'tasks'], ['ops', 'rooms'], ['ai_team', 'sessions'], ['ai_team', 'steps']] as const
+    for (const [schema, table] of liveTables) {
       channel.on('postgres_changes', { event: '*', schema, table, filter }, apply)
+    }
+    if (trainingSchemaReady) {
+      channel.on('postgres_changes', { event: '*', schema: 'ops', table: 'staff_competencies', filter }, apply)
+      channel.on('postgres_changes', { event: '*', schema: 'ops', table: 'training_events', filter }, apply)
     }
     channel.on('presence', { event: 'sync' }, () => setOnline(new Set([me.id, ...Object.keys(channel.presenceState())])))
     channel.subscribe(async (status) => {
@@ -185,7 +229,7 @@ export default function OsShell({ me, email }: { me: Staff; email: string }) {
     })
     const fallback = setTimeout(() => setLive((l) => (l === 'connecting' ? 'polling' : l)), 10_000)
     return () => { clearTimeout(fallback); supabase.removeChannel(channel) }
-  }, [supabase, spaceId, me.id, me.display_name, notify, later, load, refreshAnalytics])
+  }, [supabase, spaceId, me.id, me.display_name, notify, later, load, refreshAnalytics, trainingSchemaReady])
 
   // Realtime unavailable → keep the console current by polling.
   useEffect(() => {
@@ -217,35 +261,48 @@ export default function OsShell({ me, email }: { me: Staff; email: string }) {
 
   if (!snap) {
     return (
-      <div className="grid h-full place-items-center p-6">
-        <div className="card w-full max-w-sm animate-pop p-6 text-center">
-          <div className="mx-auto grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-[#5e5ce6] to-[#bf5af2]"><Sparkles className="size-6 text-white" /></div>
+      <div className="grid h-full place-items-center bg-app-bg p-page">
+        <Card className="w-full max-w-sm p-5">
+          <div className="mx-auto grid size-10 place-items-center rounded-control border border-border bg-accent-subtle text-accent">
+            <Building2 aria-hidden="true" className="size-5" />
+          </div>
           {loadError ? (
             <>
-              <div className="mt-4 text-[15px] font-semibold">Workspace could not be loaded</div>
-              <p className="mt-1.5 text-[12.5px] text-fg-2">{loadError}</p>
-              <p className="mt-2 text-[12px] text-fg-3">Check that db/supabase_master_schema.sql is installed and the Smartstay schemas are exposed in Data API settings.</p>
-              <button onClick={load} className="btn btn-primary mt-4">Retry</button>
+              <div className="mt-4 text-center text-[14px] font-semibold text-foreground">Workspace could not be loaded</div>
+              <p role="alert" className="mt-1.5 break-words text-center text-[11.5px] leading-5 text-foreground-secondary">{loadError}</p>
+              <p className="mt-2 text-center text-[11px] leading-5 text-foreground-muted">Check that db/supabase_master_schema.sql is installed and the Smartstay schemas are exposed in Data API settings.</p>
+              <Button onClick={load} variant="primary" className="mt-4 w-full">Retry</Button>
             </>
           ) : (
-            <div className="mt-4 flex items-center justify-center gap-2 text-[13px] text-fg-2"><Loader2 className="size-4 animate-spin" /> Loading Chateau Telavi…</div>
+            <div role="status" className="mt-4 flex items-center justify-center gap-2 text-[12px] text-foreground-secondary">
+              <Loader2 aria-hidden="true" className="size-4 animate-spin text-accent" />
+              Loading hotel workspace…
+            </div>
           )}
-        </div>
+        </Card>
       </div>
     )
   }
 
   const ctx: OsContext = { snap, me, live, online, actions }
   const openTasks = snap.tasks.filter((t) => ['QUEUED', 'CLAIMED', 'IN_PROGRESS'].includes(t.status)).length
-  const current = APPS.find((a) => a.key === view) ?? HOME_APP
 
   return (
-    <div className="flex h-full overflow-hidden">
-      <LeftRail ctx={ctx} onOpenMia={() => setMiaOpen(true)} />
+    <div className="flex h-full overflow-hidden bg-app-bg">
+      <LeftRail
+        ctx={ctx}
+        active={view}
+        badges={{ contact: unread, ops: openTasks }}
+        onOpenMia={() => setMiaOpen(true)}
+        mobileOpen={mobileNavOpen}
+        onCloseMobile={closeMobileNav}
+      />
       <div className="flex min-w-0 flex-1 flex-col">
-        <Header ctx={ctx} title={current.key === 'home' ? 'Workspace' : current.title} email={email} notes={notes}
-          onReadAll={() => setNotes((l) => l.map((n) => ({ ...n, read: true })))} onClear={() => setNotes([])} />
-        <main key={view} className="min-h-0 flex-1 animate-fade overflow-y-auto px-4 pb-28 sm:px-6">
+        <Header ctx={ctx} title={PAGE_LABELS[view]} email={email} notes={notes}
+          onReadAll={() => setNotes((l) => l.map((n) => ({ ...n, read: true })))} onClear={() => setNotes([])}
+          navigationOpen={mobileNavOpen} onToggleNavigation={() => setMobileNavOpen((open) => !open)}
+          onOpenMia={() => setMiaOpen(true)} />
+        <main key={view} className="min-h-0 flex-1 animate-fade overflow-y-auto px-page pb-16 lg:pb-5">
           {view === 'home' && <AppsGrid ctx={ctx} unread={unread} />}
           {view === 'contact' && <ContactCenterView ctx={ctx} />}
           {view === 'crm' && <CrmView ctx={ctx} />}
@@ -259,10 +316,10 @@ export default function OsShell({ me, email }: { me: Staff; email: string }) {
       <BottomDock items={DOCK.map((k) => (k === 'home' ? HOME_APP : APPS.find((a) => a.key === k)!))} active={view} onSelect={go}
         badges={{ contact: unread, ops: openTasks }} />
       {miaOpen && <MiaDrawer ctx={ctx} onClose={() => setMiaOpen(false)} />}
-      <div className="pointer-events-none fixed bottom-28 right-5 z-50 flex w-80 flex-col-reverse gap-2">
+      <div aria-live="polite" className="pointer-events-none fixed bottom-16 right-3 z-50 flex w-80 max-w-[calc(100vw-1.5rem)] flex-col-reverse gap-2 lg:bottom-4 lg:right-4">
         {toasts.map((t) => (
-          <div key={t.id} className="glass flex animate-slide-in items-start gap-2 rounded-2xl px-3.5 py-2.5 text-[12.5px]">
-            {t.tone === 'error' ? <CircleAlert className="mt-px size-4 shrink-0 text-rose-400" /> : <Check className="mt-px size-4 shrink-0 text-emerald-400" />}
+          <div key={t.id} className="flex animate-slide-in items-start gap-2 rounded-card border border-border bg-elevated px-3 py-2.5 text-[11.5px] text-foreground shadow-overlay">
+            {t.tone === 'error' ? <CircleAlert aria-hidden="true" className="mt-px size-4 shrink-0 text-destructive" /> : <Check aria-hidden="true" className="mt-px size-4 shrink-0 text-success" />}
             <span>{t.text}</span>
           </div>
         ))}
@@ -295,15 +352,23 @@ function MiaDrawer({ ctx, onClose }: { ctx: OsContext; onClose: () => void }) {
   }, [onClose])
   const conversation = ctx.snap.conversations[0] ?? null
   return (
-    <div className="fixed inset-0 z-40 flex animate-fade justify-end bg-black/30 backdrop-blur-xs" onClick={onClose}>
-      <aside className="glass m-3 flex w-full max-w-[440px] animate-slide-in flex-col overflow-hidden rounded-3xl" onClick={(e) => e.stopPropagation()}>
-        <div className="flex items-center gap-3 border-b border-line px-4 py-3">
-          <Avatar name="Mia" size={36} gradient={['#ff6fa5', '#8b5cf6']} badge={<span className="absolute -right-1 -top-1 grid size-4 place-items-center rounded-full bg-amber-300 ring-2 ring-card"><Sparkles className="size-2.5 text-amber-900" /></span>} />
+    <div className="fixed inset-0 z-[60] flex animate-fade justify-end bg-overlay" onClick={onClose}>
+      <aside
+        role="dialog"
+        aria-modal="true"
+        aria-label="Ask Mia"
+        className="flex h-full w-full max-w-[440px] animate-slide-in flex-col overflow-hidden border-l border-border bg-surface"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-center gap-3 border-b border-border-muted px-3 py-2.5">
+          <span className="grid size-8 shrink-0 place-items-center rounded-control border border-border bg-accent-subtle text-accent">
+            <Sparkles aria-hidden="true" className="size-4" />
+          </span>
           <div className="min-w-0 flex-1 leading-tight">
-            <div className="text-sm font-semibold">Mia · Front-Desk Concierge</div>
-            <div className="truncate text-[11.5px] text-fg-3">Quick chat · latest conversation</div>
+            <div className="text-[12px] font-semibold text-foreground">Mia · Front-Desk Concierge</div>
+            <div className="truncate text-[10.5px] text-foreground-muted">Quick chat · latest conversation</div>
           </div>
-          <button onClick={onClose} className="icon-btn" aria-label="Close"><X className="size-4" /></button>
+          <IconButton label="Close Mia" icon={<X aria-hidden="true" className="size-4" />} onClick={onClose} />
         </div>
         <ChatThread ctx={ctx} conversation={conversation} compact />
       </aside>
